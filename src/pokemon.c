@@ -4932,27 +4932,27 @@ static int Pokemon_GetFormNarcIndex(int monSpecies, int monForm)
     switch (monSpecies) {
     case SPECIES_DEOXYS:
         if (monForm && monForm <= DEOXYS_FORM_COUNT - 1) {
-            monSpecies = (496 - 1) + monForm;
+            monSpecies = MAX_SPECIES + monForm;
         }
         break;
     case SPECIES_WORMADAM:
         if (monForm && monForm <= WORMADAM_FORM_COUNT - 1) {
-            monSpecies = (499 - 1) + monForm;
+            monSpecies = (MAX_SPECIES + DEOXYS_FORM_COUNT - 1) + monForm;
         }
         break;
     case SPECIES_GIRATINA:
         if (monForm && monForm <= GIRATINA_FORM_COUNT - 1) {
-            monSpecies = (501 - 1) + monForm;
+            monSpecies = (MAX_SPECIES + DEOXYS_FORM_COUNT - 1 + WORMADAM_FORM_COUNT - 1) + monForm;
         }
         break;
     case SPECIES_SHAYMIN:
         if (monForm && monForm <= SHAYMIN_FORM_COUNT - 1) {
-            monSpecies = (502 - 1) + monForm;
+            monSpecies = (MAX_SPECIES + DEOXYS_FORM_COUNT - 1 + WORMADAM_FORM_COUNT - 1 + GIRATINA_FORM_COUNT - 1) + monForm;
         }
         break;
     case SPECIES_ROTOM:
         if (monForm && monForm <= ROTOM_FORM_COUNT - 1) {
-            monSpecies = (503 - 1) + monForm;
+            monSpecies = (MAX_SPECIES + DEOXYS_FORM_COUNT - 1 + WORMADAM_FORM_COUNT - 1 + GIRATINA_FORM_COUNT - 1 + SHAYMIN_FORM_COUNT - 1) + monForm;
         }
         break;
     default:
