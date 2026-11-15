@@ -7,7 +7,10 @@
         "special_attack": 100,
         "special_defense": 100
     },
-    "types": [ "TYPE_PSYCHIC", "TYPE_FIRE" ],
+    "types": [
+        "TYPE_PSYCHIC",
+        "TYPE_FIRE"
+    ],
     "catch_rate": 3,
     "base_exp_reward": 255,
     "ev_yields": {
@@ -26,47 +29,80 @@
     "hatch_cycles": 120,
     "base_friendship": 100,
     "exp_rate": "EXP_RATE_SLOW",
-    "egg_groups": [ "EGG_GROUP_UNDISCOVERED", "EGG_GROUP_UNDISCOVERED" ],
-    "abilities": [ "ABILITY_COMPOUND_EYES", "ABILITY_NONE" ],
+    "egg_groups": [
+        "EGG_GROUP_UNDISCOVERED",
+        "EGG_GROUP_UNDISCOVERED"
+    ],
+    "abilities": [
+        "ABILITY_NONE",
+        "ABILITY_NONE"
+    ],
     "safari_flee_rate": 0,
     "body_color": "MON_COLOR_YELLOW",
     "flip_sprite": false,
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_CONFUSION" ],
-            [ 1, "MOVE_FOCUS_ENERGY" ],
-            [ 1, "MOVE_EMBER" ],
-            [ 1, "MOVE_QUICK_ATTACK" ],
-            [ 9, "MOVE_ENDURE" ],
-            [ 17, "MOVE_HEADBUTT" ],
-            [ 25, "MOVE_FLAME_WHEEL" ],
-            [ 33, "MOVE_REVERSAL" ],
-            [ 41, "MOVE_FIRE_FANG" ],
-            [ 49, "MOVE_ZEN_HEADBUTT" ],
-            [ 57, "MOVE_FIRE_BLAST" ],
-            [ 65, "MOVE_DOUBLE_EDGE" ],
-            [ 73, "MOVE_FLARE_BLITZ" ],
-            [ 81, "MOVE_PSYCHIC" ],
-            [ 89, "MOVE_OVERHEAT" ]
+            [
+                1,
+                "MOVE_QUICK_ATTACK"
+            ],
+            [
+                1,
+                "MOVE_CONFUSION"
+            ],
+            [
+                1,
+                "MOVE_FOCUS_ENERGY"
+            ],
+            [
+                28,
+                "MOVE_HEADBUTT"
+            ],
+            [
+                35,
+                "MOVE_ENDURE"
+            ],
+            [
+                42,
+                "MOVE_ZEN_HEADBUTT"
+            ],
+            [
+                56,
+                "MOVE_REVERSAL"
+            ],
+            [
+                70,
+                "MOVE_DOUBLE_EDGE"
+            ],
+            [
+                77,
+                "MOVE_FLARE_BLITZ"
+            ],
+            [
+                84,
+                "MOVE_OVERHEAT"
+            ]
         ],
         "by_tm": [
-            "TM04",
             "TM06",
             "TM10",
             "TM11",
+            "TM12",
             "TM15",
             "TM16",
             "TM17",
             "TM20",
             "TM21",
             "TM22",
+            "TM24",
+            "TM25",
             "TM27",
             "TM29",
             "TM30",
             "TM31",
             "TM32",
-            "TM33",
+            "TM34",
             "TM35",
             "TM38",
             "TM42",
@@ -74,115 +110,120 @@
             "TM44",
             "TM48",
             "TM50",
+            "TM52",
+            "TM53",
             "TM56",
             "TM57",
             "TM58",
             "TM61",
+            "TM63",
             "TM68",
             "TM70",
             "TM73",
             "TM77",
             "TM82",
-            "TM83",
             "TM86",
             "TM87",
             "TM89",
-            "TM90"
+            "TM90",
+            "TM92",
+            "HM06"
         ],
         "by_tutor": [
-            "MOVE_SNORE",
-            "MOVE_HELPING_HAND",
-            "MOVE_ZEN_HEADBUTT",
-            "MOVE_HEAT_WAVE",
+            "MOVE_BOUNCE",
             "MOVE_FIRE_PUNCH",
-            "MOVE_THUNDER_PUNCH",
+            "MOVE_HEAT_WAVE",
+            "MOVE_HELPING_HAND",
             "MOVE_LAST_RESORT",
-            "MOVE_TRICK",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR",
             "MOVE_SIGNAL_BEAM",
-            "MOVE_MAGNET_RISE"
-        ]
+            "MOVE_SNORE",
+            "MOVE_SWIFT",
+            "MOVE_THUNDER_PUNCH",
+            "MOVE_TRICK",
+            "MOVE_UPROAR",
+            "MOVE_ZEN_HEADBUTT"
+        ],
+        "egg_moves": []
     },
-    "evolutions": [  ],
+    "evolutions": [],
     "offspring": "SPECIES_VICTINI",
     "footprint": {
-        "has": true,
+        "has": false,
         "size": "FOOTPRINT_SMALL",
         "type": "FOOTPRINT_TYPE_CUTE"
     },
     "pokedex_data": {
         "height_inches": 16,
         "weight_pounds": 8.8,
-        "body_shape": "SHAPE_BIPEDAL_TAILLESS",
+        "body_shape": "SHAPE_QUADRUPED",
         "trainer_scale_f": 272,
-        "pokemon_scale_f": 390,
+        "pokemon_scale_f": 423,
         "trainer_scale_m": 256,
-        "pokemon_scale_m": 390,
+        "pokemon_scale_m": 423,
         "trainer_pos_f": 8,
-        "pokemon_pos_f": 65535,
+        "pokemon_pos_f": 23,
         "trainer_pos_m": 9,
-        "pokemon_pos_m": 65535,
+        "pokemon_pos_m": 23,
         "en": {
             "name": "VICTINI",
             "category": "Victory Pokémon",
             "entry_text": [
-                "A small Pokémon that brings luck\n",
-                "to whoever earns its trust. Its\n",
-                "energy fills allies with courage."
+                "When it shares the infinite energy\n",
+                "it creates, that being’s entire body\n",
+                "will be overflowing with power."
             ]
         },
         "fr": {
             "name": "VICTINI",
-            "category": "Pokémon Victoire",
+            "category": "Victory Pokémon",
             "entry_text": [
-                "Ce petit Pokémon porte chance à\n",
-                "ceux qui gagnent sa confiance et\n",
-                "leur donne du courage."
+                "When it shares the infinite energy\n",
+                "it creates, that being’s entire body\n",
+                "will be overflowing with power."
             ]
         },
         "de": {
             "name": "VICTINI",
-            "category": "Sieg",
+            "category": "Victory Pokémon",
             "entry_text": [
-                "Ein kleines Pokémon, das jenen\n",
-                "Glück bringt, die sein Vertrauen\n",
-                "gewinnen, und ihnen Mut schenkt."
+                "When it shares the infinite energy\n",
+                "it creates, that being’s entire body\n",
+                "will be overflowing with power."
             ]
         },
         "it": {
             "name": "VICTINI",
-            "category": "Pokémon Vittoria",
+            "category": "Victory Pokémon",
             "entry_text": [
-                "Un piccolo Pokémon che porta\n",
-                "fortuna a chi ne conquista la\n",
-                "fiducia, infondendogli coraggio."
+                "When it shares the infinite energy\n",
+                "it creates, that being’s entire body\n",
+                "will be overflowing with power."
             ]
         },
         "es": {
             "name": "VICTINI",
-            "category": "Pokémon Victoria",
+            "category": "Victory Pokémon",
             "entry_text": [
-                "Un pequeño Pokémon que trae\n",
-                "suerte a quien se gana su\n",
-                "confianza y le infunde valor."
+                "When it shares the infinite energy\n",
+                "it creates, that being’s entire body\n",
+                "will be overflowing with power."
             ]
         },
         "jp": {
-            "name": "ビクティニ",
-            "category": "しょうりポケモン",
+            "name": "VICTINI",
+            "category": "Victory Pokémon",
             "entry_text": [
-                "しんらいした　あいてに\n",
-                "しょうりと　ゆうきを\n",
-                "もたらすと　いわれている。"
+                "When it shares the infinite energy\n",
+                "it creates, that being’s entire body\n",
+                "will be overflowing with power."
             ]
         }
     },
     "catching_show": {
-        "pal_park_land_area": "PAL_PARK_AREA_LAND_NORTH_WEST",
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
         "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
-        "catching_points": 100,
-        "rarity": 1,
-        "unused": 266
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
     }
 }

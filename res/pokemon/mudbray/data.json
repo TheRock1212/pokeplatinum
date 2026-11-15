@@ -1,0 +1,214 @@
+{
+    "base_stats": {
+        "hp": 70,
+        "attack": 100,
+        "defense": 70,
+        "speed": 45,
+        "special_attack": 45,
+        "special_defense": 55
+    },
+    "types": [
+        "TYPE_GROUND",
+        "TYPE_GROUND"
+    ],
+    "catch_rate": 190,
+    "base_exp_reward": 77,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 1,
+        "defense": 0,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 0
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_LIGHT_CLAY"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_50",
+    "hatch_cycles": 20,
+    "base_friendship": 50,
+    "exp_rate": "EXP_RATE_MEDIUM_FAST",
+    "egg_groups": [
+        "EGG_GROUP_FIELD",
+        "EGG_GROUP_FIELD"
+    ],
+    "abilities": [
+        "ABILITY_OWN_TEMPO",
+        "ABILITY_NONE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_BROWN",
+    "flip_sprite": false,
+    "icon_palette": 2,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_MUD_SLAP"
+            ],
+            [
+                1,
+                "MOVE_ROCK_SMASH"
+            ],
+            [
+                4,
+                "MOVE_IRON_DEFENSE"
+            ],
+            [
+                8,
+                "MOVE_DOUBLE_KICK"
+            ],
+            [
+                16,
+                "MOVE_STOMP"
+            ],
+            [
+                20,
+                "MOVE_STRENGTH"
+            ],
+            [
+                24,
+                "MOVE_COUNTER"
+            ],
+            [
+                36,
+                "MOVE_EARTHQUAKE"
+            ],
+            [
+                40,
+                "MOVE_MEGA_KICK"
+            ],
+            [
+                44,
+                "MOVE_SUPERPOWER"
+            ]
+        ],
+        "by_tm": [
+            "TM05",
+            "TM06",
+            "TM10",
+            "TM11",
+            "TM17",
+            "TM21",
+            "TM26",
+            "TM27",
+            "TM32",
+            "TM37",
+            "TM39",
+            "TM42",
+            "TM44",
+            "TM45",
+            "TM58",
+            "TM66",
+            "TM71",
+            "TM76",
+            "TM80",
+            "TM82",
+            "TM87",
+            "TM90"
+        ],
+        "by_tutor": [
+            "MOVE_EARTH_POWER",
+            "MOVE_ENDEAVOR",
+            "MOVE_IRON_DEFENSE",
+            "MOVE_IRON_HEAD",
+            "MOVE_MUD_SLAP",
+            "MOVE_SNORE",
+            "MOVE_SUPERPOWER"
+        ],
+        "egg_moves": [
+            "MOVE_DOUBLE_EDGE",
+            "MOVE_ROAR",
+            "MOVE_FISSURE",
+            "MOVE_ENDEAVOR"
+        ]
+    },
+    "evolutions": [
+        [
+            "EVO_LEVEL",
+            30,
+            "SPECIES_MUDSDALE"
+        ]
+    ],
+    "offspring": "SPECIES_MUDBRAY",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 39,
+        "weight_pounds": 242.5,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 337,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 337,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 24,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 24,
+        "en": {
+            "name": "MUDBRAY",
+            "category": "Donkey Pokémon",
+            "entry_text": [
+                "The mud stuck to Mudbray’s hooves\n",
+                "enhances its grip and its powerful\n",
+                "running gait."
+            ]
+        },
+        "fr": {
+            "name": "MUDBRAY",
+            "category": "Donkey Pokémon",
+            "entry_text": [
+                "The mud stuck to Mudbray’s hooves\n",
+                "enhances its grip and its powerful\n",
+                "running gait."
+            ]
+        },
+        "de": {
+            "name": "MUDBRAY",
+            "category": "Donkey Pokémon",
+            "entry_text": [
+                "The mud stuck to Mudbray’s hooves\n",
+                "enhances its grip and its powerful\n",
+                "running gait."
+            ]
+        },
+        "it": {
+            "name": "MUDBRAY",
+            "category": "Donkey Pokémon",
+            "entry_text": [
+                "The mud stuck to Mudbray’s hooves\n",
+                "enhances its grip and its powerful\n",
+                "running gait."
+            ]
+        },
+        "es": {
+            "name": "MUDBRAY",
+            "category": "Donkey Pokémon",
+            "entry_text": [
+                "The mud stuck to Mudbray’s hooves\n",
+                "enhances its grip and its powerful\n",
+                "running gait."
+            ]
+        },
+        "jp": {
+            "name": "MUDBRAY",
+            "category": "Donkey Pokémon",
+            "entry_text": [
+                "The mud stuck to Mudbray’s hooves\n",
+                "enhances its grip and its powerful\n",
+                "running gait."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

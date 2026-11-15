@@ -1,0 +1,213 @@
+{
+    "base_stats": {
+        "hp": 40,
+        "attack": 35,
+        "defense": 55,
+        "speed": 15,
+        "special_attack": 65,
+        "special_defense": 75
+    },
+    "types": [
+        "TYPE_GRASS",
+        "TYPE_FAIRY"
+    ],
+    "catch_rate": 190,
+    "base_exp_reward": 57,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 1
+    },
+    "held_items": {
+        "common": "ITEM_TINYMUSHROOM",
+        "rare": "ITEM_BIG_MUSHROOM"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_50",
+    "hatch_cycles": 20,
+    "base_friendship": 50,
+    "exp_rate": "EXP_RATE_MEDIUM_FAST",
+    "egg_groups": [
+        "EGG_GROUP_GRASS",
+        "EGG_GROUP_GRASS"
+    ],
+    "abilities": [
+        "ABILITY_ILLUMINATE",
+        "ABILITY_EFFECT_SPORE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_PURPLE",
+    "flip_sprite": false,
+    "icon_palette": 0,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_ABSORB"
+            ],
+            [
+                1,
+                "MOVE_ASTONISH"
+            ],
+            [
+                4,
+                "MOVE_CONFUSE_RAY"
+            ],
+            [
+                8,
+                "MOVE_INGRAIN"
+            ],
+            [
+                12,
+                "MOVE_MEGA_DRAIN"
+            ],
+            [
+                16,
+                "MOVE_SLEEP_POWDER"
+            ],
+            [
+                20,
+                "MOVE_MOONLIGHT"
+            ],
+            [
+                28,
+                "MOVE_GIGA_DRAIN"
+            ],
+            [
+                36,
+                "MOVE_SPORE"
+            ],
+            [
+                44,
+                "MOVE_DREAM_EATER"
+            ]
+        ],
+        "by_tm": [
+            "TM06",
+            "TM10",
+            "TM11",
+            "TM16",
+            "TM17",
+            "TM19",
+            "TM20",
+            "TM21",
+            "TM22",
+            "TM27",
+            "TM32",
+            "TM36",
+            "TM42",
+            "TM44",
+            "TM45",
+            "TM53",
+            "TM58",
+            "TM67",
+            "TM73",
+            "TM82",
+            "TM85",
+            "TM86",
+            "TM87",
+            "TM90"
+        ],
+        "by_tutor": [
+            "MOVE_SEED_BOMB",
+            "MOVE_SIGNAL_BEAM",
+            "MOVE_SNORE",
+            "MOVE_SYNTHESIS"
+        ],
+        "egg_moves": [
+            "MOVE_LEECH_SEED",
+            "MOVE_GROWTH",
+            "MOVE_POISON_POWDER",
+            "MOVE_STUN_SPORE"
+        ]
+    },
+    "evolutions": [
+        [
+            "EVO_LEVEL",
+            24,
+            "SPECIES_SHIINOTIC"
+        ]
+    ],
+    "offspring": "SPECIES_MORELULL",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 8,
+        "weight_pounds": 3.3,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 337,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 337,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 24,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 24,
+        "en": {
+            "name": "MORELULL",
+            "category": "Illuminating Pokémon",
+            "entry_text": [
+                "It scatters spores that flicker and\n",
+                "glow. Anyone seeing these lights falls\n",
+                "into a deep slumber."
+            ]
+        },
+        "fr": {
+            "name": "MORELULL",
+            "category": "Illuminating Pokémon",
+            "entry_text": [
+                "It scatters spores that flicker and\n",
+                "glow. Anyone seeing these lights falls\n",
+                "into a deep slumber."
+            ]
+        },
+        "de": {
+            "name": "MORELULL",
+            "category": "Illuminating Pokémon",
+            "entry_text": [
+                "It scatters spores that flicker and\n",
+                "glow. Anyone seeing these lights falls\n",
+                "into a deep slumber."
+            ]
+        },
+        "it": {
+            "name": "MORELULL",
+            "category": "Illuminating Pokémon",
+            "entry_text": [
+                "It scatters spores that flicker and\n",
+                "glow. Anyone seeing these lights falls\n",
+                "into a deep slumber."
+            ]
+        },
+        "es": {
+            "name": "MORELULL",
+            "category": "Illuminating Pokémon",
+            "entry_text": [
+                "It scatters spores that flicker and\n",
+                "glow. Anyone seeing these lights falls\n",
+                "into a deep slumber."
+            ]
+        },
+        "jp": {
+            "name": "MORELULL",
+            "category": "Illuminating Pokémon",
+            "entry_text": [
+                "It scatters spores that flicker and\n",
+                "glow. Anyone seeing these lights falls\n",
+                "into a deep slumber."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

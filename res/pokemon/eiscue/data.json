@@ -1,0 +1,201 @@
+{
+    "base_stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 110,
+        "speed": 50,
+        "special_attack": 65,
+        "special_defense": 90
+    },
+    "types": [
+        "TYPE_ICE",
+        "TYPE_ICE"
+    ],
+    "catch_rate": 60,
+    "base_exp_reward": 165,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 0,
+        "defense": 2,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 0
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_NONE"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_50",
+    "hatch_cycles": 25,
+    "base_friendship": 50,
+    "exp_rate": "EXP_RATE_SLOW",
+    "egg_groups": [
+        "EGG_GROUP_WATER_1",
+        "EGG_GROUP_FIELD"
+    ],
+    "abilities": [
+        "ABILITY_NONE",
+        "ABILITY_NONE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_BLUE",
+    "flip_sprite": false,
+    "icon_palette": 0,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_TACKLE"
+            ],
+            [
+                1,
+                "MOVE_POWDER_SNOW"
+            ],
+            [
+                6,
+                "MOVE_MIST"
+            ],
+            [
+                12,
+                "MOVE_WEATHER_BALL"
+            ],
+            [
+                18,
+                "MOVE_ICY_WIND"
+            ],
+            [
+                24,
+                "MOVE_HEADBUTT"
+            ],
+            [
+                30,
+                "MOVE_AMNESIA"
+            ],
+            [
+                54,
+                "MOVE_SURF"
+            ],
+            [
+                60,
+                "MOVE_BLIZZARD"
+            ]
+        ],
+        "by_tm": [
+            "TM03",
+            "TM07",
+            "TM13",
+            "TM14",
+            "TM15",
+            "TM17",
+            "TM18",
+            "TM33",
+            "TM42",
+            "TM44",
+            "TM45",
+            "TM55",
+            "TM58",
+            "TM68",
+            "TM72",
+            "TM82",
+            "TM90",
+            "HM03",
+            "HM07"
+        ],
+        "by_tutor": [
+            "MOVE_DIVE",
+            "MOVE_ICE_PUNCH",
+            "MOVE_ICY_WIND",
+            "MOVE_IRON_DEFENSE",
+            "MOVE_IRON_HEAD",
+            "MOVE_SNORE",
+            "MOVE_ZEN_HEADBUTT"
+        ],
+        "egg_moves": [
+            "MOVE_DOUBLE_EDGE",
+            "MOVE_BELLY_DRUM",
+            "MOVE_AQUA_RING",
+            "MOVE_HEAD_SMASH"
+        ]
+    },
+    "evolutions": [],
+    "offspring": "SPECIES_EISCUE",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 55,
+        "weight_pounds": 196.2,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 337,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 337,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 24,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 24,
+        "en": {
+            "name": "EISCUE",
+            "category": "Penguin Pokémon",
+            "entry_text": [
+                "It drifted in on the flow of ocean\n",
+                "waters from a frigid place. It keeps its\n",
+                "head iced constantly to stay cold."
+            ]
+        },
+        "fr": {
+            "name": "EISCUE",
+            "category": "Penguin Pokémon",
+            "entry_text": [
+                "It drifted in on the flow of ocean\n",
+                "waters from a frigid place. It keeps its\n",
+                "head iced constantly to stay cold."
+            ]
+        },
+        "de": {
+            "name": "EISCUE",
+            "category": "Penguin Pokémon",
+            "entry_text": [
+                "It drifted in on the flow of ocean\n",
+                "waters from a frigid place. It keeps its\n",
+                "head iced constantly to stay cold."
+            ]
+        },
+        "it": {
+            "name": "EISCUE",
+            "category": "Penguin Pokémon",
+            "entry_text": [
+                "It drifted in on the flow of ocean\n",
+                "waters from a frigid place. It keeps its\n",
+                "head iced constantly to stay cold."
+            ]
+        },
+        "es": {
+            "name": "EISCUE",
+            "category": "Penguin Pokémon",
+            "entry_text": [
+                "It drifted in on the flow of ocean\n",
+                "waters from a frigid place. It keeps its\n",
+                "head iced constantly to stay cold."
+            ]
+        },
+        "jp": {
+            "name": "EISCUE",
+            "category": "Penguin Pokémon",
+            "entry_text": [
+                "It drifted in on the flow of ocean\n",
+                "waters from a frigid place. It keeps its\n",
+                "head iced constantly to stay cold."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

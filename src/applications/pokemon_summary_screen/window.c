@@ -1048,7 +1048,7 @@ static void DrawInfoPageWindows(PokemonSummaryScreen *summaryScreen)
     u32 dexNum = GetDexNumber(summaryScreen->data->dexMode, summaryScreen->monData.species);
 
     if (dexNum != 0) {
-        SetAndFormatNumberBuf(summaryScreen, PokemonSummary_Text_DexNumberTemplate, dexNum, 3, PADDING_MODE_ZEROES);
+        SetAndFormatNumberBuf(summaryScreen, PokemonSummary_Text_DexNumberTemplate, dexNum, dexNum >= 1000 ? 4 : 3, PADDING_MODE_ZEROES);
     } else {
         MessageLoader_GetString(summaryScreen->msgLoader, PokemonSummary_Text_ThreeQuestionMarks, summaryScreen->string);
     }

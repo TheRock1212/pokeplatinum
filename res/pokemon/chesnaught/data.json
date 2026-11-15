@@ -1,0 +1,271 @@
+{
+    "base_stats": {
+        "hp": 88,
+        "attack": 107,
+        "defense": 122,
+        "speed": 64,
+        "special_attack": 74,
+        "special_defense": 75
+    },
+    "types": [
+        "TYPE_GRASS",
+        "TYPE_FIGHTING"
+    ],
+    "catch_rate": 45,
+    "base_exp_reward": 255,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 0,
+        "defense": 3,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 0
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_NONE"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_12_5",
+    "hatch_cycles": 20,
+    "base_friendship": 70,
+    "exp_rate": "EXP_RATE_MEDIUM_SLOW",
+    "egg_groups": [
+        "EGG_GROUP_FIELD",
+        "EGG_GROUP_FIELD"
+    ],
+    "abilities": [
+        "ABILITY_OVERGROW",
+        "ABILITY_NONE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_GREEN",
+    "flip_sprite": false,
+    "icon_palette": 1,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_FEINT"
+            ],
+            [
+                1,
+                "MOVE_HAMMER_ARM"
+            ],
+            [
+                1,
+                "MOVE_GROWL"
+            ],
+            [
+                1,
+                "MOVE_ROLLOUT"
+            ],
+            [
+                1,
+                "MOVE_TACKLE"
+            ],
+            [
+                1,
+                "MOVE_VINE_WHIP"
+            ],
+            [
+                11,
+                "MOVE_BITE"
+            ],
+            [
+                15,
+                "MOVE_LEECH_SEED"
+            ],
+            [
+                19,
+                "MOVE_PIN_MISSILE"
+            ],
+            [
+                29,
+                "MOVE_TAKE_DOWN"
+            ],
+            [
+                35,
+                "MOVE_SEED_BOMB"
+            ],
+            [
+                41,
+                "MOVE_MUD_SHOT"
+            ],
+            [
+                48,
+                "MOVE_BULK_UP"
+            ],
+            [
+                54,
+                "MOVE_BODY_SLAM"
+            ],
+            [
+                60,
+                "MOVE_PAIN_SPLIT"
+            ],
+            [
+                66,
+                "MOVE_WOOD_HAMMER"
+            ],
+            [
+                78,
+                "MOVE_GIGA_IMPACT"
+            ]
+        ],
+        "by_tm": [
+            "TM01",
+            "TM02",
+            "TM05",
+            "TM06",
+            "TM08",
+            "TM09",
+            "TM10",
+            "TM11",
+            "TM12",
+            "TM15",
+            "TM17",
+            "TM18",
+            "TM19",
+            "TM21",
+            "TM22",
+            "TM23",
+            "TM26",
+            "TM27",
+            "TM28",
+            "TM31",
+            "TM32",
+            "TM33",
+            "TM36",
+            "TM39",
+            "TM40",
+            "TM42",
+            "TM43",
+            "TM44",
+            "TM45",
+            "TM52",
+            "TM53",
+            "TM56",
+            "TM58",
+            "TM60",
+            "TM65",
+            "TM66",
+            "TM68",
+            "TM70",
+            "TM71",
+            "TM74",
+            "TM75",
+            "TM80",
+            "TM82",
+            "TM84",
+            "TM86",
+            "TM87",
+            "TM90",
+            "HM01",
+            "HM04",
+            "HM06"
+        ],
+        "by_tutor": [
+            "MOVE_ENDEAVOR",
+            "MOVE_HELPING_HAND",
+            "MOVE_IRON_DEFENSE",
+            "MOVE_IRON_HEAD",
+            "MOVE_KNOCK_OFF",
+            "MOVE_MUD_SLAP",
+            "MOVE_SEED_BOMB",
+            "MOVE_SNORE",
+            "MOVE_SUPERPOWER",
+            "MOVE_SWIFT",
+            "MOVE_SYNTHESIS",
+            "MOVE_THUNDER_PUNCH",
+            "MOVE_ZEN_HEADBUTT"
+        ],
+        "egg_moves": [
+            "MOVE_SUPER_FANG",
+            "MOVE_CURSE",
+            "MOVE_BELLY_DRUM",
+            "MOVE_SPIKES",
+            "MOVE_SYNTHESIS"
+        ]
+    },
+    "evolutions": [],
+    "offspring": "SPECIES_CHESPIN",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 63,
+        "weight_pounds": 198.4,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 337,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 337,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 24,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 24,
+        "en": {
+            "name": "CHESNAUGHT",
+            "category": "Spiny Armor Pokémon",
+            "entry_text": [
+                "When it takes a defensive posture with\n",
+                "its fists guarding its face, it could\n",
+                "withstand a bomb blast."
+            ]
+        },
+        "fr": {
+            "name": "CHESNAUGHT",
+            "category": "Spiny Armor Pokémon",
+            "entry_text": [
+                "When it takes a defensive posture with\n",
+                "its fists guarding its face, it could\n",
+                "withstand a bomb blast."
+            ]
+        },
+        "de": {
+            "name": "CHESNAUGHT",
+            "category": "Spiny Armor Pokémon",
+            "entry_text": [
+                "When it takes a defensive posture with\n",
+                "its fists guarding its face, it could\n",
+                "withstand a bomb blast."
+            ]
+        },
+        "it": {
+            "name": "CHESNAUGHT",
+            "category": "Spiny Armor Pokémon",
+            "entry_text": [
+                "When it takes a defensive posture with\n",
+                "its fists guarding its face, it could\n",
+                "withstand a bomb blast."
+            ]
+        },
+        "es": {
+            "name": "CHESNAUGHT",
+            "category": "Spiny Armor Pokémon",
+            "entry_text": [
+                "When it takes a defensive posture with\n",
+                "its fists guarding its face, it could\n",
+                "withstand a bomb blast."
+            ]
+        },
+        "jp": {
+            "name": "CHESNAUGHT",
+            "category": "Spiny Armor Pokémon",
+            "entry_text": [
+                "When it takes a defensive posture with\n",
+                "its fists guarding its face, it could\n",
+                "withstand a bomb blast."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

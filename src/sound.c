@@ -1124,7 +1124,7 @@ const SNDWaveData *Sound_LoadPokedexDataForSpecies(int species)
     u16 waveArcID = species;
 
     if (waveArcID != chatot_cry_swar) {
-        if (species > MAX_SPECIES || species == SPECIES_NONE) {
+        if (species > LAST_SPECIES_WITH_CRY || species == SPECIES_NONE) {
             waveArcID = bulbasaur_cry_swar;
         }
     }
@@ -1140,7 +1140,7 @@ static const SNDWaveData *Sound_Impl_GetWaveDataForSpecies(int species)
 
     u16 waveArcID = species;
     if (waveArcID != chatot_cry_swar) {
-        if (species > MAX_SPECIES || species == SPECIES_NONE) {
+        if (species > LAST_SPECIES_WITH_CRY || species == SPECIES_NONE) {
             waveArcID = bulbasaur_cry_swar;
         }
     }

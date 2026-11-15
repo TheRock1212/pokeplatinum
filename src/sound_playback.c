@@ -336,7 +336,7 @@ BOOL Sound_PlayPokemonCry(u16 species, u8 form)
     }
 
     if (waveID != shaymin_forms_sky_cry_swar) {
-        if (waveID > MAX_SPECIES || waveID == SPECIES_NONE) {
+        if (waveID > LAST_SPECIES_WITH_CRY || waveID == SPECIES_NONE) {
             waveID = bulbasaur_cry_swar;
         }
     }
@@ -426,7 +426,7 @@ BOOL Sound_PlayPokemonCryEx(enum PokemonCryMod cryMod, u16 species, int pan, int
     }
 
     if (species != shaymin_forms_sky_cry_swar) {
-        if (species > MAX_SPECIES || species == SPECIES_NONE) {
+        if (species > LAST_SPECIES_WITH_CRY || species == SPECIES_NONE) {
             species = SPECIES_BULBASAUR;
         }
     }

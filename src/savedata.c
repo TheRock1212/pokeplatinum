@@ -872,7 +872,10 @@ static void SaveBlockInfo_Init(SaveBlockInfo *blockInfo, const SavePageInfo *pag
     }
 
     GF_ASSERT(totalSectors == blockInfo[SAVE_BLOCK_ID_MAX - 1].sectorStartPos + blockInfo[SAVE_BLOCK_ID_MAX - 1].sectorsInUse);
-    GF_ASSERT(totalSectors <= SAVE_PAGE_MAX);
+    // The blocks are packed byte by byte both in RAM and on the card, so what
+    // has to fit is their total size, not the per-block sector counts (which
+    // round each block up separately).
+    GF_ASSERT((u32)blockOffset <= SAVE_SECTOR_SIZE * SAVE_PAGE_MAX);
 }
 
 static void SaveTable_Clear(SaveDataBody *body, const SavePageInfo *pageInfo)

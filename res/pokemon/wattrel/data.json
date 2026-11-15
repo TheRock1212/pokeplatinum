@@ -1,0 +1,204 @@
+{
+    "base_stats": {
+        "hp": 40,
+        "attack": 40,
+        "defense": 35,
+        "speed": 70,
+        "special_attack": 55,
+        "special_defense": 40
+    },
+    "types": [
+        "TYPE_ELECTRIC",
+        "TYPE_FLYING"
+    ],
+    "catch_rate": 180,
+    "base_exp_reward": 56,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 0,
+        "defense": 0,
+        "speed": 1,
+        "special_attack": 0,
+        "special_defense": 0
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_NONE"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_50",
+    "hatch_cycles": 20,
+    "base_friendship": 50,
+    "exp_rate": "EXP_RATE_MEDIUM_SLOW",
+    "egg_groups": [
+        "EGG_GROUP_WATER_1",
+        "EGG_GROUP_FLYING"
+    ],
+    "abilities": [
+        "ABILITY_VOLT_ABSORB",
+        "ABILITY_NONE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_BLACK",
+    "flip_sprite": false,
+    "icon_palette": 0,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_GROWL"
+            ],
+            [
+                1,
+                "MOVE_PECK"
+            ],
+            [
+                4,
+                "MOVE_THUNDER_SHOCK"
+            ],
+            [
+                7,
+                "MOVE_QUICK_ATTACK"
+            ],
+            [
+                11,
+                "MOVE_PLUCK"
+            ],
+            [
+                15,
+                "MOVE_SPARK"
+            ],
+            [
+                19,
+                "MOVE_UPROAR"
+            ],
+            [
+                23,
+                "MOVE_ROOST"
+            ],
+            [
+                32,
+                "MOVE_AGILITY"
+            ],
+            [
+                43,
+                "MOVE_DISCHARGE"
+            ]
+        ],
+        "by_tm": [
+            "TM17",
+            "TM24",
+            "TM25",
+            "TM40",
+            "TM42",
+            "TM44",
+            "TM57",
+            "TM58",
+            "TM73",
+            "TM82",
+            "TM89",
+            "TM90",
+            "HM02"
+        ],
+        "by_tutor": [
+            "MOVE_AIR_CUTTER",
+            "MOVE_ENDEAVOR",
+            "MOVE_SWIFT",
+            "MOVE_UPROAR"
+        ],
+        "egg_moves": [
+            "MOVE_STOCKPILE",
+            "MOVE_SPIT_UP",
+            "MOVE_SWALLOW",
+            "MOVE_ENDEAVOR",
+            "MOVE_FEATHER_DANCE",
+            "MOVE_WEATHER_BALL"
+        ]
+    },
+    "evolutions": [
+        [
+            "EVO_LEVEL",
+            25,
+            "SPECIES_KILOWATTREL"
+        ]
+    ],
+    "offspring": "SPECIES_WATTREL",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 16,
+        "weight_pounds": 7.9,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 337,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 337,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 24,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 24,
+        "en": {
+            "name": "WATTREL",
+            "category": "Storm Petrel Pokémon",
+            "entry_text": [
+                "These Pokémon make their nests on coastal\n",
+                "cliffs. The nests have a strange, crackling\n",
+                "texture, and they’re a popular delicacy."
+            ]
+        },
+        "fr": {
+            "name": "WATTREL",
+            "category": "Storm Petrel Pokémon",
+            "entry_text": [
+                "These Pokémon make their nests on coastal\n",
+                "cliffs. The nests have a strange, crackling\n",
+                "texture, and they’re a popular delicacy."
+            ]
+        },
+        "de": {
+            "name": "WATTREL",
+            "category": "Storm Petrel Pokémon",
+            "entry_text": [
+                "These Pokémon make their nests on coastal\n",
+                "cliffs. The nests have a strange, crackling\n",
+                "texture, and they’re a popular delicacy."
+            ]
+        },
+        "it": {
+            "name": "WATTREL",
+            "category": "Storm Petrel Pokémon",
+            "entry_text": [
+                "These Pokémon make their nests on coastal\n",
+                "cliffs. The nests have a strange, crackling\n",
+                "texture, and they’re a popular delicacy."
+            ]
+        },
+        "es": {
+            "name": "WATTREL",
+            "category": "Storm Petrel Pokémon",
+            "entry_text": [
+                "These Pokémon make their nests on coastal\n",
+                "cliffs. The nests have a strange, crackling\n",
+                "texture, and they’re a popular delicacy."
+            ]
+        },
+        "jp": {
+            "name": "WATTREL",
+            "category": "Storm Petrel Pokémon",
+            "entry_text": [
+                "These Pokémon make their nests on coastal\n",
+                "cliffs. The nests have a strange, crackling\n",
+                "texture, and they’re a popular delicacy."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

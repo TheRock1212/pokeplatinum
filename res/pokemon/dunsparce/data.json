@@ -120,7 +120,9 @@
             "MOVE_SNORE"
         ]
     },
-    "evolutions": [  ],
+    "evolutions": [
+        [ "EVO_LEVEL", 30, "SPECIES_DUDUNSPARCE" ]
+    ],
     "offspring": "SPECIES_DUNSPARCE",
     "footprint": {
         "has": false,

@@ -110,7 +110,9 @@
             "MOVE_UPROAR"
         ]
     },
-    "evolutions": [  ],
+    "evolutions": [
+        [ "EVO_LEVEL", 40, "SPECIES_URSALUNA" ]
+    ],
     "offspring": "SPECIES_TEDDIURSA",
     "footprint": {
         "has": true,

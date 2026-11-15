@@ -115,7 +115,9 @@
             "MOVE_ZEN_HEADBUTT"
         ]
     },
-    "evolutions": [  ],
+    "evolutions": [
+        [ "EVO_LEVEL", 30, "SPECIES_WYRDEER" ]
+    ],
     "offspring": "SPECIES_STANTLER",
     "footprint": {
         "has": true,

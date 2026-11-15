@@ -1,0 +1,236 @@
+{
+    "base_stats": {
+        "hp": 50,
+        "attack": 72,
+        "defense": 35,
+        "speed": 65,
+        "special_attack": 35,
+        "special_defense": 35
+    },
+    "types": [
+        "TYPE_GROUND",
+        "TYPE_DARK"
+    ],
+    "catch_rate": 180,
+    "base_exp_reward": 58,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 1,
+        "defense": 0,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 0
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_BLACKGLASSES"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_50",
+    "hatch_cycles": 20,
+    "base_friendship": 50,
+    "exp_rate": "EXP_RATE_MEDIUM_SLOW",
+    "egg_groups": [
+        "EGG_GROUP_FIELD",
+        "EGG_GROUP_FIELD"
+    ],
+    "abilities": [
+        "ABILITY_INTIMIDATE",
+        "ABILITY_NONE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_BROWN",
+    "flip_sprite": false,
+    "icon_palette": 1,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_LEER"
+            ],
+            [
+                3,
+                "MOVE_SAND_ATTACK"
+            ],
+            [
+                9,
+                "MOVE_SAND_TOMB"
+            ],
+            [
+                12,
+                "MOVE_SCARY_FACE"
+            ],
+            [
+                15,
+                "MOVE_BITE"
+            ],
+            [
+                18,
+                "MOVE_TORMENT"
+            ],
+            [
+                21,
+                "MOVE_DIG"
+            ],
+            [
+                24,
+                "MOVE_SWAGGER"
+            ],
+            [
+                27,
+                "MOVE_CRUNCH"
+            ],
+            [
+                30,
+                "MOVE_SANDSTORM"
+            ],
+            [
+                36,
+                "MOVE_EARTHQUAKE"
+            ],
+            [
+                39,
+                "MOVE_THRASH"
+            ]
+        ],
+        "by_tm": [
+            "TM05",
+            "TM06",
+            "TM10",
+            "TM12",
+            "TM17",
+            "TM21",
+            "TM23",
+            "TM26",
+            "TM27",
+            "TM28",
+            "TM31",
+            "TM32",
+            "TM36",
+            "TM37",
+            "TM39",
+            "TM41",
+            "TM42",
+            "TM43",
+            "TM44",
+            "TM45",
+            "TM46",
+            "TM49",
+            "TM56",
+            "TM58",
+            "TM63",
+            "TM65",
+            "TM66",
+            "TM71",
+            "TM76",
+            "TM79",
+            "TM80",
+            "TM82",
+            "TM86",
+            "TM87",
+            "TM90",
+            "HM01"
+        ],
+        "by_tutor": [
+            "MOVE_AQUA_TAIL",
+            "MOVE_EARTH_POWER",
+            "MOVE_HELPING_HAND",
+            "MOVE_MUD_SLAP",
+            "MOVE_SNORE",
+            "MOVE_SPITE",
+            "MOVE_UPROAR"
+        ],
+        "egg_moves": [
+            "MOVE_DOUBLE_EDGE",
+            "MOVE_COUNTER",
+            "MOVE_SPITE",
+            "MOVE_AQUA_TAIL"
+        ]
+    },
+    "evolutions": [
+        [
+            "EVO_LEVEL",
+            29,
+            "SPECIES_KROKOROK"
+        ]
+    ],
+    "offspring": "SPECIES_SANDILE",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 28,
+        "weight_pounds": 33.5,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 342,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 342,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 29,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 29,
+        "en": {
+            "name": "SANDILE",
+            "category": "Desert Croc Pokémon",
+            "entry_text": [
+                "They live hidden under hot desert sands\n",
+                "in order to keep their body temperature\n",
+                "from dropping."
+            ]
+        },
+        "fr": {
+            "name": "SANDILE",
+            "category": "Desert Croc Pokémon",
+            "entry_text": [
+                "They live hidden under hot desert sands\n",
+                "in order to keep their body temperature\n",
+                "from dropping."
+            ]
+        },
+        "de": {
+            "name": "SANDILE",
+            "category": "Desert Croc Pokémon",
+            "entry_text": [
+                "They live hidden under hot desert sands\n",
+                "in order to keep their body temperature\n",
+                "from dropping."
+            ]
+        },
+        "it": {
+            "name": "SANDILE",
+            "category": "Desert Croc Pokémon",
+            "entry_text": [
+                "They live hidden under hot desert sands\n",
+                "in order to keep their body temperature\n",
+                "from dropping."
+            ]
+        },
+        "es": {
+            "name": "SANDILE",
+            "category": "Desert Croc Pokémon",
+            "entry_text": [
+                "They live hidden under hot desert sands\n",
+                "in order to keep their body temperature\n",
+                "from dropping."
+            ]
+        },
+        "jp": {
+            "name": "SANDILE",
+            "category": "Desert Croc Pokémon",
+            "entry_text": [
+                "They live hidden under hot desert sands\n",
+                "in order to keep their body temperature\n",
+                "from dropping."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

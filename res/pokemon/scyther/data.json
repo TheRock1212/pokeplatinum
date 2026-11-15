@@ -109,11 +109,8 @@
         ]
     },
     "evolutions": [
-        [
-            "EVO_TRADE_WITH_HELD_ITEM",
-            "ITEM_METAL_COAT",
-            "SPECIES_SCIZOR"
-        ]
+        [ "EVO_TRADE_WITH_HELD_ITEM", "ITEM_METAL_COAT", "SPECIES_SCIZOR" ],
+        [ "EVO_LEVEL", 30, "SPECIES_KLEAVOR" ]
     ],
     "offspring": "SPECIES_SCYTHER",
     "footprint": {

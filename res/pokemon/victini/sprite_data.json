@@ -2,34 +2,34 @@
     "front": {
         "y_offset": {
             "female": 0,
-            "male": 21
+            "male": 0
         },
-        "addl_y_offset": 14,
-        "animation": 22,
+        "addl_y_offset": -9,
+        "animation": 11,
         "cry_delay": 0,
         "start_delay": 0,
         "frames": [
             {
-                "sprite_frame": 1,
-                "frame_delay": 15,
+                "sprite_frame": 0,
+                "frame_delay": 4,
                 "x_shift": 0,
                 "y_shift": 0
             },
             {
                 "sprite_frame": 1,
-                "frame_delay": 15,
+                "frame_delay": 6,
+                "x_shift": 0,
+                "y_shift": 0
+            },
+            {
+                "sprite_frame": 0,
+                "frame_delay": 4,
                 "x_shift": 0,
                 "y_shift": 0
             },
             {
                 "sprite_frame": 1,
-                "frame_delay": 15,
-                "x_shift": 0,
-                "y_shift": 0
-            },
-            {
-                "sprite_frame": -1,
-                "frame_delay": 0,
+                "frame_delay": 8,
                 "x_shift": 0,
                 "y_shift": 0
             },
@@ -74,21 +74,21 @@
     "back": {
         "y_offset": {
             "female": 0,
-            "male": 9
+            "male": 8
         },
-        "animation": 9,
-        "cry_delay": 8,
-        "start_delay": 2,
+        "animation": 5,
+        "cry_delay": 9,
+        "start_delay": 11,
         "frames": [
             {
                 "sprite_frame": 0,
-                "frame_delay": 12,
+                "frame_delay": 11,
                 "x_shift": 0,
                 "y_shift": 0
             },
             {
                 "sprite_frame": 1,
-                "frame_delay": 12,
+                "frame_delay": 22,
                 "x_shift": 0,
                 "y_shift": 0
             },
@@ -143,7 +143,7 @@
         ]
     },
     "shadow": {
-        "x_offset": 0,
+        "x_offset": 2,
         "size": "SHADOW_SIZE_SMALL"
     }
 }

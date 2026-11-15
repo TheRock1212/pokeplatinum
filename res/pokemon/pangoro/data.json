@@ -1,0 +1,248 @@
+{
+    "base_stats": {
+        "hp": 95,
+        "attack": 124,
+        "defense": 78,
+        "speed": 58,
+        "special_attack": 69,
+        "special_defense": 71
+    },
+    "types": [
+        "TYPE_FIGHTING",
+        "TYPE_DARK"
+    ],
+    "catch_rate": 65,
+    "base_exp_reward": 173,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 2,
+        "defense": 0,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 0
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_MENTAL_HERB"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_50",
+    "hatch_cycles": 25,
+    "base_friendship": 50,
+    "exp_rate": "EXP_RATE_MEDIUM_FAST",
+    "egg_groups": [
+        "EGG_GROUP_FIELD",
+        "EGG_GROUP_HUMAN_LIKE"
+    ],
+    "abilities": [
+        "ABILITY_IRON_FIST",
+        "ABILITY_MOLD_BREAKER"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_WHITE",
+    "flip_sprite": false,
+    "icon_palette": 0,
+    "learnset": {
+        "by_level": [
+            [
+                0,
+                "MOVE_NIGHT_SLASH"
+            ],
+            [
+                1,
+                "MOVE_NIGHT_SLASH"
+            ],
+            [
+                1,
+                "MOVE_BULLET_PUNCH"
+            ],
+            [
+                1,
+                "MOVE_TACKLE"
+            ],
+            [
+                1,
+                "MOVE_LEER"
+            ],
+            [
+                1,
+                "MOVE_ARM_THRUST"
+            ],
+            [
+                1,
+                "MOVE_TAUNT"
+            ],
+            [
+                24,
+                "MOVE_SLASH"
+            ],
+            [
+                28,
+                "MOVE_VITAL_THROW"
+            ],
+            [
+                35,
+                "MOVE_CRUNCH"
+            ],
+            [
+                40,
+                "MOVE_BODY_SLAM"
+            ],
+            [
+                58,
+                "MOVE_HAMMER_ARM"
+            ]
+        ],
+        "by_tm": [
+            "TM01",
+            "TM02",
+            "TM05",
+            "TM06",
+            "TM08",
+            "TM10",
+            "TM11",
+            "TM12",
+            "TM15",
+            "TM17",
+            "TM18",
+            "TM21",
+            "TM26",
+            "TM27",
+            "TM28",
+            "TM31",
+            "TM32",
+            "TM36",
+            "TM39",
+            "TM40",
+            "TM41",
+            "TM42",
+            "TM43",
+            "TM44",
+            "TM45",
+            "TM46",
+            "TM49",
+            "TM52",
+            "TM54",
+            "TM56",
+            "TM58",
+            "TM60",
+            "TM63",
+            "TM65",
+            "TM66",
+            "TM68",
+            "TM71",
+            "TM75",
+            "TM79",
+            "TM80",
+            "TM81",
+            "TM82",
+            "TM84",
+            "TM86",
+            "TM87",
+            "TM90",
+            "HM01",
+            "HM03",
+            "HM04",
+            "HM06"
+        ],
+        "by_tutor": [
+            "MOVE_ENDEAVOR",
+            "MOVE_FIRE_PUNCH",
+            "MOVE_GUNK_SHOT",
+            "MOVE_HELPING_HAND",
+            "MOVE_ICE_PUNCH",
+            "MOVE_IRON_HEAD",
+            "MOVE_KNOCK_OFF",
+            "MOVE_OUTRAGE",
+            "MOVE_SNORE",
+            "MOVE_SPITE",
+            "MOVE_SUPERPOWER",
+            "MOVE_THUNDER_PUNCH",
+            "MOVE_UPROAR",
+            "MOVE_ZEN_HEADBUTT"
+        ],
+        "egg_moves": [
+            "MOVE_SEISMIC_TOSS"
+        ]
+    },
+    "evolutions": [],
+    "offspring": "SPECIES_PANCHAM",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 83,
+        "weight_pounds": 299.8,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 337,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 337,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 24,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 24,
+        "en": {
+            "name": "PANGORO",
+            "category": "Daunting Pokémon",
+            "entry_text": [
+                "This Pokémon boasts great physical\n",
+                "strength. Many Trainers are also smitten\n",
+                "by its lively character."
+            ]
+        },
+        "fr": {
+            "name": "PANGORO",
+            "category": "Daunting Pokémon",
+            "entry_text": [
+                "This Pokémon boasts great physical\n",
+                "strength. Many Trainers are also smitten\n",
+                "by its lively character."
+            ]
+        },
+        "de": {
+            "name": "PANGORO",
+            "category": "Daunting Pokémon",
+            "entry_text": [
+                "This Pokémon boasts great physical\n",
+                "strength. Many Trainers are also smitten\n",
+                "by its lively character."
+            ]
+        },
+        "it": {
+            "name": "PANGORO",
+            "category": "Daunting Pokémon",
+            "entry_text": [
+                "This Pokémon boasts great physical\n",
+                "strength. Many Trainers are also smitten\n",
+                "by its lively character."
+            ]
+        },
+        "es": {
+            "name": "PANGORO",
+            "category": "Daunting Pokémon",
+            "entry_text": [
+                "This Pokémon boasts great physical\n",
+                "strength. Many Trainers are also smitten\n",
+                "by its lively character."
+            ]
+        },
+        "jp": {
+            "name": "PANGORO",
+            "category": "Daunting Pokémon",
+            "entry_text": [
+                "This Pokémon boasts great physical\n",
+                "strength. Many Trainers are also smitten\n",
+                "by its lively character."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

@@ -1,0 +1,218 @@
+{
+    "base_stats": {
+        "hp": 68,
+        "attack": 105,
+        "defense": 70,
+        "speed": 92,
+        "special_attack": 70,
+        "special_defense": 70
+    },
+    "types": [
+        "TYPE_WATER",
+        "TYPE_PSYCHIC"
+    ],
+    "catch_rate": 80,
+    "base_exp_reward": 166,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 2,
+        "defense": 0,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 0
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_RAZOR_FANG"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_50",
+    "hatch_cycles": 15,
+    "base_friendship": 70,
+    "exp_rate": "EXP_RATE_MEDIUM_FAST",
+    "egg_groups": [
+        "EGG_GROUP_WATER_2",
+        "EGG_GROUP_WATER_2"
+    ],
+    "abilities": [
+        "ABILITY_NONE",
+        "ABILITY_NONE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_PINK",
+    "flip_sprite": false,
+    "icon_palette": 0,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_WATER_GUN"
+            ],
+            [
+                4,
+                "MOVE_ASTONISH"
+            ],
+            [
+                9,
+                "MOVE_CONFUSION"
+            ],
+            [
+                12,
+                "MOVE_BITE"
+            ],
+            [
+                17,
+                "MOVE_AQUA_JET"
+            ],
+            [
+                20,
+                "MOVE_DISABLE"
+            ],
+            [
+                28,
+                "MOVE_CRUNCH"
+            ],
+            [
+                33,
+                "MOVE_AQUA_TAIL"
+            ],
+            [
+                36,
+                "MOVE_SCREECH"
+            ]
+        ],
+        "by_tm": [
+            "TM03",
+            "TM04",
+            "TM06",
+            "TM08",
+            "TM10",
+            "TM12",
+            "TM13",
+            "TM14",
+            "TM15",
+            "TM16",
+            "TM17",
+            "TM18",
+            "TM20",
+            "TM21",
+            "TM23",
+            "TM27",
+            "TM29",
+            "TM32",
+            "TM33",
+            "TM40",
+            "TM41",
+            "TM42",
+            "TM44",
+            "TM45",
+            "TM49",
+            "TM56",
+            "TM58",
+            "TM63",
+            "TM66",
+            "TM68",
+            "TM75",
+            "TM82",
+            "TM85",
+            "TM87",
+            "TM90",
+            "TM92",
+            "HM03",
+            "HM07"
+        ],
+        "by_tutor": [
+            "MOVE_AQUA_TAIL",
+            "MOVE_ICY_WIND",
+            "MOVE_SIGNAL_BEAM",
+            "MOVE_SNORE",
+            "MOVE_UPROAR"
+        ],
+        "egg_moves": [
+            "MOVE_SUPER_FANG",
+            "MOVE_POISON_FANG",
+            "MOVE_WATER_PULSE",
+            "MOVE_ICE_FANG"
+        ]
+    },
+    "evolutions": [],
+    "offspring": "SPECIES_BRUXISH",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 35,
+        "weight_pounds": 41.9,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 337,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 337,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 24,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 24,
+        "en": {
+            "name": "BRUXISH",
+            "category": "Gnash Teeth Pokémon",
+            "entry_text": [
+                "Its skin is thick enough to fend off\n",
+                "spikes. With its robust teeth, it\n",
+                "crunches up and eats the spikes."
+            ]
+        },
+        "fr": {
+            "name": "BRUXISH",
+            "category": "Gnash Teeth Pokémon",
+            "entry_text": [
+                "Its skin is thick enough to fend off\n",
+                "spikes. With its robust teeth, it\n",
+                "crunches up and eats the spikes."
+            ]
+        },
+        "de": {
+            "name": "BRUXISH",
+            "category": "Gnash Teeth Pokémon",
+            "entry_text": [
+                "Its skin is thick enough to fend off\n",
+                "spikes. With its robust teeth, it\n",
+                "crunches up and eats the spikes."
+            ]
+        },
+        "it": {
+            "name": "BRUXISH",
+            "category": "Gnash Teeth Pokémon",
+            "entry_text": [
+                "Its skin is thick enough to fend off\n",
+                "spikes. With its robust teeth, it\n",
+                "crunches up and eats the spikes."
+            ]
+        },
+        "es": {
+            "name": "BRUXISH",
+            "category": "Gnash Teeth Pokémon",
+            "entry_text": [
+                "Its skin is thick enough to fend off\n",
+                "spikes. With its robust teeth, it\n",
+                "crunches up and eats the spikes."
+            ]
+        },
+        "jp": {
+            "name": "BRUXISH",
+            "category": "Gnash Teeth Pokémon",
+            "entry_text": [
+                "Its skin is thick enough to fend off\n",
+                "spikes. With its robust teeth, it\n",
+                "crunches up and eats the spikes."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

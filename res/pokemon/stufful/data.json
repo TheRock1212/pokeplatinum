@@ -1,0 +1,225 @@
+{
+    "base_stats": {
+        "hp": 70,
+        "attack": 75,
+        "defense": 50,
+        "speed": 50,
+        "special_attack": 45,
+        "special_defense": 50
+    },
+    "types": [
+        "TYPE_NORMAL",
+        "TYPE_FIGHTING"
+    ],
+    "catch_rate": 140,
+    "base_exp_reward": 68,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 1,
+        "defense": 0,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 0
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_NONE"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_50",
+    "hatch_cycles": 15,
+    "base_friendship": 50,
+    "exp_rate": "EXP_RATE_MEDIUM_FAST",
+    "egg_groups": [
+        "EGG_GROUP_FIELD",
+        "EGG_GROUP_FIELD"
+    ],
+    "abilities": [
+        "ABILITY_KLUTZ",
+        "ABILITY_NONE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_PINK",
+    "flip_sprite": false,
+    "icon_palette": 0,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_TACKLE"
+            ],
+            [
+                1,
+                "MOVE_LEER"
+            ],
+            [
+                8,
+                "MOVE_PAYBACK"
+            ],
+            [
+                16,
+                "MOVE_ENDURE"
+            ],
+            [
+                20,
+                "MOVE_STRENGTH"
+            ],
+            [
+                24,
+                "MOVE_TAKE_DOWN"
+            ],
+            [
+                28,
+                "MOVE_FLAIL"
+            ],
+            [
+                32,
+                "MOVE_HAMMER_ARM"
+            ],
+            [
+                36,
+                "MOVE_THRASH"
+            ],
+            [
+                40,
+                "MOVE_PAIN_SPLIT"
+            ],
+            [
+                44,
+                "MOVE_DOUBLE_EDGE"
+            ],
+            [
+                48,
+                "MOVE_SUPERPOWER"
+            ]
+        ],
+        "by_tm": [
+            "TM01",
+            "TM05",
+            "TM06",
+            "TM08",
+            "TM10",
+            "TM12",
+            "TM17",
+            "TM21",
+            "TM26",
+            "TM27",
+            "TM31",
+            "TM32",
+            "TM39",
+            "TM40",
+            "TM42",
+            "TM44",
+            "TM45",
+            "TM52",
+            "TM56",
+            "TM58",
+            "TM66",
+            "TM75",
+            "TM80",
+            "TM82",
+            "TM87",
+            "TM90"
+        ],
+        "by_tutor": [
+            "MOVE_ICE_PUNCH",
+            "MOVE_IRON_HEAD",
+            "MOVE_SNORE",
+            "MOVE_SUPERPOWER",
+            "MOVE_THUNDER_PUNCH",
+            "MOVE_ZEN_HEADBUTT"
+        ],
+        "egg_moves": [
+            "MOVE_STOMP",
+            "MOVE_DEFENSE_CURL",
+            "MOVE_ROLLOUT",
+            "MOVE_FORCE_PALM"
+        ]
+    },
+    "evolutions": [
+        [
+            "EVO_LEVEL",
+            27,
+            "SPECIES_BEWEAR"
+        ]
+    ],
+    "offspring": "SPECIES_STUFFUL",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 20,
+        "weight_pounds": 15.0,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 337,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 337,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 24,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 24,
+        "en": {
+            "name": "STUFFUL",
+            "category": "Flailing Pokémon",
+            "entry_text": [
+                "Stufful hates to be hugged or touched\n",
+                "in any way. It will squirm, thrash, and\n",
+                "resist with amazing power."
+            ]
+        },
+        "fr": {
+            "name": "STUFFUL",
+            "category": "Flailing Pokémon",
+            "entry_text": [
+                "Stufful hates to be hugged or touched\n",
+                "in any way. It will squirm, thrash, and\n",
+                "resist with amazing power."
+            ]
+        },
+        "de": {
+            "name": "STUFFUL",
+            "category": "Flailing Pokémon",
+            "entry_text": [
+                "Stufful hates to be hugged or touched\n",
+                "in any way. It will squirm, thrash, and\n",
+                "resist with amazing power."
+            ]
+        },
+        "it": {
+            "name": "STUFFUL",
+            "category": "Flailing Pokémon",
+            "entry_text": [
+                "Stufful hates to be hugged or touched\n",
+                "in any way. It will squirm, thrash, and\n",
+                "resist with amazing power."
+            ]
+        },
+        "es": {
+            "name": "STUFFUL",
+            "category": "Flailing Pokémon",
+            "entry_text": [
+                "Stufful hates to be hugged or touched\n",
+                "in any way. It will squirm, thrash, and\n",
+                "resist with amazing power."
+            ]
+        },
+        "jp": {
+            "name": "STUFFUL",
+            "category": "Flailing Pokémon",
+            "entry_text": [
+                "Stufful hates to be hugged or touched\n",
+                "in any way. It will squirm, thrash, and\n",
+                "resist with amazing power."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

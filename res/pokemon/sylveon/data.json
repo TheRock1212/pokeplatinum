@@ -1,0 +1,244 @@
+{
+    "base_stats": {
+        "hp": 95,
+        "attack": 65,
+        "defense": 65,
+        "speed": 60,
+        "special_attack": 110,
+        "special_defense": 130
+    },
+    "types": [
+        "TYPE_FAIRY",
+        "TYPE_FAIRY"
+    ],
+    "catch_rate": 45,
+    "base_exp_reward": 184,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 2
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_NONE"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_12_5",
+    "hatch_cycles": 35,
+    "base_friendship": 50,
+    "exp_rate": "EXP_RATE_MEDIUM_FAST",
+    "egg_groups": [
+        "EGG_GROUP_FIELD",
+        "EGG_GROUP_FIELD"
+    ],
+    "abilities": [
+        "ABILITY_CUTE_CHARM",
+        "ABILITY_NONE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_PINK",
+    "flip_sprite": false,
+    "icon_palette": 0,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_BATON_PASS"
+            ],
+            [
+                1,
+                "MOVE_TACKLE"
+            ],
+            [
+                1,
+                "MOVE_TAKE_DOWN"
+            ],
+            [
+                1,
+                "MOVE_DOUBLE_EDGE"
+            ],
+            [
+                1,
+                "MOVE_TAIL_WHIP"
+            ],
+            [
+                1,
+                "MOVE_BITE"
+            ],
+            [
+                1,
+                "MOVE_GROWL"
+            ],
+            [
+                1,
+                "MOVE_COPYCAT"
+            ],
+            [
+                1,
+                "MOVE_COVET"
+            ],
+            [
+                1,
+                "MOVE_CHARM"
+            ],
+            [
+                1,
+                "MOVE_HELPING_HAND"
+            ],
+            [
+                5,
+                "MOVE_SAND_ATTACK"
+            ],
+            [
+                10,
+                "MOVE_QUICK_ATTACK"
+            ],
+            [
+                20,
+                "MOVE_SWIFT"
+            ],
+            [
+                25,
+                "MOVE_LIGHT_SCREEN"
+            ],
+            [
+                40,
+                "MOVE_SKILL_SWAP"
+            ],
+            [
+                45,
+                "MOVE_PSYCH_UP"
+            ],
+            [
+                55,
+                "MOVE_LAST_RESORT"
+            ]
+        ],
+        "by_tm": [
+            "TM04",
+            "TM05",
+            "TM06",
+            "TM10",
+            "TM11",
+            "TM15",
+            "TM16",
+            "TM17",
+            "TM18",
+            "TM20",
+            "TM21",
+            "TM23",
+            "TM27",
+            "TM28",
+            "TM29",
+            "TM30",
+            "TM32",
+            "TM33",
+            "TM42",
+            "TM43",
+            "TM44",
+            "TM45",
+            "TM48",
+            "TM58",
+            "TM68",
+            "TM70",
+            "TM77",
+            "TM82",
+            "TM87",
+            "TM90",
+            "HM01"
+        ],
+        "by_tutor": [
+            "MOVE_HELPING_HAND",
+            "MOVE_LAST_RESORT",
+            "MOVE_SNORE",
+            "MOVE_SWIFT"
+        ],
+        "egg_moves": [
+            "MOVE_DOUBLE_KICK",
+            "MOVE_CURSE",
+            "MOVE_FLAIL",
+            "MOVE_MUD_SLAP",
+            "MOVE_DETECT",
+            "MOVE_WISH",
+            "MOVE_YAWN",
+            "MOVE_TICKLE"
+        ]
+    },
+    "evolutions": [],
+    "offspring": "SPECIES_EEVEE",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 39,
+        "weight_pounds": 51.8,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 337,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 337,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 24,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 24,
+        "en": {
+            "name": "SYLVEON",
+            "category": "Intertwining Pokémon",
+            "entry_text": [
+                "It sends a soothing aura from its\n",
+                "ribbonlike feelers to calm fights."
+            ]
+        },
+        "fr": {
+            "name": "SYLVEON",
+            "category": "Intertwining Pokémon",
+            "entry_text": [
+                "It sends a soothing aura from its\n",
+                "ribbonlike feelers to calm fights."
+            ]
+        },
+        "de": {
+            "name": "SYLVEON",
+            "category": "Intertwining Pokémon",
+            "entry_text": [
+                "It sends a soothing aura from its\n",
+                "ribbonlike feelers to calm fights."
+            ]
+        },
+        "it": {
+            "name": "SYLVEON",
+            "category": "Intertwining Pokémon",
+            "entry_text": [
+                "It sends a soothing aura from its\n",
+                "ribbonlike feelers to calm fights."
+            ]
+        },
+        "es": {
+            "name": "SYLVEON",
+            "category": "Intertwining Pokémon",
+            "entry_text": [
+                "It sends a soothing aura from its\n",
+                "ribbonlike feelers to calm fights."
+            ]
+        },
+        "jp": {
+            "name": "SYLVEON",
+            "category": "Intertwining Pokémon",
+            "entry_text": [
+                "It sends a soothing aura from its\n",
+                "ribbonlike feelers to calm fights."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

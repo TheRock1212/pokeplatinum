@@ -607,8 +607,8 @@ void PokedexMain_DisplayNameNumberText(Window *window, int dexNumber, int specie
     String *nameNumber;
 
     if (dexNumber > 0) {
-        numStr = String_Init(4, heapID);
-        String_FormatInt(numStr, dexNumber, 3, 2, 1);
+        numStr = String_Init(5, heapID);
+        String_FormatInt(numStr, dexNumber, dexNumber >= 1000 ? 4 : 3, 2, 1);
     } else {
         numStr = PokedexMain_GetMessage(pl_msg_pokedex_none, heapID);
     }

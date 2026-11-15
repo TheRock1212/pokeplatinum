@@ -1,0 +1,255 @@
+{
+    "base_stats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 115,
+        "speed": 58,
+        "special_attack": 45,
+        "special_defense": 115
+    },
+    "types": [
+        "TYPE_DARK",
+        "TYPE_FIGHTING"
+    ],
+    "catch_rate": 90,
+    "base_exp_reward": 171,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 0,
+        "defense": 1,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 1
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_SHED_SHELL"
+    },
+    "gender_ratio": "GENDER_RATIO_FEMALE_50",
+    "hatch_cycles": 15,
+    "base_friendship": 50,
+    "exp_rate": "EXP_RATE_MEDIUM_FAST",
+    "egg_groups": [
+        "EGG_GROUP_FIELD",
+        "EGG_GROUP_DRAGON"
+    ],
+    "abilities": [
+        "ABILITY_SHED_SKIN",
+        "ABILITY_NONE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_RED",
+    "flip_sprite": false,
+    "icon_palette": 0,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_HEADBUTT"
+            ],
+            [
+                1,
+                "MOVE_LEER"
+            ],
+            [
+                1,
+                "MOVE_LOW_KICK"
+            ],
+            [
+                1,
+                "MOVE_PAYBACK"
+            ],
+            [
+                12,
+                "MOVE_SAND_ATTACK"
+            ],
+            [
+                16,
+                "MOVE_FACADE"
+            ],
+            [
+                20,
+                "MOVE_TORMENT"
+            ],
+            [
+                24,
+                "MOVE_BEAT_UP"
+            ],
+            [
+                28,
+                "MOVE_SCARY_FACE"
+            ],
+            [
+                32,
+                "MOVE_BRICK_BREAK"
+            ],
+            [
+                36,
+                "MOVE_SWAGGER"
+            ],
+            [
+                42,
+                "MOVE_CRUNCH"
+            ],
+            [
+                48,
+                "MOVE_HI_JUMP_KICK"
+            ],
+            [
+                54,
+                "MOVE_FOCUS_PUNCH"
+            ],
+            [
+                60,
+                "MOVE_HEAD_SMASH"
+            ]
+        ],
+        "by_tm": [
+            "TM01",
+            "TM02",
+            "TM05",
+            "TM06",
+            "TM08",
+            "TM10",
+            "TM11",
+            "TM12",
+            "TM15",
+            "TM17",
+            "TM18",
+            "TM21",
+            "TM23",
+            "TM27",
+            "TM28",
+            "TM31",
+            "TM32",
+            "TM36",
+            "TM39",
+            "TM41",
+            "TM42",
+            "TM43",
+            "TM44",
+            "TM45",
+            "TM46",
+            "TM49",
+            "TM52",
+            "TM56",
+            "TM58",
+            "TM59",
+            "TM60",
+            "TM66",
+            "TM68",
+            "TM71",
+            "TM75",
+            "TM79",
+            "TM80",
+            "TM82",
+            "TM84",
+            "TM86",
+            "TM87",
+            "TM90",
+            "HM04",
+            "HM06"
+        ],
+        "by_tutor": [
+            "MOVE_ENDEAVOR",
+            "MOVE_FIRE_PUNCH",
+            "MOVE_HELPING_HAND",
+            "MOVE_ICE_PUNCH",
+            "MOVE_IRON_DEFENSE",
+            "MOVE_IRON_HEAD",
+            "MOVE_KNOCK_OFF",
+            "MOVE_OUTRAGE",
+            "MOVE_SNORE",
+            "MOVE_SPITE",
+            "MOVE_THUNDER_PUNCH",
+            "MOVE_UPROAR",
+            "MOVE_ZEN_HEADBUTT"
+        ],
+        "egg_moves": [
+            "MOVE_COUNTER",
+            "MOVE_DETECT",
+            "MOVE_FAKE_OUT"
+        ]
+    },
+    "evolutions": [],
+    "offspring": "SPECIES_SCRAGGY",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 43,
+        "weight_pounds": 66.1,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 313,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 313,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 15,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 15,
+        "en": {
+            "name": "SCRAFTY",
+            "category": "Hoodlum Pokémon",
+            "entry_text": [
+                "It pulls up its shed skin to protect\n",
+                "itself while it kicks. The bigger\n",
+                "the crest, the more respected it is."
+            ]
+        },
+        "fr": {
+            "name": "SCRAFTY",
+            "category": "Hoodlum Pokémon",
+            "entry_text": [
+                "It pulls up its shed skin to protect\n",
+                "itself while it kicks. The bigger\n",
+                "the crest, the more respected it is."
+            ]
+        },
+        "de": {
+            "name": "SCRAFTY",
+            "category": "Hoodlum Pokémon",
+            "entry_text": [
+                "It pulls up its shed skin to protect\n",
+                "itself while it kicks. The bigger\n",
+                "the crest, the more respected it is."
+            ]
+        },
+        "it": {
+            "name": "SCRAFTY",
+            "category": "Hoodlum Pokémon",
+            "entry_text": [
+                "It pulls up its shed skin to protect\n",
+                "itself while it kicks. The bigger\n",
+                "the crest, the more respected it is."
+            ]
+        },
+        "es": {
+            "name": "SCRAFTY",
+            "category": "Hoodlum Pokémon",
+            "entry_text": [
+                "It pulls up its shed skin to protect\n",
+                "itself while it kicks. The bigger\n",
+                "the crest, the more respected it is."
+            ]
+        },
+        "jp": {
+            "name": "SCRAFTY",
+            "category": "Hoodlum Pokémon",
+            "entry_text": [
+                "It pulls up its shed skin to protect\n",
+                "itself while it kicks. The bigger\n",
+                "the crest, the more respected it is."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}

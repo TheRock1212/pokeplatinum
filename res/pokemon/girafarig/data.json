@@ -117,7 +117,9 @@
             "MOVE_MIRROR_COAT"
         ]
     },
-    "evolutions": [  ],
+    "evolutions": [
+        [ "EVO_LEVEL", 30, "SPECIES_FARIGIRAF" ]
+    ],
     "offspring": "SPECIES_GIRAFARIG",
     "footprint": {
         "has": true,

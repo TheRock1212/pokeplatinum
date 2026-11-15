@@ -1,0 +1,224 @@
+{
+    "base_stats": {
+        "hp": 91,
+        "attack": 90,
+        "defense": 72,
+        "speed": 108,
+        "special_attack": 90,
+        "special_defense": 129
+    },
+    "types": [
+        "TYPE_GRASS",
+        "TYPE_FIGHTING"
+    ],
+    "catch_rate": 3,
+    "base_exp_reward": 255,
+    "ev_yields": {
+        "hp": 0,
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "special_attack": 0,
+        "special_defense": 3
+    },
+    "held_items": {
+        "common": "ITEM_NONE",
+        "rare": "ITEM_NONE"
+    },
+    "gender_ratio": "GENDER_RATIO_NO_GENDER",
+    "hatch_cycles": 80,
+    "base_friendship": 35,
+    "exp_rate": "EXP_RATE_SLOW",
+    "egg_groups": [
+        "EGG_GROUP_UNDISCOVERED",
+        "EGG_GROUP_UNDISCOVERED"
+    ],
+    "abilities": [
+        "ABILITY_NONE",
+        "ABILITY_NONE"
+    ],
+    "safari_flee_rate": 0,
+    "body_color": "MON_COLOR_GREEN",
+    "flip_sprite": false,
+    "icon_palette": 1,
+    "learnset": {
+        "by_level": [
+            [
+                1,
+                "MOVE_LEER"
+            ],
+            [
+                1,
+                "MOVE_QUICK_ATTACK"
+            ],
+            [
+                1,
+                "MOVE_HELPING_HAND"
+            ],
+            [
+                7,
+                "MOVE_MAGICAL_LEAF"
+            ],
+            [
+                21,
+                "MOVE_DOUBLE_KICK"
+            ],
+            [
+                35,
+                "MOVE_GIGA_DRAIN"
+            ],
+            [
+                42,
+                "MOVE_SYNTHESIS"
+            ],
+            [
+                56,
+                "MOVE_SWORDS_DANCE"
+            ],
+            [
+                63,
+                "MOVE_LEAF_BLADE"
+            ],
+            [
+                70,
+                "MOVE_CLOSE_COMBAT"
+            ]
+        ],
+        "by_tm": [
+            "TM04",
+            "TM05",
+            "TM06",
+            "TM09",
+            "TM10",
+            "TM11",
+            "TM12",
+            "TM15",
+            "TM16",
+            "TM17",
+            "TM19",
+            "TM20",
+            "TM21",
+            "TM22",
+            "TM27",
+            "TM31",
+            "TM32",
+            "TM33",
+            "TM40",
+            "TM42",
+            "TM43",
+            "TM44",
+            "TM52",
+            "TM53",
+            "TM54",
+            "TM58",
+            "TM68",
+            "TM70",
+            "TM71",
+            "TM75",
+            "TM77",
+            "TM81",
+            "TM82",
+            "TM86",
+            "TM87",
+            "TM90",
+            "HM01",
+            "HM04",
+            "HM06"
+        ],
+        "by_tutor": [
+            "MOVE_BOUNCE",
+            "MOVE_HELPING_HAND",
+            "MOVE_SEED_BOMB",
+            "MOVE_SNORE",
+            "MOVE_SUPERPOWER",
+            "MOVE_SWIFT",
+            "MOVE_SYNTHESIS",
+            "MOVE_VACUUM_WAVE",
+            "MOVE_ZEN_HEADBUTT"
+        ],
+        "egg_moves": [
+            "MOVE_TAKE_DOWN"
+        ]
+    },
+    "evolutions": [],
+    "offspring": "SPECIES_VIRIZION",
+    "footprint": {
+        "has": false,
+        "size": "FOOTPRINT_SMALL",
+        "type": "FOOTPRINT_TYPE_CUTE"
+    },
+    "pokedex_data": {
+        "height_inches": 79,
+        "weight_pounds": 440.9,
+        "body_shape": "SHAPE_QUADRUPED",
+        "trainer_scale_f": 272,
+        "pokemon_scale_f": 256,
+        "trainer_scale_m": 256,
+        "pokemon_scale_m": 256,
+        "trainer_pos_f": 8,
+        "pokemon_pos_f": 4,
+        "trainer_pos_m": 9,
+        "pokemon_pos_m": 4,
+        "en": {
+            "name": "VIRIZION",
+            "category": "Grassland Pokémon",
+            "entry_text": [
+                "Legends say this Pokémon\n",
+                "confounded opponents\n",
+                "with its swift movements."
+            ]
+        },
+        "fr": {
+            "name": "VIRIZION",
+            "category": "Grassland Pokémon",
+            "entry_text": [
+                "Legends say this Pokémon\n",
+                "confounded opponents\n",
+                "with its swift movements."
+            ]
+        },
+        "de": {
+            "name": "VIRIZION",
+            "category": "Grassland Pokémon",
+            "entry_text": [
+                "Legends say this Pokémon\n",
+                "confounded opponents\n",
+                "with its swift movements."
+            ]
+        },
+        "it": {
+            "name": "VIRIZION",
+            "category": "Grassland Pokémon",
+            "entry_text": [
+                "Legends say this Pokémon\n",
+                "confounded opponents\n",
+                "with its swift movements."
+            ]
+        },
+        "es": {
+            "name": "VIRIZION",
+            "category": "Grassland Pokémon",
+            "entry_text": [
+                "Legends say this Pokémon\n",
+                "confounded opponents\n",
+                "with its swift movements."
+            ]
+        },
+        "jp": {
+            "name": "VIRIZION",
+            "category": "Grassland Pokémon",
+            "entry_text": [
+                "Legends say this Pokémon\n",
+                "confounded opponents\n",
+                "with its swift movements."
+            ]
+        }
+    },
+    "catching_show": {
+        "pal_park_land_area": "PAL_PARK_AREA_LAND_NONE",
+        "pal_park_water_area": "PAL_PARK_AREA_WATER_NONE",
+        "catching_points": 0,
+        "rarity": 0,
+        "unused": 0
+    }
+}
