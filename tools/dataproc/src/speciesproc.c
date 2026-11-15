@@ -999,7 +999,7 @@ static void PackDexData(int archive, const DexData *data)
 
     // Files 27 through 44: species by type, without the Mystery type
     for (u8 type = 0; type < NUM_POKEMON_TYPES; type++) {
-        if (type == TYPE_MYSTERY) continue;
+        if (type == TYPE_FAIRY) continue;
 
         size_t count = 0;
         for (u16 s = 1; IsNationalDex(s); s++) {
