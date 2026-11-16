@@ -36,6 +36,7 @@ ALIASES = {
     'CHECK_OPCODE_NOT_HAVE': 'CHECK_NOT_HAVE',
     'MULTIHIT_TRIPLE_KICK': 'SYSCTL_TRIPLE_KICK',
     'MULTIHIT_MULTI_HIT_MOVE': 'SYSCTL_MULTI_HIT_MOVE',
+    'FIELD_CONDITION_RAIN_ALL': 'FIELD_CONDITION_RAINING',
 }
 MSG_COMMANDS = {'PrintMessage': 0, 'PrintGlobalMessage': 0, 'BufferMessage': 0, 'BufferLocalMessage': 1}
 log = collections.defaultdict(list)
@@ -116,6 +117,70 @@ for f in glob.glob(f'{PP}/generated/*.txt'):
 for f in glob.glob(f'{PP}/include/constants/**/*.h', recursive=True) + glob.glob(f'{PP}/include/*.h'):
     PT_IDENTS |= set(re.findall(r'#define\s+(\w+)', open(f, errors='ignore').read()))
     PT_IDENTS |= set(re.findall(r'^\s*([A-Z][A-Z0-9_]+)\s*[=,]', open(f, errors='ignore').read(), re.M))
+PT_IDENTS |= set(re.findall(r'#define\s+(\w+)', read(f'{PP}/include/battle/btlcmd.h')))
+
+
+def _defines(path, prefix):
+    """#define PREFIX_X <numero o (1 << n)> -> {nome: valore}, solo valori semplici."""
+    out = {}
+    for n, e in re.findall(r'#define\s+(' + prefix + r'\w+)\s+([^\n/]+)', read(path)):
+        e = e.strip()
+        if re.fullmatch(r'\(?\s*(0x[0-9a-fA-F]+|\d+|1\s*<<\s*\d+)\s*\)?', e):
+            out[n] = int(eval(e))
+    return out
+
+
+def _by_value(hg_names, pt_names):
+    """Mappa hg -> pt per costanti di famiglie con gli stessi valori (nomi diversi)."""
+    inv = collections.defaultdict(list)
+    for n, v in pt_names.items():
+        inv[v].append(n)
+    # a parità di valore vince il primo nome definito (in system_control.h il registro principale
+    # viene prima dei flag di BATTLE_CTX_STATUS_2, che riusano gli stessi bit)
+    return {n: inv[v][0] for n, v in hg_names.items() if inv.get(v)}
+
+
+HG_BC = f'{HG}/include/constants/battle_constants.h'
+_SYSCTL = f'{PP}/include/constants/battle/system_control.h'
+_sys_text = read(_SYSCTL)
+_reg1 = _sys_text[:_sys_text.index('SYSCTL_INIT_P1')]                                  # BTLVAR_BATTLE_CTX_STATUS
+_reg2 = _sys_text[_sys_text.index('SYSCTL_MON_SELFDESTRUCTED_SHIFT'):_sys_text.index('SYSCTL_LINK_WAITING')]  # ..._STATUS_2
+_sysdefs = _defines(_SYSCTL, 'SYSCTL_')
+VALUE_MAP = {}
+VALUE_MAP.update(_by_value(_defines(HG_BC, 'BATTLE_STATUS_'),
+                           {n: v for n, v in _sysdefs.items() if re.search(r'\b' + n + r'\b', _reg1)}))
+VALUE_MAP.update(_by_value(_defines(HG_BC, 'BATTLE_STATUS2_'),
+                           {n: v for n, v in _sysdefs.items() if re.search(r'\b' + n + r'\b', _reg2)}))
+VALUE_MAP.update(_by_value(_defines(HG_BC, 'STAT_'),
+                           {n: i for i, n in enumerate(read(f'{PP}/generated/battle_stats.txt').split())}))
+VALUE_MAP.update(_by_value(_defines(HG_BC, 'BSCRIPT_VAR_'),
+                           {n: i for i, n in enumerate(read(f'{PP}/generated/battle_script_vars.txt').split())}))
+
+
+# ---------------------------------------------------------------- comandi hg -> pt per numero di opcode
+def build_cmdmap():
+    hg_ops = {}
+    for m in re.finditer(r'\.macro (\w+)[^\n]*\n\s*\.long (\w+)', read(f'{HG}/asm/include/battle_commands.inc')):
+        try:
+            hg_ops[m.group(1)] = int(m.group(2), 0)
+        except ValueError:
+            pass
+    pt_order = re.findall(r'ScriptCommand\((\w+)', read(f'{PP}/include/data/scripts/btlcmd.h'))
+    pt_macro = {}
+    for m in re.finditer(r'\.macro (\w+)[^\n]*\n\s*\.long (BTLCMD_\w+)', read(f'{PP}/asm/macros/btlcmd.inc')):
+        pt_macro.setdefault(m.group(2), m.group(1))
+    out = {}
+    for name, op in hg_ops.items():
+        if op < 222:                                   # numerazione comune
+            out[name] = pt_macro[pt_order[op]]
+        elif op == 0xE0:                               # End: 0xE0 in HGSS, 0xDE in Platinum
+            out[name] = 'End'
+        elif name in PT_CMDS:                          # comandi aggiunti a mano in pokeplatinum con lo stesso nome
+            out[name] = name
+    return out
+
+
+CMDMAP = build_cmdmap()
 
 
 # ---------------------------------------------------------------- nomi hg -> pt dai file vanilla
@@ -128,11 +193,19 @@ def build_namemap():
         if len(la) != len(lb):
             continue
         for x, y in zip(la, lb):
-            tx, ty = tokens(x), tokens(y)
-            if len(tx) == len(ty) and tx[0] == ty[0] or (len(tx) == len(ty) and tx[0] not in PT_CMDS):
-                for p, q in zip(tx, ty):
-                    if not re.fullmatch(r'-?\d+|0x\w+|_\w+', p):
-                        votes[p][q] += 1
+            cx, _, ax = x.partition(' ')
+            cy, _, ay = y.partition(' ')
+            if cx.endswith(':') or cy.endswith(':') or CMDMAP.get(cx) != cy:
+                continue                       # righe con comandi diversi: hg-engine ha cambiato lo script
+            args_x = [a.strip() for a in ax.split(',')] if ax.strip() else []
+            args_y = [a.strip() for a in ay.split(',')] if ay.strip() else []
+            if len(args_x) != len(args_y):
+                continue
+            # solo argomenti fatti di un unico nome: nelle espressioni A|B l'ordine degli operandi
+            # cambia tra i due progetti e l'abbinamento per posizione sarebbe sbagliato
+            for p, q in zip(args_x, args_y):
+                if re.fullmatch(r'[A-Za-z]\w*', p) and re.fullmatch(r'[A-Za-z]\w*', q):
+                    votes[p][q] += 1
     m = {}
     for k, c in votes.items():
         best, n = c.most_common(1)[0]
@@ -196,6 +269,8 @@ def translate(text, where):
     """Script hg-engine -> testo pokeplatinum, o Untranslatable con il motivo."""
     out = ['#include "macros/btlcmd.inc"', '']
     calls = set()
+    text = re.sub(r'/\*.*?\*/', '', text, flags=re.S)
+    labels = set(re.findall(r'^\s*(\w+):', text, re.M))
     for raw in text.split('\n'):
         line = raw.rstrip()
         s = line.strip()
@@ -211,8 +286,7 @@ def translate(text, where):
             continue
         if not st:
             continue
-        cmd = st.split()[0]
-        cmd = NAMEMAP.get(cmd, cmd) if cmd not in PT_CMDS else cmd
+        cmd = CMDMAP.get(st.split()[0], st.split()[0])
         if cmd not in PT_CMDS:
             raise Untranslatable(f'command {cmd}')
         args = st[len(st.split()[0]):].strip()
@@ -227,7 +301,7 @@ def translate(text, where):
         for a in args:
             def repl(m):
                 t = m.group(0)
-                if re.fullmatch(r'0x[0-9a-fA-F]+|-?\d+', t) or t.startswith('_') or t.startswith('BattleStrings_'):
+                if re.fullmatch(r'0x[0-9a-fA-F]+|-?\d+', t) or t.startswith('_') or t.startswith('BattleStrings_') or t in labels:
                     return t
                 if t in HG_SUB_NUM:                       # sempre nel namespace di hg-engine
                     calls.add(HG_SUB_NUM[t])
@@ -236,9 +310,12 @@ def translate(text, where):
                     return _PTR_PT[HG_PTR_NUM[t]]
                 if t in ALIASES:
                     return ALIASES[t]
-                if t.startswith('ABILITY_') and t not in PT_IDENTS:
-                    # abilità che pokeplatinum non ha ancora: nessun Pokémon può averla (rieseguire dopo averle aggiunte)
-                    log['ability_missing'].append(f'{where}: {t}')
+                if t in VALUE_MAP:                       # stessa famiglia, stesso valore: più affidabile della mappa
+                    return VALUE_MAP[t]
+                if t.startswith(('ABILITY_', 'HOLD_EFFECT_')) and t not in PT_IDENTS:
+                    # abilità/strumenti che pokeplatinum non ha ancora: nessun Pokémon può averli
+                    # (rieseguire dopo averli aggiunti)
+                    log['ability_or_item_missing'].append(f'{where}: {t}')
                     return '0xFFFF'
                 if t in ('TRUE', 'FALSE'):
                     return t

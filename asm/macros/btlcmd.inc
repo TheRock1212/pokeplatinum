@@ -1235,6 +1235,21 @@
     .long BTLCMD_END
     .endm
 
+    @ Expansion (ported from hg-engine)
+    .macro CalcHeavySlamPower
+    .long BTLCMD_CALCHEAVYSLAMPOWER
+    .endm
+
+    .macro CheckTargetIsPartner jump
+    .long BTLCMD_CHECKTARGETISPARTNER
+    .long (\jump-.) / 4 - 1
+    .endm
+
+    .macro GoToIfSecondHitOfParentalBond jump
+    .long BTLCMD_GOTOIFSECONDHITOFPARENTALBOND
+    .long (\jump-.) / 4 - 1
+    .endm
+
     .text
     .globl _start
 _start:

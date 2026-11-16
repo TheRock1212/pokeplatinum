@@ -307,6 +307,9 @@ static BOOL BtlCmd_CheckCurMoveIsType(BattleSystem *battleSys, BattleContext *ba
 static BOOL BtlCmd_LoadArchivedMonData(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_RefreshMonData(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_End(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_CalcHeavySlamPower(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_CheckTargetIsPartner(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_GoToIfSecondHitOfParentalBond(BattleSystem *battleSys, BattleContext *battleCtx);
 
 static int BattleScript_Read(BattleContext *battleCtx);
 static void BattleScript_Iter(BattleContext *battleCtx, int i);
@@ -9462,6 +9465,70 @@ static BOOL BtlCmd_End(BattleSystem *battleSys, BattleContext *battleCtx)
 {
     battleCtx->battleProgressFlag = TRUE;
     return BattleSystem_PopScript(battleCtx);
+}
+
+// ---------------------------------------------------------------------------
+// Expansion commands, ported from hg-engine (src/battle/battle_script_commands.c)
+// ---------------------------------------------------------------------------
+
+/**
+ * @brief Set the base power of Heavy Slam / Heat Crash from the ratio between
+ * the target's weight and the user's weight.
+ */
+static BOOL BtlCmd_CalcHeavySlamPower(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+
+    u32 attackerWeight = ATTACKING_MON.weight;
+    u32 ratio = attackerWeight ? DEFENDING_MON.weight * 10000 / attackerWeight : 10000;
+
+    if (ratio <= 2000) {
+        battleCtx->movePower = 120;
+    } else if (ratio <= 2500) {
+        battleCtx->movePower = 100;
+    } else if (ratio <= 3334) {
+        battleCtx->movePower = 80;
+    } else if (ratio <= 5000) {
+        battleCtx->movePower = 60;
+    } else {
+        battleCtx->movePower = 40;
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief Jump if the target is the user's partner (Pollen Puff heals instead of
+ * hitting).
+ *
+ * Inputs:
+ * 1. Jump distance if the target is the partner.
+ */
+static BOOL BtlCmd_CheckTargetIsPartner(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int jump = BattleScript_Read(battleCtx);
+
+    if (battleCtx->defender != BATTLER_NONE
+        && battleCtx->defender != battleCtx->attacker
+        && BattleSystem_GetBattlerSide(battleSys, battleCtx->defender) == BattleSystem_GetBattlerSide(battleSys, battleCtx->attacker)) {
+        battleCtx->msgBattlerTemp = battleCtx->defender;
+        BattleScript_Iter(battleCtx, jump);
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief Jump on the second hit of Parental Bond. That ability does not exist in
+ * this game, so this never jumps; it only keeps hg-engine's scripts unchanged.
+ */
+static BOOL BtlCmd_GoToIfSecondHitOfParentalBond(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    BattleScript_Read(battleCtx);
+
+    return FALSE;
 }
 
 /**

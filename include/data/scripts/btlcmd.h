@@ -228,6 +228,10 @@ ScriptCommand(BTLCMD_CHECKCURMOVEISTYPE,          BtlCmd_CheckCurMoveIsType)
 ScriptCommand(BTLCMD_LOADARCHIVEDMONDATA,         BtlCmd_LoadArchivedMonData)
 ScriptCommand(BTLCMD_REFRESHMONDATA,              BtlCmd_RefreshMonData)
 ScriptCommand(BTLCMD_END,                         BtlCmd_End)
+// Expansion (ported from hg-engine)
+ScriptCommand(BTLCMD_CALCHEAVYSLAMPOWER,          BtlCmd_CalcHeavySlamPower)
+ScriptCommand(BTLCMD_CHECKTARGETISPARTNER,        BtlCmd_CheckTargetIsPartner)
+ScriptCommand(BTLCMD_GOTOIFSECONDHITOFPARENTALBOND, BtlCmd_GoToIfSecondHitOfParentalBond)
 
 // clang-format on
 

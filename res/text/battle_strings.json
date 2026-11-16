@@ -8541,6 +8541,32 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1348",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s\n",
+        "illusion wore off!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1351",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s disguise was busted!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1360",
+      "en_US": [
+        "You sense the presence of many!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1361",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} transformed into its Complete\n",
+        "Forme!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1364",
       "en_US": [
         "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
@@ -8590,13 +8616,6 @@
       ]
     },
     {
-      "id": "BattleStrings_Text_HgEngine1396",
-      "en_US": [
-        "{STRVAR_1 1, 0, 0} had\n",
-        "its HP restored."
-      ]
-    },
-    {
       "id": "BattleStrings_Text_HgEngine1436",
       "en_US": [
         "{STRVAR_1 1, 0, 0} is absorbing\n",
@@ -8624,10 +8643,30 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1460",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s burn was healed!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1471",
       "en_US": [
         "{STRVAR_1 1, 0, 0}\n",
         "is protected by the Psychic Terrain!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1477",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} is\n",
+        "overflowing with space power!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1480",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} absorbed\n",
+        "electricity!"
       ]
     },
     {
@@ -8709,10 +8748,31 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1527",
+      "en_US": [
+        "The {STRVAR_1 8, 1, 0} weakened\n",
+        "the damage to {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1530",
       "en_US": [
         "{STRVAR_1 8, 0, 0} cannot\n",
         "be confused!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1533",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} became cloaked\n",
+        "in a freezing light!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1536",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} became cloaked\n",
+        "in freezing air!"
       ]
     },
     {
@@ -8743,9 +8803,22 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1559",
+      "en_US": [
+        "Being hit by {STRVAR_1 8, 1, 0} charged\n",
+        "{STRVAR_1 1, 0, 0} with power!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1562",
       "en_US": [
         "{STRVAR_1 1, 0, 0} was hurt!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1597",
+      "en_US": [
+        "The bursting flame hit {STRVAR_1 1, 0, 0}!"
       ]
     },
     {
