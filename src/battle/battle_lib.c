@@ -6667,6 +6667,67 @@ static int Battler_PositiveStatBoosts(BattleContext *battleCtx, int battler)
  * @brief Base power changes of moves added after Generation 4, ported from
  * hg-engine (src/individual/CalcBaseDamage.c).
  */
+/**
+ * @brief Terrain power modifiers (Gen 8+ values), as in hg-engine's CalcBaseDamage.
+ */
+static u16 Expansion_TerrainMovePower(BattleContext *battleCtx, int move, u16 power, int moveType, int attacker, int defender)
+{
+    BOOL attackerGrounded = Battler_IsGrounded(battleCtx, attacker);
+    BOOL defenderGrounded = Battler_IsGrounded(battleCtx, defender);
+
+    switch (battleCtx->terrain) {
+    case GRASSY_TERRAIN:
+        if (attackerGrounded && moveType == TYPE_GRASS) {
+            power = power * 13 / 10;
+        }
+
+        if (defenderGrounded && (move == MOVE_EARTHQUAKE || move == MOVE_BULLDOZE || move == MOVE_MAGNITUDE)) {
+            power /= 2;
+        }
+        break;
+
+    case MISTY_TERRAIN:
+        if (defenderGrounded && moveType == TYPE_DRAGON) {
+            power /= 2;
+        }
+
+        if (attackerGrounded && move == MOVE_MISTY_EXPLOSION) {
+            power = power * 15 / 10;
+        }
+        break;
+
+    case ELECTRIC_TERRAIN:
+        if (attackerGrounded && moveType == TYPE_ELECTRIC) {
+            power = power * 13 / 10;
+        }
+
+        if (defenderGrounded && move == MOVE_RISING_VOLTAGE) {
+            power *= 2;
+        }
+
+        if (move == MOVE_PSYBLADE) {
+            power = power * 15 / 10;
+        }
+        break;
+
+    case PSYCHIC_TERRAIN:
+        if (attackerGrounded && moveType == TYPE_PSYCHIC) {
+            power = power * 13 / 10;
+        }
+
+        if (attackerGrounded && move == MOVE_EXPANDING_FORCE) {
+            power = power * 15 / 10;
+        }
+        break;
+    }
+
+    if (battleCtx->terrain != TERRAIN_NONE && attackerGrounded && move == MOVE_TERRAIN_PULSE) {
+        power *= 2;
+    }
+
+    return power;
+}
+
 static u16 Expansion_ModifyMovePower(BattleContext *battleCtx, u32 fieldConditions, int move, u16 power, int attacker, int defender)
 {
     u16 attackerSpeed, defenderSpeed;
@@ -6822,6 +6883,8 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
     } else {
         moveType = inType & 0x3F;
     }
+
+    movePower = Expansion_TerrainMovePower(battleCtx, move, movePower, moveType, attacker, defender);
 
     GF_ASSERT(battleCtx->powerMul >= 10);
     movePower = movePower * battleCtx->powerMul / 10;

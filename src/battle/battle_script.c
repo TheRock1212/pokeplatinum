@@ -318,6 +318,9 @@ static BOOL BtlCmd_AddEntryHazardToQueue(BattleSystem *battleSys, BattleContext 
 static BOOL BtlCmd_CheckStickyWeb(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_ActivateParadoxAbility(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_ResetParadoxAbility(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_UpdateTerrainOverlay(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_GotoIfTerrainOverlayIsType(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_CheckTerrainBlocksStatus(BattleSystem *battleSys, BattleContext *battleCtx);
 
 static int BattleScript_Read(BattleContext *battleCtx);
 static void BattleScript_Iter(BattleContext *battleCtx, int i);
@@ -9713,6 +9716,112 @@ static BOOL BtlCmd_ResetParadoxAbility(BattleSystem *battleSys, BattleContext *b
 {
     BattleScript_Iter(battleCtx, 1);
     BattleScript_Read(battleCtx);
+
+    return FALSE;
+}
+
+/**
+ * @brief Set the terrain of the current move (Grassy/Misty/Electric/Psychic
+ * Terrain) for 5 turns, or clear the terrain.
+ *
+ * Inputs:
+ * 1. TRUE to clear the terrain, FALSE to set it.
+ * 2. Jump distance if the move's terrain is already active.
+ */
+static BOOL BtlCmd_UpdateTerrainOverlay(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int endTerrain = BattleScript_Read(battleCtx);
+    int jump = BattleScript_Read(battleCtx);
+    int terrain;
+
+    if (endTerrain) {
+        battleCtx->terrain = TERRAIN_NONE;
+        battleCtx->terrainTurns = 0;
+        return FALSE;
+    }
+
+    switch (battleCtx->moveCur) {
+    case MOVE_GRASSY_TERRAIN:
+        terrain = GRASSY_TERRAIN;
+        break;
+    case MOVE_MISTY_TERRAIN:
+        terrain = MISTY_TERRAIN;
+        break;
+    case MOVE_ELECTRIC_TERRAIN:
+        terrain = ELECTRIC_TERRAIN;
+        break;
+    case MOVE_PSYCHIC_TERRAIN:
+        terrain = PSYCHIC_TERRAIN;
+        break;
+    default:
+        terrain = TERRAIN_NONE;
+        break;
+    }
+
+    if (terrain == battleCtx->terrain) {
+        BattleScript_Iter(battleCtx, jump);
+    } else {
+        battleCtx->terrain = terrain;
+        battleCtx->terrainTurns = 5;
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief Jump if the given terrain is active.
+ *
+ * Inputs:
+ * 1. The terrain (GRASSY_TERRAIN, ...).
+ * 2. Jump distance if it is active.
+ */
+static BOOL BtlCmd_GotoIfTerrainOverlayIsType(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int terrain = BattleScript_Read(battleCtx);
+    int jump = BattleScript_Read(battleCtx);
+
+    if (battleCtx->terrain == terrain) {
+        BattleScript_Iter(battleCtx, jump);
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief Jump if the terrain protects a grounded battler from a status
+ * condition (Misty Terrain: all of them and confusion; Electric Terrain: sleep).
+ * The protection message is prepared in the message buffer.
+ *
+ * Inputs:
+ * 1. The battler.
+ * 2. TERRAIN_BLOCK_STATUS or TERRAIN_BLOCK_SLEEP.
+ * 3. Jump distance if the battler is protected.
+ */
+static BOOL BtlCmd_CheckTerrainBlocksStatus(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int inBattler = BattleScript_Read(battleCtx);
+    int kind = BattleScript_Read(battleCtx);
+    int jump = BattleScript_Read(battleCtx);
+    int battler = BattleScript_Battler(battleSys, battleCtx, inBattler);
+    int msg = 0;
+
+    if (Battler_IsGrounded(battleCtx, battler)) {
+        if (battleCtx->terrain == MISTY_TERRAIN) {
+            msg = BattleStrings_Text_HgEngine1496; // "{0} surrounds itself with a protective mist!"
+        } else if (battleCtx->terrain == ELECTRIC_TERRAIN && kind == TERRAIN_BLOCK_SLEEP) {
+            msg = BattleStrings_Text_HgEngine1484; // "{0} is protected by the Electric Terrain!"
+        }
+    }
+
+    if (msg) {
+        battleCtx->msgBuffer.id = msg;
+        battleCtx->msgBuffer.tags = TAG_NICKNAME;
+        battleCtx->msgBuffer.params[0] = BattleSystem_NicknameTag(battleCtx, battler);
+        BattleScript_Iter(battleCtx, jump);
+    }
 
     return FALSE;
 }

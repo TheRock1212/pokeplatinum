@@ -17,6 +17,7 @@ _021:
 
 _036:
     CompareMonDataToValue OPCODE_NEQ, BTLSCR_SIDE_EFFECT_MON, BATTLEMON_STATUS, MON_CONDITION_NONE, _077
+    CheckTerrainBlocksStatus BTLSCR_SIDE_EFFECT_MON, TERRAIN_BLOCK_SLEEP, _terrain_083
     CompareVarToValue OPCODE_FLAG_SET, BTLVAR_SIDE_CONDITIONS_EFFECT_MON, SIDE_CONDITION_SAFEGUARD, _083
     CompareVarToValue OPCODE_FLAG_SET, BTLVAR_MOVE_STATUS_FLAGS, MOVE_STATUS_MISSED|MOVE_STATUS_SEMI_INVULNERABLE, _077
     TryYawn _077
@@ -53,3 +54,9 @@ _089:
 
 _096:
     End 
+
+_terrain_083:
+    WaitButtonABTime 30
+    // terrain protection message, prepared by CheckTerrainBlocksStatus
+    PrintBufferedMessage
+    GoTo _089

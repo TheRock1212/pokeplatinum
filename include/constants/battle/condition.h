@@ -134,6 +134,17 @@
 #define FIELD_CONDITION_2_NONE       0
 #define FIELD_CONDITION_2_MAGIC_ROOM (1 << 0)
 
+// Terrains (BattleContext.terrain), same values as hg-engine's TerrainOverlayType
+#define TERRAIN_NONE     0
+#define GRASSY_TERRAIN   1
+#define MISTY_TERRAIN    2
+#define ELECTRIC_TERRAIN 3
+#define PSYCHIC_TERRAIN  4
+
+// CheckTerrainBlocksStatus
+#define TERRAIN_BLOCK_STATUS 0 // Misty Terrain
+#define TERRAIN_BLOCK_SLEEP  1 // Misty and Electric Terrain
+
 #define HAZARD_IDX_NONE         0
 #define HAZARD_IDX_SPIKES       1
 #define HAZARD_IDX_TOXIC_SPIKES 2

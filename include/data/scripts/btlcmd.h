@@ -240,6 +240,9 @@ ScriptCommand(BTLCMD_ADDENTRYHAZARDTOQUEUE,       BtlCmd_AddEntryHazardToQueue)
 ScriptCommand(BTLCMD_CHECKSTICKYWEB,              BtlCmd_CheckStickyWeb)
 ScriptCommand(BTLCMD_ACTIVATEPARADOXABILITY,      BtlCmd_ActivateParadoxAbility)
 ScriptCommand(BTLCMD_RESETPARADOXABILITY,         BtlCmd_ResetParadoxAbility)
+ScriptCommand(BTLCMD_UPDATETERRAINOVERLAY,        BtlCmd_UpdateTerrainOverlay)
+ScriptCommand(BTLCMD_GOTOIFTERRAINOVERLAYISTYPE,  BtlCmd_GotoIfTerrainOverlayIsType)
+ScriptCommand(BTLCMD_CHECKTERRAINBLOCKSSTATUS,    BtlCmd_CheckTerrainBlocksStatus)
 
 // clang-format on
 

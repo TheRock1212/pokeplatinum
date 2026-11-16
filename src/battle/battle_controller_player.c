@@ -914,6 +914,7 @@ enum FieldCondCheckState {
     FIELD_COND_CHECK_STATE_GRAVITY,
     FIELD_COND_CHECK_STATE_MAGIC_ROOM,
     FIELD_COND_CHECK_STATE_ION_DELUGE,
+    FIELD_COND_CHECK_STATE_TERRAIN,
 
     FIELD_COND_CHECK_END
 };
@@ -1277,6 +1278,17 @@ static void BattleControllerPlayer_CheckFieldConditions(BattleSystem *battleSys,
             battleCtx->fieldConditionCheckState++;
             break;
 
+        case FIELD_COND_CHECK_STATE_TERRAIN:
+            if (battleCtx->terrain != TERRAIN_NONE
+                && battleCtx->terrainTurns
+                && --battleCtx->terrainTurns == 0) {
+                PrepareSubroutineSequence(battleCtx, subscript_handle_terrain_end);
+                state = STATE_BREAK_OUT;
+            }
+
+            battleCtx->fieldConditionCheckState++;
+            break;
+
         case FIELD_COND_CHECK_END:
             state = STATE_DONE;
             break;
@@ -1298,6 +1310,7 @@ enum MonCondCheckState {
 
     MON_COND_CHECK_STATE_INGRAIN = MON_COND_CHECK_START,
     MON_COND_CHECK_STATE_AQUA_RING,
+    MON_COND_CHECK_STATE_GRASSY_TERRAIN,
     MON_COND_CHECK_STATE_ABILITY,
     MON_COND_CHECK_STATE_USE_ITEM,
     MON_COND_CHECK_STATE_LEFTOVERS,
@@ -1363,6 +1376,21 @@ static void BattleControllerPlayer_CheckMonConditions(BattleSystem *battleSys, B
                 battleCtx->commandNext = battleCtx->command;
                 battleCtx->command = BATTLE_CONTROL_EXEC_SCRIPT;
 
+                state = STATE_BREAK_OUT;
+            }
+
+            battleCtx->monConditionCheckState++;
+            break;
+
+        case MON_COND_CHECK_STATE_GRASSY_TERRAIN:
+            if (battleCtx->terrain == GRASSY_TERRAIN
+                && battleCtx->battleMons[battler].curHP
+                && battleCtx->battleMons[battler].curHP != battleCtx->battleMons[battler].maxHP
+                && battleCtx->battleMons[battler].moveEffectsData.healBlockTurns == 0
+                && Battler_IsGrounded(battleCtx, battler)) {
+                battleCtx->msgBattlerTemp = battler;
+                battleCtx->hpCalcTemp = BattleSystem_Divide(battleCtx->battleMons[battler].maxHP, 16);
+                PrepareSubroutineSequence(battleCtx, subscript_handle_field_effects_end_of_turn);
                 state = STATE_BREAK_OUT;
             }
 
@@ -3261,12 +3289,37 @@ static void BattleControllerPlayer_BeforeMove(BattleSystem *battleSys, BattleCon
     case BEFORE_MOVE_STATE_REDIRECT_TARGET:
         BattleSystem_CheckRedirectionAbilities(battleSys, battleCtx, battleCtx->attacker, battleCtx->moveCur);
         battleCtx->beforeMoveCheckState = BEFORE_MOVE_START;
+
+        // expansion: Psychic Terrain
+        if (battleCtx->terrain == PSYCHIC_TERRAIN
+            && MOVE_DATA(battleCtx->moveCur).priority > 0
+            && battleCtx->defender != BATTLER_NONE
+            && BattleSystem_GetBattlerSide(battleSys, battleCtx->defender) != BattleSystem_GetBattlerSide(battleSys, battleCtx->attacker)
+            && Battler_IsGrounded(battleCtx, battleCtx->defender)) {
+            battleCtx->msgBattlerTemp = battleCtx->defender;
+            LOAD_SUBSEQ(subscript_handle_psychic_terrain_protection);
+            battleCtx->command = BATTLE_CONTROL_EXEC_SCRIPT;
+            battleCtx->commandNext = BATTLE_CONTROL_UPDATE_MOVE_BUFFERS;
+            return;
+        }
     }
 
     if (battleCtx->moveStatusFlags & MOVE_STATUS_NO_EFFECTS) {
         battleCtx->command = BATTLE_CONTROL_MOVE_FAILED;
     } else {
         battleCtx->battleStatusMask2 |= SYSCTL_MOVE_SUCCEEDED;
+
+        if (battleCtx->moveCur == MOVE_TERRAIN_PULSE
+            && battleCtx->terrain != TERRAIN_NONE
+            && Battler_IsGrounded(battleCtx, battleCtx->attacker)) {
+            static const u8 sTerrainPulseTypes[] = {
+                [GRASSY_TERRAIN] = TYPE_GRASS,
+                [MISTY_TERRAIN] = TYPE_FAIRY,
+                [ELECTRIC_TERRAIN] = TYPE_ELECTRIC,
+                [PSYCHIC_TERRAIN] = TYPE_PSYCHIC,
+            };
+            battleCtx->moveType = sTerrainPulseTypes[battleCtx->terrain];
+        }
 
         if ((battleCtx->fieldConditionsMask & FIELD_CONDITION_ION_DELUGE)
             && battleCtx->moveType == TYPE_NORMAL

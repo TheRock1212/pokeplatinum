@@ -8616,6 +8616,80 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1388",
+      "en_US": [
+        "Grass grew to cover the battlefield!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1389",
+      "en_US": [
+        "The grass disappeared\n",
+        "from the battlefield."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1390",
+      "en_US": [
+        "Mist swirled about the battlefield!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1391",
+      "en_US": [
+        "The mist disappeared\n",
+        "from the battlefield."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1392",
+      "en_US": [
+        "An electric current\n",
+        "ran across the battlefield!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1393",
+      "en_US": [
+        "The electricity disappeared\n",
+        "from the battlefield."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1394",
+      "en_US": [
+        "The battlefield got weird!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1395",
+      "en_US": [
+        "The weirdness disappeared\n",
+        "from the battlefield."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1396",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} had\n",
+        "its HP restored."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1397",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} had\n",
+        "its HP restored."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1398",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} had\n",
+        "its HP restored."
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1436",
       "en_US": [
         "{STRVAR_1 1, 0, 0} is absorbing\n",
@@ -8689,6 +8763,20 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1485",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}\n",
+        "is protected by the Electric Terrain!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1486",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}\n",
+        "is protected by the Electric Terrain!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1487",
       "en_US": [
         "{STRVAR_1 1, 0, 0}\n",
@@ -8728,6 +8816,22 @@
       "id": "BattleStrings_Text_HgEngine1496",
       "en_US": [
         "{STRVAR_1 1, 0, 0} surrounds itself with\n",
+        "a protective mist!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1497",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}\n",
+        "surrounds itself with\f",
+        "a protective mist!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1498",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}\n",
+        "surrounds itself with\f",
         "a protective mist!"
       ]
     },

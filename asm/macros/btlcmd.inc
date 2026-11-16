@@ -1295,6 +1295,25 @@
     .long \ability
     .endm
 
+    .macro UpdateTerrainOverlay endTerrain, jump
+    .long BTLCMD_UPDATETERRAINOVERLAY
+    .long \endTerrain
+    .long (\jump-.) / 4 - 1
+    .endm
+
+    .macro GotoIfTerrainOverlayIsType terrain, jump
+    .long BTLCMD_GOTOIFTERRAINOVERLAYISTYPE
+    .long \terrain
+    .long (\jump-.) / 4 - 1
+    .endm
+
+    .macro CheckTerrainBlocksStatus battler, kind, jump
+    .long BTLCMD_CHECKTERRAINBLOCKSSTATUS
+    .long \battler
+    .long \kind
+    .long (\jump-.) / 4 - 1
+    .endm
+
     .text
     .globl _start
 _start:

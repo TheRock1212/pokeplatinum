@@ -30,6 +30,10 @@ C_MESSAGES = [
     1516, 1517, 1518,     # {0} was caught in a sticky web!  (subscript_hazards_check)
     1619, 1620, 1621,     # The effects of Throat Chop prevent {0} from using certain moves!
     1440,                 # The snow stopped.  (subscript_snow_end, scritto a mano)
+    1388, 1389, 1390, 1391, 1392, 1393, 1394, 1395,  # terreni: inizio/fine (script scritti a mano)
+    1396, 1397, 1398,     # {0} had its HP restored.  (Grassy Terrain)
+    1484, 1485, 1486,     # {0} is protected by the Electric Terrain!
+    1496, 1497, 1498,     # {0} surrounds itself with a protective mist!
 ]
 # Costanti che gli script vanilla non usano (quindi non compaiono nella mappa ricavata) ma hanno un equivalente.
 ALIASES = {
