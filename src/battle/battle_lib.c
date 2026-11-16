@@ -6588,8 +6588,86 @@ static const u16 sPunchingMoves[] = {
     MOVE_SHADOW_PUNCH,
     MOVE_DRAIN_PUNCH,
     MOVE_BULLET_PUNCH,
-    MOVE_SKY_UPPERCUT
+    MOVE_SKY_UPPERCUT,
+    // Expansion
+    MOVE_POWER_UP_PUNCH,
+    MOVE_ICE_HAMMER,
+    MOVE_DOUBLE_IRON_BASH,
+    MOVE_PLASMA_FISTS,
+    MOVE_WICKED_BLOW,
+    MOVE_SURGING_STRIKES,
+    MOVE_JET_PUNCH,
+    MOVE_RAGE_FIST,
+    MOVE_HEADLONG_RUSH,
 };
+
+static int Battler_PositiveStatBoosts(BattleContext *battleCtx, int battler)
+{
+    int i, total = 0;
+
+    for (i = BATTLE_STAT_ATTACK; i <= BATTLE_STAT_EVASION; i++) {
+        if (battleCtx->battleMons[battler].statBoosts[i] > DEFAULT_STAT_STAGE) {
+            total += battleCtx->battleMons[battler].statBoosts[i] - DEFAULT_STAT_STAGE;
+        }
+    }
+
+    return total;
+}
+
+/**
+ * @brief Base power changes of moves added after Generation 4, ported from
+ * hg-engine (src/individual/CalcBaseDamage.c).
+ */
+static u16 Expansion_ModifyMovePower(BattleContext *battleCtx, u32 fieldConditions, int move, u16 power, int attacker, int defender)
+{
+    u16 attackerSpeed, defenderSpeed;
+
+    switch (move) {
+    case MOVE_ELECTRO_BALL:
+        attackerSpeed = BattleMon_Get(battleCtx, attacker, BATTLEMON_SPEED, NULL);
+        defenderSpeed = BattleMon_Get(battleCtx, defender, BATTLEMON_SPEED, NULL);
+
+        if (defenderSpeed == 0) {
+            return 40;
+        }
+
+        switch (attackerSpeed / defenderSpeed) {
+        case 0:
+            return 40;
+        case 1:
+            return 60;
+        case 2:
+            return 80;
+        case 3:
+            return 120;
+        default:
+            return 150;
+        }
+
+    case MOVE_POWER_TRIP:
+    case MOVE_STORED_POWER:
+        return 20 + 20 * Battler_PositiveStatBoosts(battleCtx, attacker);
+
+    // Acrobatics, Hex, Venoshock, Infernal Parade and Barb Barrage double their power
+    // in their effect scripts (BTLVAR_POWER_MULTI), as in hg-engine.
+
+    case MOVE_BOLT_BEAK:
+    case MOVE_FISHIOUS_REND:
+        // doubles if the target has not moved yet this turn (the opposite of Payback)
+        if (battleCtx->battlerActions[defender][BATTLE_ACTION_PICK_COMMAND] != BATTLE_CONTROL_MOVE_END) {
+            return power * 2;
+        }
+        break;
+
+    case MOVE_GRAV_APPLE:
+        if (fieldConditions & FIELD_CONDITION_GRAVITY) {
+            return power * 15 / 10;
+        }
+        break;
+    }
+
+    return power;
+}
 
 typedef struct DamageCalcParams {
     u16 species;
@@ -6685,6 +6763,8 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
     } else {
         movePower = inPower;
     }
+
+    movePower = Expansion_ModifyMovePower(battleCtx, fieldConditions, move, movePower, attacker, defender);
 
     if (attackerParams.ability == ABILITY_NORMALIZE) {
         moveType = TYPE_NORMAL;
@@ -7141,7 +7221,10 @@ int BattleSystem_CalcCriticalMulti(BattleSystem *battleSys, BattleContext *battl
         effectiveCritStage = 4;
     }
 
-    if (BattleSystem_RandNext(battleSys) % sCriticalStageRates[effectiveCritStage] == 0
+    if ((BattleSystem_RandNext(battleSys) % sCriticalStageRates[effectiveCritStage] == 0
+            // Expansion (hg-engine): moves that always land a critical hit
+            || MOVE_DATA(battleCtx->moveCur).effect == BATTLE_EFFECT_ALWAYS_CRITICAL
+            || MOVE_DATA(battleCtx->moveCur).effect == BATTLE_EFFECT_HIT_THREE_TIMES_ALWAYS_CRITICAL)
         && Battler_IgnorableAbility(battleCtx, attacker, defender, ABILITY_BATTLE_ARMOR) == FALSE
         && Battler_IgnorableAbility(battleCtx, attacker, defender, ABILITY_SHELL_ARMOR) == FALSE
         && (sideConditions & SIDE_CONDITION_LUCKY_CHANT) == FALSE
