@@ -18,7 +18,7 @@ _016:
     SetMosaic BTLSCR_MSG_TEMP, 0, 1
     Wait
     // {0} transformed!
-    PrintMessage BattleStrings_Text_PokemonTransformed_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_PokemonTransformed_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     CompareMonDataToValue OPCODE_FLAG_NOT, BTLSCR_MSG_TEMP, BATTLEMON_VOLATILE_STATUS, VOLATILE_CONDITION_SUBSTITUTE, _058

@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 15
     // The mysterious strong winds weakened the attack!
-    PrintMessage BattleStrings_Text_HgEngine1451, TAG_NONE
+    PrintMessage BattleStrings_Text_HgEngine1451, TAG_NONE, 0, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

@@ -16,12 +16,12 @@ _000:
     UpdateVar OPCODE_FLAG_OFF, BTLVAR_BATTLE_CTX_STATUS, SYSCTL_HIT_DURING_SHADOW_FORCE
     UpdateVar OPCODE_SET, BTLVAR_MSG_TEMP, BATTLE_STAT_ATTACK
     // The {1} sharply boosted {0}'s {2}!
-    PrintMessage BattleStrings_Text_TheItemSharplyRaisedPokemonsStat_Ally, TAG_NICKNAME_ITEM_STAT, BTLSCR_DEFENDER, BTLSCR_DEFENDER, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_TheItemSharplyRaisedPokemonsStat_Ally, TAG_NICKNAME_ITEM_STAT, BTLSCR_DEFENDER, BTLSCR_DEFENDER, BTLSCR_MSG_TEMP, 0, 0, 0
     Wait
     WaitButtonABTime 30
     UpdateVar OPCODE_SET, BTLVAR_MSG_TEMP, BATTLE_STAT_SP_ATTACK
     // The {1} sharply boosted {0}'s {2}!
-    PrintMessage BattleStrings_Text_TheItemSharplyRaisedPokemonsStat_Ally, TAG_NICKNAME_ITEM_STAT, BTLSCR_DEFENDER, BTLSCR_DEFENDER, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_TheItemSharplyRaisedPokemonsStat_Ally, TAG_NICKNAME_ITEM_STAT, BTLSCR_DEFENDER, BTLSCR_DEFENDER, BTLSCR_MSG_TEMP, 0, 0, 0
     Wait
     WaitButtonABTime 30
     RemoveItem BTLSCR_DEFENDER

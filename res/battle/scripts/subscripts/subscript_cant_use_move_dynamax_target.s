@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 30
     // {0} shook its head. It seems like it can’t use this move...
-    PrintMessage BattleStrings_Text_HgEngine1493, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_HgEngine1493, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

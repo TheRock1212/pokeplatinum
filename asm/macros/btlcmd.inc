@@ -1250,6 +1250,51 @@
     .long (\jump-.) / 4 - 1
     .endm
 
+    .macro IsFieldCondition2On condition, jump
+    .long BTLCMD_ISFIELDCONDITION2ON
+    .long \condition
+    .long (\jump-.) / 4 - 1
+    .endm
+
+    .macro SetFieldCondition2 opcode, condition
+    .long BTLCMD_SETFIELDCONDITION2
+    .long \opcode
+    .long \condition
+    .endm
+
+    .macro SetMoveConditionFlag move, battler
+    .long BTLCMD_SETMOVECONDITIONFLAG
+    .long \move
+    .long \battler
+    .endm
+
+    .macro TryStickyWeb jump
+    .long BTLCMD_TRYSTICKYWEB
+    .long (\jump-.) / 4 - 1
+    .endm
+
+    .macro AddEntryHazardToQueue battler, hazard
+    .long BTLCMD_ADDENTRYHAZARDTOQUEUE
+    .long \battler
+    .long \hazard
+    .endm
+
+    .macro CheckStickyWeb battler, jump
+    .long BTLCMD_CHECKSTICKYWEB
+    .long \battler
+    .long (\jump-.) / 4 - 1
+    .endm
+
+    .macro ActivateParadoxAbility ability
+    .long BTLCMD_ACTIVATEPARADOXABILITY
+    .long \ability
+    .endm
+
+    .macro ResetParadoxAbility ability
+    .long BTLCMD_RESETPARADOXABILITY
+    .long \ability
+    .endm
+
     .text
     .globl _start
 _start:

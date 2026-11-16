@@ -44,6 +44,7 @@
 #include "trainer_info.h"
 
 #include "res/battle/scripts/sub_seq.naix"
+#include "res/text/bank/battle_strings.h"
 
 enum BattleControllerState {
     STATE_PROCESSING = 0,
@@ -908,8 +909,11 @@ enum FieldCondCheckState {
     FIELD_COND_CHECK_STATE_SANDSTORM,
     FIELD_COND_CHECK_STATE_SUNNY,
     FIELD_COND_CHECK_STATE_HAILING,
+    FIELD_COND_CHECK_STATE_SNOW,
     FIELD_COND_CHECK_STATE_DEEP_FOG,
     FIELD_COND_CHECK_STATE_GRAVITY,
+    FIELD_COND_CHECK_STATE_MAGIC_ROOM,
+    FIELD_COND_CHECK_STATE_ION_DELUGE,
 
     FIELD_COND_CHECK_END
 };
@@ -1210,6 +1214,26 @@ static void BattleControllerPlayer_CheckFieldConditions(BattleSystem *battleSys,
             battleCtx->fieldConditionCheckState++;
             break;
 
+        case FIELD_COND_CHECK_STATE_SNOW:
+            if (battleCtx->fieldConditionsMask & FIELD_CONDITION_SNOW) {
+                if ((battleCtx->fieldConditionsMask & FIELD_CONDITION_SNOW_PERM) == FALSE
+                    && --battleCtx->fieldConditions.weatherTurns == 0) {
+                    PrepareSubroutineSequence(battleCtx, subscript_snow_end);
+                } else {
+                    battleCtx->msgBuffer.id = BattleStrings_Text_SnowContinuesToFall;
+                    battleCtx->msgBuffer.tags = TAG_NONE;
+
+                    PrepareSubroutineSequence(battleCtx, subscript_weather_continues);
+                }
+
+                // there is no snow animation: reuse the hail one
+                battleCtx->scriptTemp = BATTLE_ANIMATION_WEATHER_HAIL;
+                state = STATE_BREAK_OUT;
+            }
+
+            battleCtx->fieldConditionCheckState++;
+            break;
+
         case FIELD_COND_CHECK_STATE_DEEP_FOG:
             if (battleCtx->fieldConditionsMask & FIELD_CONDITION_DEEP_FOG) {
                 battleCtx->msgBuffer.id = 813; // "The fog is deep..."
@@ -1234,6 +1258,22 @@ static void BattleControllerPlayer_CheckFieldConditions(BattleSystem *battleSys,
                 }
             }
 
+            battleCtx->fieldConditionCheckState++;
+            break;
+
+        case FIELD_COND_CHECK_STATE_MAGIC_ROOM:
+            if ((battleCtx->fieldConditions2Mask & FIELD_CONDITION_2_MAGIC_ROOM)
+                && battleCtx->magicRoomTurns
+                && --battleCtx->magicRoomTurns == 0) {
+                PrepareSubroutineSequence(battleCtx, subscript_magic_room_end);
+                state = STATE_BREAK_OUT;
+            }
+
+            battleCtx->fieldConditionCheckState++;
+            break;
+
+        case FIELD_COND_CHECK_STATE_ION_DELUGE:
+            battleCtx->fieldConditionsMask &= ~FIELD_CONDITION_ION_DELUGE;
             battleCtx->fieldConditionCheckState++;
             break;
 
@@ -1633,6 +1673,10 @@ static void BattleControllerPlayer_CheckMonConditions(BattleSystem *battleSys, B
             break;
 
         case MON_COND_CHECK_STATE_TAUNT:
+            if (battleCtx->battleMons[battler].moveEffectsData.throatChopTurns) {
+                battleCtx->battleMons[battler].moveEffectsData.throatChopTurns--;
+            }
+
             if (battleCtx->battleMons[battler].moveEffectsData.tauntedTurns
                 && --battleCtx->battleMons[battler].moveEffectsData.tauntedTurns == 0) {
                 battleCtx->msgBattlerTemp = battler;
@@ -2564,6 +2608,16 @@ static BOOL BattleControllerPlayer_CheckStatusDisruption(BattleSystem *battleSys
                 battleCtx->commandNext = BATTLE_CONTROL_UPDATE_MOVE_BUFFERS;
 
                 result = CHECK_STATUS_DISRUPT_MOVE;
+            } else if (ATTACKING_MON.moveEffectsData.throatChopTurns
+                && Move_IsSoundBased(battleCtx->moveCur)) {
+                // expansion: Throat Chop, reusing the Taunt failure flag
+                battleCtx->moveFailFlags[battleCtx->attacker].taunted = TRUE;
+
+                LOAD_SUBSEQ(subscript_move_fail_throat_chop);
+                battleCtx->command = BATTLE_CONTROL_EXEC_SCRIPT;
+                battleCtx->commandNext = BATTLE_CONTROL_UPDATE_MOVE_BUFFERS;
+
+                result = CHECK_STATUS_DISRUPT_MOVE;
             }
 
             battleCtx->statusCheckState++;
@@ -2929,7 +2983,7 @@ static int BattleControllerPlayer_CheckMoveHitAccuracy(BattleSystem *battleSys, 
             hitRate = hitRate * 80 / 100;
         }
 
-        if (WEATHER_IS_HAIL && Battler_IgnorableAbility(battleCtx, attacker, defender, ABILITY_SNOW_CLOAK) == TRUE) {
+        if ((WEATHER_IS_HAIL || WEATHER_IS_SNOW) && Battler_IgnorableAbility(battleCtx, attacker, defender, ABILITY_SNOW_CLOAK) == TRUE) {
             hitRate = hitRate * 80 / 100;
         }
 
@@ -3017,7 +3071,8 @@ static int BattleControllerPlayer_CheckMoveHitOverrides(BattleSystem *battleSys,
     if ((battleCtx->battleStatusMask & SYSCTL_NONSTANDARD_ACC_CHECK) == FALSE
         && (MON_IS_LOCKED_ONTO(attacker, defender)
             || Battler_Ability(battleCtx, attacker) == ABILITY_NO_GUARD
-            || Battler_Ability(battleCtx, defender) == ABILITY_NO_GUARD)) {
+            || Battler_Ability(battleCtx, defender) == ABILITY_NO_GUARD
+            || battleCtx->battleMons[defender].moveEffectsData.glaiveRush)) {
         battleCtx->moveStatusFlags &= ~MOVE_STATUS_MISSED;
         return 0;
     }
@@ -3028,7 +3083,7 @@ static int BattleControllerPlayer_CheckMoveHitOverrides(BattleSystem *battleSys,
             battleCtx->moveStatusFlags &= ~MOVE_STATUS_MISSED;
         }
 
-        if (WEATHER_IS_HAIL && MOVE_DATA(move).effect == BATTLE_EFFECT_BLIZZARD) {
+        if ((WEATHER_IS_HAIL || WEATHER_IS_SNOW) && MOVE_DATA(move).effect == BATTLE_EFFECT_BLIZZARD) {
             battleCtx->moveStatusFlags &= ~MOVE_STATUS_MISSED;
         }
     }
@@ -3212,6 +3267,12 @@ static void BattleControllerPlayer_BeforeMove(BattleSystem *battleSys, BattleCon
         battleCtx->command = BATTLE_CONTROL_MOVE_FAILED;
     } else {
         battleCtx->battleStatusMask2 |= SYSCTL_MOVE_SUCCEEDED;
+
+        if ((battleCtx->fieldConditionsMask & FIELD_CONDITION_ION_DELUGE)
+            && battleCtx->moveType == TYPE_NORMAL
+            && CURRENT_MOVE_DATA.type == TYPE_NORMAL) {
+            battleCtx->moveType = TYPE_ELECTRIC;
+        }
 
         BattleSystem_LoadScript(battleCtx, NARC_INDEX_BATTLE__SKILL__WAZA_SEQ, battleCtx->moveCur);
         battleCtx->command = BATTLE_CONTROL_EXEC_SCRIPT;
@@ -4730,6 +4791,10 @@ static BOOL BattleControllerPlayer_TriggerAfterMoveHitEffects(BattleSystem *batt
         case AFTER_MOVE_HIT_STATE_RAGE:
             if ((ATTACKING_MON.statusVolatile & VOLATILE_CONDITION_RAGE) && battleCtx->moveCur != MOVE_RAGE) {
                 ATTACKING_MON.statusVolatile &= ~VOLATILE_CONDITION_RAGE;
+            }
+
+            if (battleCtx->moveCur != MOVE_GLAIVE_RUSH) {
+                ATTACKING_MON.moveEffectsData.glaiveRush = FALSE;
             }
 
             battleCtx->afterMoveHitCheckState++;

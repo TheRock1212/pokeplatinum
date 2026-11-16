@@ -8,7 +8,7 @@ _000:
     Wait
     WaitButtonABTime 30
     // {1} is about to be attacked by its {2}!
-    PrintMessage BattleStrings_Text_HgEngine1542, TAG_NICKNAME_ITEM, BTLSCR_DEFENDER, BTLSCR_DEFENDER
+    PrintMessage BattleStrings_Text_HgEngine1542, TAG_NICKNAME_ITEM, BTLSCR_DEFENDER, BTLSCR_DEFENDER, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     CalcCrit

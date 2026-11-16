@@ -13,7 +13,7 @@ _000:
     UpdateVar OPCODE_SET, BTLVAR_MSG_TEMP, 2  // STAT_DEFENSE
     // TODO: Directly use ChangeStatStage?
     // {0}’s {1} sharply raised its {2}!
-    PrintMessage BattleStrings_Text_HgEngine1309, TAG_NICKNAME_ABILITY_STAT, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_HgEngine1309, TAG_NICKNAME_ABILITY_STAT, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_MSG_TEMP, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End
@@ -21,13 +21,13 @@ _raiseByOne:
     UpdateMonData OPCODE_ADD, BTLSCR_MSG_BATTLER_TEMP, BATTLEMON_DEFENSE_STAGE, 1
     UpdateVar OPCODE_SET, BTLVAR_MSG_TEMP, 2  // STAT_DEFENSE
     // {0}’s {1} raised its {2}!
-    PrintMessage BattleStrings_Text_PokemonsAbilityRaisedItsStat_Ally, TAG_NICKNAME_ABILITY_STAT, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_PokemonsAbilityRaisedItsStat_Ally, TAG_NICKNAME_ABILITY_STAT, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_MSG_TEMP, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End
 _032:
     // {0}’s {1} made {2} useless!
-    PrintMessage BattleStrings_Text_PokemonsAbilityMadeMoveUseless_Ally, TAG_NICKNAME_ABILITY_MOVE, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_PokemonsAbilityMadeMoveUseless_Ally, TAG_NICKNAME_ABILITY_MOVE, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_ATTACKER, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

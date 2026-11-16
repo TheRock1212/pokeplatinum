@@ -4,7 +4,7 @@
 _000:
     IfTurnFlag BTLSCR_DEFENDER, TURN_FLAG_PROTECTING, 0, _022
     // It broke through {0}’s protection!
-    PrintMessage BattleStrings_Text_ItBrokeThroughPokemonsProtection_Ally, TAG_NICKNAME, BTLSCR_DEFENDER
+    PrintMessage BattleStrings_Text_ItBrokeThroughPokemonsProtection_Ally, TAG_NICKNAME, BTLSCR_DEFENDER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
 _022:

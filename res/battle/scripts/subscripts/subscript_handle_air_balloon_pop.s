@@ -3,7 +3,7 @@
 
 _000:
     // {0}’s {1} popped!
-    PrintMessage BattleStrings_Text_HgEngine1367, TAG_NICKNAME_ITEM, BTLSCR_DEFENDER, BTLSCR_DEFENDER
+    PrintMessage BattleStrings_Text_HgEngine1367, TAG_NICKNAME_ITEM, BTLSCR_DEFENDER, BTLSCR_DEFENDER, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     RemoveItem BTLSCR_DEFENDER

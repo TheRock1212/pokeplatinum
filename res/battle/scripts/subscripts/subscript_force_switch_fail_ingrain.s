@@ -3,7 +3,7 @@
 
 _000:
     // {0} is anchored in place with its roots!
-    BufferMessage BattleStrings_Text_PokemonAnchoredItselfWithItsRoots_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    BufferMessage BattleStrings_Text_PokemonAnchoredItselfWithItsRoots_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     PrintAttackMessage
     Wait
     WaitButtonABTime 30

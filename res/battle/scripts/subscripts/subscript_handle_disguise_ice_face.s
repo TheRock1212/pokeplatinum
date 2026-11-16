@@ -12,7 +12,7 @@ _000:
 _016:
     CompareMonDataToValue OPCODE_EQU, BTLSCR_MSG_TEMP, BATTLEMON_ABILITY, 0xFFFF, _skipDisguiseMessage
     // Its disguise served it as a decoy!
-    PrintMessage BattleStrings_Text_TheItemWeakenedMovesPower, TAG_NONE
+    PrintMessage BattleStrings_Text_TheItemWeakenedMovesPower, TAG_NONE, 0, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
 _skipDisguiseMessage:
@@ -25,7 +25,7 @@ _skipDisguiseMessage:
     Wait
     CompareMonDataToValue OPCODE_EQU, BTLSCR_MSG_TEMP, BATTLEMON_ABILITY, 0xFFFF, _067
     // {0}’s disguise was busted!
-    PrintMessage BattleStrings_Text_HgEngine1351, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_HgEngine1351, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     UpdateMonDataFromVar OPCODE_GET, BTLSCR_MSG_TEMP, BATTLEMON_MAX_HP, BTLVAR_HP_CALC_TEMP
@@ -36,7 +36,7 @@ _skipDisguiseMessage:
     GoTo _074
 _067:
     // {0} transformed!
-    PrintMessage BattleStrings_Text_PokemonTransformed_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_PokemonTransformed_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
 _074:

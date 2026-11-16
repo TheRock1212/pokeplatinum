@@ -5,7 +5,7 @@ _000:
     CompareMonDataToValue OPCODE_EQU, BTLSCR_MSG_TEMP, BATTLEMON_CUR_HP, 0, _020
     UpdateMonData OPCODE_FLAG_OFF, BTLSCR_MSG_TEMP, BATTLEMON_STATUS, MON_CONDITION_BURN
     // {0}’s burn was healed!
-    PrintMessage BattleStrings_Text_HgEngine1460, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_HgEngine1460, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     SetHealthBoxStatusIcon BTLSCR_MSG_TEMP, BATTLE_ANIMATION_NONE
     WaitButtonABTime 30

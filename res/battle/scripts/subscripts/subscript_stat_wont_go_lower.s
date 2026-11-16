@@ -7,7 +7,7 @@ _000:
     WaitButtonABTime 30
     // Pending Champions modernization
     // {0}’s stats won’t go any lower!
-    PrintMessage BattleStrings_Text_PokemonsStatsWontGoAnyLower_Ally, TAG_NICKNAME, BTLSCR_DEFENDER
+    PrintMessage BattleStrings_Text_PokemonsStatsWontGoAnyLower_Ally, TAG_NICKNAME, BTLSCR_DEFENDER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

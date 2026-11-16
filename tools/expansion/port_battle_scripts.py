@@ -27,6 +27,9 @@ C_MESSAGES = [
     1313, 1314, 1315,     # {0}'s {1} raised its {2} drastically!  (abilità)
     1316, 1317, 1318,     # {0}'s {1} rose drastically!
     1520, 1521, 1522,     # {0}'s {1} severely fell!
+    1516, 1517, 1518,     # {0} was caught in a sticky web!  (subscript_hazards_check)
+    1619, 1620, 1621,     # The effects of Throat Chop prevent {0} from using certain moves!
+    1440,                 # The snow stopped.  (subscript_snow_end, scritto a mano)
 ]
 # Costanti che gli script vanilla non usano (quindi non compaiono nella mappa ricavata) ma hanno un equivalente.
 ALIASES = {
@@ -37,6 +40,12 @@ ALIASES = {
     'MULTIHIT_TRIPLE_KICK': 'SYSCTL_TRIPLE_KICK',
     'MULTIHIT_MULTI_HIT_MOVE': 'SYSCTL_MULTI_HIT_MOVE',
     'FIELD_CONDITION_RAIN_ALL': 'FIELD_CONDITION_RAINING',
+    'BATTLER_CATEGORY_ATTACKER_ENEMY': 'BTLSCR_ATTACKER_ENEMY',
+    'BATTLER_CATEGORY_DEFENDER_ENEMY': 'BTLSCR_DEFENDER_ENEMY',
+}
+# Messaggi che hg-engine non ha, usati dal C/script scritti a mano (accodati dopo quelli di hg-engine).
+EXTRA_MESSAGES = {
+    'BattleStrings_Text_SnowContinuesToFall': ['Snow continues to fall.'],
 }
 MSG_COMMANDS = {'PrintMessage': 0, 'PrintGlobalMessage': 0, 'BufferMessage': 0, 'BufferLocalMessage': 1}
 log = collections.defaultdict(list)
@@ -110,7 +119,8 @@ PT_PTRS = read(f'{PP}/generated/battle_move_subscript_ptrs.txt').split()[:VANILL
 STRINGS_PATH = f'{PP}/res/text/battle_strings.json'
 STRINGS = json.load(open(STRINGS_PATH, encoding='utf-8'))
 STRINGS['messages'] = STRINGS['messages'][:VANILLA_MSGS] + [m for m in STRINGS['messages'][VANILLA_MSGS:]
-                                                            if not m['id'].startswith('BattleStrings_Text_HgEngine')]
+                                                            if not m['id'].startswith('BattleStrings_Text_HgEngine')
+                                                            and m['id'] not in EXTRA_MESSAGES]
 PT_IDENTS = set()
 for f in glob.glob(f'{PP}/generated/*.txt'):
     PT_IDENTS |= set(read(f).split())
@@ -324,6 +334,10 @@ def translate(text, where):
                     raise Untranslatable(f'constant {t}')
                 return u
             new_args.append(TOKEN.sub(repl, a))
+        if cmd in MSG_COMMANDS and len(new_args) > MSG_COMMANDS[cmd] + 1:
+            # i macro emettono tanti argomenti quanti ne chiede il tag: quelli mancanti
+            # (hg-engine a volte ne passa meno) diventerebbero .long vuoti e sposterebbero lo script
+            new_args += ['0'] * (MSG_COMMANDS[cmd] + 8 - len(new_args))
         line_out = '    ' + cmd + (' ' + ', '.join(new_args) if new_args else '')
         if comment.strip():
             line_out += '  // ' + comment.strip()
@@ -416,6 +430,8 @@ def main():
     for n in C_MESSAGES:                         # messaggi usati dal codice C portato a mano
         msg_const(n)
     STRINGS['messages'][VANILLA_MSGS:] = sorted(STRINGS['messages'][VANILLA_MSGS:], key=lambda m: int(m['id'][len('BattleStrings_Text_HgEngine'):]))
+    for ident, parts in EXTRA_MESSAGES.items():
+        STRINGS['messages'].append({'id': ident, 'en_US': parts})
     write(STRINGS_PATH, json.dumps(STRINGS, indent=2, ensure_ascii=False) + '\n')
 
     for k, v in log.items():

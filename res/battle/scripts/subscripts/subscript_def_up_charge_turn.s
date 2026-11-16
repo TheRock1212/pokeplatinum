@@ -9,7 +9,7 @@ _000:
     PlayMoveAnimation BTLSCR_ATTACKER
     Wait
     // {0} tucked in its head!
-    PrintMessage BattleStrings_Text_PokemonTuckedInItsHead_Ally, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_PokemonTuckedInItsHead_Ally, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     LockMoveChoice BTLSCR_ATTACKER
@@ -20,5 +20,5 @@ _017:
     UpdateVar OPCODE_SET, BTLVAR_SIDE_EFFECT_PARAM, MOVE_SUBSCRIPT_PTR_DEFENSE_UP_1_STAGE
     UpdateVar OPCODE_SET, BTLVAR_SIDE_EFFECT_TYPE, SIDE_EFFECT_TYPE_INDIRECT
     Call BATTLE_SUBSCRIPT_UPDATE_STAT_STAGE
-    BufferMessage BattleStrings_Text_Dummy0, TAG_NONE
+    BufferMessage BattleStrings_Text_Dummy0, TAG_NONE, 0, 0, 0, 0, 0, 0
     End

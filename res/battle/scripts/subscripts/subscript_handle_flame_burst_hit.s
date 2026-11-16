@@ -7,7 +7,7 @@ _000:
     FlickerMon BTLSCR_MSG_TEMP
     Wait
     //The bursting flame hit {0}!
-    PrintMessage BattleStrings_Text_HgEngine1597, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_HgEngine1597, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     CompareVarToValue OPCODE_EQU, BTLVAR_WAITING_BATTLERS, 0, _016

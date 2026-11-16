@@ -5,7 +5,7 @@ _000:
     UpdateVar OPCODE_FLAG_ON, BTLVAR_BATTLE_CTX_STATUS, SYSCTL_SKIP_SPRITE_BLINK
     Call BATTLE_SUBSCRIPT_UPDATE_HP
     // {0} was hurt!
-    PrintMessage BattleStrings_Text_HgEngine1562, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_HgEngine1562, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

@@ -5,7 +5,7 @@ _000:
     PlayBattleAnimation BTLSCR_DEFENDER, BATTLE_ANIMATION_HELD_ITEM
     Wait
     // {0} hung on using its {1}!
-    PrintMessage BattleStrings_Text_PokemonHungOnUsingItsItem_Ally, TAG_NICKNAME_ITEM, BTLSCR_DEFENDER, BTLSCR_DEFENDER
+    PrintMessage BattleStrings_Text_PokemonHungOnUsingItsItem_Ally, TAG_NICKNAME_ITEM, BTLSCR_DEFENDER, BTLSCR_DEFENDER, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     CheckItemHoldEffect CHECK_HAVE, BTLSCR_DEFENDER, HOLD_EFFECT_MAYBE_ENDURE, _end

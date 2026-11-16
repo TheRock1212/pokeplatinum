@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 15
     // The Water-type attack evaporated in the harsh sunlight!
-    PrintMessage BattleStrings_Text_HgEngine1443, TAG_NONE
+    PrintMessage BattleStrings_Text_HgEngine1443, TAG_NONE, 0, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

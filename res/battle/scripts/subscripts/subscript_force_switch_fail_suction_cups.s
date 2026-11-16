@@ -3,7 +3,7 @@
 
 _000:
     // {0} is anchored in place with its suction cups!
-    BufferMessage BattleStrings_Text_PokemonAnchorsItselfWithAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_DEFENDER, BTLSCR_MSG_TEMP
+    BufferMessage BattleStrings_Text_PokemonAnchorsItselfWithAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_DEFENDER, BTLSCR_MSG_TEMP, 0, 0, 0, 0
     PrintAttackMessage
     Wait
     WaitButtonABTime 30

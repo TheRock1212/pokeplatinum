@@ -52,6 +52,11 @@ typedef struct MoveEffectsData {
     u16 transformedGender;
 
     int itemHPRecovery;
+
+    // Expansion (ported from hg-engine)
+    u8 throatChopTurns; // sound moves fail while nonzero
+    u8 glaiveRush; // moves against this battler always hit and deal double damage
+    u16 paddingExpansion;
 } MoveEffectsData;
 
 typedef struct BattleMon {

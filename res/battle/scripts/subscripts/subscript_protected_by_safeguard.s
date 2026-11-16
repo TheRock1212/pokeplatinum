@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 30
     // {0} is protected by Safeguard!
-    PrintMessage BattleStrings_Text_PokemonIsProtectedBySafeguard_Ally, TAG_NICKNAME, BTLSCR_DEFENDER
+    PrintMessage BattleStrings_Text_PokemonIsProtectedBySafeguard_Ally, TAG_NICKNAME, BTLSCR_DEFENDER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

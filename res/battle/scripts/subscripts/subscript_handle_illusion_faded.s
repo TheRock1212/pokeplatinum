@@ -18,7 +18,7 @@ _000:
     HealthBoxSlideIn BTLSCR_MSG_TEMP
     Wait
     // {0}’s illusion wore off!
-    PrintMessage BattleStrings_Text_HgEngine1348, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_HgEngine1348, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     UpdateMonData OPCODE_FLAG_ON, BTLSCR_MSG_TEMP, BATTLEMON_VOLATILE_STATUS, VOLATILE_CONDITION_SUBSTITUTE
@@ -39,7 +39,7 @@ _078:
     HealthBoxSlideIn BTLSCR_MSG_TEMP
     Wait
     // {0}’s illusion wore off!
-    PrintMessage BattleStrings_Text_HgEngine1348, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_HgEngine1348, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     CompareMonDataToValue OPCODE_FLAG_NOT, BTLSCR_MSG_TEMP, BATTLEMON_VOLATILE_STATUS, VOLATILE_CONDITION_SUBSTITUTE, _113

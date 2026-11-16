@@ -7,7 +7,7 @@ _000:
     WaitButtonABTime 30
     UpdateVar OPCODE_FLAG_ON, BTLVAR_MOVE_STATUS_FLAGS, MOVE_STATUS_FAILED
     // {0} is not affected by {1} thanks to its Safety Goggles!
-    PrintMessage BattleStrings_Text_HgEngine1487, TAG_NICKNAME_MOVE, BTLSCR_MSG_TEMP, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_HgEngine1487, TAG_NICKNAME_MOVE, BTLSCR_MSG_TEMP, BTLSCR_ATTACKER, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

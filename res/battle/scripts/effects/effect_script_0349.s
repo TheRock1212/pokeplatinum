@@ -10,7 +10,7 @@ _000:
 _020:
     UpdateVar OPCODE_SET, BTLVAR_POWER_MULTI, 20
     // {STRVAR_1 1, 0, 0} is going all out for this attack!
-    PrintMessage BattleStrings_Text_HgEngine1545, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_HgEngine1545, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
 _024:

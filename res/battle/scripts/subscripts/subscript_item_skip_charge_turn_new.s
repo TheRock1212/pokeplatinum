@@ -8,7 +8,7 @@ _011:
     PlayBattleAnimation BTLSCR_ATTACKER, BATTLE_ANIMATION_HELD_ITEM
     Wait
     // {0} became fully charged due to its {1}!
-    PrintMessage BattleStrings_Text_PokemonBecameFullyChargedDueToItsItem_Ally, TAG_NICKNAME_ITEM, BTLSCR_ATTACKER, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_PokemonBecameFullyChargedDueToItsItem_Ally, TAG_NICKNAME_ITEM, BTLSCR_ATTACKER, BTLSCR_ATTACKER, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     RemoveItem BTLSCR_ATTACKER

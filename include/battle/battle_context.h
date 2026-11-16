@@ -318,6 +318,13 @@ struct BattleContext {
 
     u32 battleProgressFlag : 1;
     u32 padding3154_01 : 31;
+
+    // Expansion (ported from hg-engine)
+    u32 fieldConditions2Mask;
+    u8 magicRoomTurns;
+    u8 terrain;
+    u8 terrainTurns;
+    u8 paddingExpansion;
 };
 
 #endif // POKEPLATINUM_BATTLE_BATTLE_CONTEXT_H

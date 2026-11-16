@@ -9,7 +9,7 @@ _000:
     PlayBattleAnimation BTLSCR_MSG_TEMP, BATTLE_ANIMATION_SUB_IN
     Wait
     // {0}’s substitute faded!
-    PrintMessage BattleStrings_Text_PokemonsSubstituteFaded_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_PokemonsSubstituteFaded_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

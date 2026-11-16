@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 30
     // {0} stayed awake because of its {1}!
-    PrintMessage BattleStrings_Text_PokemonStayedAwakeBecauseOfItsAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON
+    PrintMessage BattleStrings_Text_PokemonStayedAwakeBecauseOfItsAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

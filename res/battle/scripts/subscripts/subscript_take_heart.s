@@ -21,7 +21,7 @@ _046:
     Wait
     WaitButtonABTime 30
     // {0}’s stats won’t go any higher!
-    PrintMessage BattleStrings_Text_PokemonsStatsWontGoAnyHigher_Ally, TAG_NICKNAME, BTLSCR_SIDE_EFFECT_MON
+    PrintMessage BattleStrings_Text_PokemonsStatsWontGoAnyHigher_Ally, TAG_NICKNAME, BTLSCR_SIDE_EFFECT_MON, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
 _refresh:
@@ -29,7 +29,7 @@ _refresh:
     Call BATTLE_SUBSCRIPT_ATTACK_MESSAGE_AND_ANIMATION
     UpdateMonData OPCODE_SET, BTLSCR_ATTACKER, BATTLEMON_STATUS, MON_CONDITION_NONE
     // {0}’s status returned to normal!
-    PrintMessage BattleStrings_Text_PokemonsStatusReturnedToNormal_Ally, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_PokemonsStatusReturnedToNormal_Ally, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     SetHealthBoxStatusIcon BTLSCR_ATTACKER, BATTLE_ANIMATION_NONE
     WaitButtonABTime 30

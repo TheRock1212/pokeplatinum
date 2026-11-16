@@ -3,7 +3,7 @@
 
 _000:
     // {0} lost its focus and couldn’t move!
-    PrintMessage BattleStrings_Text_PokemonLostItsFocusAndCouldntMove_Ally, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_PokemonLostItsFocusAndCouldntMove_Ally, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

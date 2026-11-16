@@ -3,7 +3,7 @@
 
 _000:
     // A critical hit on {0}!
-    PrintMessage BattleStrings_Text_HgEngine1676, TAG_NICKNAME, BTLSCR_DEFENDER
+    PrintMessage BattleStrings_Text_HgEngine1676, TAG_NICKNAME, BTLSCR_DEFENDER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

@@ -11,7 +11,7 @@ _000:
     Wait
 _016:
     // You sense the presence of many!
-    PrintMessage BattleStrings_Text_HgEngine1360, TAG_NONE
+    PrintMessage BattleStrings_Text_HgEngine1360, TAG_NONE, 0, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 78
     PlaySound BTLSCR_MSG_TEMP, 1980
@@ -25,7 +25,7 @@ _016:
     Call BATTLE_SUBSCRIPT_UPDATE_HP
     Wait
     // {0} transformed into its Complete Forme!
-    PrintMessage BattleStrings_Text_HgEngine1361, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_HgEngine1361, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 78
     CompareMonDataToValue OPCODE_FLAG_NOT, BTLSCR_MSG_TEMP, BATTLEMON_VOLATILE_STATUS, VOLATILE_CONDITION_SUBSTITUTE, _071

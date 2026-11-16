@@ -5,7 +5,7 @@ _000:
     UpdateMonData OPCODE_FLAG_ON, BTLSCR_MSG_TEMP, BATTLEMON_MOVE_EFFECTS_MASK, MOVE_EFFECT_CHARGE
     UpdateMonData OPCODE_SET, BTLSCR_MSG_TEMP, BATTLEMON_CHARGED_TURNS, 2
     // Being hit by {1} charged\n{0} with power!
-    PrintMessage BattleStrings_Text_HgEngine1559, TAG_NICKNAME_MOVE, BTLSCR_MSG_TEMP, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_HgEngine1559, TAG_NICKNAME_MOVE, BTLSCR_MSG_TEMP, BTLSCR_MSG_TEMP, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

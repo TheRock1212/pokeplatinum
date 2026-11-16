@@ -2299,6 +2299,12 @@ int BattleSystem_CheckInvalidMoves(BattleSystem *battleSys, BattleContext *battl
             invalidMoves |= FlagIndex(i);
         }
 
+        if (battleCtx->battleMons[battler].moveEffectsData.throatChopTurns
+            && (opMask & CHECK_INVALID_THROAT_CHOP)
+            && Move_IsSoundBased(battleCtx->battleMons[battler].moves[i])) {
+            invalidMoves |= FlagIndex(i);
+        }
+
         if (battleCtx->battleMons[battler].moveEffectsData.encoredMove
             && battleCtx->battleMons[battler].moveEffectsData.encoredMove != battleCtx->battleMons[battler].moves[i]) {
             invalidMoves |= FlagIndex(i);
@@ -2357,6 +2363,11 @@ BOOL BattleSystem_CanUseMove(BattleSystem *battleSys, BattleContext *battleCtx, 
         msgOut->params[0] = BattleSystem_NicknameTag(battleCtx, battler);
         msgOut->params[1] = MOVE_HEAL_BLOCK;
         msgOut->params[2] = battleCtx->battleMons[battler].moves[moveSlot];
+        result = FALSE;
+    } else if (BattleSystem_CheckInvalidMoves(battleSys, battleCtx, battler, 0, CHECK_INVALID_THROAT_CHOP) & FlagIndex(moveSlot)) {
+        msgOut->tags = TAG_NICKNAME;
+        msgOut->id = BattleStrings_Text_HgEngine1619; // "The effects of Throat Chop prevent {0} from using certain moves!"
+        msgOut->params[0] = BattleSystem_NicknameTag(battleCtx, battler);
         result = FALSE;
     } else if (BattleSystem_CheckInvalidMoves(battleSys, battleCtx, battler, 0, CHECK_INVALID_CHOICE_ITEM) & FlagIndex(moveSlot)) {
         msgOut->tags = TAG_ITEM_MOVE;
@@ -3493,7 +3504,40 @@ static u16 sSoundMoves[] = {
     MOVE_HYPER_VOICE,
     MOVE_BUG_BUZZ,
     MOVE_CHATTER,
+    // Expansion (hg-engine SoundBasedMoveList)
+    MOVE_HEAL_BELL,
+    MOVE_HOWL,
+    MOVE_PERISH_SONG,
+    MOVE_ROUND,
+    MOVE_ECHOED_VOICE,
+    MOVE_RELIC_SONG,
+    MOVE_SNARL,
+    MOVE_NOBLE_ROAR,
+    MOVE_DISARMING_VOICE,
+    MOVE_PARTING_SHOT,
+    MOVE_BOOMBURST,
+    MOVE_CONFIDE,
+    MOVE_SPARKLING_ARIA,
+    MOVE_CLANGING_SCALES,
+    MOVE_CLANGOROUS_SOULBLAZE,
+    MOVE_CLANGOROUS_SOUL,
+    MOVE_OVERDRIVE,
+    MOVE_EERIE_SPELL,
+    MOVE_TORCH_SONG,
+    MOVE_ALLURING_VOICE,
+    MOVE_PSYCHIC_NOISE,
 };
+
+BOOL Move_IsSoundBased(int move)
+{
+    for (int i = 0; i < NELEMS(sSoundMoves); i++) {
+        if (sSoundMoves[i] == move) {
+            return TRUE;
+        }
+    }
+
+    return FALSE;
+}
 
 int BattleSystem_TriggerImmunityAbility(BattleContext *battleCtx, int attacker, int defender)
 {
@@ -3530,13 +3574,9 @@ int BattleSystem_TriggerImmunityAbility(BattleContext *battleCtx, int attacker, 
         subscript = subscript_absorb_and_boost_fire_type_moves;
     }
 
-    if (Battler_IgnorableAbility(battleCtx, attacker, defender, ABILITY_SOUNDPROOF) == TRUE) {
-        for (int i = 0; i < NELEMS(sSoundMoves); i++) {
-            if (sSoundMoves[i] == battleCtx->moveCur) {
-                subscript = subscript_blocked_by_soundproof;
-                break;
-            }
-        }
+    if (Battler_IgnorableAbility(battleCtx, attacker, defender, ABILITY_SOUNDPROOF) == TRUE
+        && Move_IsSoundBased(battleCtx->moveCur)) {
+        subscript = subscript_blocked_by_soundproof;
     }
 
     if (Battler_IgnorableAbility(battleCtx, attacker, defender, ABILITY_MOTOR_DRIVE) == TRUE
@@ -5369,6 +5409,10 @@ u16 Battler_HeldItem(BattleContext *battleCtx, int battler)
         return ITEM_NONE;
     }
 
+    if (battleCtx->fieldConditions2Mask & FIELD_CONDITION_2_MAGIC_ROOM) {
+        return ITEM_NONE;
+    }
+
     return battleCtx->battleMons[battler].heldItem;
 }
 
@@ -5460,7 +5504,7 @@ s32 Battler_HeldItemPower(BattleContext *battleCtx, int battler, enum HeldItemPo
         break;
 
     case ITEM_POWER_CHECK_EMBARGO:
-        if (battleCtx->battleMons[battler].moveEffectsData.embargoTurns) {
+        if (battleCtx->battleMons[battler].moveEffectsData.embargoTurns || (battleCtx->fieldConditions2Mask & FIELD_CONDITION_2_MAGIC_ROOM)) {
             return 0;
         }
 
@@ -5491,7 +5535,7 @@ s32 Battler_ItemPluckEffect(BattleContext *battleCtx, int battler)
 
 s32 Battler_ItemFlingEffect(BattleContext *battleCtx, int battler)
 {
-    if (battleCtx->battleMons[battler].moveEffectsData.embargoTurns) {
+    if (battleCtx->battleMons[battler].moveEffectsData.embargoTurns || (battleCtx->fieldConditions2Mask & FIELD_CONDITION_2_MAGIC_ROOM)) {
         return FLING_EFFECT_NONE;
     }
 
@@ -5500,7 +5544,7 @@ s32 Battler_ItemFlingEffect(BattleContext *battleCtx, int battler)
 
 s32 Battler_ItemFlingPower(BattleContext *battleCtx, int battler)
 {
-    if (battleCtx->battleMons[battler].moveEffectsData.embargoTurns) {
+    if (battleCtx->battleMons[battler].moveEffectsData.embargoTurns || (battleCtx->fieldConditions2Mask & FIELD_CONDITION_2_MAGIC_ROOM)) {
         return 0;
     }
 
@@ -5514,6 +5558,11 @@ static inline BOOL BattlerIsGrounded(BattleContext *battleCtx, int battler)
                && MON_IS_NOT_TYPE(battler, TYPE_FLYING))
         || Battler_HeldItemEffect(battleCtx, battler) == HOLD_EFFECT_SPEED_DOWN_GROUNDED
         || (battleCtx->fieldConditionsMask & FIELD_CONDITION_GRAVITY);
+}
+
+BOOL Battler_IsGrounded(BattleContext *battleCtx, int battler)
+{
+    return BattlerIsGrounded(battleCtx, battler);
 }
 
 static inline int CountAbilityTheirSide(BattleSystem *battleSys, BattleContext *battleCtx, int battler, int ability)
@@ -7018,6 +7067,11 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
             spDefenseStat = spDefenseStat * 15 / 10;
         }
 
+        if ((fieldConditions & FIELD_CONDITION_SNOW)
+            && (defenderParams.type1 == TYPE_ICE || defenderParams.type2 == TYPE_ICE)) {
+            defenseStat = defenseStat * 15 / 10;
+        }
+
         if ((fieldConditions & FIELD_CONDITION_SUNNY)
             && BattleSystem_CountAbility(battleSys, battleCtx, COUNT_ALIVE_BATTLERS_OUR_SIDE, attacker, ABILITY_FLOWER_GIFT)) {
             attackStat = attackStat * 15 / 10;
@@ -7163,6 +7217,10 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
 
     if (BattleMon_Get(battleCtx, attacker, BATTLEMON_FLASH_FIRE, NULL) && moveType == TYPE_FIRE) {
         damage = damage * 15 / 10;
+    }
+
+    if (battleCtx->battleMons[defender].moveEffectsData.glaiveRush) {
+        return (damage + 2) * 2;
     }
 
     return damage + 2;
@@ -7999,7 +8057,7 @@ static int CalcMoveType(BattleSystem *battleSys, BattleContext *battleCtx, int i
                 type = TYPE_FIRE;
             }
 
-            if (WEATHER_IS_HAIL) {
+            if (WEATHER_IS_HAIL || WEATHER_IS_SNOW) {
                 type = TYPE_ICE;
             }
         }
@@ -8281,7 +8339,7 @@ int Move_CalcVariableType(BattleSystem *battleSys, BattleContext *battleCtx, Pok
                     type = TYPE_FIRE;
                 }
 
-                if (WEATHER_IS_HAIL) {
+                if (WEATHER_IS_HAIL || WEATHER_IS_SNOW) {
                     type = TYPE_ICE;
                 }
             }

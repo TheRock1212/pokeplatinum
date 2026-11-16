@@ -13,7 +13,7 @@ _000:
     UpdateMonDataFromVar OPCODE_FLAG_ON, BTLSCR_ATTACKER, BATTLEMON_MEAN_LOOK_TARGET, BTLVAR_DEFENDER
     UpdateMonDataFromVar OPCODE_FLAG_ON, BTLSCR_DEFENDER, BATTLEMON_MEAN_LOOK_TARGET, BTLVAR_ATTACKER
     // Neither Pokémon can run away!
-    PrintMessage BattleStrings_Text_HgEngine1548, TAG_NONE
+    PrintMessage BattleStrings_Text_HgEngine1548, TAG_NONE, 0, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End
@@ -31,7 +31,7 @@ _trapdefender:
     UpdateMonData OPCODE_FLAG_ON, BTLSCR_DEFENDER, BATTLEMON_VOLATILE_STATUS, VOLATILE_CONDITION_MEAN_LOOK
     UpdateMonDataFromVar OPCODE_FLAG_ON, BTLSCR_DEFENDER, BATTLEMON_MEAN_LOOK_TARGET, BTLVAR_ATTACKER
     // {0} can no longer escape!
-    PrintMessage BattleStrings_Text_PokemonCanNoLongerEscape_Ally, TAG_NICKNAME, BTLSCR_DEFENDER
+    PrintMessage BattleStrings_Text_PokemonCanNoLongerEscape_Ally, TAG_NICKNAME, BTLSCR_DEFENDER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End
@@ -40,7 +40,7 @@ _trapattacker:
     UpdateMonData OPCODE_FLAG_ON, BTLSCR_ATTACKER, BATTLEMON_VOLATILE_STATUS, VOLATILE_CONDITION_MEAN_LOOK
     UpdateMonDataFromVar OPCODE_FLAG_ON, BTLSCR_ATTACKER, BATTLEMON_MEAN_LOOK_TARGET, BTLVAR_DEFENDER
     // {0} can no longer escape!
-    PrintMessage BattleStrings_Text_PokemonCanNoLongerEscape_Ally, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_PokemonCanNoLongerEscape_Ally, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

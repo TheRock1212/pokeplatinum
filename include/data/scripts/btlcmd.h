@@ -232,6 +232,14 @@ ScriptCommand(BTLCMD_END,                         BtlCmd_End)
 ScriptCommand(BTLCMD_CALCHEAVYSLAMPOWER,          BtlCmd_CalcHeavySlamPower)
 ScriptCommand(BTLCMD_CHECKTARGETISPARTNER,        BtlCmd_CheckTargetIsPartner)
 ScriptCommand(BTLCMD_GOTOIFSECONDHITOFPARENTALBOND, BtlCmd_GoToIfSecondHitOfParentalBond)
+ScriptCommand(BTLCMD_ISFIELDCONDITION2ON,         BtlCmd_IsFieldCondition2On)
+ScriptCommand(BTLCMD_SETFIELDCONDITION2,          BtlCmd_SetFieldCondition2)
+ScriptCommand(BTLCMD_SETMOVECONDITIONFLAG,        BtlCmd_SetMoveConditionFlag)
+ScriptCommand(BTLCMD_TRYSTICKYWEB,                BtlCmd_TryStickyWeb)
+ScriptCommand(BTLCMD_ADDENTRYHAZARDTOQUEUE,       BtlCmd_AddEntryHazardToQueue)
+ScriptCommand(BTLCMD_CHECKSTICKYWEB,              BtlCmd_CheckStickyWeb)
+ScriptCommand(BTLCMD_ACTIVATEPARADOXABILITY,      BtlCmd_ActivateParadoxAbility)
+ScriptCommand(BTLCMD_RESETPARADOXABILITY,         BtlCmd_ResetParadoxAbility)
 
 // clang-format on
 

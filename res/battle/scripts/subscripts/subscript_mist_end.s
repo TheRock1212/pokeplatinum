@@ -3,7 +3,7 @@
 
 _000:
     // Your team is no longer protected by mist!
-    BufferLocalMessage BTLSCR_MSG_TEMP, BattleStrings_Text_HgEngine1525, TAG_NONE, BTLSCR_MSG_TEMP
+    BufferLocalMessage BTLSCR_MSG_TEMP, BattleStrings_Text_HgEngine1525, TAG_NONE, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

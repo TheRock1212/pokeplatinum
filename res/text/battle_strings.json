@@ -8623,6 +8623,18 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1439",
+      "en_US": [
+        "It started to snow!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1440",
+      "en_US": [
+        "The snow stopped."
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1443",
       "en_US": [
         "The Water-type attack evaporated\n",
@@ -8717,6 +8729,34 @@
       "en_US": [
         "{STRVAR_1 1, 0, 0} surrounds itself with\n",
         "a protective mist!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1514",
+      "en_US": [
+        "A sticky web has been laid out on the\n",
+        "ground on your side!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1516",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} was caught\n",
+        "in a sticky web!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1517",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} was caught\n",
+        "in a sticky web!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1518",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} was caught\n",
+        "in a sticky web!"
       ]
     },
     {
@@ -8842,10 +8882,38 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1613",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} is covered in powder!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1616",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} concentrated intensely!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1619",
       "en_US": [
         "The effects of Throat Chop prevent\n",
         "{STRVAR_1 1, 0, 0} from using certain moves!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1620",
+      "en_US": [
+        "The effects of Throat Chop prevent\n",
+        "the wild {STRVAR_1 1, 0, 0}\f",
+        "from using certain moves!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1621",
+      "en_US": [
+        "The effects of Throat Chop prevent\n",
+        "the opposing {STRVAR_1 1, 0, 0}\f",
+        "from using certain moves!"
       ]
     },
     {
@@ -8873,6 +8941,27 @@
         "{STRVAR_1 1, 0, 0} held up\n",
         "its Red Card against\f",
         "{STRVAR_1 1, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1793",
+      "en_US": [
+        "It created a bizarre area in which\n",
+        "Pokémon’s held items lose\f",
+        "their effects!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1794",
+      "en_US": [
+        "Magic Room wore off, and held items’\n",
+        "effects returned to normal!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_SnowContinuesToFall",
+      "en_US": [
+        "Snow continues to fall."
       ]
     }
   ]

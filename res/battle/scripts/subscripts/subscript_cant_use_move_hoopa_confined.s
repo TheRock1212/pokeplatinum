@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 30
     // But {0} can’t use it the way it is now!
-    PrintMessage BattleStrings_Text_HgEngine1492, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_HgEngine1492, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

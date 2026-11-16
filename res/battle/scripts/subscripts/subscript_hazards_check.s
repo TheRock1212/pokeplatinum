@@ -48,4 +48,16 @@ _085:
     WaitButtonABTime 30
 
 _105:
-    End 
+    // Expansion: Sticky Web (Magic Guard does not prevent it)
+    CheckStickyWeb BTLSCR_SWITCHED_MON, _end
+    // {0} was caught in a sticky web!
+    PrintMessage BattleStrings_Text_HgEngine1516, TAG_NICKNAME, BTLSCR_SWITCHED_MON
+    Wait
+    WaitButtonABTime 30
+    UpdateVarFromVar OPCODE_SET, BTLVAR_SIDE_EFFECT_MON, BTLVAR_SWITCHED_MON
+    UpdateVar OPCODE_SET, BTLVAR_SIDE_EFFECT_PARAM, MOVE_SUBSCRIPT_PTR_SPEED_DOWN_1_STAGE
+    UpdateVar OPCODE_SET, BTLVAR_SIDE_EFFECT_TYPE, SIDE_EFFECT_TYPE_INDIRECT
+    Call BATTLE_SUBSCRIPT_UPDATE_STAT_STAGE
+
+_end:
+    End

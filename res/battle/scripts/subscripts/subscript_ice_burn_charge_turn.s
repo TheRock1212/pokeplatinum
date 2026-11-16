@@ -9,7 +9,7 @@ _000:
     PlayMoveAnimation BTLSCR_ATTACKER
     Wait
     // {0} became cloaked in freezing air!
-    PrintMessage BattleStrings_Text_HgEngine1536, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_HgEngine1536, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     LockMoveChoice BTLSCR_ATTACKER

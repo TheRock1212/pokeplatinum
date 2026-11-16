@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 30
     // It was too weak to make a substitute!
-    PrintMessage BattleStrings_Text_ItWasTooWeakToMakeASubstitute, TAG_NONE
+    PrintMessage BattleStrings_Text_ItWasTooWeakToMakeASubstitute, TAG_NONE, 0, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

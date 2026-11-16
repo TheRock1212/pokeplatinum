@@ -4,7 +4,7 @@
 _000:
     UpdateVarFromVar OPCODE_SET, BTLVAR_DEFENDER, BTLVAR_MSG_BATTLER_TEMP
     // {0} floats in the air with its {1}!
-    PrintMessage BattleStrings_Text_HgEngine1370, TAG_NICKNAME_ITEM, BTLSCR_DEFENDER, BTLSCR_DEFENDER
+    PrintMessage BattleStrings_Text_HgEngine1370, TAG_NICKNAME_ITEM, BTLSCR_DEFENDER, BTLSCR_DEFENDER, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

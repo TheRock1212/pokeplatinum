@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 15
     // The Fire-type attack fizzled out in the heavy rain!
-    PrintMessage BattleStrings_Text_HgEngine1447, TAG_NONE
+    PrintMessage BattleStrings_Text_HgEngine1447, TAG_NONE, 0, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

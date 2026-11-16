@@ -13,23 +13,23 @@ _000:
     CompareMonDataToValue OPCODE_FLAG_SET, BTLSCR_MSG_TEMP, BATTLEMON_VOLATILE_STATUS, VOLATILE_CONDITION_CONFUSION, Confused
 Paralyzed:
     // {0} is already paralyzed!
-    PrintMessage BattleStrings_Text_PokemonIsAlreadyParalyzed_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_PokemonIsAlreadyParalyzed_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     GoTo Continue
 Burned:
     // {0} is already burned!
-    PrintMessage BattleStrings_Text_PokemonAlreadyHasABurn_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_PokemonAlreadyHasABurn_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     GoTo Continue
 Asleep:
     // {0} is already asleep!
-    PrintMessage BattleStrings_Text_PokemonIsAlreadyAsleep_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_PokemonIsAlreadyAsleep_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     GoTo Continue
 Poisoned:
     // {0} is already poisoned!
-    PrintMessage BattleStrings_Text_PokemonIsAlreadyPoisoned_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_PokemonIsAlreadyPoisoned_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     GoTo Continue
 Confused:
     // {0} is already confused!
-    PrintMessage BattleStrings_Text_PokemonIsAlreadyConfused_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_PokemonIsAlreadyConfused_Ally, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
 Continue:
     Wait
     WaitButtonABTime 30

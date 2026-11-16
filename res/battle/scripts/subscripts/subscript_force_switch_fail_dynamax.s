@@ -3,7 +3,7 @@
 
 _000:
     // The move was blocked by the power of Dynamax!
-    BufferMessage BattleStrings_Text_HgEngine1490, TAG_NONE
+    BufferMessage BattleStrings_Text_HgEngine1490, TAG_NONE, 0, 0, 0, 0, 0, 0
     PrintAttackMessage
     Wait
     WaitButtonABTime 30

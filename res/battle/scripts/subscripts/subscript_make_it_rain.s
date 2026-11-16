@@ -8,7 +8,7 @@ _000:
     UpdateVarFromVar OPCODE_ADD, BTLVAR_PAY_DAY_COUNT, BTLVAR_CALC_TEMP
 _016:
     // Coins were scattered everywhere!
-    PrintMessage BattleStrings_Text_CoinsScatteredEverywhere, TAG_NONE
+    PrintMessage BattleStrings_Text_CoinsScatteredEverywhere, TAG_NONE, 0, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     UpdateVarFromVar OPCODE_SET, BTLVAR_MSG_BATTLER_TEMP, BTLVAR_ATTACKER

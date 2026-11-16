@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 30
     // {0} is protected by the Electric Terrain!
-    PrintMessage BattleStrings_Text_HgEngine1484, TAG_NICKNAME, BTLSCR_MSG_TEMP
+    PrintMessage BattleStrings_Text_HgEngine1484, TAG_NICKNAME, BTLSCR_MSG_TEMP, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

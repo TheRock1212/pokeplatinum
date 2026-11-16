@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 30
     // But the uproar kept {0} awake!
-    PrintMessage BattleStrings_Text_ButTheUproarKeptPokemonAwake_Ally, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_ButTheUproarKeptPokemonAwake_Ally, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

@@ -6,7 +6,7 @@ _000:
     Wait
     WaitButtonABTime 30
     // But it failed!
-    PrintMessage BattleStrings_Text_ButItFailed, TAG_NONE
+    PrintMessage BattleStrings_Text_ButItFailed, TAG_NONE, 0, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End

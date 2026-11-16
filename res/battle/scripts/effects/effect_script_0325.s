@@ -20,7 +20,7 @@ _028:
     PrintAttackMessage
     Wait
     WaitButtonABTime 30
-    BufferMessage BattleStrings_Text_HgEngine1480, TAG_NICKNAME, BTLSCR_ATTACKER
+    BufferMessage BattleStrings_Text_HgEngine1480, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Call BATTLE_SUBSCRIPT_SP_ATK_UP_RAIN_SKIP
     CompareVarToValue OPCODE_EQU, BTLVAR_DEFENDER, BATTLER_NONE, _035
 _033:

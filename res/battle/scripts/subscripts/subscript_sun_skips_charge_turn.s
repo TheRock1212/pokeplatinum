@@ -9,7 +9,7 @@ _000:
     PlayMoveAnimation BTLSCR_ATTACKER
     Wait
     // {0} absorbed light!
-    PrintMessage BattleStrings_Text_PokemonAbsorbedLight_Ally, TAG_NICKNAME, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_PokemonAbsorbedLight_Ally, TAG_NICKNAME, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     LockMoveChoice BTLSCR_ATTACKER

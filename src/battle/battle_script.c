@@ -310,6 +310,14 @@ static BOOL BtlCmd_End(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_CalcHeavySlamPower(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_CheckTargetIsPartner(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_GoToIfSecondHitOfParentalBond(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_IsFieldCondition2On(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_SetFieldCondition2(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_SetMoveConditionFlag(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_TryStickyWeb(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_AddEntryHazardToQueue(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_CheckStickyWeb(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_ActivateParadoxAbility(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_ResetParadoxAbility(BattleSystem *battleSys, BattleContext *battleCtx);
 
 static int BattleScript_Read(BattleContext *battleCtx);
 static void BattleScript_Iter(BattleContext *battleCtx, int i);
@@ -5600,6 +5608,13 @@ static BOOL BtlCmd_EndOfTurnWeatherEffect(BattleSystem *battleSys, BattleContext
             }
         }
 
+        if (WEATHER_IS_SNOW
+            && battleCtx->battleMons[battler].curHP
+            && Battler_Ability(battleCtx, battler) == ABILITY_ICE_BODY
+            && battleCtx->battleMons[battler].curHP < battleCtx->battleMons[battler].maxHP) {
+            battleCtx->hpCalcTemp = BattleSystem_Divide(battleCtx->battleMons[battler].maxHP, 16);
+        }
+
         if (WEATHER_IS_HAIL
             && battleCtx->battleMons[battler].curHP
             && (battleCtx->battleMons[battler].moveEffectsMask & MOVE_EFFECT_NO_WEATHER_DAMAGE) == FALSE) {
@@ -5947,6 +5962,14 @@ static BOOL BtlCmd_RapidSpin(BattleSystem *battleSys, BattleContext *battleCtx)
     if (battleCtx->sideConditionsMask[side] & SIDE_CONDITION_STEALTH_ROCK) {
         battleCtx->sideConditionsMask[side] &= ~SIDE_CONDITION_STEALTH_ROCK;
         battleCtx->msgMoveTemp = MOVE_STEALTH_ROCK;
+        BattleScript_Call(battleCtx, NARC_INDEX_BATTLE__SKILL__SUB_SEQ, subscript_blow_away_hazards);
+
+        return FALSE;
+    }
+
+    if (battleCtx->sideConditionsMask[side] & SIDE_CONDITION_STICKY_WEB) {
+        battleCtx->sideConditionsMask[side] &= ~SIDE_CONDITION_STICKY_WEB;
+        battleCtx->msgMoveTemp = MOVE_STICKY_WEB;
         BattleScript_Call(battleCtx, NARC_INDEX_BATTLE__SKILL__SUB_SEQ, subscript_blow_away_hazards);
 
         return FALSE;
@@ -6865,7 +6888,7 @@ static BOOL BtlCmd_CalcWeatherBallParams(BattleSystem *battleSys, BattleContext 
                 battleCtx->moveType = TYPE_FIRE;
             }
 
-            if (WEATHER_IS_HAIL) {
+            if (WEATHER_IS_HAIL || WEATHER_IS_SNOW) {
                 battleCtx->moveType = TYPE_ICE;
             }
         } else {
@@ -9524,6 +9547,169 @@ static BOOL BtlCmd_CheckTargetIsPartner(BattleSystem *battleSys, BattleContext *
  * this game, so this never jumps; it only keeps hg-engine's scripts unchanged.
  */
 static BOOL BtlCmd_GoToIfSecondHitOfParentalBond(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    BattleScript_Read(battleCtx);
+
+    return FALSE;
+}
+
+/**
+ * @brief Jump if a condition of the second field condition mask is active.
+ *
+ * Inputs:
+ * 1. The FIELD_CONDITION_2_* flag(s) to check.
+ * 2. Jump distance if any of them is active.
+ */
+static BOOL BtlCmd_IsFieldCondition2On(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    u32 condition = BattleScript_Read(battleCtx);
+    int jump = BattleScript_Read(battleCtx);
+
+    if (battleCtx->fieldConditions2Mask & condition) {
+        BattleScript_Iter(battleCtx, jump);
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief Turn on or off a condition of the second field condition mask, and
+ * start or clear its turn counter.
+ *
+ * Inputs:
+ * 1. OPCODE_FLAG_ON or OPCODE_FLAG_OFF.
+ * 2. The FIELD_CONDITION_2_* flag.
+ */
+static BOOL BtlCmd_SetFieldCondition2(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int opcode = BattleScript_Read(battleCtx);
+    u32 condition = BattleScript_Read(battleCtx);
+
+    if (opcode == OPCODE_FLAG_ON) {
+        battleCtx->fieldConditions2Mask |= condition;
+
+        if (condition == FIELD_CONDITION_2_MAGIC_ROOM) {
+            battleCtx->magicRoomTurns = 5;
+        }
+    } else if (opcode == OPCODE_FLAG_OFF) {
+        battleCtx->fieldConditions2Mask &= ~condition;
+
+        if (condition == FIELD_CONDITION_2_MAGIC_ROOM) {
+            battleCtx->magicRoomTurns = 0;
+        }
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief Set the volatile condition a move leaves on a battler.
+ *
+ * Inputs:
+ * 1. The move (MOVE_GLAIVE_RUSH, MOVE_THROAT_CHOP).
+ * 2. The battler.
+ */
+static BOOL BtlCmd_SetMoveConditionFlag(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int move = BattleScript_Read(battleCtx);
+    int inBattler = BattleScript_Read(battleCtx);
+    int battler = BattleScript_Battler(battleSys, battleCtx, inBattler);
+
+    switch (move) {
+    case MOVE_GLAIVE_RUSH:
+        battleCtx->battleMons[battler].moveEffectsData.glaiveRush = TRUE;
+        break;
+
+    case MOVE_THROAT_CHOP:
+        // the timer is not reset by a second Throat Chop
+        if (battleCtx->battleMons[battler].moveEffectsData.throatChopTurns == 0) {
+            battleCtx->battleMons[battler].moveEffectsData.throatChopTurns = 2;
+        }
+        break;
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief Lay Sticky Web on the defender's side, or jump if it is already there.
+ *
+ * Inputs:
+ * 1. Jump distance if Sticky Web is already on the defender's side.
+ */
+static BOOL BtlCmd_TryStickyWeb(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int jump = BattleScript_Read(battleCtx);
+    int side = BattleSystem_GetBattlerSide(battleSys, battleCtx->defender);
+
+    if (battleCtx->sideConditionsMask[side] & SIDE_CONDITION_STICKY_WEB) {
+        battleCtx->selfTurnFlags[battleCtx->attacker].skipPressureCheck = TRUE;
+        BattleScript_Iter(battleCtx, jump);
+    } else {
+        battleCtx->sideConditionsMask[side] |= SIDE_CONDITION_STICKY_WEB;
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief hg-engine keeps a queue of entry hazards in the order they were laid.
+ * Here the hazards check subscript always runs them in a fixed order, so this
+ * only skips its arguments.
+ */
+static BOOL BtlCmd_AddEntryHazardToQueue(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    BattleScript_Read(battleCtx);
+    BattleScript_Read(battleCtx);
+
+    return FALSE;
+}
+
+/**
+ * @brief Jump unless a battler switching in gets caught in Sticky Web: the web
+ * must be on its side, and the battler must be alive and grounded.
+ *
+ * Inputs:
+ * 1. The battler switching in.
+ * 2. Jump distance if there is no effect.
+ */
+static BOOL BtlCmd_CheckStickyWeb(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int inBattler = BattleScript_Read(battleCtx);
+    int jump = BattleScript_Read(battleCtx);
+    int battler = BattleScript_Battler(battleSys, battleCtx, inBattler);
+    int side = BattleSystem_GetBattlerSide(battleSys, battler);
+
+    if ((battleCtx->sideConditionsMask[side] & SIDE_CONDITION_STICKY_WEB) == FALSE
+        || battleCtx->battleMons[battler].curHP == 0
+        || Battler_IsGrounded(battleCtx, battler) == FALSE) {
+        BattleScript_Iter(battleCtx, jump);
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief Protosynthesis / Quark Drive (and Booster Energy) react to weather and
+ * terrain changes in hg-engine. Those abilities do not exist here, so these two
+ * commands only skip their argument.
+ */
+static BOOL BtlCmd_ActivateParadoxAbility(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    BattleScript_Read(battleCtx);
+
+    return FALSE;
+}
+
+static BOOL BtlCmd_ResetParadoxAbility(BattleSystem *battleSys, BattleContext *battleCtx)
 {
     BattleScript_Iter(battleCtx, 1);
     BattleScript_Read(battleCtx);

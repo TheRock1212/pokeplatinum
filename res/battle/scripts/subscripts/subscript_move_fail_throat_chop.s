@@ -3,7 +3,7 @@
 
 _000:
     // The effects of Throat Chop prevent {0} from using certain moves!
-    PrintMessage BattleStrings_Text_HgEngine1619, TAG_NICKNAME_MOVE, BTLSCR_ATTACKER
+    PrintMessage BattleStrings_Text_HgEngine1619, TAG_NICKNAME_MOVE, BTLSCR_ATTACKER, 0, 0, 0, 0, 0
     Wait
     WaitButtonABTime 30
     End
