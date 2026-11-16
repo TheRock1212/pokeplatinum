@@ -7,7 +7,7 @@
 
 #define MAX_EVOLUTIONS 8
 
-#define MAX_LEARNSET_ENTRIES        20
+#define MAX_LEARNSET_ENTRIES        40
 #define LEARNSET_NO_MOVE_TO_LEARN   0
 #define LEARNSET_MOVE_ALREADY_KNOWN 0xFFFE
 #define LEARNSET_ALL_SLOTS_FILLED   0xFFFF
@@ -63,15 +63,15 @@ typedef struct SpeciesEvolution {
     u16 targetSpecies;
 } SpeciesEvolution;
 
+// Same layout as hg-engine: one 32-bit entry per move, the list ends with
+// an entry whose move is LEARNSET_SENTINEL_ENTRY (bytes FF FF 00 00).
 typedef struct SpeciesLearnsetEntry {
-    u16 move : 9;
-    u16 level : 7;
+    u16 move;
+    u16 level;
 } SpeciesLearnsetEntry;
 
-// This struct is not explicitly used; it is provided to document and enforce the size of
-// the learnset entries.
 typedef struct SpeciesLearnset {
-    ALIGN_4 SpeciesLearnsetEntry entries[MAX_LEARNSET_ENTRIES + 1];
+    SpeciesLearnsetEntry entries[MAX_LEARNSET_ENTRIES + 1];
 } SpeciesLearnset;
 
 typedef struct SpeciesPalPark {
