@@ -60,6 +60,10 @@
                 "MOVE_COPYCAT"
             ],
             [
+                12,
+                "MOVE_GUARD_SPLIT"
+            ],
+            [
                 16,
                 "MOVE_DOUBLE_KICK"
             ],
@@ -78,6 +82,10 @@
             [
                 38,
                 "MOVE_REVERSAL"
+            ],
+            [
+                44,
+                "MOVE_COTTON_GUARD"
             ],
             [
                 50,

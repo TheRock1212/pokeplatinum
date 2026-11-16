@@ -44,6 +44,14 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_FLOWER_TRICK"
+            ],
+            [
+                1,
+                "MOVE_LEAFAGE"
+            ],
+            [
                 1,
                 "MOVE_SCRATCH"
             ],
@@ -54,6 +62,10 @@
             [
                 7,
                 "MOVE_BITE"
+            ],
+            [
+                10,
+                "MOVE_HONE_CLAWS"
             ],
             [
                 13,
@@ -88,8 +100,16 @@
                 "MOVE_ENERGY_BALL"
             ],
             [
+                47,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
                 52,
                 "MOVE_KNOCK_OFF"
+            ],
+            [
+                58,
+                "MOVE_GRASSY_TERRAIN"
             ],
             [
                 64,
@@ -137,7 +157,9 @@
             "MOVE_TRICK",
             "MOVE_LEECH_SEED",
             "MOVE_COPYCAT",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_ALLY_SWITCH",
+            "MOVE_PETAL_BLIZZARD"
         ]
     },
     "evolutions": [],

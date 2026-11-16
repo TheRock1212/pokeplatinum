@@ -64,12 +64,24 @@
                 "MOVE_STUN_SPORE"
             ],
             [
+                14,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
                 21,
                 "MOVE_STOMP"
             ],
             [
+                28,
+                "MOVE_LOW_SWEEP"
+            ],
+            [
                 35,
                 "MOVE_MORNING_SUN"
+            ],
+            [
+                42,
+                "MOVE_LUNGE"
             ],
             [
                 49,
@@ -78,6 +90,14 @@
             [
                 56,
                 "MOVE_BULK_UP"
+            ],
+            [
+                63,
+                "MOVE_DUAL_WINGBEAT"
+            ],
+            [
+                70,
+                "MOVE_FIRST_IMPRESSION"
             ],
             [
                 77,

@@ -56,8 +56,16 @@
                 "MOVE_WATER_GUN"
             ],
             [
+                1,
+                "MOVE_SOAK"
+            ],
+            [
                 13,
                 "MOVE_FOCUS_ENERGY"
+            ],
+            [
+                18,
+                "MOVE_RAZOR_SHELL"
             ],
             [
                 21,
@@ -82,6 +90,10 @@
             [
                 42,
                 "MOVE_AQUA_TAIL"
+            ],
+            [
+                45,
+                "MOVE_RETALIATE"
             ],
             [
                 50,
@@ -145,7 +157,9 @@
             "MOVE_KNOCK_OFF",
             "MOVE_COPYCAT",
             "MOVE_NIGHT_SLASH",
-            "MOVE_AIR_SLASH"
+            "MOVE_AIR_SLASH",
+            "MOVE_SACRED_SWORD",
+            "MOVE_AQUA_CUTTER"
         ]
     },
     "evolutions": [

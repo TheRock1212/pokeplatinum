@@ -74,6 +74,14 @@
             [
                 1,
                 "MOVE_DISCHARGE"
+            ],
+            [
+                1,
+                "MOVE_COIL"
+            ],
+            [
+                5,
+                "MOVE_WILD_CHARGE"
             ]
         ],
         "by_tm": [

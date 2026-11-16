@@ -52,12 +52,20 @@
                 "MOVE_DRAGON_BREATH"
             ],
             [
+                1,
+                "MOVE_ELECTRIC_TERRAIN"
+            ],
+            [
                 7,
                 "MOVE_SHOCK_WAVE"
             ],
             [
                 14,
                 "MOVE_CHARGE"
+            ],
+            [
+                21,
+                "MOVE_PARABOLIC_CHARGE"
             ],
             [
                 28,
@@ -70,6 +78,10 @@
             [
                 42,
                 "MOVE_DRAGON_PULSE"
+            ],
+            [
+                56,
+                "MOVE_ELECTRO_DRIFT"
             ],
             [
                 63,

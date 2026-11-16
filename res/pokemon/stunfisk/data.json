@@ -80,6 +80,10 @@
                 "MOVE_SUCKER_PUNCH"
             ],
             [
+                30,
+                "MOVE_ELECTRIC_TERRAIN"
+            ],
+            [
                 35,
                 "MOVE_BOUNCE"
             ],
@@ -149,7 +153,8 @@
             "MOVE_SPARK",
             "MOVE_PAIN_SPLIT",
             "MOVE_YAWN",
-            "MOVE_ASTONISH"
+            "MOVE_ASTONISH",
+            "MOVE_REFLECT_TYPE"
         ]
     },
     "evolutions": [],

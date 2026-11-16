@@ -56,6 +56,14 @@
                 "MOVE_MINIMIZE"
             ],
             [
+                1,
+                "MOVE_BRUTAL_SWING"
+            ],
+            [
+                15,
+                "MOVE_BULLDOZE"
+            ],
+            [
                 20,
                 "MOVE_HEADBUTT"
             ],
@@ -74,6 +82,10 @@
             [
                 42,
                 "MOVE_SLAM"
+            ],
+            [
+                49,
+                "MOVE_COIL"
             ],
             [
                 51,
@@ -112,7 +124,8 @@
             "MOVE_MUD_SLAP",
             "MOVE_POISON_TAIL",
             "MOVE_LAST_RESORT",
-            "MOVE_DRAGON_RUSH"
+            "MOVE_DRAGON_RUSH",
+            "MOVE_BELCH"
         ]
     },
     "evolutions": [],

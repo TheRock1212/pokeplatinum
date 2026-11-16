@@ -44,6 +44,14 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_FLIP_TURN"
+            ],
+            [
+                1,
+                "MOVE_JET_PUNCH"
+            ],
+            [
                 1,
                 "MOVE_SUPERSONIC"
             ],
@@ -76,6 +84,10 @@
                 "MOVE_CHARM"
             ],
             [
+                29,
+                "MOVE_ACROBATICS"
+            ],
+            [
                 34,
                 "MOVE_ENCORE"
             ],
@@ -94,6 +106,10 @@
             [
                 55,
                 "MOVE_FOCUS_PUNCH"
+            ],
+            [
+                61,
+                "MOVE_WAVE_CRASH"
             ]
         ],
         "by_tm": [
@@ -134,7 +150,8 @@
             "MOVE_COUNTER",
             "MOVE_HAZE",
             "MOVE_TICKLE",
-            "MOVE_BOUNCE"
+            "MOVE_BOUNCE",
+            "MOVE_BOOMBURST"
         ]
     },
     "evolutions": [],

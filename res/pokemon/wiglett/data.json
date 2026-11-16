@@ -82,6 +82,14 @@
             [
                 32,
                 "MOVE_SUCKER_PUNCH"
+            ],
+            [
+                36,
+                "MOVE_THROAT_CHOP"
+            ],
+            [
+                40,
+                "MOVE_LIQUIDATION"
             ]
         ],
         "by_tm": [
@@ -106,7 +114,8 @@
             "MOVE_SWIFT"
         ],
         "egg_moves": [
-            "MOVE_MEMENTO"
+            "MOVE_MEMENTO",
+            "MOVE_FINAL_GAMBIT"
         ]
     },
     "evolutions": [

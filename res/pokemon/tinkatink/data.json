@@ -45,7 +45,15 @@
         "by_level": [
             [
                 1,
+                "MOVE_FAIRY_WIND"
+            ],
+            [
+                1,
                 "MOVE_ASTONISH"
+            ],
+            [
+                5,
+                "MOVE_BABY_DOLL_EYES"
             ],
             [
                 8,
@@ -60,8 +68,16 @@
                 "MOVE_ROCK_SMASH"
             ],
             [
+                17,
+                "MOVE_DRAINING_KISS"
+            ],
+            [
                 21,
                 "MOVE_SWEET_KISS"
+            ],
+            [
+                24,
+                "MOVE_BRUTAL_SWING"
             ],
             [
                 27,
@@ -72,12 +88,20 @@
                 "MOVE_FLASH_CANNON"
             ],
             [
+                35,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
                 39,
                 "MOVE_FAKE_OUT"
             ],
             [
                 43,
                 "MOVE_FLATTER"
+            ],
+            [
+                47,
+                "MOVE_SKITTER_SMACK"
             ],
             [
                 52,
@@ -110,7 +134,9 @@
             "MOVE_KNOCK_OFF"
         ],
         "egg_moves": [
-            "MOVE_FEINT"
+            "MOVE_FEINT",
+            "MOVE_QUASH",
+            "MOVE_ICE_HAMMER"
         ]
     },
     "evolutions": [

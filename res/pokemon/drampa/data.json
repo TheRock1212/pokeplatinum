@@ -44,6 +44,14 @@
     "learnset": {
         "by_level": [
             [
+                1,
+                "MOVE_PLAY_NICE"
+            ],
+            [
+                1,
+                "MOVE_ECHOED_VOICE"
+            ],
+            [
                 5,
                 "MOVE_TWISTER"
             ],

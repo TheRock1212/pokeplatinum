@@ -94,6 +94,10 @@
             [
                 47,
                 "MOVE_BRAVE_BIRD"
+            ],
+            [
+                55,
+                "MOVE_HURRICANE"
             ]
         ],
         "by_tm": [

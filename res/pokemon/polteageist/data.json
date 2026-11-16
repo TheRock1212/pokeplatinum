@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_TEATIME"
+            ],
+            [
                 1,
                 "MOVE_MEGA_DRAIN"
             ],
@@ -54,6 +58,14 @@
             [
                 1,
                 "MOVE_ASTONISH"
+            ],
+            [
+                1,
+                "MOVE_AROMATIC_MIST"
+            ],
+            [
+                1,
+                "MOVE_STRENGTH_SAP"
             ],
             [
                 18,
@@ -82,6 +94,10 @@
             [
                 54,
                 "MOVE_MEMENTO"
+            ],
+            [
+                60,
+                "MOVE_SHELL_SMASH"
             ],
             [
                 66,
@@ -114,7 +130,9 @@
             "MOVE_SPITE",
             "MOVE_TRICK"
         ],
-        "egg_moves": []
+        "egg_moves": [
+            "MOVE_ALLY_SWITCH"
+        ]
     },
     "evolutions": [],
     "offspring": "SPECIES_SINISTEA",

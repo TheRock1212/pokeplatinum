@@ -57,6 +57,10 @@
             ],
             [
                 1,
+                "MOVE_ECHOED_VOICE"
+            ],
+            [
+                1,
                 "MOVE_GROWL"
             ],
             [
@@ -70,6 +74,10 @@
             [
                 12,
                 "MOVE_MUD_SHOT"
+            ],
+            [
+                16,
+                "MOVE_ROUND"
             ],
             [
                 20,

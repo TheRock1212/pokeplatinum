@@ -80,6 +80,10 @@
                 "MOVE_PSYCHO_CUT"
             ],
             [
+                40,
+                "MOVE_STORED_POWER"
+            ],
+            [
                 48,
                 "MOVE_ROCK_BLAST"
             ],
@@ -92,8 +96,16 @@
                 "MOVE_POWER_GEM"
             ],
             [
+                72,
+                "MOVE_PHOTON_GEYSER"
+            ],
+            [
                 80,
                 "MOVE_GRAVITY"
+            ],
+            [
+                88,
+                "MOVE_PRISMATIC_LASER"
             ]
         ],
         "by_tm": [

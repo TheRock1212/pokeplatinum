@@ -80,6 +80,10 @@
                 "MOVE_BUG_BITE"
             ],
             [
+                26,
+                "MOVE_VENOSHOCK"
+            ],
+            [
                 34,
                 "MOVE_TAKE_DOWN"
             ],
@@ -90,6 +94,10 @@
             [
                 50,
                 "MOVE_TOXIC"
+            ],
+            [
+                58,
+                "MOVE_VENOM_DRENCH"
             ],
             [
                 66,

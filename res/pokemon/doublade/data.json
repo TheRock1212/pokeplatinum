@@ -56,6 +56,10 @@
                 "MOVE_SHADOW_SNEAK"
             ],
             [
+                1,
+                "MOVE_AUTOTOMIZE"
+            ],
+            [
                 12,
                 "MOVE_AERIAL_ACE"
             ],
@@ -72,6 +76,10 @@
                 "MOVE_NIGHT_SLASH"
             ],
             [
+                28,
+                "MOVE_RETALIATE"
+            ],
+            [
                 32,
                 "MOVE_IRON_DEFENSE"
             ],
@@ -86,6 +94,10 @@
             [
                 50,
                 "MOVE_SWORDS_DANCE"
+            ],
+            [
+                56,
+                "MOVE_SACRED_SWORD"
             ]
         ],
         "by_tm": [
@@ -126,7 +138,8 @@
         ],
         "egg_moves": [
             "MOVE_DESTINY_BOND",
-            "MOVE_BLOCK"
+            "MOVE_BLOCK",
+            "MOVE_WIDE_GUARD"
         ]
     },
     "evolutions": [

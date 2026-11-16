@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_LUNGE"
+            ],
+            [
                 1,
                 "MOVE_TACKLE"
             ],
@@ -58,6 +62,10 @@
             [
                 1,
                 "MOVE_DETECT"
+            ],
+            [
+                4,
+                "MOVE_STRUGGLE_BUG"
             ],
             [
                 6,
@@ -92,12 +100,24 @@
                 "MOVE_AGILITY"
             ],
             [
+                36,
+                "MOVE_THROAT_CHOP"
+            ],
+            [
                 40,
                 "MOVE_SUCKER_PUNCH"
             ],
             [
+                44,
+                "MOVE_FIRST_IMPRESSION"
+            ],
+            [
                 48,
                 "MOVE_BOUNCE"
+            ],
+            [
+                53,
+                "MOVE_AXE_KICK"
             ]
         ],
         "by_tm": [
@@ -125,7 +145,8 @@
             "MOVE_SPITE"
         ],
         "egg_moves": [
-            "MOVE_COUNTER"
+            "MOVE_COUNTER",
+            "MOVE_SKITTER_SMACK"
         ]
     },
     "evolutions": [],

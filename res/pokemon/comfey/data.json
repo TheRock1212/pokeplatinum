@@ -60,6 +60,10 @@
                 "MOVE_HELPING_HAND"
             ],
             [
+                9,
+                "MOVE_DRAINING_KISS"
+            ],
+            [
                 12,
                 "MOVE_CHARM"
             ],
@@ -84,8 +88,20 @@
                 "MOVE_SWEET_KISS"
             ],
             [
+                30,
+                "MOVE_FLORAL_HEALING"
+            ],
+            [
+                33,
+                "MOVE_PETAL_BLIZZARD"
+            ],
+            [
                 36,
                 "MOVE_BIND"
+            ],
+            [
+                39,
+                "MOVE_PLAY_ROUGH"
             ],
             [
                 42,
@@ -94,6 +110,10 @@
             [
                 45,
                 "MOVE_PETAL_DANCE"
+            ],
+            [
+                48,
+                "MOVE_GRASSY_TERRAIN"
             ]
         ],
         "by_tm": [
@@ -138,7 +158,8 @@
             "MOVE_TRICK"
         ],
         "egg_moves": [
-            "MOVE_WORRY_SEED"
+            "MOVE_WORRY_SEED",
+            "MOVE_AFTER_YOU"
         ]
     },
     "evolutions": [],

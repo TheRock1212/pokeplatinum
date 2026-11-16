@@ -48,6 +48,10 @@
                 "MOVE_LEER"
             ],
             [
+                1,
+                "MOVE_LEAFAGE"
+            ],
+            [
                 4,
                 "MOVE_BITE"
             ],
@@ -114,7 +118,8 @@
             "MOVE_LEECH_SEED",
             "MOVE_ROLLOUT",
             "MOVE_INGRAIN",
-            "MOVE_WORRY_SEED"
+            "MOVE_WORRY_SEED",
+            "MOVE_RAGE_POWDER"
         ]
     },
     "evolutions": [

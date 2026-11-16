@@ -44,6 +44,22 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_QUIVER_DANCE"
+            ],
+            [
+                1,
+                "MOVE_FIERY_DANCE"
+            ],
+            [
+                1,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
+                1,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
                 1,
                 "MOVE_FLARE_BLITZ"
             ],
@@ -66,14 +82,6 @@
             [
                 1,
                 "MOVE_TAKE_DOWN"
-            ],
-            [
-                1,
-                "MOVE_WHIRLWIND"
-            ],
-            [
-                1,
-                "MOVE_STRING_SHOT"
             ],
             [
                 18,
@@ -104,8 +112,16 @@
                 "MOVE_AMNESIA"
             ],
             [
+                62,
+                "MOVE_HURRICANE"
+            ],
+            [
                 70,
                 "MOVE_FIRE_BLAST"
+            ],
+            [
+                78,
+                "MOVE_RAGE_POWDER"
             ]
         ],
         "by_tm": [

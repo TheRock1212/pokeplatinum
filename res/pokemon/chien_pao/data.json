@@ -80,6 +80,10 @@
                 "MOVE_SWORDS_DANCE"
             ],
             [
+                30,
+                "MOVE_SNOWSCAPE"
+            ],
+            [
                 35,
                 "MOVE_NIGHT_SLASH"
             ],
@@ -88,12 +92,28 @@
                 "MOVE_DARK_PULSE"
             ],
             [
+                45,
+                "MOVE_ICICLE_CRASH"
+            ],
+            [
+                50,
+                "MOVE_RUINATION"
+            ],
+            [
                 55,
                 "MOVE_SUCKER_PUNCH"
             ],
             [
+                60,
+                "MOVE_SACRED_SWORD"
+            ],
+            [
                 65,
                 "MOVE_RECOVER"
+            ],
+            [
+                70,
+                "MOVE_THROAT_CHOP"
             ],
             [
                 75,

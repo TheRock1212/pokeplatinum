@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_DIRE_CLAW"
+            ],
+            [
                 1,
                 "MOVE_SCRATCH"
             ],
@@ -78,6 +82,10 @@
             [
                 30,
                 "MOVE_BRICK_BREAK"
+            ],
+            [
+                36,
+                "MOVE_HONE_CLAWS"
             ],
             [
                 42,
@@ -144,7 +152,8 @@
             "MOVE_FAKE_OUT",
             "MOVE_FEINT",
             "MOVE_ICE_SHARD",
-            "MOVE_DOUBLE_HIT"
+            "MOVE_DOUBLE_HIT",
+            "MOVE_ICICLE_CRASH"
         ]
     },
     "evolutions": [],

@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_DARKEST_LARIAT"
+            ],
+            [
                 1,
                 "MOVE_EMBER"
             ],
@@ -155,7 +159,10 @@
         "egg_moves": [
             "MOVE_SCRATCH",
             "MOVE_GROWL",
-            "MOVE_FAKE_OUT"
+            "MOVE_FAKE_OUT",
+            "MOVE_PARTING_SHOT",
+            "MOVE_THROAT_CHOP",
+            "MOVE_POWER_TRIP"
         ]
     },
     "evolutions": [],

@@ -64,6 +64,10 @@
                 "MOVE_ICY_WIND"
             ],
             [
+                16,
+                "MOVE_ROUND"
+            ],
+            [
                 20,
                 "MOVE_MIST"
             ],
@@ -78,6 +82,10 @@
             [
                 32,
                 "MOVE_NATURE_POWER"
+            ],
+            [
+                36,
+                "MOVE_FREEZE_DRY"
             ],
             [
                 42,
@@ -164,7 +172,8 @@
             "MOVE_ROCK_THROW",
             "MOVE_HAZE",
             "MOVE_MIRROR_COAT",
-            "MOVE_DISCHARGE"
+            "MOVE_DISCHARGE",
+            "MOVE_AURORA_VEIL"
         ]
     },
     "evolutions": [],

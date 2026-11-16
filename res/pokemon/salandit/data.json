@@ -72,6 +72,14 @@
                 "MOVE_NASTY_PLOT"
             ],
             [
+                30,
+                "MOVE_INCINERATE"
+            ],
+            [
+                35,
+                "MOVE_VENOSHOCK"
+            ],
+            [
                 40,
                 "MOVE_DRAGON_PULSE"
             ],
@@ -134,7 +142,8 @@
         "egg_moves": [
             "MOVE_SAND_ATTACK",
             "MOVE_MUD_SLAP",
-            "MOVE_FAKE_OUT"
+            "MOVE_FAKE_OUT",
+            "MOVE_BELCH"
         ]
     },
     "evolutions": [

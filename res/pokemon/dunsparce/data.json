@@ -121,7 +121,7 @@
         ]
     },
     "evolutions": [
-        [ "EVO_LEVEL", 30, "SPECIES_DUDUNSPARCE" ]
+        [ "EVO_LEVEL_KNOW_MOVE", "MOVE_HYPER_DRILL", "SPECIES_DUDUNSPARCE" ]
     ],
     "offspring": "SPECIES_DUNSPARCE",
     "footprint": {

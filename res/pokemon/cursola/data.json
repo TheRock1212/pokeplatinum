@@ -72,8 +72,16 @@
                 "MOVE_ANCIENT_POWER"
             ],
             [
+                25,
+                "MOVE_HEX"
+            ],
+            [
                 30,
                 "MOVE_CURSE"
+            ],
+            [
+                35,
+                "MOVE_STRENGTH_SAP"
             ],
             [
                 40,

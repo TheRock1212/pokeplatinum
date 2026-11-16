@@ -56,6 +56,14 @@
                 "MOVE_BUG_BITE"
             ],
             [
+                1,
+                "MOVE_WIDE_GUARD"
+            ],
+            [
+                1,
+                "MOVE_INFESTATION"
+            ],
+            [
                 12,
                 "MOVE_BUBBLE_BEAM"
             ],
@@ -70,6 +78,22 @@
             [
                 26,
                 "MOVE_CRUNCH"
+            ],
+            [
+                32,
+                "MOVE_SOAK"
+            ],
+            [
+                38,
+                "MOVE_ENTRAINMENT"
+            ],
+            [
+                44,
+                "MOVE_LUNGE"
+            ],
+            [
+                50,
+                "MOVE_LIQUIDATION"
             ],
             [
                 56,
@@ -118,7 +142,9 @@
         ],
         "egg_moves": [
             "MOVE_STOCKPILE",
-            "MOVE_SPIT_UP"
+            "MOVE_SPIT_UP",
+            "MOVE_POWER_SPLIT",
+            "MOVE_STICKY_WEB"
         ]
     },
     "evolutions": [],

@@ -68,6 +68,14 @@
                 "MOVE_HELPING_HAND"
             ],
             [
+                42,
+                "MOVE_FREEZE_DRY"
+            ],
+            [
+                49,
+                "MOVE_FLIP_TURN"
+            ],
+            [
                 56,
                 "MOVE_ICE_BEAM"
             ],
@@ -76,8 +84,16 @@
                 "MOVE_AGILITY"
             ],
             [
+                70,
+                "MOVE_SNOWSCAPE"
+            ],
+            [
                 77,
                 "MOVE_HYDRO_PUMP"
+            ],
+            [
+                84,
+                "MOVE_AURORA_VEIL"
             ],
             [
                 91,
@@ -110,7 +126,9 @@
             "MOVE_ICY_WIND",
             "MOVE_SWIFT"
         ],
-        "egg_moves": []
+        "egg_moves": [
+            "MOVE_ELECTRIC_TERRAIN"
+        ]
     },
     "evolutions": [],
     "offspring": "SPECIES_IRON_BUNDLE",

@@ -1,0 +1,29 @@
+{
+    "name": "Venoshock",
+    "description": [
+        "The foe is soaked\n",
+        "by a special acid.\n",
+        "Its power doubles if\n",
+        "the foe is poisoned."
+    ],
+    "class": "CLASS_SPECIAL",
+    "type": "TYPE_POISON",
+    "power": 65,
+    "accuracy": 100,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_DOUBLE_POWER_ON_POISONED",
+        "chance": 0
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_BEAUTY"
+    }
+}

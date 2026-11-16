@@ -48,6 +48,10 @@
                 "MOVE_FAKE_OUT"
             ],
             [
+                1,
+                "MOVE_CONFIDE"
+            ],
+            [
                 4,
                 "MOVE_BITE"
             ],
@@ -82,6 +86,14 @@
             [
                 36,
                 "MOVE_NASTY_PLOT"
+            ],
+            [
+                40,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
+                44,
+                "MOVE_FOUL_PLAY"
             ]
         ],
         "by_tm": [
@@ -106,7 +118,9 @@
             "MOVE_TRICK",
             "MOVE_UPROAR"
         ],
-        "egg_moves": []
+        "egg_moves": [
+            "MOVE_PARTING_SHOT"
+        ]
     },
     "evolutions": [
         [

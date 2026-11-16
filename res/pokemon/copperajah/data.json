@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_HEAVY_SLAM"
+            ],
+            [
                 1,
                 "MOVE_TACKLE"
             ],
@@ -58,6 +62,10 @@
             [
                 1,
                 "MOVE_ROCK_SMASH"
+            ],
+            [
+                15,
+                "MOVE_BULLDOZE"
             ],
             [
                 20,
@@ -78,6 +86,14 @@
             [
                 44,
                 "MOVE_IRON_HEAD"
+            ],
+            [
+                51,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
+                58,
+                "MOVE_HIGH_HORSEPOWER"
             ],
             [
                 65,
@@ -125,7 +141,8 @@
             "MOVE_FISSURE",
             "MOVE_DEFENSE_CURL",
             "MOVE_CURSE",
-            "MOVE_SWAGGER"
+            "MOVE_SWAGGER",
+            "MOVE_BELCH"
         ]
     },
     "evolutions": [],

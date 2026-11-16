@@ -45,6 +45,14 @@
         "by_level": [
             [
                 1,
+                "MOVE_GEAR_UP"
+            ],
+            [
+                1,
+                "MOVE_MAGNETIC_FLUX"
+            ],
+            [
+                1,
                 "MOVE_THUNDER_SHOCK"
             ],
             [
@@ -68,6 +76,10 @@
                 "MOVE_METAL_SOUND"
             ],
             [
+                20,
+                "MOVE_AUTOTOMIZE"
+            ],
+            [
                 24,
                 "MOVE_DISCHARGE"
             ],
@@ -76,8 +88,16 @@
                 "MOVE_SCREECH"
             ],
             [
+                32,
+                "MOVE_GEAR_GRIND"
+            ],
+            [
                 36,
                 "MOVE_LOCK_ON"
+            ],
+            [
+                42,
+                "MOVE_SHIFT_GEAR"
             ],
             [
                 48,
@@ -86,6 +106,10 @@
             [
                 56,
                 "MOVE_HYPER_BEAM"
+            ],
+            [
+                64,
+                "MOVE_ELECTRIC_TERRAIN"
             ]
         ],
         "by_tm": [

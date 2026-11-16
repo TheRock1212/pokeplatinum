@@ -68,12 +68,32 @@
                 "MOVE_DRAGON_BREATH"
             ],
             [
+                21,
+                "MOVE_ELECTRIC_TERRAIN"
+            ],
+            [
                 28,
                 "MOVE_DISCHARGE"
             ],
             [
+                35,
+                "MOVE_DRAGON_TAIL"
+            ],
+            [
                 42,
                 "MOVE_CALM_MIND"
+            ],
+            [
+                49,
+                "MOVE_THUNDERCLAP"
+            ],
+            [
+                56,
+                "MOVE_DRAGON_HAMMER"
+            ],
+            [
+                63,
+                "MOVE_RISING_VOLTAGE"
             ],
             [
                 70,
@@ -82,6 +102,10 @@
             [
                 77,
                 "MOVE_ZAP_CANNON"
+            ],
+            [
+                84,
+                "MOVE_BODY_PRESS"
             ],
             [
                 91,

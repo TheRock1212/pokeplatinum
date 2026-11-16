@@ -44,6 +44,18 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_SPIRIT_BREAK"
+            ],
+            [
+                1,
+                "MOVE_FALSE_SURRENDER"
+            ],
+            [
+                1,
+                "MOVE_CONFIDE"
+            ],
+            [
                 1,
                 "MOVE_BULK_UP"
             ],
@@ -88,6 +100,14 @@
                 "MOVE_NASTY_PLOT"
             ],
             [
+                48,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
+                56,
+                "MOVE_FOUL_PLAY"
+            ],
+            [
                 64,
                 "MOVE_HAMMER_ARM"
             ]
@@ -125,7 +145,9 @@
             "MOVE_TRICK",
             "MOVE_UPROAR"
         ],
-        "egg_moves": []
+        "egg_moves": [
+            "MOVE_PARTING_SHOT"
+        ]
     },
     "evolutions": [],
     "offspring": "SPECIES_IMPIDIMP",

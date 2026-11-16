@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_COMEUPPANCE"
+            ],
+            [
                 1,
                 "MOVE_LEER"
             ],
@@ -58,6 +62,14 @@
             [
                 4,
                 "MOVE_LICK"
+            ],
+            [
+                7,
+                "MOVE_SNARL"
+            ],
+            [
+                10,
+                "MOVE_HONE_CLAWS"
             ],
             [
                 14,
@@ -86,6 +98,10 @@
             [
                 43,
                 "MOVE_REVERSAL"
+            ],
+            [
+                48,
+                "MOVE_JAW_LOCK"
             ],
             [
                 55,
@@ -121,7 +137,9 @@
         ],
         "egg_moves": [
             "MOVE_DESTINY_BOND",
-            "MOVE_ENDEAVOR"
+            "MOVE_ENDEAVOR",
+            "MOVE_RETALIATE",
+            "MOVE_PLAY_ROUGH"
         ]
     },
     "evolutions": [],

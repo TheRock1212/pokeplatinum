@@ -56,6 +56,10 @@
                 "MOVE_PROTECT"
             ],
             [
+                14,
+                "MOVE_BRUTAL_SWING"
+            ],
+            [
                 21,
                 "MOVE_ANCIENT_POWER"
             ],
@@ -78,6 +82,10 @@
             [
                 56,
                 "MOVE_CRUNCH"
+            ],
+            [
+                63,
+                "MOVE_FISHIOUS_REND"
             ],
             [
                 70,

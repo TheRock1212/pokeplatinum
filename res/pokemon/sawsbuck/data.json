@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_HORN_LEECH"
+            ],
+            [
                 1,
                 "MOVE_SAND_ATTACK"
             ],

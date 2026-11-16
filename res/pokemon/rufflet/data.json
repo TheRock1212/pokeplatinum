@@ -52,6 +52,10 @@
                 "MOVE_PECK"
             ],
             [
+                6,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
                 12,
                 "MOVE_WING_ATTACK"
             ],

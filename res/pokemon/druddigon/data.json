@@ -56,6 +56,10 @@
                 "MOVE_BITE"
             ],
             [
+                10,
+                "MOVE_DRAGON_TAIL"
+            ],
+            [
                 15,
                 "MOVE_METAL_CLAW"
             ],
@@ -70,6 +74,10 @@
             [
                 30,
                 "MOVE_DRAGON_CLAW"
+            ],
+            [
+                35,
+                "MOVE_HONE_CLAWS"
             ],
             [
                 40,

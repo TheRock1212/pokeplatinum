@@ -68,6 +68,10 @@
                 "MOVE_FLAIL"
             ],
             [
+                20,
+                "MOVE_INCINERATE"
+            ],
+            [
                 24,
                 "MOVE_IRON_DEFENSE"
             ],
@@ -82,6 +86,14 @@
             [
                 36,
                 "MOVE_FLAMETHROWER"
+            ],
+            [
+                40,
+                "MOVE_SHELL_TRAP"
+            ],
+            [
+                44,
+                "MOVE_SHELL_SMASH"
             ],
             [
                 48,
@@ -143,7 +155,8 @@
         "egg_moves": [
             "MOVE_CURSE",
             "MOVE_RAPID_SPIN",
-            "MOVE_HEAD_SMASH"
+            "MOVE_HEAD_SMASH",
+            "MOVE_WIDE_GUARD"
         ]
     },
     "evolutions": [],

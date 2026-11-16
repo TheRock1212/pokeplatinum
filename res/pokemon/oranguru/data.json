@@ -52,12 +52,24 @@
                 "MOVE_TAUNT"
             ],
             [
+                5,
+                "MOVE_AFTER_YOU"
+            ],
+            [
                 10,
                 "MOVE_CALM_MIND"
             ],
             [
+                15,
+                "MOVE_STORED_POWER"
+            ],
+            [
                 20,
                 "MOVE_PSYCH_UP"
+            ],
+            [
+                25,
+                "MOVE_QUASH"
             ],
             [
                 30,
@@ -74,6 +86,14 @@
             [
                 45,
                 "MOVE_PSYCHIC"
+            ],
+            [
+                50,
+                "MOVE_INSTRUCT"
+            ],
+            [
+                55,
+                "MOVE_FOUL_PLAY"
             ],
             [
                 60,

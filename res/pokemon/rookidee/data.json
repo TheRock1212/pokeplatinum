@@ -52,6 +52,14 @@
                 "MOVE_PECK"
             ],
             [
+                4,
+                "MOVE_POWER_TRIP"
+            ],
+            [
+                8,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
                 12,
                 "MOVE_FURY_ATTACK"
             ],

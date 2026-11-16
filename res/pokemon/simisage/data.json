@@ -121,7 +121,9 @@
             "MOVE_COVET",
             "MOVE_MAGICAL_LEAF",
             "MOVE_NASTY_PLOT",
-            "MOVE_LEAF_STORM"
+            "MOVE_LEAF_STORM",
+            "MOVE_DISARMING_VOICE",
+            "MOVE_SPIKY_SHIELD"
         ]
     },
     "evolutions": [],

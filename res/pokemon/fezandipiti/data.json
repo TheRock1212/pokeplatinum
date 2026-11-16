@@ -56,6 +56,10 @@
                 "MOVE_POISON_GAS"
             ],
             [
+                1,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
                 8,
                 "MOVE_QUICK_ATTACK"
             ],
@@ -72,6 +76,10 @@
                 "MOVE_CROSS_POISON"
             ],
             [
+                40,
+                "MOVE_TAIL_SLAP"
+            ],
+            [
                 48,
                 "MOVE_BEAT_UP"
             ],
@@ -86,6 +94,10 @@
             [
                 64,
                 "MOVE_ROOST"
+            ],
+            [
+                72,
+                "MOVE_MOONBLAST"
             ]
         ],
         "by_tm": [

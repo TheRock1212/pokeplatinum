@@ -156,7 +156,8 @@
             "MOVE_SEISMIC_TOSS",
             "MOVE_QUICK_ATTACK",
             "MOVE_KNOCK_OFF",
-            "MOVE_FEINT"
+            "MOVE_FEINT",
+            "MOVE_QUICK_GUARD"
         ]
     },
     "evolutions": [],

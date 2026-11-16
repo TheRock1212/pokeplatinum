@@ -48,6 +48,10 @@
                 "MOVE_WATER_GUN"
             ],
             [
+                1,
+                "MOVE_INFESTATION"
+            ],
+            [
                 4,
                 "MOVE_BUG_BITE"
             ],
@@ -70,6 +74,22 @@
             [
                 24,
                 "MOVE_CRUNCH"
+            ],
+            [
+                28,
+                "MOVE_SOAK"
+            ],
+            [
+                32,
+                "MOVE_ENTRAINMENT"
+            ],
+            [
+                36,
+                "MOVE_LUNGE"
+            ],
+            [
+                40,
+                "MOVE_LIQUIDATION"
             ],
             [
                 44,
@@ -113,7 +133,9 @@
         ],
         "egg_moves": [
             "MOVE_STOCKPILE",
-            "MOVE_SPIT_UP"
+            "MOVE_SPIT_UP",
+            "MOVE_POWER_SPLIT",
+            "MOVE_STICKY_WEB"
         ]
     },
     "evolutions": [

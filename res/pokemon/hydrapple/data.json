@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_FICKLE_BEAM"
+            ],
+            [
                 1,
                 "MOVE_WITHDRAW"
             ],
@@ -60,6 +64,10 @@
                 "MOVE_ASTONISH"
             ],
             [
+                4,
+                "MOVE_DRAGON_TAIL"
+            ],
+            [
                 8,
                 "MOVE_GROWTH"
             ],
@@ -74,6 +82,10 @@
             [
                 20,
                 "MOVE_BULLET_SEED"
+            ],
+            [
+                28,
+                "MOVE_SYRUP_BOMB"
             ],
             [
                 32,
@@ -129,7 +141,8 @@
             "MOVE_RECYCLE",
             "MOVE_YAWN",
             "MOVE_SUCKER_PUNCH",
-            "MOVE_DOUBLE_HIT"
+            "MOVE_DOUBLE_HIT",
+            "MOVE_INFESTATION"
         ]
     },
     "evolutions": [],

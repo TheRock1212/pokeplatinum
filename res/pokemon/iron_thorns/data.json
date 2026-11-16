@@ -88,6 +88,10 @@
                 "MOVE_SANDSTORM"
             ],
             [
+                56,
+                "MOVE_WILD_CHARGE"
+            ],
+            [
                 63,
                 "MOVE_PIN_MISSILE"
             ],
@@ -148,7 +152,9 @@
             "MOVE_IRON_HEAD",
             "MOVE_THUNDER_PUNCH"
         ],
-        "egg_moves": []
+        "egg_moves": [
+            "MOVE_ELECTRIC_TERRAIN"
+        ]
     },
     "evolutions": [],
     "offspring": "SPECIES_IRON_THORNS",

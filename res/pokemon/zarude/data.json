@@ -106,6 +106,10 @@
             [
                 84,
                 "MOVE_POWER_WHIP"
+            ],
+            [
+                90,
+                "MOVE_JUNGLE_HEALING"
             ]
         ],
         "by_tm": [

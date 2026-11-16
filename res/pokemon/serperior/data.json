@@ -84,6 +84,10 @@
                 "MOVE_LEAF_BLADE"
             ],
             [
+                38,
+                "MOVE_COIL"
+            ],
+            [
                 44,
                 "MOVE_GIGA_DRAIN"
             ],

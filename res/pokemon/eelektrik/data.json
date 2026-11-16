@@ -80,6 +80,18 @@
                 "MOVE_THUNDERBOLT"
             ],
             [
+                49,
+                "MOVE_ACID_SPRAY"
+            ],
+            [
+                54,
+                "MOVE_COIL"
+            ],
+            [
+                59,
+                "MOVE_WILD_CHARGE"
+            ],
+            [
                 64,
                 "MOVE_GASTRO_ACID"
             ],

@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_PETAL_BLIZZARD"
+            ],
+            [
                 1,
                 "MOVE_GROWTH"
             ],
@@ -62,6 +66,10 @@
             [
                 1,
                 "MOVE_NIGHT_SLASH"
+            ],
+            [
+                1,
+                "MOVE_LEAFAGE"
             ],
             [
                 15,
@@ -90,6 +98,10 @@
             [
                 51,
                 "MOVE_SUNNY_DAY"
+            ],
+            [
+                63,
+                "MOVE_SOLAR_BLADE"
             ]
         ],
         "by_tm": [

@@ -49,6 +49,10 @@
             ],
             [
                 1,
+                "MOVE_ALLY_SWITCH"
+            ],
+            [
+                1,
                 "MOVE_DESTINY_BOND"
             ],
             [
@@ -72,12 +76,28 @@
                 "MOVE_SKILL_SWAP"
             ],
             [
+                29,
+                "MOVE_GUARD_SPLIT"
+            ],
+            [
+                29,
+                "MOVE_POWER_SPLIT"
+            ],
+            [
+                35,
+                "MOVE_PHANTOM_FORCE"
+            ],
+            [
                 46,
                 "MOVE_ZEN_HEADBUTT"
             ],
             [
                 50,
                 "MOVE_TRICK_ROOM"
+            ],
+            [
+                50,
+                "MOVE_WONDER_ROOM"
             ],
             [
                 55,
@@ -90,6 +110,10 @@
             [
                 75,
                 "MOVE_PSYCHIC"
+            ],
+            [
+                85,
+                "MOVE_HYPERSPACE_HOLE"
             ]
         ],
         "by_tm": [

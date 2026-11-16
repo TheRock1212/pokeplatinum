@@ -68,12 +68,24 @@
                 "MOVE_BULLET_SEED"
             ],
             [
+                17,
+                "MOVE_INFESTATION"
+            ],
+            [
+                21,
+                "MOVE_HEX"
+            ],
+            [
                 25,
                 "MOVE_MEGA_DRAIN"
             ],
             [
                 29,
                 "MOVE_DISABLE"
+            ],
+            [
+                35,
+                "MOVE_PHANTOM_FORCE"
             ],
             [
                 40,
@@ -117,7 +129,8 @@
             "MOVE_LEECH_SEED",
             "MOVE_BEAT_UP",
             "MOVE_BLOCK",
-            "MOVE_SHADOW_SNEAK"
+            "MOVE_SHADOW_SNEAK",
+            "MOVE_STRENGTH_SAP"
         ]
     },
     "evolutions": [],

@@ -59,7 +59,8 @@
             "MOVE_IRON_DEFENSE"
         ],
         "egg_moves": [
-            "MOVE_POISON_POWDER"
+            "MOVE_POISON_POWDER",
+            "MOVE_RAGE_POWDER"
         ]
     },
     "evolutions": [

@@ -49,6 +49,10 @@
             ],
             [
                 1,
+                "MOVE_INFESTATION"
+            ],
+            [
+                1,
                 "MOVE_BITE"
             ],
             [
@@ -68,6 +72,10 @@
                 "MOVE_ASSURANCE"
             ],
             [
+                18,
+                "MOVE_HEX"
+            ],
+            [
                 24,
                 "MOVE_AGILITY"
             ],
@@ -82,6 +90,10 @@
             [
                 42,
                 "MOVE_DRAGON_DANCE"
+            ],
+            [
+                48,
+                "MOVE_PHANTOM_FORCE"
             ],
             [
                 54,
@@ -137,7 +149,8 @@
             "MOVE_DOUBLE_TEAM",
             "MOVE_CONFUSE_RAY",
             "MOVE_CURSE",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_DRAGON_TAIL"
         ]
     },
     "evolutions": [

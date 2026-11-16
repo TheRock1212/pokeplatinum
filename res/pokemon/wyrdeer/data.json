@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_PSYSHIELD_BASH"
+            ],
+            [
                 1,
                 "MOVE_TACKLE"
             ],
@@ -146,7 +150,8 @@
             "MOVE_DISABLE",
             "MOVE_SPITE",
             "MOVE_MEGAHORN",
-            "MOVE_EXTRASENSORY"
+            "MOVE_EXTRASENSORY",
+            "MOVE_PSYSHIELD_BASH"
         ]
     },
     "evolutions": [],

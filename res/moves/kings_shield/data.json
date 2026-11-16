@@ -1,0 +1,26 @@
+{
+    "name": "King’s Shield",
+    "description": [
+        "The user protects\n",
+        "itself from damage\n",
+        "while lowering the\n",
+        "Attack of any attacker\n",
+        "that makes contact."
+    ],
+    "class": "CLASS_STATUS",
+    "type": "TYPE_STEEL",
+    "power": 0,
+    "accuracy": 0,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_PROTECT",
+        "chance": 0
+    },
+    "range": "RANGE_USER",
+    "priority": 4,
+    "flags": [],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

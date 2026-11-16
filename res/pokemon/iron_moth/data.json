@@ -56,12 +56,24 @@
                 "MOVE_EMBER"
             ],
             [
+                1,
+                "MOVE_ACID_SPRAY"
+            ],
+            [
+                7,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
                 14,
                 "MOVE_FIRE_SPIN"
             ],
             [
                 21,
                 "MOVE_TAKE_DOWN"
+            ],
+            [
+                28,
+                "MOVE_LUNGE"
             ],
             [
                 35,
@@ -72,12 +84,24 @@
                 "MOVE_DISCHARGE"
             ],
             [
+                49,
+                "MOVE_SLUDGE_WAVE"
+            ],
+            [
+                56,
+                "MOVE_FIERY_DANCE"
+            ],
+            [
                 63,
                 "MOVE_METAL_SOUND"
             ],
             [
                 70,
                 "MOVE_MORNING_SUN"
+            ],
+            [
+                77,
+                "MOVE_HURRICANE"
             ],
             [
                 84,
@@ -115,7 +139,9 @@
             "MOVE_HELPING_HAND",
             "MOVE_SWIFT"
         ],
-        "egg_moves": []
+        "egg_moves": [
+            "MOVE_ELECTRIC_TERRAIN"
+        ]
     },
     "evolutions": [],
     "offspring": "SPECIES_IRON_MOTH",

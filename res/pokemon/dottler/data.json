@@ -66,6 +66,10 @@
             [
                 1,
                 "MOVE_CONFUSION"
+            ],
+            [
+                1,
+                "MOVE_STRUGGLE_BUG"
             ]
         ],
         "by_tm": [
@@ -97,7 +101,9 @@
         ],
         "egg_moves": [
             "MOVE_SUPERSONIC",
-            "MOVE_RECOVER"
+            "MOVE_RECOVER",
+            "MOVE_STICKY_WEB",
+            "MOVE_INFESTATION"
         ]
     },
     "evolutions": [

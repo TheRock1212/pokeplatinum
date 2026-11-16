@@ -1,0 +1,30 @@
+{
+    "name": "Octolock",
+    "description": [
+        "The user prevents the\n",
+        "target from fleeing.\n",
+        "This move also lowers\n",
+        "the target’s Defense\n",
+        "and Sp. Def every turn."
+    ],
+    "class": "CLASS_STATUS",
+    "type": "TYPE_FIGHTING",
+    "power": 0,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": {
+        "type": "BATTLE_EFFECT_HIT",
+        "chance": 0
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MAGIC_COAT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

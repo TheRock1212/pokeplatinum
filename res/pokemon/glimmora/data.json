@@ -44,6 +44,18 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_MORTAL_SPIN"
+            ],
+            [
+                1,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
+                1,
+                "MOVE_SPIKY_SHIELD"
+            ],
+            [
                 1,
                 "MOVE_TOXIC_SPIKES"
             ],
@@ -56,6 +68,10 @@
                 "MOVE_HARDEN"
             ],
             [
+                7,
+                "MOVE_ACID_SPRAY"
+            ],
+            [
                 11,
                 "MOVE_ANCIENT_POWER"
             ],
@@ -66,6 +82,10 @@
             [
                 18,
                 "MOVE_STEALTH_ROCK"
+            ],
+            [
+                22,
+                "MOVE_VENOSHOCK"
             ],
             [
                 26,
@@ -86,6 +106,10 @@
             [
                 44,
                 "MOVE_ACID_ARMOR"
+            ],
+            [
+                50,
+                "MOVE_SLUDGE_WAVE"
             ]
         ],
         "by_tm": [

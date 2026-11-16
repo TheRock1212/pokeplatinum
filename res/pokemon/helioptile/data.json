@@ -68,12 +68,28 @@
                 "MOVE_CHARGE"
             ],
             [
+                20,
+                "MOVE_BULLDOZE"
+            ],
+            [
+                24,
+                "MOVE_VOLT_SWITCH"
+            ],
+            [
+                28,
+                "MOVE_PARABOLIC_CHARGE"
+            ],
+            [
                 32,
                 "MOVE_THUNDER_WAVE"
             ],
             [
                 36,
                 "MOVE_THUNDERBOLT"
+            ],
+            [
+                40,
+                "MOVE_ELECTRIFY"
             ],
             [
                 44,
@@ -123,7 +139,8 @@
         ],
         "egg_moves": [
             "MOVE_GLARE",
-            "MOVE_DRAGON_RUSH"
+            "MOVE_DRAGON_RUSH",
+            "MOVE_DRAGON_TAIL"
         ]
     },
     "evolutions": [

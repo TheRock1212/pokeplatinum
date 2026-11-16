@@ -56,6 +56,10 @@
                 "MOVE_WITHDRAW"
             ],
             [
+                8,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
                 12,
                 "MOVE_BUG_BITE"
             ],
@@ -86,6 +90,10 @@
             [
                 40,
                 "MOVE_ROCK_POLISH"
+            ],
+            [
+                44,
+                "MOVE_SHELL_SMASH"
             ],
             [
                 48,
@@ -135,7 +143,8 @@
             "MOVE_CURSE",
             "MOVE_KNOCK_OFF",
             "MOVE_BLOCK",
-            "MOVE_NIGHT_SLASH"
+            "MOVE_NIGHT_SLASH",
+            "MOVE_WIDE_GUARD"
         ]
     },
     "evolutions": [

@@ -49,6 +49,14 @@
             ],
             [
                 1,
+                "MOVE_ICICLE_CRASH"
+            ],
+            [
+                1,
+                "MOVE_FREEZE_DRY"
+            ],
+            [
+                1,
                 "MOVE_ASTONISH"
             ],
             [
@@ -143,7 +151,10 @@
         "egg_moves": [
             "MOVE_EXPLOSION",
             "MOVE_MAGNET_RISE",
-            "MOVE_ICE_SHARD"
+            "MOVE_ICE_SHARD",
+            "MOVE_AUTOTOMIZE",
+            "MOVE_ICICLE_CRASH",
+            "MOVE_AURORA_VEIL"
         ]
     },
     "evolutions": [],

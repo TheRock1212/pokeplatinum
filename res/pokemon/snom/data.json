@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
+                1,
                 "MOVE_POWDER_SNOW"
             ]
         ],
@@ -63,7 +67,8 @@
         ],
         "egg_moves": [
             "MOVE_MIRROR_COAT",
-            "MOVE_BUG_BITE"
+            "MOVE_BUG_BITE",
+            "MOVE_FAIRY_WIND"
         ]
     },
     "evolutions": [

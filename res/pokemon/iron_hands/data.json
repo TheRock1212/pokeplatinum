@@ -88,12 +88,20 @@
                 "MOVE_CHARGE"
             ],
             [
+                56,
+                "MOVE_WILD_CHARGE"
+            ],
+            [
                 63,
                 "MOVE_CLOSE_COMBAT"
             ],
             [
                 70,
                 "MOVE_DETECT"
+            ],
+            [
+                77,
+                "MOVE_HEAVY_SLAM"
             ],
             [
                 84,
@@ -132,7 +140,9 @@
             "MOVE_IRON_HEAD",
             "MOVE_THUNDER_PUNCH"
         ],
-        "egg_moves": []
+        "egg_moves": [
+            "MOVE_ELECTRIC_TERRAIN"
+        ]
     },
     "evolutions": [],
     "offspring": "SPECIES_IRON_HANDS",

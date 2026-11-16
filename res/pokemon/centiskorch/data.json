@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_INFERNO"
+            ],
+            [
+                1,
                 "MOVE_EMBER"
             ],
             [
@@ -68,6 +72,10 @@
                 "MOVE_BUG_BITE"
             ],
             [
+                25,
+                "MOVE_COIL"
+            ],
+            [
                 32,
                 "MOVE_SLAM"
             ],
@@ -78,6 +86,18 @@
             [
                 46,
                 "MOVE_CRUNCH"
+            ],
+            [
+                53,
+                "MOVE_FIRE_LASH"
+            ],
+            [
+                60,
+                "MOVE_LUNGE"
+            ],
+            [
+                67,
+                "MOVE_BURN_UP"
             ]
         ],
         "by_tm": [
@@ -105,7 +125,8 @@
         "egg_moves": [
             "MOVE_DEFENSE_CURL",
             "MOVE_ROLLOUT",
-            "MOVE_KNOCK_OFF"
+            "MOVE_KNOCK_OFF",
+            "MOVE_STRUGGLE_BUG"
         ]
     },
     "evolutions": [],

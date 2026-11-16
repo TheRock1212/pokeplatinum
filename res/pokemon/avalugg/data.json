@@ -57,6 +57,10 @@
             ],
             [
                 1,
+                "MOVE_WIDE_GUARD"
+            ],
+            [
+                1,
                 "MOVE_HARDEN"
             ],
             [
@@ -110,6 +114,10 @@
             [
                 46,
                 "MOVE_DOUBLE_EDGE"
+            ],
+            [
+                51,
+                "MOVE_ICICLE_CRASH"
             ]
         ],
         "by_tm": [
@@ -158,7 +166,8 @@
         ],
         "egg_moves": [
             "MOVE_MIST",
-            "MOVE_MIRROR_COAT"
+            "MOVE_MIRROR_COAT",
+            "MOVE_AURORA_VEIL"
         ]
     },
     "evolutions": [],

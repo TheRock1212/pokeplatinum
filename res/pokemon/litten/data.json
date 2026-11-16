@@ -135,7 +135,9 @@
             "MOVE_SNORE"
         ],
         "egg_moves": [
-            "MOVE_FAKE_OUT"
+            "MOVE_FAKE_OUT",
+            "MOVE_PARTING_SHOT",
+            "MOVE_POWER_TRIP"
         ]
     },
     "evolutions": [

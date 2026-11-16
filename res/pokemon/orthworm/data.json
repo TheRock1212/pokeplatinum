@@ -60,6 +60,14 @@
                 "MOVE_MUD_SLAP"
             ],
             [
+                12,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
+                16,
+                "MOVE_BULLDOZE"
+            ],
+            [
                 21,
                 "MOVE_IRON_HEAD"
             ],
@@ -86,6 +94,10 @@
             [
                 47,
                 "MOVE_EARTHQUAKE"
+            ],
+            [
+                52,
+                "MOVE_SHED_TAIL"
             ]
         ],
         "by_tm": [
@@ -114,7 +126,8 @@
         ],
         "egg_moves": [
             "MOVE_CURSE",
-            "MOVE_METAL_BURST"
+            "MOVE_METAL_BURST",
+            "MOVE_COIL"
         ]
     },
     "evolutions": [],

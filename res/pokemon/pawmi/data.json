@@ -64,6 +64,10 @@
                 "MOVE_CHARGE"
             ],
             [
+                12,
+                "MOVE_NUZZLE"
+            ],
+            [
                 15,
                 "MOVE_DIG"
             ],
@@ -80,6 +84,10 @@
                 "MOVE_THUNDER_WAVE"
             ],
             [
+                31,
+                "MOVE_ENTRAINMENT"
+            ],
+            [
                 35,
                 "MOVE_SLAM"
             ],
@@ -90,6 +98,10 @@
             [
                 40,
                 "MOVE_AGILITY"
+            ],
+            [
+                44,
+                "MOVE_WILD_CHARGE"
             ]
         ],
         "by_tm": [

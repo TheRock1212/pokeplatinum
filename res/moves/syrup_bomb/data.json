@@ -1,0 +1,31 @@
+{
+    "name": "Syrup Bomb",
+    "description": [
+        "The user sets off a\n",
+        "gooey explosion, which\n",
+        "causes the target’s\n",
+        "Speed stat to drop each\n",
+        "turn for three turns."
+    ],
+    "class": "CLASS_SPECIAL",
+    "type": "TYPE_GRASS",
+    "power": 60,
+    "accuracy": 90,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_HIT",
+        "chance": 100
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK",
+        "MOVE_FLAG_HIDES_HP_GAUGES"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

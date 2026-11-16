@@ -56,6 +56,10 @@
                 "MOVE_BITE"
             ],
             [
+                10,
+                "MOVE_STUFF_CHEEKS"
+            ],
+            [
                 15,
                 "MOVE_STOCKPILE"
             ],
@@ -86,6 +90,10 @@
             [
                 40,
                 "MOVE_SUPER_FANG"
+            ],
+            [
+                45,
+                "MOVE_BELCH"
             ]
         ],
         "by_tm": [

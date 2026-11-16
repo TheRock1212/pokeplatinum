@@ -84,6 +84,10 @@
                 "MOVE_WEATHER_BALL"
             ],
             [
+                40,
+                "MOVE_ELECTRIC_TERRAIN"
+            ],
+            [
                 45,
                 "MOVE_SUCKER_PUNCH"
             ],
@@ -112,7 +116,9 @@
             "MOVE_SWIFT"
         ],
         "egg_moves": [
-            "MOVE_MUDDY_WATER"
+            "MOVE_MUDDY_WATER",
+            "MOVE_SOAK",
+            "MOVE_PARABOLIC_CHARGE"
         ]
     },
     "evolutions": [

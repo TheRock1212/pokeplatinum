@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_BANEFUL_BUNKER"
+            ],
+            [
                 1,
                 "MOVE_POISON_STING"
             ],
@@ -56,6 +60,14 @@
                 "MOVE_PECK"
             ],
             [
+                1,
+                "MOVE_WIDE_GUARD"
+            ],
+            [
+                15,
+                "MOVE_VENOSHOCK"
+            ],
+            [
                 20,
                 "MOVE_RECOVER"
             ],
@@ -66,6 +78,14 @@
             [
                 30,
                 "MOVE_TOXIC_SPIKES"
+            ],
+            [
+                35,
+                "MOVE_LIQUIDATION"
+            ],
+            [
+                42,
+                "MOVE_ACID_SPRAY"
             ],
             [
                 49,
@@ -119,7 +139,8 @@
             "MOVE_HAZE",
             "MOVE_STOCKPILE",
             "MOVE_SPIT_UP",
-            "MOVE_SWALLOW"
+            "MOVE_SWALLOW",
+            "MOVE_INFESTATION"
         ]
     },
     "evolutions": [],

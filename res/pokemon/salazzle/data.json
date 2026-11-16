@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_FIRE_LASH"
+            ],
+            [
                 1,
                 "MOVE_ENDEAVOR"
             ],
@@ -98,6 +102,14 @@
             [
                 25,
                 "MOVE_NASTY_PLOT"
+            ],
+            [
+                30,
+                "MOVE_INCINERATE"
+            ],
+            [
+                37,
+                "MOVE_VENOSHOCK"
             ],
             [
                 44,
@@ -160,7 +172,8 @@
         "egg_moves": [
             "MOVE_SAND_ATTACK",
             "MOVE_MUD_SLAP",
-            "MOVE_FAKE_OUT"
+            "MOVE_FAKE_OUT",
+            "MOVE_BELCH"
         ]
     },
     "evolutions": [],

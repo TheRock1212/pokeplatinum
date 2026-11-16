@@ -49,6 +49,10 @@
             ],
             [
                 1,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
+                1,
                 "MOVE_POWDER_SNOW"
             ],
             [
@@ -62,6 +66,10 @@
             [
                 4,
                 "MOVE_STUN_SPORE"
+            ],
+            [
+                8,
+                "MOVE_INFESTATION"
             ],
             [
                 12,
@@ -80,8 +88,16 @@
                 "MOVE_AURORA_BEAM"
             ],
             [
+                28,
+                "MOVE_SNOWSCAPE"
+            ],
+            [
                 32,
                 "MOVE_BUG_BUZZ"
+            ],
+            [
+                36,
+                "MOVE_AURORA_VEIL"
             ],
             [
                 40,
@@ -90,6 +106,14 @@
             [
                 44,
                 "MOVE_TAILWIND"
+            ],
+            [
+                48,
+                "MOVE_WIDE_GUARD"
+            ],
+            [
+                52,
+                "MOVE_QUIVER_DANCE"
             ]
         ],
         "by_tm": [
@@ -121,7 +145,8 @@
         ],
         "egg_moves": [
             "MOVE_MIRROR_COAT",
-            "MOVE_BUG_BITE"
+            "MOVE_BUG_BITE",
+            "MOVE_FAIRY_WIND"
         ]
     },
     "evolutions": [],

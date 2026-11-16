@@ -70,6 +70,26 @@
             [
                 1,
                 "MOVE_GRASS_KNOT"
+            ],
+            [
+                1,
+                "MOVE_PETAL_BLIZZARD"
+            ],
+            [
+                1,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
+                1,
+                "MOVE_GRASSY_TERRAIN"
+            ],
+            [
+                1,
+                "MOVE_MISTY_TERRAIN"
+            ],
+            [
+                5,
+                "MOVE_MOONBLAST"
             ]
         ],
         "by_tm": [
@@ -114,7 +134,8 @@
         ],
         "egg_moves": [
             "MOVE_ENDEAVOR",
-            "MOVE_COPYCAT"
+            "MOVE_COPYCAT",
+            "MOVE_TEARFUL_LOOK"
         ]
     },
     "evolutions": [],

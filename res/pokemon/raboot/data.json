@@ -64,6 +64,10 @@
                 "MOVE_DOUBLE_KICK"
             ],
             [
+                19,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
                 24,
                 "MOVE_AGILITY"
             ],

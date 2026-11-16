@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_ELECTRO_SHOT"
+            ],
+            [
                 1,
                 "MOVE_LEER"
             ],
@@ -56,8 +60,20 @@
                 "MOVE_ROCK_SMASH"
             ],
             [
+                12,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
                 18,
                 "MOVE_METAL_SOUND"
+            ],
+            [
+                24,
+                "MOVE_BREAKING_SWIPE"
+            ],
+            [
+                30,
+                "MOVE_DRAGON_TAIL"
             ],
             [
                 36,

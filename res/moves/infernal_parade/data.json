@@ -1,0 +1,31 @@
+{
+    "name": "Infernal Parade",
+    "description": [
+        "The user summons myriad\n",
+        "fireballs which may burn\n",
+        "the target. Its power is\n",
+        "doubled if the target\n",
+        "has a status condition."
+    ],
+    "class": "CLASS_SPECIAL",
+    "type": "TYPE_GHOST",
+    "power": 65,
+    "accuracy": 100,
+    "pp": 15,
+    "effect": {
+        "type": "BATTLE_EFFECT_BURN_HIT_DOUBLE_POWER_ON_STATUS",
+        "chance": 30
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK",
+        "MOVE_FLAG_HIDES_HP_GAUGES"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

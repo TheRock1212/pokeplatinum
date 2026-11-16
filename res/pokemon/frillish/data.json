@@ -68,6 +68,10 @@
                 "MOVE_RAIN_DANCE"
             ],
             [
+                20,
+                "MOVE_HEX"
+            ],
+            [
                 24,
                 "MOVE_BRINE"
             ],
@@ -146,7 +150,8 @@
             "MOVE_BUBBLE_BEAM",
             "MOVE_CONFUSE_RAY",
             "MOVE_ACID_ARMOR",
-            "MOVE_PAIN_SPLIT"
+            "MOVE_PAIN_SPLIT",
+            "MOVE_STRENGTH_SAP"
         ]
     },
     "evolutions": [

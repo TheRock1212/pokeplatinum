@@ -68,8 +68,16 @@
                 "MOVE_FLARE_BLITZ"
             ],
             [
+                1,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
                 15,
                 "MOVE_FLAIL"
+            ],
+            [
+                22,
+                "MOVE_ACROBATICS"
             ],
             [
                 29,
@@ -143,7 +151,9 @@
             "MOVE_SWIFT"
         ],
         "egg_moves": [
-            "MOVE_DEFOG"
+            "MOVE_DEFOG",
+            "MOVE_FLAME_CHARGE",
+            "MOVE_QUICK_GUARD"
         ]
     },
     "evolutions": [],

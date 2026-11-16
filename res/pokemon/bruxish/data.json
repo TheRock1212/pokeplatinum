@@ -68,6 +68,10 @@
                 "MOVE_DISABLE"
             ],
             [
+                25,
+                "MOVE_PSYSHOCK"
+            ],
+            [
                 28,
                 "MOVE_CRUNCH"
             ],
@@ -78,6 +82,14 @@
             [
                 36,
                 "MOVE_SCREECH"
+            ],
+            [
+                41,
+                "MOVE_PSYCHIC_FANGS"
+            ],
+            [
+                44,
+                "MOVE_WAVE_CRASH"
             ]
         ],
         "by_tm": [

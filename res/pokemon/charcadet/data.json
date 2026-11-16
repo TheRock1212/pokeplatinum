@@ -56,6 +56,10 @@
                 "MOVE_ASTONISH"
             ],
             [
+                8,
+                "MOVE_CLEAR_SMOG"
+            ],
+            [
                 12,
                 "MOVE_FIRE_SPIN"
             ],
@@ -66,6 +70,14 @@
             [
                 20,
                 "MOVE_NIGHT_SHADE"
+            ],
+            [
+                24,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
+                28,
+                "MOVE_INCINERATE"
             ],
             [
                 32,

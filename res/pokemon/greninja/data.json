@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_WATER_SHURIKEN"
+            ],
+            [
                 1,
                 "MOVE_NIGHT_SLASH"
             ],
@@ -169,7 +173,8 @@
             "MOVE_COUNTER",
             "MOVE_SPIKES",
             "MOVE_TOXIC_SPIKES",
-            "MOVE_SWITCHEROO"
+            "MOVE_SWITCHEROO",
+            "MOVE_RETALIATE"
         ]
     },
     "evolutions": [],

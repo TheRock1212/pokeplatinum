@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_EERIE_IMPULSE"
+            ],
+            [
+                1,
                 "MOVE_DISCHARGE"
             ],
             [
@@ -57,11 +61,27 @@
             ],
             [
                 1,
+                "MOVE_BULLDOZE"
+            ],
+            [
+                1,
+                "MOVE_VOLT_SWITCH"
+            ],
+            [
+                1,
+                "MOVE_PARABOLIC_CHARGE"
+            ],
+            [
+                1,
                 "MOVE_THUNDER_WAVE"
             ],
             [
                 1,
                 "MOVE_THUNDERBOLT"
+            ],
+            [
+                1,
+                "MOVE_ELECTRIFY"
             ],
             [
                 1,
@@ -135,7 +155,8 @@
         ],
         "egg_moves": [
             "MOVE_GLARE",
-            "MOVE_DRAGON_RUSH"
+            "MOVE_DRAGON_RUSH",
+            "MOVE_DRAGON_TAIL"
         ]
     },
     "evolutions": [],

@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_FAIRY_WIND"
+            ],
+            [
+                1,
                 "MOVE_SWEET_SCENT"
             ],
             [
@@ -52,8 +56,20 @@
                 "MOVE_SWEET_KISS"
             ],
             [
+                6,
+                "MOVE_ECHOED_VOICE"
+            ],
+            [
+                9,
+                "MOVE_DRAINING_KISS"
+            ],
+            [
                 12,
                 "MOVE_AROMATHERAPY"
+            ],
+            [
+                15,
+                "MOVE_DRAINING_KISS"
             ],
             [
                 18,
@@ -62,6 +78,10 @@
             [
                 21,
                 "MOVE_FLAIL"
+            ],
+            [
+                24,
+                "MOVE_MISTY_TERRAIN"
             ],
             [
                 27,
@@ -74,6 +94,10 @@
             [
                 33,
                 "MOVE_CALM_MIND"
+            ],
+            [
+                36,
+                "MOVE_MOONBLAST"
             ],
             [
                 39,
@@ -120,7 +144,8 @@
         ],
         "egg_moves": [
             "MOVE_DISABLE",
-            "MOVE_WISH"
+            "MOVE_WISH",
+            "MOVE_AFTER_YOU"
         ]
     },
     "evolutions": [

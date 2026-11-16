@@ -72,8 +72,16 @@
                 "MOVE_SMOKE_SCREEN"
             ],
             [
+                21,
+                "MOVE_ROUND"
+            ],
+            [
                 25,
                 "MOVE_FLING"
+            ],
+            [
+                29,
+                "MOVE_SMACK_DOWN"
             ],
             [
                 35,
@@ -142,7 +150,8 @@
             "MOVE_COUNTER",
             "MOVE_SPIKES",
             "MOVE_TOXIC_SPIKES",
-            "MOVE_SWITCHEROO"
+            "MOVE_SWITCHEROO",
+            "MOVE_RETALIATE"
         ]
     },
     "evolutions": [

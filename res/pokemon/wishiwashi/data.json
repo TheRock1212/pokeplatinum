@@ -64,8 +64,16 @@
                 "MOVE_BRINE"
             ],
             [
+                16,
+                "MOVE_TEARFUL_LOOK"
+            ],
+            [
                 20,
                 "MOVE_DIVE"
+            ],
+            [
+                24,
+                "MOVE_SOAK"
             ],
             [
                 28,

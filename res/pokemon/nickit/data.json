@@ -56,6 +56,14 @@
                 "MOVE_BEAT_UP"
             ],
             [
+                8,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
+                12,
+                "MOVE_SNARL"
+            ],
+            [
                 16,
                 "MOVE_ASSURANCE"
             ],
@@ -70,6 +78,14 @@
             [
                 28,
                 "MOVE_NIGHT_SLASH"
+            ],
+            [
+                32,
+                "MOVE_TAIL_SLAP"
+            ],
+            [
+                36,
+                "MOVE_FOUL_PLAY"
             ]
         ],
         "by_tm": [
@@ -91,7 +107,8 @@
         "egg_moves": [
             "MOVE_TORMENT",
             "MOVE_KNOCK_OFF",
-            "MOVE_HOWL"
+            "MOVE_HOWL",
+            "MOVE_QUICK_GUARD"
         ]
     },
     "evolutions": [

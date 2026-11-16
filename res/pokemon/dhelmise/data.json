@@ -84,6 +84,10 @@
                 "MOVE_WHIRLPOOL"
             ],
             [
+                36,
+                "MOVE_HEAVY_SLAM"
+            ],
+            [
                 40,
                 "MOVE_SLAM"
             ],
@@ -96,8 +100,16 @@
                 "MOVE_METAL_SOUND"
             ],
             [
+                52,
+                "MOVE_ANCHOR_SHOT"
+            ],
+            [
                 56,
                 "MOVE_ENERGY_BALL"
+            ],
+            [
+                60,
+                "MOVE_PHANTOM_FORCE"
             ],
             [
                 64,

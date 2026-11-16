@@ -56,8 +56,20 @@
                 "MOVE_HELPING_HAND"
             ],
             [
+                0,
+                "MOVE_WORK_UP"
+            ],
+            [
                 7,
                 "MOVE_MAGICAL_LEAF"
+            ],
+            [
+                14,
+                "MOVE_RETALIATE"
+            ],
+            [
+                21,
+                "MOVE_QUICK_GUARD"
             ],
             [
                 28,
@@ -68,8 +80,16 @@
                 "MOVE_SWORDS_DANCE"
             ],
             [
+                42,
+                "MOVE_SACRED_SWORD"
+            ],
+            [
                 49,
                 "MOVE_LEAF_BLADE"
+            ],
+            [
+                56,
+                "MOVE_PSYBLADE"
             ],
             [
                 63,
@@ -82,6 +102,14 @@
             [
                 77,
                 "MOVE_MEGAHORN"
+            ],
+            [
+                84,
+                "MOVE_ALLY_SWITCH"
+            ],
+            [
+                91,
+                "MOVE_SOLAR_BLADE"
             ]
         ],
         "by_tm": [

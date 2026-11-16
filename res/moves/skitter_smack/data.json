@@ -1,0 +1,31 @@
+{
+    "name": "Skitter Smack",
+    "description": [
+        "The user skitters\n",
+        "behind the target to\n",
+        "attack.\n",
+        "This also lowers the\n",
+        "target’s Sp. Atk stat."
+    ],
+    "class": "CLASS_PHYSICAL",
+    "type": "TYPE_BUG",
+    "power": 70,
+    "accuracy": 90,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_LOWER_SP_ATK_HIT",
+        "chance": 100
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_MAKES_CONTACT",
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

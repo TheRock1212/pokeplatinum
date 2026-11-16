@@ -52,6 +52,10 @@
                 "MOVE_RAPID_SPIN"
             ],
             [
+                6,
+                "MOVE_ELECTROWEB"
+            ],
+            [
                 12,
                 "MOVE_ANCIENT_POWER"
             ],
@@ -66,6 +70,10 @@
             [
                 30,
                 "MOVE_EXTREME_SPEED"
+            ],
+            [
+                36,
+                "MOVE_THUNDER_CAGE"
             ],
             [
                 42,

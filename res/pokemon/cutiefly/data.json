@@ -48,12 +48,24 @@
                 "MOVE_ABSORB"
             ],
             [
+                1,
+                "MOVE_FAIRY_WIND"
+            ],
+            [
                 6,
                 "MOVE_STUN_SPORE"
             ],
             [
                 12,
                 "MOVE_SWEET_SCENT"
+            ],
+            [
+                18,
+                "MOVE_DRAINING_KISS"
+            ],
+            [
+                24,
+                "MOVE_STRUGGLE_BUG"
             ],
             [
                 30,
@@ -64,8 +76,16 @@
                 "MOVE_SWITCHEROO"
             ],
             [
+                42,
+                "MOVE_DAZZLING_GLEAM"
+            ],
+            [
                 48,
                 "MOVE_BUG_BUZZ"
+            ],
+            [
+                54,
+                "MOVE_QUIVER_DANCE"
             ]
         ],
         "by_tm": [
@@ -107,7 +127,11 @@
             "MOVE_SWIFT",
             "MOVE_TRICK"
         ],
-        "egg_moves": []
+        "egg_moves": [
+            "MOVE_STICKY_WEB",
+            "MOVE_MOONBLAST",
+            "MOVE_AROMATIC_MIST"
+        ]
     },
     "evolutions": [
         [

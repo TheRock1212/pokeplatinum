@@ -49,6 +49,14 @@
             ],
             [
                 1,
+                "MOVE_ACCELEROCK"
+            ],
+            [
+                1,
+                "MOVE_QUICK_GUARD"
+            ],
+            [
+                1,
                 "MOVE_DOUBLE_TEAM"
             ],
             [

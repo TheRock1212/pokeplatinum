@@ -52,6 +52,10 @@
                 "MOVE_LEER"
             ],
             [
+                1,
+                "MOVE_DRAGON_TAIL"
+            ],
+            [
                 6,
                 "MOVE_ICY_WIND"
             ],
@@ -86,6 +90,10 @@
             [
                 44,
                 "MOVE_CRUNCH"
+            ],
+            [
+                48,
+                "MOVE_ICICLE_CRASH"
             ]
         ],
         "by_tm": [
@@ -112,7 +120,8 @@
         "egg_moves": [
             "MOVE_ICICLE_SPEAR",
             "MOVE_AQUA_TAIL",
-            "MOVE_DRAGON_RUSH"
+            "MOVE_DRAGON_RUSH",
+            "MOVE_FREEZE_DRY"
         ]
     },
     "evolutions": [

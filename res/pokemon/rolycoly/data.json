@@ -56,6 +56,10 @@
                 "MOVE_RAPID_SPIN"
             ],
             [
+                10,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
                 15,
                 "MOVE_ROCK_POLISH"
             ],
@@ -64,8 +68,16 @@
                 "MOVE_ANCIENT_POWER"
             ],
             [
+                25,
+                "MOVE_INCINERATE"
+            ],
+            [
                 30,
                 "MOVE_STEALTH_ROCK"
+            ],
+            [
+                35,
+                "MOVE_HEAT_CRASH"
             ],
             [
                 40,

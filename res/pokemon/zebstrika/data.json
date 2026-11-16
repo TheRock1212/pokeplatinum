@@ -64,6 +64,10 @@
                 "MOVE_SHOCK_WAVE"
             ],
             [
+                18,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
                 25,
                 "MOVE_SPARK"
             ],
@@ -78,6 +82,10 @@
             [
                 42,
                 "MOVE_AGILITY"
+            ],
+            [
+                47,
+                "MOVE_WILD_CHARGE"
             ],
             [
                 53,

@@ -68,6 +68,14 @@
                 "MOVE_IRON_DEFENSE"
             ],
             [
+                1,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
+                1,
+                "MOVE_POWER_TRIP"
+            ],
+            [
                 12,
                 "MOVE_FURY_ATTACK"
             ],

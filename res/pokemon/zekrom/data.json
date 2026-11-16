@@ -56,6 +56,10 @@
                 "MOVE_THUNDER_FANG"
             ],
             [
+                1,
+                "MOVE_NOBLE_ROAR"
+            ],
+            [
                 8,
                 "MOVE_SLASH"
             ],
@@ -76,6 +80,10 @@
                 "MOVE_THUNDERBOLT"
             ],
             [
+                48,
+                "MOVE_FUSION_BOLT"
+            ],
+            [
                 56,
                 "MOVE_HYPER_VOICE"
             ],
@@ -90,6 +98,10 @@
             [
                 80,
                 "MOVE_OUTRAGE"
+            ],
+            [
+                88,
+                "MOVE_BOLT_STRIKE"
             ]
         ],
         "by_tm": [

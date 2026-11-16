@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_LAST_RESPECTS"
+            ],
+            [
                 1,
                 "MOVE_TACKLE"
             ],
@@ -84,8 +88,16 @@
                 "MOVE_CRUNCH"
             ],
             [
+                36,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
                 41,
                 "MOVE_HELPING_HAND"
+            ],
+            [
+                46,
+                "MOVE_PHANTOM_FORCE"
             ],
             [
                 51,
@@ -127,7 +139,8 @@
             "MOVE_MEMENTO",
             "MOVE_YAWN",
             "MOVE_HOWL",
-            "MOVE_SHADOW_SNEAK"
+            "MOVE_SHADOW_SNEAK",
+            "MOVE_ALLY_SWITCH"
         ]
     },
     "evolutions": [],

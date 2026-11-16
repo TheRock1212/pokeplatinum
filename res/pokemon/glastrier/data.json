@@ -72,6 +72,10 @@
                 "MOVE_MIST"
             ],
             [
+                36,
+                "MOVE_ICICLE_CRASH"
+            ],
+            [
                 42,
                 "MOVE_TAKE_DOWN"
             ],

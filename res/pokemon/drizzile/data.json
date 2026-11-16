@@ -64,12 +64,24 @@
                 "MOVE_WATER_PULSE"
             ],
             [
+                19,
+                "MOVE_TEARFUL_LOOK"
+            ],
+            [
                 24,
                 "MOVE_SUCKER_PUNCH"
             ],
             [
                 30,
                 "MOVE_U_TURN"
+            ],
+            [
+                36,
+                "MOVE_LIQUIDATION"
+            ],
+            [
+                42,
+                "MOVE_SOAK"
             ],
             [
                 48,
@@ -106,7 +118,8 @@
             "MOVE_HAZE",
             "MOVE_AQUA_RING",
             "MOVE_ICE_SHARD",
-            "MOVE_AQUA_JET"
+            "MOVE_AQUA_JET",
+            "MOVE_FELL_STINGER"
         ]
     },
     "evolutions": [

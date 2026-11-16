@@ -64,8 +64,16 @@
                 "MOVE_BUG_BITE"
             ],
             [
+                22,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
                 29,
                 "MOVE_ENDURE"
+            ],
+            [
+                31,
+                "MOVE_STICKY_WEB"
             ],
             [
                 36,

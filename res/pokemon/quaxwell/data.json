@@ -60,6 +60,10 @@
                 "MOVE_DOUBLE_HIT"
             ],
             [
+                7,
+                "MOVE_WORK_UP"
+            ],
+            [
                 10,
                 "MOVE_WING_ATTACK"
             ],
@@ -72,12 +76,28 @@
                 "MOVE_WATER_PULSE"
             ],
             [
+                19,
+                "MOVE_LOW_SWEEP"
+            ],
+            [
+                23,
+                "MOVE_AQUA_CUTTER"
+            ],
+            [
                 27,
                 "MOVE_AIR_SLASH"
             ],
             [
                 32,
                 "MOVE_FOCUS_ENERGY"
+            ],
+            [
+                38,
+                "MOVE_ACROBATICS"
+            ],
+            [
+                43,
+                "MOVE_LIQUIDATION"
             ],
             [
                 48,

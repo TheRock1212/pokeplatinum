@@ -60,6 +60,10 @@
                 "MOVE_MEMENTO"
             ],
             [
+                1,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
                 7,
                 "MOVE_THIEF"
             ],
@@ -88,12 +92,20 @@
                 "MOVE_PAYBACK"
             ],
             [
+                42,
+                "MOVE_DUAL_WINGBEAT"
+            ],
+            [
                 47,
                 "MOVE_ROCK_SLIDE"
             ],
             [
                 53,
                 "MOVE_KNOCK_OFF"
+            ],
+            [
+                60,
+                "MOVE_PARTING_SHOT"
             ]
         ],
         "by_tm": [
@@ -130,7 +142,8 @@
             "MOVE_SKY_ATTACK",
             "MOVE_FEATHER_DANCE",
             "MOVE_ROOST",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_POWER_TRIP"
         ]
     },
     "evolutions": [],

@@ -98,6 +98,14 @@
             [
                 1,
                 "MOVE_OVERHEAT"
+            ],
+            [
+                1,
+                "MOVE_HEX"
+            ],
+            [
+                1,
+                "MOVE_INFERNO"
             ]
         ],
         "by_tm": [
@@ -147,7 +155,9 @@
         ],
         "egg_moves": [
             "MOVE_HAZE",
-            "MOVE_ACID_ARMOR"
+            "MOVE_ACID_ARMOR",
+            "MOVE_POWER_SPLIT",
+            "MOVE_CLEAR_SMOG"
         ]
     },
     "evolutions": [],

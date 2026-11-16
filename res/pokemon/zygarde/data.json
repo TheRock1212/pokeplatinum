@@ -45,7 +45,23 @@
         "by_level": [
             [
                 1,
+                "MOVE_THOUSAND_ARROWS"
+            ],
+            [
+                1,
+                "MOVE_THOUSAND_WAVES"
+            ],
+            [
+                1,
+                "MOVE_CORE_ENFORCER"
+            ],
+            [
+                1,
                 "MOVE_BIND"
+            ],
+            [
+                1,
+                "MOVE_BULLDOZE"
             ],
             [
                 1,
@@ -76,12 +92,20 @@
                 "MOVE_DRAGON_PULSE"
             ],
             [
+                48,
+                "MOVE_LANDS_WRATH"
+            ],
+            [
                 56,
                 "MOVE_GLARE"
             ],
             [
                 64,
                 "MOVE_SANDSTORM"
+            ],
+            [
+                72,
+                "MOVE_COIL"
             ],
             [
                 80,

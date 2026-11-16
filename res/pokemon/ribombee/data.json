@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_POLLEN_PUFF"
+            ],
+            [
                 1,
                 "MOVE_ABSORB"
             ],
@@ -56,6 +60,18 @@
                 "MOVE_SWEET_SCENT"
             ],
             [
+                1,
+                "MOVE_FAIRY_WIND"
+            ],
+            [
+                18,
+                "MOVE_DRAINING_KISS"
+            ],
+            [
+                24,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
                 32,
                 "MOVE_COVET"
             ],
@@ -64,8 +80,16 @@
                 "MOVE_SWITCHEROO"
             ],
             [
+                48,
+                "MOVE_DAZZLING_GLEAM"
+            ],
+            [
                 56,
                 "MOVE_BUG_BUZZ"
+            ],
+            [
+                64,
+                "MOVE_QUIVER_DANCE"
             ]
         ],
         "by_tm": [
@@ -110,7 +134,11 @@
             "MOVE_SWIFT",
             "MOVE_TRICK"
         ],
-        "egg_moves": []
+        "egg_moves": [
+            "MOVE_STICKY_WEB",
+            "MOVE_MOONBLAST",
+            "MOVE_AROMATIC_MIST"
+        ]
     },
     "evolutions": [],
     "offspring": "SPECIES_CUTIEFLY",

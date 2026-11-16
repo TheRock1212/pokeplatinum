@@ -76,6 +76,14 @@
                 "MOVE_DIVE"
             ],
             [
+                25,
+                "MOVE_NOBLE_ROAR"
+            ],
+            [
+                30,
+                "MOVE_SOAK"
+            ],
+            [
                 35,
                 "MOVE_BODY_SLAM"
             ],
@@ -88,8 +96,20 @@
                 "MOVE_RAIN_DANCE"
             ],
             [
+                50,
+                "MOVE_ORDER_UP"
+            ],
+            [
+                55,
+                "MOVE_HEAVY_SLAM"
+            ],
+            [
                 60,
                 "MOVE_DOUBLE_EDGE"
+            ],
+            [
+                65,
+                "MOVE_WAVE_CRASH"
             ]
         ],
         "by_tm": [

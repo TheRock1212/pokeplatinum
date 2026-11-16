@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_ACID_SPRAY"
+            ],
+            [
                 1,
                 "MOVE_TACKLE"
             ],
@@ -129,7 +133,8 @@
             "MOVE_SNORE"
         ],
         "egg_moves": [
-            "MOVE_COUNTER"
+            "MOVE_COUNTER",
+            "MOVE_LIFE_DEW"
         ]
     },
     "evolutions": [

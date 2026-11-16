@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_FELL_STINGER"
+            ],
+            [
+                1,
                 "MOVE_ENDURE"
             ],
             [
@@ -78,6 +82,10 @@
             [
                 12,
                 "MOVE_FALSE_SWIPE"
+            ],
+            [
+                16,
+                "MOVE_ACID_SPRAY"
             ],
             [
                 20,

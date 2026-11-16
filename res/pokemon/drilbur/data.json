@@ -56,6 +56,10 @@
                 "MOVE_SCRATCH"
             ],
             [
+                8,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
                 12,
                 "MOVE_FURY_SWIPES"
             ],
@@ -82,6 +86,10 @@
             [
                 36,
                 "MOVE_SWORDS_DANCE"
+            ],
+            [
+                40,
+                "MOVE_DRILL_RUN"
             ],
             [
                 44,

@@ -60,6 +60,14 @@
                 "MOVE_METAL_CLAW"
             ],
             [
+                21,
+                "MOVE_FELL_STINGER"
+            ],
+            [
+                28,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
                 35,
                 "MOVE_METAL_SOUND"
             ],
@@ -76,12 +84,20 @@
                 "MOVE_BUG_BUZZ"
             ],
             [
+                63,
+                "MOVE_SIMPLE_BEAM"
+            ],
+            [
                 70,
                 "MOVE_ZAP_CANNON"
             ],
             [
                 77,
                 "MOVE_LOCK_ON"
+            ],
+            [
+                84,
+                "MOVE_TECHNO_BLAST"
             ],
             [
                 91,

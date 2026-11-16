@@ -56,6 +56,10 @@
                 "MOVE_LEER"
             ],
             [
+                10,
+                "MOVE_POWER_TRIP"
+            ],
+            [
                 15,
                 "MOVE_QUICK_ATTACK"
             ],
@@ -86,6 +90,10 @@
             [
                 50,
                 "MOVE_CRUNCH"
+            ],
+            [
+                55,
+                "MOVE_AURA_WHEEL"
             ],
             [
                 60,
@@ -129,7 +137,9 @@
             "MOVE_RAPID_SPIN",
             "MOVE_FAKE_OUT",
             "MOVE_CHARGE",
-            "MOVE_TICKLE"
+            "MOVE_TICKLE",
+            "MOVE_QUASH",
+            "MOVE_PARTING_SHOT"
         ]
     },
     "evolutions": [],

@@ -60,6 +60,10 @@
                 "MOVE_BITE"
             ],
             [
+                12,
+                "MOVE_FELL_STINGER"
+            ],
+            [
                 16,
                 "MOVE_MINIMIZE"
             ],
@@ -70,6 +74,10 @@
             [
                 24,
                 "MOVE_BRINE"
+            ],
+            [
+                28,
+                "MOVE_BARB_BARRAGE"
             ],
             [
                 32,
@@ -140,7 +148,9 @@
             "MOVE_FLAIL",
             "MOVE_ASTONISH",
             "MOVE_WATER_PULSE",
-            "MOVE_AQUA_JET"
+            "MOVE_AQUA_JET",
+            "MOVE_ACID_SPRAY",
+            "MOVE_BARB_BARRAGE"
         ]
     },
     "evolutions": [],

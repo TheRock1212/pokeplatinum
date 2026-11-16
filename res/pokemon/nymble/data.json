@@ -52,6 +52,10 @@
                 "MOVE_LEER"
             ],
             [
+                4,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
                 6,
                 "MOVE_ASTONISH"
             ],
@@ -86,6 +90,10 @@
             [
                 38,
                 "MOVE_SUCKER_PUNCH"
+            ],
+            [
+                41,
+                "MOVE_FIRST_IMPRESSION"
             ]
         ],
         "by_tm": [
@@ -103,7 +111,8 @@
         ],
         "by_tutor": [],
         "egg_moves": [
-            "MOVE_COUNTER"
+            "MOVE_COUNTER",
+            "MOVE_SKITTER_SMACK"
         ]
     },
     "evolutions": [

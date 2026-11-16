@@ -118,7 +118,7 @@
         ]
     },
     "evolutions": [
-        [ "EVO_LEVEL", 30, "SPECIES_FARIGIRAF" ]
+        [ "EVO_LEVEL_KNOW_MOVE", "MOVE_TWIN_BEAM", "SPECIES_FARIGIRAF" ]
     ],
     "offspring": "SPECIES_GIRAFARIG",
     "footprint": {

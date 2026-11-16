@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_PSYCHIC_TERRAIN"
+            ],
+            [
+                1,
                 "MOVE_CONFUSION"
             ],
             [
@@ -64,6 +68,14 @@
                 "MOVE_PSYBEAM"
             ],
             [
+                24,
+                "MOVE_POWER_SPLIT"
+            ],
+            [
+                24,
+                "MOVE_GUARD_SPLIT"
+            ],
+            [
                 30,
                 "MOVE_HEADBUTT"
             ],
@@ -78,6 +90,10 @@
             [
                 52,
                 "MOVE_CALM_MIND"
+            ],
+            [
+                60,
+                "MOVE_WONDER_ROOM"
             ],
             [
                 68,

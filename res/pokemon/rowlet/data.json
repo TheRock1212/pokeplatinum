@@ -52,6 +52,10 @@
                 "MOVE_GROWL"
             ],
             [
+                3,
+                "MOVE_LEAFAGE"
+            ],
+            [
                 6,
                 "MOVE_ASTONISH"
             ],

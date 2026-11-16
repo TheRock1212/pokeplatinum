@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_PSYSHOCK"
+            ],
+            [
                 1,
                 "MOVE_LEER"
             ],
@@ -53,7 +57,19 @@
             ],
             [
                 1,
+                "MOVE_MYSTICAL_FIRE"
+            ],
+            [
+                1,
                 "MOVE_ASTONISH"
+            ],
+            [
+                1,
+                "MOVE_WIDE_GUARD"
+            ],
+            [
+                8,
+                "MOVE_CLEAR_SMOG"
             ],
             [
                 12,
@@ -68,6 +84,14 @@
                 "MOVE_NIGHT_SHADE"
             ],
             [
+                24,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
+                28,
+                "MOVE_INCINERATE"
+            ],
+            [
                 32,
                 "MOVE_LAVA_PLUME"
             ],
@@ -76,8 +100,20 @@
                 "MOVE_CALM_MIND"
             ],
             [
+                42,
+                "MOVE_ALLY_SWITCH"
+            ],
+            [
                 48,
                 "MOVE_FLAMETHROWER"
+            ],
+            [
+                56,
+                "MOVE_EXPANDING_FORCE"
+            ],
+            [
+                62,
+                "MOVE_ARMOR_CANNON"
             ]
         ],
         "by_tm": [

@@ -122,7 +122,8 @@
             "MOVE_SNORE"
         ],
         "egg_moves": [
-            "MOVE_COUNTER"
+            "MOVE_COUNTER",
+            "MOVE_LIFE_DEW"
         ]
     },
     "evolutions": [

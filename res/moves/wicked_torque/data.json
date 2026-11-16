@@ -1,0 +1,30 @@
+{
+    "name": "Wicked Torque",
+    "description": [
+        "The user rams into the\n",
+        "target with malicious\n",
+        "intent. This may put\n",
+        "the target to sleep."
+    ],
+    "class": "CLASS_PHYSICAL",
+    "type": "TYPE_DARK",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_SLEEP_HIT",
+        "chance": 10
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK",
+        "MOVE_FLAG_HIDES_HP_GAUGES"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

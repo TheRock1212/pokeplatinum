@@ -44,6 +44,22 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_GLAIVE_RUSH"
+            ],
+            [
+                1,
+                "MOVE_SNOWSCAPE"
+            ],
+            [
+                1,
+                "MOVE_BREAKING_SWIPE"
+            ],
+            [
+                1,
+                "MOVE_DRAGON_TAIL"
+            ],
+            [
                 1,
                 "MOVE_ICE_SHARD"
             ],
@@ -90,6 +106,10 @@
             [
                 55,
                 "MOVE_CRUNCH"
+            ],
+            [
+                62,
+                "MOVE_ICICLE_CRASH"
             ]
         ],
         "by_tm": [
@@ -124,7 +144,8 @@
         "egg_moves": [
             "MOVE_ICICLE_SPEAR",
             "MOVE_AQUA_TAIL",
-            "MOVE_DRAGON_RUSH"
+            "MOVE_DRAGON_RUSH",
+            "MOVE_FREEZE_DRY"
         ]
     },
     "evolutions": [],

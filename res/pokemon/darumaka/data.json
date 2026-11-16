@@ -60,6 +60,14 @@
                 "MOVE_BITE"
             ],
             [
+                12,
+                "MOVE_INCINERATE"
+            ],
+            [
+                16,
+                "MOVE_WORK_UP"
+            ],
+            [
                 20,
                 "MOVE_FIRE_FANG"
             ],

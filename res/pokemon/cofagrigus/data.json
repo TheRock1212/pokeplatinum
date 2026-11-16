@@ -80,6 +80,14 @@
                 "MOVE_WILL_O_WISP"
             ],
             [
+                20,
+                "MOVE_CRAFTY_SHIELD"
+            ],
+            [
+                24,
+                "MOVE_HEX"
+            ],
+            [
                 28,
                 "MOVE_MEAN_LOOK"
             ],
@@ -98,6 +106,14 @@
             [
                 50,
                 "MOVE_DARK_PULSE"
+            ],
+            [
+                56,
+                "MOVE_POWER_SPLIT"
+            ],
+            [
+                56,
+                "MOVE_GUARD_SPLIT"
             ],
             [
                 62,

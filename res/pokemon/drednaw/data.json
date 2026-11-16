@@ -72,12 +72,24 @@
                 "MOVE_ROCK_POLISH"
             ],
             [
+                1,
+                "MOVE_RAZOR_SHELL"
+            ],
+            [
                 21,
                 "MOVE_HEADBUTT"
             ],
             [
                 30,
                 "MOVE_COUNTER"
+            ],
+            [
+                39,
+                "MOVE_JAW_LOCK"
+            ],
+            [
+                48,
+                "MOVE_LIQUIDATION"
             ],
             [
                 57,
@@ -125,7 +137,9 @@
             "MOVE_SUPERPOWER"
         ],
         "egg_moves": [
-            "MOVE_GASTRO_ACID"
+            "MOVE_GASTRO_ACID",
+            "MOVE_SHELL_SMASH",
+            "MOVE_DRAGON_TAIL"
         ]
     },
     "evolutions": [],

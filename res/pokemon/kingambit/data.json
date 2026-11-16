@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_KOWTOW_CLEAVE"
+            ],
+            [
                 1,
                 "MOVE_METAL_BURST"
             ],
@@ -90,6 +94,10 @@
             [
                 45,
                 "MOVE_IRON_DEFENSE"
+            ],
+            [
+                50,
+                "MOVE_RETALIATE"
             ],
             [
                 57,
@@ -144,7 +152,8 @@
         "egg_moves": [
             "MOVE_HEADBUTT",
             "MOVE_MEAN_LOOK",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_QUICK_GUARD"
         ]
     },
     "evolutions": [],

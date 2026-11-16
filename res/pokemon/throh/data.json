@@ -56,12 +56,24 @@
                 "MOVE_FOCUS_ENERGY"
             ],
             [
+                10,
+                "MOVE_CIRCLE_THROW"
+            ],
+            [
+                15,
+                "MOVE_WIDE_GUARD"
+            ],
+            [
                 20,
                 "MOVE_REVENGE"
             ],
             [
                 25,
                 "MOVE_BULK_UP"
+            ],
+            [
+                30,
+                "MOVE_STORM_THROW"
             ],
             [
                 35,

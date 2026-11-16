@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_WATER_SHURIKEN"
+            ],
+            [
+                1,
                 "MOVE_ACID"
             ],
             [
@@ -76,12 +80,12 @@
                 "MOVE_DOUBLE_TEAM"
             ],
             [
-                1,
-                "MOVE_QUICK_ATTACK"
-            ],
-            [
                 12,
                 "MOVE_MEGA_DRAIN"
+            ],
+            [
+                16,
+                "MOVE_STRUGGLE_BUG"
             ],
             [
                 20,
@@ -110,6 +114,10 @@
             [
                 44,
                 "MOVE_BUG_BUZZ"
+            ],
+            [
+                48,
+                "MOVE_FINAL_GAMBIT"
             ],
             [
                 52,
@@ -152,7 +160,8 @@
         "egg_moves": [
             "MOVE_DOUBLE_EDGE",
             "MOVE_MIND_READER",
-            "MOVE_FEINT"
+            "MOVE_FEINT",
+            "MOVE_GUARD_SPLIT"
         ]
     },
     "evolutions": [],

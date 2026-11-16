@@ -52,6 +52,10 @@
                 "MOVE_GROWL"
             ],
             [
+                6,
+                "MOVE_BRANCH_POKE"
+            ],
+            [
                 8,
                 "MOVE_TAUNT"
             ],

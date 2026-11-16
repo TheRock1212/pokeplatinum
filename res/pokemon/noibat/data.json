@@ -98,6 +98,10 @@
             [
                 49,
                 "MOVE_TAILWIND"
+            ],
+            [
+                52,
+                "MOVE_HURRICANE"
             ]
         ],
         "by_tm": [

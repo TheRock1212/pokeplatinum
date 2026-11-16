@@ -52,12 +52,24 @@
                 "MOVE_TACKLE"
             ],
             [
+                8,
+                "MOVE_FAIRY_WIND"
+            ],
+            [
                 12,
                 "MOVE_TORMENT"
             ],
             [
+                16,
+                "MOVE_FAIRY_LOCK"
+            ],
+            [
                 20,
                 "MOVE_METAL_SOUND"
+            ],
+            [
+                24,
+                "MOVE_DRAINING_KISS"
             ],
             [
                 28,
@@ -70,6 +82,18 @@
             [
                 36,
                 "MOVE_FLASH_CANNON"
+            ],
+            [
+                40,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
+                44,
+                "MOVE_MAGIC_ROOM"
+            ],
+            [
+                48,
+                "MOVE_FOUL_PLAY"
             ],
             [
                 52,

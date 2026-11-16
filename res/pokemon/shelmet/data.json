@@ -64,6 +64,10 @@
                 "MOVE_MEGA_DRAIN"
             ],
             [
+                16,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
                 20,
                 "MOVE_YAWN"
             ],
@@ -90,6 +94,10 @@
             [
                 44,
                 "MOVE_BUG_BUZZ"
+            ],
+            [
+                48,
+                "MOVE_FINAL_GAMBIT"
             ]
         ],
         "by_tm": [
@@ -120,7 +128,8 @@
         "egg_moves": [
             "MOVE_DOUBLE_EDGE",
             "MOVE_MIND_READER",
-            "MOVE_FEINT"
+            "MOVE_FEINT",
+            "MOVE_GUARD_SPLIT"
         ]
     },
     "evolutions": [

@@ -52,8 +52,16 @@
                 "MOVE_TAIL_WHIP"
             ],
             [
+                1,
+                "MOVE_LEAFAGE"
+            ],
+            [
                 7,
                 "MOVE_BITE"
+            ],
+            [
+                10,
+                "MOVE_HONE_CLAWS"
             ],
             [
                 13,
@@ -82,6 +90,10 @@
             [
                 38,
                 "MOVE_ENERGY_BALL"
+            ],
+            [
+                42,
+                "MOVE_PLAY_ROUGH"
             ],
             [
                 46,
@@ -116,7 +128,9 @@
         "egg_moves": [
             "MOVE_LEECH_SEED",
             "MOVE_COPYCAT",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_ALLY_SWITCH",
+            "MOVE_PETAL_BLIZZARD"
         ]
     },
     "evolutions": [

@@ -52,6 +52,14 @@
                 "MOVE_LEER"
             ],
             [
+                1,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
+                1,
+                "MOVE_POWER_TRIP"
+            ],
+            [
                 9,
                 "MOVE_SAND_TOMB"
             ],
@@ -82,6 +90,10 @@
             [
                 32,
                 "MOVE_SANDSTORM"
+            ],
+            [
+                35,
+                "MOVE_FOUL_PLAY"
             ],
             [
                 44,

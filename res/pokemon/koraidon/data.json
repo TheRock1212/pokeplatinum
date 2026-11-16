@@ -48,6 +48,10 @@
                 "MOVE_SUNNY_DAY"
             ],
             [
+                1,
+                "MOVE_BREAKING_SWIPE"
+            ],
+            [
                 7,
                 "MOVE_ROCK_SMASH"
             ],
@@ -74,6 +78,10 @@
             [
                 49,
                 "MOVE_FLAMETHROWER"
+            ],
+            [
+                56,
+                "MOVE_COLLISION_COURSE"
             ],
             [
                 63,

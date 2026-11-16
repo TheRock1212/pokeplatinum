@@ -64,6 +64,10 @@
                 "MOVE_WATER_PULSE"
             ],
             [
+                23,
+                "MOVE_SOAK"
+            ],
+            [
                 28,
                 "MOVE_TAUNT"
             ],

@@ -148,7 +148,8 @@
         ],
         "egg_moves": [
             "MOVE_MIST",
-            "MOVE_MIRROR_COAT"
+            "MOVE_MIRROR_COAT",
+            "MOVE_AURORA_VEIL"
         ]
     },
     "evolutions": [

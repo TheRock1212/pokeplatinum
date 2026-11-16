@@ -68,6 +68,10 @@
                 "MOVE_SAND_ATTACK"
             ],
             [
+                25,
+                "MOVE_BULLDOZE"
+            ],
+            [
                 30,
                 "MOVE_HYPNOSIS"
             ],
@@ -86,6 +90,10 @@
             [
                 54,
                 "MOVE_EARTH_POWER"
+            ],
+            [
+                61,
+                "MOVE_SHORE_UP"
             ],
             [
                 68,

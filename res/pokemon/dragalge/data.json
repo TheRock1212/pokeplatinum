@@ -146,7 +146,8 @@
         "egg_moves": [
             "MOVE_HAZE",
             "MOVE_ACID_ARMOR",
-            "MOVE_TWISTER"
+            "MOVE_TWISTER",
+            "MOVE_DRAGON_TAIL"
         ]
     },
     "evolutions": [],

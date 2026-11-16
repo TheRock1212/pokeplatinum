@@ -56,8 +56,24 @@
                 "MOVE_HELPING_HAND"
             ],
             [
+                1,
+                "MOVE_WORK_UP"
+            ],
+            [
+                7,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
+                14,
+                "MOVE_QUICK_GUARD"
+            ],
+            [
                 21,
                 "MOVE_DOUBLE_KICK"
+            ],
+            [
+                28,
+                "MOVE_RETALIATE"
             ],
             [
                 35,
@@ -66,6 +82,10 @@
             [
                 42,
                 "MOVE_TAKE_DOWN"
+            ],
+            [
+                49,
+                "MOVE_SACRED_SWORD"
             ],
             [
                 56,

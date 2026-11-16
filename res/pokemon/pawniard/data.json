@@ -88,6 +88,10 @@
                 "MOVE_IRON_DEFENSE"
             ],
             [
+                50,
+                "MOVE_RETALIATE"
+            ],
+            [
                 55,
                 "MOVE_IRON_HEAD"
             ],
@@ -154,7 +158,8 @@
         "egg_moves": [
             "MOVE_HEADBUTT",
             "MOVE_MEAN_LOOK",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_QUICK_GUARD"
         ]
     },
     "evolutions": [

@@ -72,8 +72,16 @@
                 "MOVE_ANCIENT_POWER"
             ],
             [
+                24,
+                "MOVE_DRILL_RUN"
+            ],
+            [
                 28,
                 "MOVE_YAWN"
+            ],
+            [
+                32,
+                "MOVE_HYPER_DRILL"
             ],
             [
                 36,
@@ -84,12 +92,24 @@
                 "MOVE_DRAGON_RUSH"
             ],
             [
+                44,
+                "MOVE_COIL"
+            ],
+            [
                 48,
                 "MOVE_DOUBLE_EDGE"
             ],
             [
                 52,
                 "MOVE_ENDEAVOR"
+            ],
+            [
+                56,
+                "MOVE_HURRICANE"
+            ],
+            [
+                62,
+                "MOVE_BOOMBURST"
             ]
         ],
         "by_tm": [

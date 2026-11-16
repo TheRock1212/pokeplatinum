@@ -52,6 +52,10 @@
                 "MOVE_CONFUSION"
             ],
             [
+                4,
+                "MOVE_PLAY_NICE"
+            ],
+            [
                 8,
                 "MOVE_TICKLE"
             ],
@@ -62,6 +66,10 @@
             [
                 16,
                 "MOVE_CHARM"
+            ],
+            [
+                20,
+                "MOVE_PSYSHOCK"
             ],
             [
                 24,
@@ -86,6 +94,10 @@
             [
                 44,
                 "MOVE_FUTURE_SIGHT"
+            ],
+            [
+                48,
+                "MOVE_MAGIC_ROOM"
             ]
         ],
         "by_tm": [
@@ -146,7 +158,8 @@
             "MOVE_MEAN_LOOK",
             "MOVE_MIRROR_COAT",
             "MOVE_FAKE_OUT",
-            "MOVE_TORMENT"
+            "MOVE_TORMENT",
+            "MOVE_HEAL_PULSE"
         ]
     },
     "evolutions": [

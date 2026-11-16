@@ -72,8 +72,24 @@
                 "MOVE_SLAM"
             ],
             [
+                24,
+                "MOVE_LOW_SWEEP"
+            ],
+            [
+                30,
+                "MOVE_IVY_CUDGEL"
+            ],
+            [
+                36,
+                "MOVE_THROAT_CHOP"
+            ],
+            [
                 42,
                 "MOVE_SYNTHESIS"
+            ],
+            [
+                48,
+                "MOVE_SPIKY_SHIELD"
             ],
             [
                 54,
@@ -120,7 +136,9 @@
         ],
         "egg_moves": [
             "MOVE_DOUBLE_KICK",
-            "MOVE_COUNTER"
+            "MOVE_COUNTER",
+            "MOVE_RETALIATE",
+            "MOVE_HORN_LEECH"
         ]
     },
     "evolutions": [],

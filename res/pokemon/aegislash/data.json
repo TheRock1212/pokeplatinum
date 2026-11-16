@@ -44,6 +44,14 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_KINGS_SHIELD"
+            ],
+            [
+                1,
+                "MOVE_KINGS_SHIELD"
+            ],
+            [
                 1,
                 "MOVE_HEAD_SMASH"
             ],
@@ -65,6 +73,10 @@
             ],
             [
                 1,
+                "MOVE_RETALIATE"
+            ],
+            [
+                1,
                 "MOVE_IRON_DEFENSE"
             ],
             [
@@ -81,6 +93,10 @@
             ],
             [
                 1,
+                "MOVE_SACRED_SWORD"
+            ],
+            [
+                1,
                 "MOVE_TACKLE"
             ],
             [
@@ -90,6 +106,10 @@
             [
                 1,
                 "MOVE_SHADOW_SNEAK"
+            ],
+            [
+                1,
+                "MOVE_AUTOTOMIZE"
             ]
         ],
         "by_tm": [
@@ -134,7 +154,8 @@
         ],
         "egg_moves": [
             "MOVE_DESTINY_BOND",
-            "MOVE_BLOCK"
+            "MOVE_BLOCK",
+            "MOVE_WIDE_GUARD"
         ]
     },
     "evolutions": [],

@@ -80,8 +80,16 @@
                 "MOVE_CURSE"
             ],
             [
+                40,
+                "MOVE_ELECTRIC_TERRAIN"
+            ],
+            [
                 45,
                 "MOVE_POISON_JAB"
+            ],
+            [
+                50,
+                "MOVE_ZING_ZAP"
             ],
             [
                 55,

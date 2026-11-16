@@ -60,12 +60,20 @@
                 "MOVE_AQUA_JET"
             ],
             [
+                9,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
                 12,
                 "MOVE_ANCIENT_POWER"
             ],
             [
                 15,
                 "MOVE_BITE"
+            ],
+            [
+                18,
+                "MOVE_WIDE_GUARD"
             ],
             [
                 21,
@@ -98,6 +106,10 @@
             [
                 42,
                 "MOVE_HYDRO_PUMP"
+            ],
+            [
+                45,
+                "MOVE_SHELL_SMASH"
             ]
         ],
         "by_tm": [

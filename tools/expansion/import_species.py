@@ -68,9 +68,10 @@ def nat_of(hg_species):
 
 
 def pt_move(hg_name):
-    """Mossa hg-engine -> nome pokeplatinum, tramite l'ID (uguale fino alla 467), o None."""
+    """Mossa hg-engine -> nome pokeplatinum: tramite l'ID fino alla 467 (i nomi vanilla possono differire),
+    per nome dopo (gli ID di hg-engine sono ufficiale + 3, vedi import_moves.py), o None."""
     v = H['move_ids'].get(hg_name)
-    if v is not None and v < len(PT_MOVES) and v > 0:
+    if v is not None and 0 < v <= 467:
         return PT_MOVES[v]
     return hg_name if hg_name in PT_MOVE_SET else None
 

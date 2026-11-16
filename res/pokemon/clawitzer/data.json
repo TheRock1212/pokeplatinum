@@ -64,8 +64,20 @@
                 "MOVE_DRAGON_PULSE"
             ],
             [
+                1,
+                "MOVE_HEAL_PULSE"
+            ],
+            [
                 15,
                 "MOVE_AQUA_JET"
+            ],
+            [
+                20,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
+                25,
+                "MOVE_HONE_CLAWS"
             ],
             [
                 30,
@@ -139,7 +151,8 @@
         ],
         "egg_moves": [
             "MOVE_BUBBLE_BEAM",
-            "MOVE_AQUA_TAIL"
+            "MOVE_AQUA_TAIL",
+            "MOVE_ENTRAINMENT"
         ]
     },
     "evolutions": [],

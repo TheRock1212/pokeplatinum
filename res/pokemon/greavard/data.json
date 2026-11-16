@@ -84,8 +84,16 @@
                 "MOVE_CRUNCH"
             ],
             [
+                32,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
                 37,
                 "MOVE_HELPING_HAND"
+            ],
+            [
+                41,
+                "MOVE_PHANTOM_FORCE"
             ],
             [
                 46,
@@ -124,7 +132,8 @@
             "MOVE_MEMENTO",
             "MOVE_YAWN",
             "MOVE_HOWL",
-            "MOVE_SHADOW_SNEAK"
+            "MOVE_SHADOW_SNEAK",
+            "MOVE_ALLY_SWITCH"
         ]
     },
     "evolutions": [

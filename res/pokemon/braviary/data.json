@@ -64,6 +64,10 @@
                 "MOVE_SKY_ATTACK"
             ],
             [
+                1,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
                 18,
                 "MOVE_TAILWIND"
             ],

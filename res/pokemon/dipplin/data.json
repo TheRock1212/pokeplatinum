@@ -64,6 +64,10 @@
                 "MOVE_ASTONISH"
             ],
             [
+                4,
+                "MOVE_DRAGON_TAIL"
+            ],
+            [
                 8,
                 "MOVE_GROWTH"
             ],
@@ -78,6 +82,10 @@
             [
                 20,
                 "MOVE_BULLET_SEED"
+            ],
+            [
+                28,
+                "MOVE_SYRUP_BOMB"
             ],
             [
                 32,
@@ -123,13 +131,14 @@
             "MOVE_DEFENSE_CURL",
             "MOVE_ROLLOUT",
             "MOVE_RECYCLE",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_INFESTATION"
         ]
     },
     "evolutions": [
         [
-            "EVO_LEVEL",
-            30,
+            "EVO_LEVEL_KNOW_MOVE",
+            "MOVE_DRAGON_CHEER",
             "SPECIES_HYDRAPPLE"
         ]
     ],

@@ -72,6 +72,10 @@
                 "MOVE_MUD_SLAP"
             ],
             [
+                16,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
                 20,
                 "MOVE_IRON_DEFENSE"
             ],
@@ -135,7 +139,9 @@
         "egg_moves": [
             "MOVE_TAKE_DOWN",
             "MOVE_CURSE",
-            "MOVE_GRAVITY"
+            "MOVE_GRAVITY",
+            "MOVE_WIDE_GUARD",
+            "MOVE_AUTOTOMIZE"
         ]
     },
     "evolutions": [

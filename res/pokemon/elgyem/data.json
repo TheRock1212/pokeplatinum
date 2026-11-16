@@ -64,6 +64,14 @@
                 "MOVE_PSYBEAM"
             ],
             [
+                24,
+                "MOVE_POWER_SPLIT"
+            ],
+            [
+                24,
+                "MOVE_GUARD_SPLIT"
+            ],
+            [
                 30,
                 "MOVE_HEADBUTT"
             ],
@@ -78,6 +86,10 @@
             [
                 48,
                 "MOVE_CALM_MIND"
+            ],
+            [
+                54,
+                "MOVE_WONDER_ROOM"
             ],
             [
                 60,

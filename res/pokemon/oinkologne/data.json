@@ -52,6 +52,14 @@
                 "MOVE_TAIL_WHIP"
             ],
             [
+                5,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
+                8,
+                "MOVE_ECHOED_VOICE"
+            ],
+            [
                 12,
                 "MOVE_MUD_SHOT"
             ],
@@ -76,6 +84,10 @@
                 "MOVE_YAWN"
             ],
             [
+                34,
+                "MOVE_WORK_UP"
+            ],
+            [
                 38,
                 "MOVE_UPROAR"
             ],
@@ -86,6 +98,10 @@
             [
                 48,
                 "MOVE_EARTH_POWER"
+            ],
+            [
+                54,
+                "MOVE_BELCH"
             ]
         ],
         "by_tm": [
@@ -118,7 +134,8 @@
             "MOVE_STOCKPILE",
             "MOVE_SPIT_UP",
             "MOVE_SWALLOW",
-            "MOVE_ENDEAVOR"
+            "MOVE_ENDEAVOR",
+            "MOVE_STUFF_CHEEKS"
         ]
     },
     "evolutions": [],

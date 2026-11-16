@@ -96,6 +96,10 @@
                 "MOVE_DOUBLE_EDGE"
             ],
             [
+                45,
+                "MOVE_SHELL_SMASH"
+            ],
+            [
                 50,
                 "MOVE_EXPLOSION"
             ]

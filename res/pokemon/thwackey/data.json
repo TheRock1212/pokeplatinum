@@ -60,6 +60,10 @@
                 "MOVE_TAUNT"
             ],
             [
+                1,
+                "MOVE_BRANCH_POKE"
+            ],
+            [
                 12,
                 "MOVE_RAZOR_LEAF"
             ],

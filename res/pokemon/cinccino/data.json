@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_TAIL_SLAP"
+            ],
+            [
                 1,
                 "MOVE_POUND"
             ],
@@ -120,7 +124,11 @@
             "MOVE_TICKLE",
             "MOVE_ROCK_BLAST",
             "MOVE_LAST_RESORT",
-            "MOVE_AQUA_TAIL"
+            "MOVE_AQUA_TAIL",
+            "MOVE_AFTER_YOU",
+            "MOVE_ECHOED_VOICE",
+            "MOVE_BABY_DOLL_EYES",
+            "MOVE_TIDY_UP"
         ]
     },
     "evolutions": [],

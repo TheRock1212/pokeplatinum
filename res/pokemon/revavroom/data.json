@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_SHIFT_GEAR"
+            ],
+            [
                 1,
                 "MOVE_MAGNET_RISE"
             ],
@@ -100,6 +104,10 @@
                 "MOVE_UPROAR"
             ],
             [
+                52,
+                "MOVE_SPIN_OUT"
+            ],
+            [
                 58,
                 "MOVE_GUNK_SHOT"
             ]
@@ -137,7 +145,8 @@
             "MOVE_TOXIC",
             "MOVE_HAZE",
             "MOVE_SELFDESTRUCT",
-            "MOVE_TORMENT"
+            "MOVE_TORMENT",
+            "MOVE_PARTING_SHOT"
         ]
     },
     "evolutions": [],

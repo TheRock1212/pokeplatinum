@@ -48,6 +48,18 @@
                 "MOVE_POUND"
             ],
             [
+                1,
+                "MOVE_PLAY_NICE"
+            ],
+            [
+                4,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
+                9,
+                "MOVE_BABY_DOLL_EYES"
+            ],
+            [
                 12,
                 "MOVE_HELPING_HAND"
             ],
@@ -60,16 +72,40 @@
                 "MOVE_ZEN_HEADBUTT"
             ],
             [
+                24,
+                "MOVE_LIFE_DEW"
+            ],
+            [
+                28,
+                "MOVE_AFTER_YOU"
+            ],
+            [
                 32,
                 "MOVE_TAKE_DOWN"
+            ],
+            [
+                36,
+                "MOVE_SIMPLE_BEAM"
             ],
             [
                 40,
                 "MOVE_HYPER_VOICE"
             ],
             [
+                44,
+                "MOVE_HEAL_PULSE"
+            ],
+            [
                 48,
                 "MOVE_DOUBLE_EDGE"
+            ],
+            [
+                52,
+                "MOVE_ENTRAINMENT"
+            ],
+            [
+                56,
+                "MOVE_MISTY_TERRAIN"
             ],
             [
                 60,

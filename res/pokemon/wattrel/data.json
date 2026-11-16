@@ -76,8 +76,16 @@
                 "MOVE_ROOST"
             ],
             [
+                27,
+                "MOVE_DUAL_WINGBEAT"
+            ],
+            [
                 32,
                 "MOVE_AGILITY"
+            ],
+            [
+                37,
+                "MOVE_VOLT_SWITCH"
             ],
             [
                 43,

@@ -72,6 +72,10 @@
                 "MOVE_HEADBUTT"
             ],
             [
+                24,
+                "MOVE_WORK_UP"
+            ],
+            [
                 28,
                 "MOVE_SLAM"
             ],
@@ -150,7 +154,8 @@
         "egg_moves": [
             "MOVE_ASTONISH",
             "MOVE_HEAD_SMASH",
-            "MOVE_DOUBLE_HIT"
+            "MOVE_DOUBLE_HIT",
+            "MOVE_BELCH"
         ]
     },
     "evolutions": [

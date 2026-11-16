@@ -96,8 +96,20 @@
                 "MOVE_GIGA_DRAIN"
             ],
             [
+                50,
+                "MOVE_RUINATION"
+            ],
+            [
+                55,
+                "MOVE_FOUL_PLAY"
+            ],
+            [
                 60,
                 "MOVE_POWER_WHIP"
+            ],
+            [
+                65,
+                "MOVE_GRASSY_TERRAIN"
             ],
             [
                 70,

@@ -64,6 +64,10 @@
                 "MOVE_FALSE_SWIPE"
             ],
             [
+                16,
+                "MOVE_ACID_SPRAY"
+            ],
+            [
                 20,
                 "MOVE_HEADBUTT"
             ],

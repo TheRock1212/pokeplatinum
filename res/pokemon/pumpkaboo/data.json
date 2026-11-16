@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_TRICK_OR_TREAT"
+            ],
+            [
+                1,
                 "MOVE_ASTONISH"
             ],
             [
@@ -54,6 +58,10 @@
             [
                 8,
                 "MOVE_CONFUSE_RAY"
+            ],
+            [
+                12,
+                "MOVE_TRICK_OR_TREAT"
             ],
             [
                 12,
@@ -69,6 +77,10 @@
             ],
             [
                 24,
+                "MOVE_TRICK_OR_TREAT"
+            ],
+            [
+                24,
                 "MOVE_SCARY_FACE"
             ],
             [
@@ -78,6 +90,10 @@
             [
                 32,
                 "MOVE_SEED_BOMB"
+            ],
+            [
+                36,
+                "MOVE_TRICK_OR_TREAT"
             ],
             [
                 36,

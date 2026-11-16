@@ -56,6 +56,10 @@
                 "MOVE_CHARGE"
             ],
             [
+                14,
+                "MOVE_ECHOED_VOICE"
+            ],
+            [
                 21,
                 "MOVE_ANCIENT_POWER"
             ],
@@ -68,12 +72,24 @@
                 "MOVE_AVALANCHE"
             ],
             [
+                42,
+                "MOVE_FREEZE_DRY"
+            ],
+            [
                 49,
                 "MOVE_SLAM"
             ],
             [
                 56,
                 "MOVE_DISCHARGE"
+            ],
+            [
+                63,
+                "MOVE_BOLT_BEAK"
+            ],
+            [
+                70,
+                "MOVE_ICICLE_CRASH"
             ],
             [
                 77,

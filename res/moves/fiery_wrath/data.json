@@ -1,0 +1,30 @@
+{
+    "name": "Fiery Wrath",
+    "description": [
+        "The user transforms its\n",
+        "wrath into a fire-like\n",
+        "aura to attack. This may\n",
+        "also make opposing\n",
+        "Pokémon flinch."
+    ],
+    "class": "CLASS_SPECIAL",
+    "type": "TYPE_DARK",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_FLINCH_HIT",
+        "chance": 20
+    },
+    "range": "RANGE_ADJACENT_OPPONENTS",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

@@ -87,11 +87,20 @@ static void ProcMove(dp_node root)
         .pp             = dp_u8_at(root, ".pp"),
         .effect         = dp_u16(dp_lookup_at(root, ".effect.type", L_BATTLE_EFFECT)),
         .effectChance   = dp_u8_at(root, ".effect.chance"),
-        .range          = dp_u16(dp_lookup_at(root, ".range", L_RANGE)),
         .priority       = dp_s8_at(root, ".priority"),
         .contest.effect = dp_u8(dp_lookup_at(root, ".contest.effect", L_CONTEST_EFFECT)),
         .contest.type   = dp_u8(dp_lookup_at(root, ".contest.type", L_CONTEST_TYPE)),
     };
+
+    // A range is one name, or a list of names OR'd together (e.g. Rototiller, Teatime).
+    dp_node range = dp_at(root, ".range");
+    if (dp_type_of(range) == DP_ARRAY) {
+        for (dp_each(part, i, range)) {
+            data.range |= dp_u16(dp_lookup(part, L_RANGE));
+        }
+    } else {
+        data.range = dp_u16(dp_lookup(range, L_RANGE));
+    }
 
     for (dp_each(flag, i, dp_at(root, ".flags"))) {
         data.flags |= dp_u8(dp_lookup(flag, L_FLAG));
@@ -227,7 +236,11 @@ int main(int argc, char **argv)
         TextFile_Printf(F_MOVE_SCRIPTS, "%s/script\n", entry.stem);
     }
 
-    PackExtraMoves();
-    OrderExtraScripts();
+    // The retail filler entries only exist in an unexpanded move list; once real moves take
+    // indices 468+, the archives hold exactly one entry per move.
+    if (MAX_MOVES == MOVE_SHADOW_FORCE + 1) {
+        PackExtraMoves();
+        OrderExtraScripts();
+    }
     return Driver_Finish(&driver);
 }

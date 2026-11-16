@@ -52,6 +52,18 @@
                 "MOVE_HARDEN"
             ],
             [
+                1,
+                "MOVE_DIAMOND_STORM"
+            ],
+            [
+                7,
+                "MOVE_GUARD_SPLIT"
+            ],
+            [
+                14,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
                 21,
                 "MOVE_FLAIL"
             ],
@@ -82,6 +94,10 @@
             [
                 70,
                 "MOVE_STEALTH_ROCK"
+            ],
+            [
+                77,
+                "MOVE_MOONBLAST"
             ],
             [
                 84,

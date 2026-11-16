@@ -1,0 +1,32 @@
+{
+    "name": "Jaw Lock",
+    "description": [
+        "This move prevents the\n",
+        "user and the target from\n",
+        "switching out until\n",
+        "either of them faints or\n",
+        "leaves the field."
+    ],
+    "class": "CLASS_PHYSICAL",
+    "type": "TYPE_DARK",
+    "power": 80,
+    "accuracy": 100,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_PREVENT_ESCAPE_BOTH_HIT",
+        "chance": 0
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_MAKES_CONTACT",
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK",
+        "MOVE_FLAG_HIDES_HP_GAUGES"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

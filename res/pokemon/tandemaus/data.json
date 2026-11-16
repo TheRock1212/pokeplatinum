@@ -48,6 +48,14 @@
                 "MOVE_POUND"
             ],
             [
+                1,
+                "MOVE_BABY_DOLL_EYES"
+            ],
+            [
+                5,
+                "MOVE_ECHOED_VOICE"
+            ],
+            [
                 8,
                 "MOVE_HELPING_HAND"
             ],
@@ -68,6 +76,10 @@
                 "MOVE_ENCORE"
             ],
             [
+                26,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
                 30,
                 "MOVE_HYPER_VOICE"
             ],
@@ -82,6 +94,10 @@
             [
                 41,
                 "MOVE_COPYCAT"
+            ],
+            [
+                46,
+                "MOVE_POPULATION_BOMB"
             ]
         ],
         "by_tm": [
@@ -115,7 +131,8 @@
             "MOVE_BATON_PASS",
             "MOVE_TICKLE",
             "MOVE_FEINT",
-            "MOVE_SWITCHEROO"
+            "MOVE_SWITCHEROO",
+            "MOVE_AFTER_YOU"
         ]
     },
     "evolutions": [

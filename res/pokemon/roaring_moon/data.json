@@ -60,6 +60,10 @@
                 "MOVE_FOCUS_ENERGY"
             ],
             [
+                7,
+                "MOVE_INCINERATE"
+            ],
+            [
                 14,
                 "MOVE_HEADBUTT"
             ],
@@ -94,6 +98,10 @@
             [
                 70,
                 "MOVE_FLY"
+            ],
+            [
+                77,
+                "MOVE_THROAT_CHOP"
             ],
             [
                 84,
@@ -140,7 +148,10 @@
             "MOVE_ZEN_HEADBUTT"
         ],
         "egg_moves": [
-            "MOVE_SUNNY_DAY"
+            "MOVE_SUNNY_DAY",
+            "MOVE_JAW_LOCK",
+            "MOVE_BREAKING_SWIPE",
+            "MOVE_SCALE_SHOT"
         ]
     },
     "evolutions": [],

@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_LUMINA_CRASH"
+            ],
+            [
                 1,
                 "MOVE_GROWL"
             ],
@@ -64,6 +68,14 @@
                 "MOVE_CONFUSION"
             ],
             [
+                8,
+                "MOVE_BABY_DOLL_EYES"
+            ],
+            [
+                11,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
                 15,
                 "MOVE_QUICK_ATTACK"
             ],
@@ -82,6 +94,10 @@
             [
                 34,
                 "MOVE_UPROAR"
+            ],
+            [
+                43,
+                "MOVE_DAZZLING_GLEAM"
             ],
             [
                 49,
@@ -129,7 +145,8 @@
         ],
         "egg_moves": [
             "MOVE_HYPNOSIS",
-            "MOVE_ROOST"
+            "MOVE_ROOST",
+            "MOVE_ALLY_SWITCH"
         ]
     },
     "evolutions": [],

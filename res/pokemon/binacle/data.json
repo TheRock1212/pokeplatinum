@@ -80,6 +80,18 @@
                 "MOVE_SLASH"
             ],
             [
+                32,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
+                36,
+                "MOVE_RAZOR_SHELL"
+            ],
+            [
+                40,
+                "MOVE_SHELL_SMASH"
+            ],
+            [
                 44,
                 "MOVE_CROSS_CHOP"
             ]

@@ -45,11 +45,19 @@
         "by_level": [
             [
                 1,
+                "MOVE_ELECTRIFY"
+            ],
+            [
+                1,
                 "MOVE_TACKLE"
             ],
             [
                 1,
                 "MOVE_TAIL_WHIP"
+            ],
+            [
+                1,
+                "MOVE_NUZZLE"
             ],
             [
                 1,
@@ -74,6 +82,18 @@
             [
                 41,
                 "MOVE_CHARGE"
+            ],
+            [
+                48,
+                "MOVE_WILD_CHARGE"
+            ],
+            [
+                55,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
+                62,
+                "MOVE_ELECTRIC_TERRAIN"
             ]
         ],
         "by_tm": [
@@ -102,7 +122,8 @@
             "MOVE_SAND_ATTACK",
             "MOVE_DOUBLE_EDGE",
             "MOVE_HOWL",
-            "MOVE_DISCHARGE"
+            "MOVE_DISCHARGE",
+            "MOVE_FLAME_CHARGE"
         ]
     },
     "evolutions": [],

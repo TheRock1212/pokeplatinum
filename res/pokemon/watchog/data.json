@@ -53,15 +53,11 @@
             ],
             [
                 1,
+                "MOVE_ROTOTILLER"
+            ],
+            [
+                1,
                 "MOVE_TACKLE"
-            ],
-            [
-                1,
-                "MOVE_LEER"
-            ],
-            [
-                1,
-                "MOVE_BITE"
             ],
             [
                 3,
@@ -94,6 +90,10 @@
             [
                 22,
                 "MOVE_SUPER_FANG"
+            ],
+            [
+                25,
+                "MOVE_AFTER_YOU"
             ],
             [
                 29,
@@ -186,7 +186,8 @@
             "MOVE_IRON_TAIL",
             "MOVE_REVENGE",
             "MOVE_BULLET_SEED",
-            "MOVE_ASSURANCE"
+            "MOVE_ASSURANCE",
+            "MOVE_TEARFUL_LOOK"
         ]
     },
     "evolutions": [],

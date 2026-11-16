@@ -88,6 +88,10 @@
                 "MOVE_NIGHT_SLASH"
             ],
             [
+                36,
+                "MOVE_FREEZE_DRY"
+            ],
+            [
                 40,
                 "MOVE_LIGHT_SCREEN"
             ],
@@ -155,7 +159,9 @@
             "MOVE_SNORE"
         ],
         "egg_moves": [
-            "MOVE_EXPLOSION"
+            "MOVE_EXPLOSION",
+            "MOVE_FROST_BREATH",
+            "MOVE_AURORA_VEIL"
         ]
     },
     "evolutions": [],

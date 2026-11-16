@@ -137,7 +137,10 @@
         "egg_moves": [
             "MOVE_EXPLOSION",
             "MOVE_MAGNET_RISE",
-            "MOVE_ICE_SHARD"
+            "MOVE_ICE_SHARD",
+            "MOVE_AUTOTOMIZE",
+            "MOVE_ICICLE_CRASH",
+            "MOVE_AURORA_VEIL"
         ]
     },
     "evolutions": [

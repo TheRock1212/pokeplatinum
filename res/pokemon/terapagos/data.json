@@ -72,6 +72,14 @@
                 "MOVE_EARTH_POWER"
             ],
             [
+                50,
+                "MOVE_HEAVY_SLAM"
+            ],
+            [
+                60,
+                "MOVE_TERA_STARSTORM"
+            ],
+            [
                 70,
                 "MOVE_DOUBLE_EDGE"
             ],

@@ -60,6 +60,10 @@
                 "MOVE_IRON_DEFENSE"
             ],
             [
+                12,
+                "MOVE_BULLDOZE"
+            ],
+            [
                 16,
                 "MOVE_STOMP"
             ],
@@ -70,6 +74,14 @@
             [
                 24,
                 "MOVE_COUNTER"
+            ],
+            [
+                28,
+                "MOVE_HIGH_HORSEPOWER"
+            ],
+            [
+                34,
+                "MOVE_HEAVY_SLAM"
             ],
             [
                 40,
@@ -124,7 +136,8 @@
             "MOVE_DOUBLE_EDGE",
             "MOVE_ROAR",
             "MOVE_FISSURE",
-            "MOVE_ENDEAVOR"
+            "MOVE_ENDEAVOR",
+            "MOVE_SMACK_DOWN"
         ]
     },
     "evolutions": [],

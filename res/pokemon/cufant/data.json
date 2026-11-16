@@ -60,6 +60,10 @@
                 "MOVE_ROCK_SMASH"
             ],
             [
+                15,
+                "MOVE_BULLDOZE"
+            ],
+            [
                 20,
                 "MOVE_STOMP"
             ],
@@ -78,6 +82,14 @@
             [
                 40,
                 "MOVE_IRON_HEAD"
+            ],
+            [
+                45,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
+                50,
+                "MOVE_HIGH_HORSEPOWER"
             ],
             [
                 55,
@@ -119,7 +131,8 @@
             "MOVE_FISSURE",
             "MOVE_DEFENSE_CURL",
             "MOVE_CURSE",
-            "MOVE_SWAGGER"
+            "MOVE_SWAGGER",
+            "MOVE_BELCH"
         ]
     },
     "evolutions": [

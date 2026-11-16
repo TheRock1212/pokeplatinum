@@ -60,6 +60,18 @@
                 "MOVE_TAUNT"
             ],
             [
+                12,
+                "MOVE_CIRCLE_THROW"
+            ],
+            [
+                16,
+                "MOVE_LOW_SWEEP"
+            ],
+            [
+                20,
+                "MOVE_WORK_UP"
+            ],
+            [
                 24,
                 "MOVE_SLASH"
             ],
@@ -74,6 +86,14 @@
             [
                 36,
                 "MOVE_BODY_SLAM"
+            ],
+            [
+                40,
+                "MOVE_PARTING_SHOT"
+            ],
+            [
+                44,
+                "MOVE_ENTRAINMENT"
             ]
         ],
         "by_tm": [
@@ -135,7 +155,11 @@
             "MOVE_ZEN_HEADBUTT"
         ],
         "egg_moves": [
-            "MOVE_SEISMIC_TOSS"
+            "MOVE_SEISMIC_TOSS",
+            "MOVE_STORM_THROW",
+            "MOVE_QUICK_GUARD",
+            "MOVE_QUASH",
+            "MOVE_POWER_TRIP"
         ]
     },
     "evolutions": [

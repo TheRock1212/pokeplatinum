@@ -68,12 +68,20 @@
                 "MOVE_CHARM"
             ],
             [
+                20,
+                "MOVE_PSYSHOCK"
+            ],
+            [
                 24,
                 "MOVE_LIGHT_SCREEN"
             ],
             [
                 24,
                 "MOVE_REFLECT"
+            ],
+            [
+                28,
+                "MOVE_ALLY_SWITCH"
             ],
             [
                 35,
@@ -90,6 +98,10 @@
             [
                 52,
                 "MOVE_FUTURE_SIGHT"
+            ],
+            [
+                58,
+                "MOVE_WONDER_ROOM"
             ]
         ],
         "by_tm": [

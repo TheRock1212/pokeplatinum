@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_ELECTRO_BALL"
+            ],
+            [
                 1,
                 "MOVE_GROWL"
             ],
@@ -76,12 +80,24 @@
                 "MOVE_ROOST"
             ],
             [
+                30,
+                "MOVE_DUAL_WINGBEAT"
+            ],
+            [
                 36,
                 "MOVE_AGILITY"
             ],
             [
+                43,
+                "MOVE_VOLT_SWITCH"
+            ],
+            [
                 48,
                 "MOVE_DISCHARGE"
+            ],
+            [
+                55,
+                "MOVE_HURRICANE"
             ]
         ],
         "by_tm": [

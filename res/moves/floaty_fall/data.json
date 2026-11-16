@@ -1,0 +1,32 @@
+{
+    "name": "Floaty Fall",
+    "description": [
+        "The user floats in the\n",
+        "air, then dives at a\n",
+        "steep angle to attack.\n",
+        "This may also make the\n",
+        "target flinch."
+    ],
+    "class": "CLASS_PHYSICAL",
+    "type": "TYPE_FLYING",
+    "power": 90,
+    "accuracy": 95,
+    "pp": 15,
+    "effect": {
+        "type": "BATTLE_EFFECT_FLINCH_HIT",
+        "chance": 30
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_MAKES_CONTACT",
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK",
+        "MOVE_FLAG_HIDES_HP_GAUGES"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

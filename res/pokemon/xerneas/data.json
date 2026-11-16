@@ -76,12 +76,32 @@
                 "MOVE_PSYCH_UP"
             ],
             [
+                35,
+                "MOVE_HORN_LEECH"
+            ],
+            [
+                40,
+                "MOVE_MISTY_TERRAIN"
+            ],
+            [
                 45,
                 "MOVE_INGRAIN"
             ],
             [
                 50,
                 "MOVE_TAKE_DOWN"
+            ],
+            [
+                55,
+                "MOVE_GEOMANCY"
+            ],
+            [
+                60,
+                "MOVE_MOONBLAST"
+            ],
+            [
+                65,
+                "MOVE_HEAL_PULSE"
             ],
             [
                 70,

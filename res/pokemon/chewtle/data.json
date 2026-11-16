@@ -68,6 +68,14 @@
                 "MOVE_COUNTER"
             ],
             [
+                35,
+                "MOVE_JAW_LOCK"
+            ],
+            [
+                42,
+                "MOVE_LIQUIDATION"
+            ],
+            [
                 49,
                 "MOVE_BODY_SLAM"
             ]
@@ -93,7 +101,9 @@
             "MOVE_SNORE"
         ],
         "egg_moves": [
-            "MOVE_GASTRO_ACID"
+            "MOVE_GASTRO_ACID",
+            "MOVE_SHELL_SMASH",
+            "MOVE_DRAGON_TAIL"
         ]
     },
     "evolutions": [

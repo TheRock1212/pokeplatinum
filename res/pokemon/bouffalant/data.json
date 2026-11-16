@@ -76,6 +76,14 @@
                 "MOVE_REVERSAL"
             ],
             [
+                35,
+                "MOVE_THROAT_CHOP"
+            ],
+            [
+                40,
+                "MOVE_HEAD_CHARGE"
+            ],
+            [
                 45,
                 "MOVE_SWORDS_DANCE"
             ],
@@ -134,7 +142,9 @@
             "MOVE_HEADBUTT",
             "MOVE_SKULL_BASH",
             "MOVE_MUD_SLAP",
-            "MOVE_ENDEAVOR"
+            "MOVE_ENDEAVOR",
+            "MOVE_COTTON_GUARD",
+            "MOVE_BELCH"
         ]
     },
     "evolutions": [],

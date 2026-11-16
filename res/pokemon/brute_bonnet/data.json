@@ -68,6 +68,10 @@
                 "MOVE_SYNTHESIS"
             ],
             [
+                28,
+                "MOVE_CLEAR_SMOG"
+            ],
+            [
                 35,
                 "MOVE_PAYBACK"
             ],
@@ -90,6 +94,10 @@
             [
                 70,
                 "MOVE_INGRAIN"
+            ],
+            [
+                77,
+                "MOVE_RAGE_POWDER"
             ],
             [
                 91,

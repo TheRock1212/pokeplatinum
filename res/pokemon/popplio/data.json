@@ -56,8 +56,16 @@
                 "MOVE_WATER_GUN"
             ],
             [
+                6,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
                 9,
                 "MOVE_AQUA_JET"
+            ],
+            [
+                12,
+                "MOVE_BABY_DOLL_EYES"
             ],
             [
                 15,
@@ -76,8 +84,16 @@
                 "MOVE_ENCORE"
             ],
             [
+                27,
+                "MOVE_MISTY_TERRAIN"
+            ],
+            [
                 30,
                 "MOVE_HYPER_VOICE"
+            ],
+            [
+                33,
+                "MOVE_MOONBLAST"
             ],
             [
                 36,
@@ -119,7 +135,8 @@
         ],
         "egg_moves": [
             "MOVE_PERISH_SONG",
-            "MOVE_AQUA_RING"
+            "MOVE_AQUA_RING",
+            "MOVE_LIFE_DEW"
         ]
     },
     "evolutions": [

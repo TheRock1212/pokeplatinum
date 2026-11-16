@@ -135,7 +135,9 @@
         ],
         "egg_moves": [
             "MOVE_SKY_ATTACK",
-            "MOVE_GUNK_SHOT"
+            "MOVE_GUNK_SHOT",
+            "MOVE_ECHOED_VOICE",
+            "MOVE_BOOMBURST"
         ]
     },
     "evolutions": [

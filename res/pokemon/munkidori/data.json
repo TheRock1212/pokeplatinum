@@ -68,6 +68,10 @@
                 "MOVE_PSYBEAM"
             ],
             [
+                24,
+                "MOVE_CLEAR_SMOG"
+            ],
+            [
                 32,
                 "MOVE_POISON_JAB"
             ],
@@ -76,12 +80,20 @@
                 "MOVE_PSYCHIC"
             ],
             [
+                48,
+                "MOVE_SLUDGE_WAVE"
+            ],
+            [
                 56,
                 "MOVE_NASTY_PLOT"
             ],
             [
                 64,
                 "MOVE_FUTURE_SIGHT"
+            ],
+            [
+                72,
+                "MOVE_PARTING_SHOT"
             ]
         ],
         "by_tm": [

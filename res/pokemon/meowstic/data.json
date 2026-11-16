@@ -49,6 +49,10 @@
             ],
             [
                 1,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
+                1,
                 "MOVE_FAKE_OUT"
             ],
             [
@@ -96,12 +100,24 @@
                 "MOVE_REFLECT"
             ],
             [
+                39,
+                "MOVE_PSYSHOCK"
+            ],
+            [
                 44,
                 "MOVE_IMPRISON"
             ],
             [
+                49,
+                "MOVE_QUICK_GUARD"
+            ],
+            [
                 54,
                 "MOVE_PSYCHIC"
+            ],
+            [
+                59,
+                "MOVE_MISTY_TERRAIN"
             ]
         ],
         "by_tm": [

@@ -60,8 +60,16 @@
                 "MOVE_FAKE_OUT"
             ],
             [
+                1,
+                "MOVE_QUICK_GUARD"
+            ],
+            [
                 15,
                 "MOVE_FURY_SWIPES"
+            ],
+            [
+                20,
+                "MOVE_WIDE_GUARD"
             ],
             [
                 25,
@@ -74,6 +82,10 @@
             [
                 35,
                 "MOVE_DRAIN_PUNCH"
+            ],
+            [
+                40,
+                "MOVE_HONE_CLAWS"
             ],
             [
                 45,

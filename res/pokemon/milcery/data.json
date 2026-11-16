@@ -48,12 +48,20 @@
                 "MOVE_TACKLE"
             ],
             [
+                1,
+                "MOVE_AROMATIC_MIST"
+            ],
+            [
                 5,
                 "MOVE_SWEET_KISS"
             ],
             [
                 10,
                 "MOVE_SWEET_SCENT"
+            ],
+            [
+                15,
+                "MOVE_DRAINING_KISS"
             ],
             [
                 20,
@@ -68,8 +76,20 @@
                 "MOVE_ACID_ARMOR"
             ],
             [
+                35,
+                "MOVE_DAZZLING_GLEAM"
+            ],
+            [
                 40,
                 "MOVE_RECOVER"
+            ],
+            [
+                45,
+                "MOVE_MISTY_TERRAIN"
+            ],
+            [
+                50,
+                "MOVE_ENTRAINMENT"
             ]
         ],
         "by_tm": [
@@ -87,7 +107,8 @@
             "MOVE_SNORE"
         ],
         "egg_moves": [
-            "MOVE_LAST_RESORT"
+            "MOVE_LAST_RESORT",
+            "MOVE_BABY_DOLL_EYES"
         ]
     },
     "evolutions": [

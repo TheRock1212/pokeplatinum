@@ -84,6 +84,10 @@
                 "MOVE_FOCUS_ENERGY"
             ],
             [
+                66,
+                "MOVE_DRAGON_ENERGY"
+            ],
+            [
                 72,
                 "MOVE_HYPER_BEAM"
             ],

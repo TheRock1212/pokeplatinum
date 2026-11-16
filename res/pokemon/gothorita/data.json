@@ -56,12 +56,20 @@
                 "MOVE_TICKLE"
             ],
             [
+                1,
+                "MOVE_PLAY_NICE"
+            ],
+            [
                 12,
                 "MOVE_PSYBEAM"
             ],
             [
                 16,
                 "MOVE_CHARM"
+            ],
+            [
+                20,
+                "MOVE_PSYSHOCK"
             ],
             [
                 24,
@@ -82,6 +90,10 @@
             [
                 52,
                 "MOVE_FUTURE_SIGHT"
+            ],
+            [
+                58,
+                "MOVE_MAGIC_ROOM"
             ]
         ],
         "by_tm": [
@@ -142,7 +154,8 @@
             "MOVE_MEAN_LOOK",
             "MOVE_MIRROR_COAT",
             "MOVE_FAKE_OUT",
-            "MOVE_TORMENT"
+            "MOVE_TORMENT",
+            "MOVE_HEAL_PULSE"
         ]
     },
     "evolutions": [

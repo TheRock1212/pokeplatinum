@@ -44,12 +44,20 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_SILK_TRAP"
+            ],
+            [
                 1,
                 "MOVE_TACKLE"
             ],
             [
                 1,
                 "MOVE_STRING_SHOT"
+            ],
+            [
+                5,
+                "MOVE_STRUGGLE_BUG"
             ],
             [
                 8,
@@ -76,8 +84,24 @@
                 "MOVE_HEADBUTT"
             ],
             [
+                33,
+                "MOVE_STICKY_WEB"
+            ],
+            [
                 37,
                 "MOVE_GASTRO_ACID"
+            ],
+            [
+                41,
+                "MOVE_CIRCLE_THROW"
+            ],
+            [
+                45,
+                "MOVE_THROAT_CHOP"
+            ],
+            [
+                49,
+                "MOVE_SKITTER_SMACK"
             ]
         ],
         "by_tm": [
@@ -110,7 +134,9 @@
         ],
         "egg_moves": [
             "MOVE_MEMENTO",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_FIRST_IMPRESSION",
+            "MOVE_LUNGE"
         ]
     },
     "evolutions": [],

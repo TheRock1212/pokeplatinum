@@ -64,6 +64,10 @@
                 "MOVE_FLAIL"
             ],
             [
+                20,
+                "MOVE_ACROBATICS"
+            ],
+            [
                 25,
                 "MOVE_AGILITY"
             ],
@@ -125,7 +129,9 @@
             "MOVE_SWIFT"
         ],
         "egg_moves": [
-            "MOVE_DEFOG"
+            "MOVE_DEFOG",
+            "MOVE_FLAME_CHARGE",
+            "MOVE_QUICK_GUARD"
         ]
     },
     "evolutions": [

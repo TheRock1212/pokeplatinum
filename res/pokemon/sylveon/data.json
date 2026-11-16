@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
                 1,
                 "MOVE_BATON_PASS"
             ],
@@ -76,24 +80,16 @@
                 "MOVE_COPYCAT"
             ],
             [
-                1,
-                "MOVE_COVET"
-            ],
-            [
-                1,
-                "MOVE_CHARM"
-            ],
-            [
-                1,
-                "MOVE_HELPING_HAND"
-            ],
-            [
                 5,
                 "MOVE_SAND_ATTACK"
             ],
             [
                 10,
                 "MOVE_QUICK_ATTACK"
+            ],
+            [
+                15,
+                "MOVE_BABY_DOLL_EYES"
             ],
             [
                 20,
@@ -104,12 +100,24 @@
                 "MOVE_LIGHT_SCREEN"
             ],
             [
+                30,
+                "MOVE_DRAINING_KISS"
+            ],
+            [
+                35,
+                "MOVE_MISTY_TERRAIN"
+            ],
+            [
                 40,
                 "MOVE_SKILL_SWAP"
             ],
             [
                 45,
                 "MOVE_PSYCH_UP"
+            ],
+            [
+                50,
+                "MOVE_MOONBLAST"
             ],
             [
                 55,

@@ -49,6 +49,10 @@
             ],
             [
                 1,
+                "MOVE_ELECTRIC_TERRAIN"
+            ],
+            [
+                1,
                 "MOVE_SUPERSONIC"
             ],
             [
@@ -58,6 +62,10 @@
             [
                 7,
                 "MOVE_SPARK"
+            ],
+            [
+                14,
+                "MOVE_BULLDOZE"
             ],
             [
                 21,
@@ -70,6 +78,10 @@
             [
                 35,
                 "MOVE_SCREECH"
+            ],
+            [
+                42,
+                "MOVE_HEAVY_SLAM"
             ],
             [
                 49,
@@ -94,6 +106,10 @@
             [
                 84,
                 "MOVE_ZAP_CANNON"
+            ],
+            [
+                91,
+                "MOVE_MAGNETIC_FLUX"
             ]
         ],
         "by_tm": [

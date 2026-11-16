@@ -80,6 +80,10 @@
                 "MOVE_POISON_JAB"
             ],
             [
+                30,
+                "MOVE_SLUDGE_WAVE"
+            ],
+            [
                 36,
                 "MOVE_MEGAHORN"
             ],
@@ -132,7 +136,9 @@
             "MOVE_ANCIENT_POWER",
             "MOVE_STOCKPILE",
             "MOVE_SPIT_UP",
-            "MOVE_SWALLOW"
+            "MOVE_SWALLOW",
+            "MOVE_ACID_SPRAY",
+            "MOVE_AFTER_YOU"
         ]
     },
     "evolutions": [],

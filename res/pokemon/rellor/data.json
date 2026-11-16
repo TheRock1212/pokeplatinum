@@ -56,6 +56,10 @@
                 "MOVE_SAND_ATTACK"
             ],
             [
+                7,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
                 11,
                 "MOVE_ROLLOUT"
             ],
@@ -74,6 +78,10 @@
             [
                 29,
                 "MOVE_DIG"
+            ],
+            [
+                35,
+                "MOVE_LUNGE"
             ]
         ],
         "by_tm": [

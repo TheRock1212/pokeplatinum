@@ -100,6 +100,10 @@
                 "MOVE_SUPERPOWER"
             ],
             [
+                88,
+                "MOVE_DOUBLE_IRON_BASH"
+            ],
+            [
                 96,
                 "MOVE_HYPER_BEAM"
             ]

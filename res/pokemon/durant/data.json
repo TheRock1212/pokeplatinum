@@ -96,6 +96,10 @@
                 "MOVE_IRON_HEAD"
             ],
             [
+                48,
+                "MOVE_ENTRAINMENT"
+            ],
+            [
                 52,
                 "MOVE_IRON_DEFENSE"
             ],
@@ -146,7 +150,10 @@
         ],
         "egg_moves": [
             "MOVE_FLAIL",
-            "MOVE_METAL_BURST"
+            "MOVE_METAL_BURST",
+            "MOVE_STRUGGLE_BUG",
+            "MOVE_INFESTATION",
+            "MOVE_FIRST_IMPRESSION"
         ]
     },
     "evolutions": [],

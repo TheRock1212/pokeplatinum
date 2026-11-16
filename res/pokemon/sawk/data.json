@@ -60,8 +60,20 @@
                 "MOVE_DOUBLE_KICK"
             ],
             [
+                15,
+                "MOVE_QUICK_GUARD"
+            ],
+            [
+                20,
+                "MOVE_LOW_SWEEP"
+            ],
+            [
                 25,
                 "MOVE_BULK_UP"
+            ],
+            [
+                30,
+                "MOVE_RETALIATE"
             ],
             [
                 35,

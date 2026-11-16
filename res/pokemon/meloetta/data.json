@@ -56,16 +56,32 @@
                 "MOVE_QUICK_ATTACK"
             ],
             [
+                1,
+                "MOVE_ROUND"
+            ],
+            [
                 21,
                 "MOVE_TEETER_DANCE"
+            ],
+            [
+                26,
+                "MOVE_ACROBATICS"
             ],
             [
                 31,
                 "MOVE_PSYBEAM"
             ],
             [
+                36,
+                "MOVE_ECHOED_VOICE"
+            ],
+            [
                 43,
                 "MOVE_U_TURN"
+            ],
+            [
+                50,
+                "MOVE_RELIC_SONG"
             ],
             [
                 57,

@@ -1,0 +1,31 @@
+{
+    "name": "Flower Trick",
+    "description": [
+        "The user throws a rigged\n",
+        "bouquet of flowers at\n",
+        "the target. This attack\n",
+        "never misses and always\n",
+        "lands a critical hit."
+    ],
+    "class": "CLASS_PHYSICAL",
+    "type": "TYPE_GRASS",
+    "power": 70,
+    "accuracy": 0,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_ALWAYS_CRITICAL",
+        "chance": 0
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK",
+        "MOVE_FLAG_HIDES_HP_GAUGES"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_SUNSTEEL_STRIKE"
+            ],
+            [
                 1,
                 "MOVE_TELEPORT"
             ],
@@ -54,6 +58,10 @@
             [
                 1,
                 "MOVE_COSMIC_POWER"
+            ],
+            [
+                1,
+                "MOVE_NOBLE_ROAR"
             ],
             [
                 7,
@@ -84,12 +92,20 @@
                 "MOVE_METAL_BURST"
             ],
             [
+                56,
+                "MOVE_WILD_CHARGE"
+            ],
+            [
                 63,
                 "MOVE_SOLAR_BEAM"
             ],
             [
                 70,
                 "MOVE_FLARE_BLITZ"
+            ],
+            [
+                77,
+                "MOVE_WIDE_GUARD"
             ],
             [
                 84,

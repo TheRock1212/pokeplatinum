@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_TROP_KICK"
+            ],
+            [
                 1,
                 "MOVE_RAZOR_LEAF"
             ],
@@ -68,6 +72,10 @@
                 "MOVE_POWER_WHIP"
             ],
             [
+                1,
+                "MOVE_PLAY_NICE"
+            ],
+            [
                 16,
                 "MOVE_SWEET_SCENT"
             ],
@@ -82,6 +90,10 @@
             [
                 34,
                 "MOVE_TEETER_DANCE"
+            ],
+            [
+                40,
+                "MOVE_AROMATIC_MIST"
             ],
             [
                 46,

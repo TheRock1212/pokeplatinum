@@ -96,6 +96,10 @@
                 "MOVE_UPROAR"
             ],
             [
+                46,
+                "MOVE_SPIN_OUT"
+            ],
+            [
                 50,
                 "MOVE_GUNK_SHOT"
             ]
@@ -128,7 +132,8 @@
             "MOVE_TOXIC",
             "MOVE_HAZE",
             "MOVE_SELFDESTRUCT",
-            "MOVE_TORMENT"
+            "MOVE_TORMENT",
+            "MOVE_PARTING_SHOT"
         ]
     },
     "evolutions": [

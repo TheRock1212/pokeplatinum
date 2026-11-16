@@ -60,6 +60,10 @@
                 "MOVE_SUNNY_DAY"
             ],
             [
+                7,
+                "MOVE_BULLDOZE"
+            ],
+            [
                 14,
                 "MOVE_TAUNT"
             ],
@@ -70,6 +74,10 @@
             [
                 28,
                 "MOVE_BRICK_BREAK"
+            ],
+            [
+                35,
+                "MOVE_STOMPING_TANTRUM"
             ],
             [
                 42,
@@ -98,6 +106,10 @@
             [
                 84,
                 "MOVE_HEAD_SMASH"
+            ],
+            [
+                91,
+                "MOVE_HEADLONG_RUSH"
             ]
         ],
         "by_tm": [

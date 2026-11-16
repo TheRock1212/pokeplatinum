@@ -140,7 +140,8 @@
         "egg_moves": [
             "MOVE_FOCUS_PUNCH",
             "MOVE_SUPERPOWER",
-            "MOVE_ENDEAVOR"
+            "MOVE_ENDEAVOR",
+            "MOVE_WIDE_GUARD"
         ]
     },
     "evolutions": [

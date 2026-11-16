@@ -142,7 +142,8 @@
             "MOVE_SING",
             "MOVE_CHARM",
             "MOVE_WISH",
-            "MOVE_SUPERPOWER"
+            "MOVE_SUPERPOWER",
+            "MOVE_PLAY_ROUGH"
         ]
     },
     "evolutions": [],

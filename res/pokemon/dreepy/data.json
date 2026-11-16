@@ -54,6 +54,10 @@
             [
                 1,
                 "MOVE_ASTONISH"
+            ],
+            [
+                1,
+                "MOVE_INFESTATION"
             ]
         ],
         "by_tm": [
@@ -76,7 +80,8 @@
             "MOVE_DOUBLE_TEAM",
             "MOVE_CONFUSE_RAY",
             "MOVE_CURSE",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_DRAGON_TAIL"
         ]
     },
     "evolutions": [

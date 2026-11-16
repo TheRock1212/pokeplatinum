@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_MOONGEIST_BEAM"
+            ],
+            [
                 1,
                 "MOVE_CONFUSION"
             ],
@@ -80,12 +84,28 @@
                 "MOVE_MOONLIGHT"
             ],
             [
+                42,
+                "MOVE_NIGHT_DAZE"
+            ],
+            [
                 49,
                 "MOVE_PSYCHIC"
             ],
             [
+                56,
+                "MOVE_MOONBLAST"
+            ],
+            [
+                63,
+                "MOVE_PHANTOM_FORCE"
+            ],
+            [
                 70,
                 "MOVE_DREAM_EATER"
+            ],
+            [
+                77,
+                "MOVE_WIDE_GUARD"
             ]
         ],
         "by_tm": [

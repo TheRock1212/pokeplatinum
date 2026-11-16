@@ -48,6 +48,10 @@
                 "MOVE_ASTONISH"
             ],
             [
+                1,
+                "MOVE_FAIRY_WIND"
+            ],
+            [
                 5,
                 "MOVE_TORMENT"
             ],
@@ -60,12 +64,24 @@
                 "MOVE_TWISTER"
             ],
             [
+                20,
+                "MOVE_DRAINING_KISS"
+            ],
+            [
                 25,
                 "MOVE_IRON_DEFENSE"
             ],
             [
                 30,
                 "MOVE_IMPRISON"
+            ],
+            [
+                35,
+                "MOVE_MYSTICAL_FIRE"
+            ],
+            [
+                40,
+                "MOVE_DAZZLING_GLEAM"
             ],
             [
                 45,
@@ -84,8 +100,16 @@
                 "MOVE_HEALING_WISH"
             ],
             [
+                65,
+                "MOVE_MOONBLAST"
+            ],
+            [
                 70,
                 "MOVE_OUTRAGE"
+            ],
+            [
+                75,
+                "MOVE_SPRINGTIDE_STORM"
             ]
         ],
         "by_tm": [

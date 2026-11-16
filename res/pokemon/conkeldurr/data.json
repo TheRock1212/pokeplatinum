@@ -151,7 +151,8 @@
             "MOVE_COUNTER",
             "MOVE_MACH_PUNCH",
             "MOVE_DETECT",
-            "MOVE_DEFOG"
+            "MOVE_DEFOG",
+            "MOVE_WIDE_GUARD"
         ]
     },
     "evolutions": [],

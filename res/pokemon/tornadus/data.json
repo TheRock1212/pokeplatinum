@@ -100,8 +100,16 @@
                 "MOVE_RAIN_DANCE"
             ],
             [
+                65,
+                "MOVE_HURRICANE"
+            ],
+            [
                 70,
                 "MOVE_THRASH"
+            ],
+            [
+                77,
+                "MOVE_BLEAKWIND_STORM"
             ]
         ],
         "by_tm": [

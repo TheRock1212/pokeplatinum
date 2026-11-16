@@ -56,8 +56,16 @@
                 "MOVE_RECYCLE"
             ],
             [
+                6,
+                "MOVE_ACID_SPRAY"
+            ],
+            [
                 9,
                 "MOVE_AMNESIA"
+            ],
+            [
+                12,
+                "MOVE_CLEAR_SMOG"
             ],
             [
                 15,
@@ -86,6 +94,10 @@
             [
                 30,
                 "MOVE_TOXIC"
+            ],
+            [
+                33,
+                "MOVE_BELCH"
             ],
             [
                 37,
@@ -136,7 +148,8 @@
             "MOVE_SAND_ATTACK",
             "MOVE_HAZE",
             "MOVE_CURSE",
-            "MOVE_ROLLOUT"
+            "MOVE_ROLLOUT",
+            "MOVE_AUTOTOMIZE"
         ]
     },
     "evolutions": [

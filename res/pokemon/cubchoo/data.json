@@ -64,8 +64,16 @@
                 "MOVE_ICY_WIND"
             ],
             [
+                12,
+                "MOVE_PLAY_NICE"
+            ],
+            [
                 15,
                 "MOVE_BRINE"
+            ],
+            [
+                18,
+                "MOVE_FROST_BREATH"
             ],
             [
                 21,
@@ -78,6 +86,10 @@
             [
                 27,
                 "MOVE_CHARM"
+            ],
+            [
+                30,
+                "MOVE_SNOWSCAPE"
             ],
             [
                 33,

@@ -100,6 +100,14 @@
                 "MOVE_PSYCH_UP"
             ],
             [
+                72,
+                "MOVE_SPECTRAL_THIEF"
+            ],
+            [
+                81,
+                "MOVE_LASER_FOCUS"
+            ],
+            [
                 90,
                 "MOVE_ENDEAVOR"
             ],

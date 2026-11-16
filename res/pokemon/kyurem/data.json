@@ -52,6 +52,14 @@
                 "MOVE_ANCIENT_POWER"
             ],
             [
+                1,
+                "MOVE_NOBLE_ROAR"
+            ],
+            [
+                1,
+                "MOVE_FREEZE_DRY"
+            ],
+            [
                 8,
                 "MOVE_SLASH"
             ],
@@ -86,6 +94,10 @@
             [
                 72,
                 "MOVE_OUTRAGE"
+            ],
+            [
+                80,
+                "MOVE_GLACIATE"
             ],
             [
                 88,

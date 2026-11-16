@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_NUZZLE"
+            ],
+            [
+                1,
                 "MOVE_TACKLE"
             ],
             [
@@ -60,6 +64,10 @@
                 "MOVE_THUNDER_SHOCK"
             ],
             [
+                20,
+                "MOVE_FELL_STINGER"
+            ],
+            [
                 25,
                 "MOVE_SPARK"
             ],
@@ -72,8 +80,24 @@
                 "MOVE_MAGNET_RISE"
             ],
             [
+                40,
+                "MOVE_ZING_ZAP"
+            ],
+            [
                 45,
                 "MOVE_DISCHARGE"
+            ],
+            [
+                50,
+                "MOVE_ELECTRIC_TERRAIN"
+            ],
+            [
+                55,
+                "MOVE_WILD_CHARGE"
+            ],
+            [
+                60,
+                "MOVE_SPIKY_SHIELD"
             ]
         ],
         "by_tm": [
@@ -123,7 +147,8 @@
             "MOVE_PRESENT",
             "MOVE_FAKE_OUT",
             "MOVE_WISH",
-            "MOVE_TICKLE"
+            "MOVE_TICKLE",
+            "MOVE_DISARMING_VOICE"
         ]
     },
     "evolutions": [],

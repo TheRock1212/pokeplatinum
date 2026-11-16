@@ -56,6 +56,10 @@
                 "MOVE_GROWL"
             ],
             [
+                9,
+                "MOVE_ECHOED_VOICE"
+            ],
+            [
                 12,
                 "MOVE_ICE_SHARD"
             ],
@@ -86,6 +90,10 @@
             [
                 40,
                 "MOVE_AMNESIA"
+            ],
+            [
+                44,
+                "MOVE_ICE_SPINNER"
             ],
             [
                 49,
@@ -119,7 +127,9 @@
         "egg_moves": [
             "MOVE_BELLY_DRUM",
             "MOVE_SUPERPOWER",
-            "MOVE_YAWN"
+            "MOVE_YAWN",
+            "MOVE_ENTRAINMENT",
+            "MOVE_ICICLE_CRASH"
         ]
     },
     "evolutions": [

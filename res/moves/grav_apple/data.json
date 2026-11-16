@@ -1,0 +1,31 @@
+{
+    "name": "Grav Apple",
+    "description": [
+        "The user inflicts\n",
+        "damage by dropping\n",
+        "an apple from above.\n",
+        "This also lowers the\n",
+        "target’s Defense stat."
+    ],
+    "class": "CLASS_PHYSICAL",
+    "type": "TYPE_GRASS",
+    "power": 90,
+    "accuracy": 100,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_LOWER_DEFENSE_HIT",
+        "chance": 100
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK",
+        "MOVE_FLAG_HIDES_HP_GAUGES"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

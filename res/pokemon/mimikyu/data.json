@@ -72,8 +72,16 @@
                 "MOVE_DOUBLE_TEAM"
             ],
             [
+                18,
+                "MOVE_BABY_DOLL_EYES"
+            ],
+            [
                 24,
                 "MOVE_MIMIC"
+            ],
+            [
+                30,
+                "MOVE_HONE_CLAWS"
             ],
             [
                 36,
@@ -86,6 +94,10 @@
             [
                 48,
                 "MOVE_CHARM"
+            ],
+            [
+                54,
+                "MOVE_PLAY_ROUGH"
             ],
             [
                 60,

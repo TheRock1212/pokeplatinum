@@ -56,6 +56,10 @@
                 "MOVE_DOUBLE_KICK"
             ],
             [
+                12,
+                "MOVE_HEX"
+            ],
+            [
                 18,
                 "MOVE_STOMP"
             ],

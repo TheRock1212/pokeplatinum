@@ -1,0 +1,32 @@
+{
+    "name": "Stone Axe",
+    "description": [
+        "The user swings its\n",
+        "stone axes at the\n",
+        "target. Splinters left\n",
+        "behind by this attack\n",
+        "float around the target."
+    ],
+    "class": "CLASS_PHYSICAL",
+    "type": "TYPE_ROCK",
+    "power": 65,
+    "accuracy": 90,
+    "pp": 15,
+    "effect": {
+        "type": "BATTLE_EFFECT_STEALTH_ROCK_HIT",
+        "chance": 0
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_MAKES_CONTACT",
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK",
+        "MOVE_FLAG_HIDES_HP_GAUGES"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

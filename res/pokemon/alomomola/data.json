@@ -48,6 +48,10 @@
                 "MOVE_POUND"
             ],
             [
+                1,
+                "MOVE_PLAY_NICE"
+            ],
+            [
                 5,
                 "MOVE_AQUA_RING"
             ],
@@ -60,6 +64,10 @@
                 "MOVE_HELPING_HAND"
             ],
             [
+                13,
+                "MOVE_WIDE_GUARD"
+            ],
+            [
                 21,
                 "MOVE_PROTECT"
             ],
@@ -70,6 +78,10 @@
             [
                 29,
                 "MOVE_HEALING_WISH"
+            ],
+            [
+                33,
+                "MOVE_SOAK"
             ],
             [
                 37,

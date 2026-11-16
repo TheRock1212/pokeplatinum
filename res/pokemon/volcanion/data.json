@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_STEAM_ERUPTION"
+            ],
+            [
+                1,
                 "MOVE_WATER_GUN"
             ],
             [
@@ -60,6 +64,10 @@
                 "MOVE_WEATHER_BALL"
             ],
             [
+                18,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
                 24,
                 "MOVE_WATER_PULSE"
             ],
@@ -68,8 +76,16 @@
                 "MOVE_SCARY_FACE"
             ],
             [
+                36,
+                "MOVE_INCINERATE"
+            ],
+            [
                 42,
                 "MOVE_STOMP"
+            ],
+            [
+                48,
+                "MOVE_SCALD"
             ],
             [
                 54,

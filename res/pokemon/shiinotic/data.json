@@ -72,12 +72,24 @@
                 "MOVE_MOONLIGHT"
             ],
             [
+                27,
+                "MOVE_STRENGTH_SAP"
+            ],
+            [
                 32,
                 "MOVE_GIGA_DRAIN"
             ],
             [
+                38,
+                "MOVE_DAZZLING_GLEAM"
+            ],
+            [
                 44,
                 "MOVE_SPORE"
+            ],
+            [
+                50,
+                "MOVE_MOONBLAST"
             ],
             [
                 56,

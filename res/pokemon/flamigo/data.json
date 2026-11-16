@@ -92,6 +92,14 @@
                 "MOVE_MEGA_KICK"
             ],
             [
+                44,
+                "MOVE_WIDE_GUARD"
+            ],
+            [
+                48,
+                "MOVE_THROAT_CHOP"
+            ],
+            [
                 54,
                 "MOVE_BRAVE_BIRD"
             ]
@@ -122,7 +130,8 @@
         ],
         "egg_moves": [
             "MOVE_DOUBLE_TEAM",
-            "MOVE_SKY_ATTACK"
+            "MOVE_SKY_ATTACK",
+            "MOVE_QUICK_GUARD"
         ]
     },
     "evolutions": [],

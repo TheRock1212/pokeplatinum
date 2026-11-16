@@ -60,6 +60,10 @@
                 "MOVE_AQUA_JET"
             ],
             [
+                1,
+                "MOVE_THROAT_CHOP"
+            ],
+            [
                 18,
                 "MOVE_AGILITY"
             ],
@@ -74,6 +78,10 @@
             [
                 40,
                 "MOVE_CRUNCH"
+            ],
+            [
+                48,
+                "MOVE_LIQUIDATION"
             ],
             [
                 56,

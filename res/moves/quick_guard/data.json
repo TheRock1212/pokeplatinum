@@ -1,0 +1,27 @@
+{
+    "name": "Quick Guard",
+    "description": [
+        "The user protects\n",
+        "itself and its\n",
+        "allies from priority\n",
+        "moves."
+    ],
+    "class": "CLASS_STATUS",
+    "type": "TYPE_FIGHTING",
+    "power": 0,
+    "accuracy": 0,
+    "pp": 15,
+    "effect": {
+        "type": "BATTLE_EFFECT_PROTECT_USER_SIDE",
+        "chance": 0
+    },
+    "range": "RANGE_USER_SIDE",
+    "priority": 3,
+    "flags": [
+        "MOVE_FLAG_CAN_SNATCH"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

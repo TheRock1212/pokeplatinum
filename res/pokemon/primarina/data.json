@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_SPARKLING_ARIA"
+            ],
+            [
                 1,
                 "MOVE_POUND"
             ],
@@ -56,8 +60,16 @@
                 "MOVE_WATER_GUN"
             ],
             [
+                1,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
                 9,
                 "MOVE_AQUA_JET"
+            ],
+            [
+                12,
+                "MOVE_BABY_DOLL_EYES"
             ],
             [
                 15,
@@ -76,8 +88,16 @@
                 "MOVE_ENCORE"
             ],
             [
+                37,
+                "MOVE_MISTY_TERRAIN"
+            ],
+            [
                 44,
                 "MOVE_HYPER_VOICE"
+            ],
+            [
+                51,
+                "MOVE_MOONBLAST"
             ],
             [
                 58,
@@ -128,7 +148,8 @@
         ],
         "egg_moves": [
             "MOVE_PERISH_SONG",
-            "MOVE_AQUA_RING"
+            "MOVE_AQUA_RING",
+            "MOVE_LIFE_DEW"
         ]
     },
     "evolutions": [],

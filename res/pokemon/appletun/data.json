@@ -92,6 +92,10 @@
                 "MOVE_RECOVER"
             ],
             [
+                28,
+                "MOVE_APPLE_ACID"
+            ],
+            [
                 32,
                 "MOVE_BODY_SLAM"
             ],

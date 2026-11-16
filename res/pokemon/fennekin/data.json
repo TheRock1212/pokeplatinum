@@ -60,6 +60,10 @@
                 "MOVE_HOWL"
             ],
             [
+                14,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
                 17,
                 "MOVE_PSYBEAM"
             ],
@@ -70,6 +74,10 @@
             [
                 25,
                 "MOVE_LIGHT_SCREEN"
+            ],
+            [
+                31,
+                "MOVE_PSYSHOCK"
             ],
             [
                 35,
@@ -140,7 +148,8 @@
             "MOVE_HYPNOSIS",
             "MOVE_HEAT_WAVE",
             "MOVE_WISH",
-            "MOVE_COPYCAT"
+            "MOVE_COPYCAT",
+            "MOVE_MAGIC_ROOM"
         ]
     },
     "evolutions": [

@@ -126,7 +126,9 @@
             "MOVE_AERIAL_ACE",
             "MOVE_ROOST",
             "MOVE_AQUA_RING",
-            "MOVE_DEFOG"
+            "MOVE_DEFOG",
+            "MOVE_BELCH",
+            "MOVE_AQUA_CUTTER"
         ]
     },
     "evolutions": [],

@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_BEAK_BLAST"
+            ],
+            [
                 1,
                 "MOVE_GROWL"
             ],
@@ -58,6 +62,10 @@
             [
                 1,
                 "MOVE_ROCK_BLAST"
+            ],
+            [
+                1,
+                "MOVE_ECHOED_VOICE"
             ],
             [
                 13,
@@ -141,7 +149,8 @@
         ],
         "egg_moves": [
             "MOVE_SKY_ATTACK",
-            "MOVE_GUNK_SHOT"
+            "MOVE_GUNK_SHOT",
+            "MOVE_BOOMBURST"
         ]
     },
     "evolutions": [],

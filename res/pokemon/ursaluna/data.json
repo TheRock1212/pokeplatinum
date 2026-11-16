@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_HEADLONG_RUSH"
+            ],
+            [
                 1,
                 "MOVE_FAKE_TEARS"
             ],
@@ -80,6 +84,14 @@
                 "MOVE_SLASH"
             ],
             [
+                25,
+                "MOVE_PLAY_NICE"
+            ],
+            [
+                29,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
                 35,
                 "MOVE_SCARY_FACE"
             ],
@@ -90,6 +102,10 @@
             [
                 41,
                 "MOVE_SNORE"
+            ],
+            [
+                48,
+                "MOVE_HIGH_HORSEPOWER"
             ],
             [
                 56,

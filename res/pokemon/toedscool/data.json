@@ -84,6 +84,10 @@
                 "MOVE_MUD_SHOT"
             ],
             [
+                28,
+                "MOVE_HEX"
+            ],
+            [
                 32,
                 "MOVE_SEED_BOMB"
             ],
@@ -142,7 +146,8 @@
             "MOVE_MIRROR_COAT",
             "MOVE_KNOCK_OFF",
             "MOVE_TICKLE",
-            "MOVE_ACUPRESSURE"
+            "MOVE_ACUPRESSURE",
+            "MOVE_RAGE_POWDER"
         ]
     },
     "evolutions": [

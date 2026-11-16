@@ -88,6 +88,10 @@
                 "MOVE_ROCK_SLIDE"
             ],
             [
+                47,
+                "MOVE_HIGH_HORSEPOWER"
+            ],
+            [
                 51,
                 "MOVE_IRON_DEFENSE"
             ],

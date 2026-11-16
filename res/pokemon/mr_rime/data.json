@@ -53,6 +53,10 @@
             ],
             [
                 1,
+                "MOVE_AFTER_YOU"
+            ],
+            [
+                1,
                 "MOVE_BLOCK"
             ],
             [
@@ -76,20 +80,12 @@
                 "MOVE_RECYCLE"
             ],
             [
-                1,
-                "MOVE_MIMIC"
-            ],
-            [
-                1,
-                "MOVE_LIGHT_SCREEN"
-            ],
-            [
-                1,
-                "MOVE_REFLECT"
-            ],
-            [
                 12,
                 "MOVE_CONFUSION"
+            ],
+            [
+                16,
+                "MOVE_ALLY_SWITCH"
             ],
             [
                 20,
@@ -114,6 +110,10 @@
             [
                 40,
                 "MOVE_SUCKER_PUNCH"
+            ],
+            [
+                44,
+                "MOVE_FREEZE_DRY"
             ],
             [
                 48,
@@ -176,7 +176,8 @@
             "MOVE_HYPNOSIS",
             "MOVE_CONFUSE_RAY",
             "MOVE_FAKE_OUT",
-            "MOVE_TICKLE"
+            "MOVE_TICKLE",
+            "MOVE_POWER_SPLIT"
         ]
     },
     "evolutions": [],

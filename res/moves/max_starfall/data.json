@@ -1,0 +1,31 @@
+{
+    "name": "Max Starfall",
+    "description": [
+        "This is a Fairy-type\n",
+        "attack Dynamax Pokémon\n",
+        "use. The user turns the\n",
+        "ground into Misty\n",
+        "Terrain for five turns."
+    ],
+    "class": "CLASS_PHYSICAL",
+    "type": "TYPE_FAIRY",
+    "power": 10,
+    "accuracy": 0,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_HIT",
+        "chance": 0
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK",
+        "MOVE_FLAG_HIDES_HP_GAUGES"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

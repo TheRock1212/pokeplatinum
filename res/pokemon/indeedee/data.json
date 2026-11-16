@@ -44,8 +44,20 @@
     "learnset": {
         "by_level": [
             [
+                1,
+                "MOVE_STORED_POWER"
+            ],
+            [
+                1,
+                "MOVE_PLAY_NICE"
+            ],
+            [
                 5,
                 "MOVE_ENCORE"
+            ],
+            [
+                10,
+                "MOVE_DISARMING_VOICE"
             ],
             [
                 15,
@@ -54,6 +66,10 @@
             [
                 20,
                 "MOVE_HELPING_HAND"
+            ],
+            [
+                25,
+                "MOVE_AFTER_YOU"
             ],
             [
                 30,
@@ -66,6 +82,14 @@
             [
                 40,
                 "MOVE_CALM_MIND"
+            ],
+            [
+                45,
+                "MOVE_POWER_SPLIT"
+            ],
+            [
+                50,
+                "MOVE_PSYCHIC_TERRAIN"
             ],
             [
                 55,

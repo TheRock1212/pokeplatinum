@@ -49,11 +49,19 @@
             ],
             [
                 1,
+                "MOVE_ELECTRIC_TERRAIN"
+            ],
+            [
+                1,
                 "MOVE_CONFUSION"
             ],
             [
                 1,
                 "MOVE_METAL_CLAW"
+            ],
+            [
+                7,
+                "MOVE_SMART_STRIKE"
             ],
             [
                 14,
@@ -64,6 +72,10 @@
                 "MOVE_IRON_DEFENSE"
             ],
             [
+                28,
+                "MOVE_PSYSHOCK"
+            ],
+            [
                 35,
                 "MOVE_PSYCHO_CUT"
             ],
@@ -72,8 +84,24 @@
                 "MOVE_FLASH_CANNON"
             ],
             [
+                49,
+                "MOVE_SACRED_SWORD"
+            ],
+            [
+                56,
+                "MOVE_TACHYON_CUTTER"
+            ],
+            [
                 63,
                 "MOVE_FUTURE_SIGHT"
+            ],
+            [
+                70,
+                "MOVE_VOLT_SWITCH"
+            ],
+            [
+                77,
+                "MOVE_QUICK_GUARD"
             ],
             [
                 84,

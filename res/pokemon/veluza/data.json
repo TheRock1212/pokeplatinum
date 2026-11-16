@@ -68,6 +68,14 @@
                 "MOVE_SLASH"
             ],
             [
+                25,
+                "MOVE_AQUA_CUTTER"
+            ],
+            [
+                30,
+                "MOVE_FILLET_AWAY"
+            ],
+            [
                 35,
                 "MOVE_NIGHT_SLASH"
             ],
@@ -76,8 +84,16 @@
                 "MOVE_PSYCHO_CUT"
             ],
             [
+                45,
+                "MOVE_LIQUIDATION"
+            ],
+            [
                 50,
                 "MOVE_CRUNCH"
+            ],
+            [
+                55,
+                "MOVE_FINAL_GAMBIT"
             ]
         ],
         "by_tm": [

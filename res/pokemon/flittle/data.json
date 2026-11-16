@@ -56,6 +56,14 @@
                 "MOVE_CONFUSION"
             ],
             [
+                8,
+                "MOVE_BABY_DOLL_EYES"
+            ],
+            [
+                11,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
                 15,
                 "MOVE_QUICK_ATTACK"
             ],
@@ -106,7 +114,8 @@
         ],
         "egg_moves": [
             "MOVE_HYPNOSIS",
-            "MOVE_ROOST"
+            "MOVE_ROOST",
+            "MOVE_ALLY_SWITCH"
         ]
     },
     "evolutions": [

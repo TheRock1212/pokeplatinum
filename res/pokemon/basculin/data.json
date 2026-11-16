@@ -76,12 +76,24 @@
                 "MOVE_HEADBUTT"
             ],
             [
+                28,
+                "MOVE_SOAK"
+            ],
+            [
                 32,
                 "MOVE_CRUNCH"
             ],
             [
                 36,
                 "MOVE_TAKE_DOWN"
+            ],
+            [
+                40,
+                "MOVE_FINAL_GAMBIT"
+            ],
+            [
+                44,
+                "MOVE_WAVE_CRASH"
             ],
             [
                 48,

@@ -48,6 +48,10 @@
                 "MOVE_TACKLE"
             ],
             [
+                1,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
                 4,
                 "MOVE_WING_ATTACK"
             ],
@@ -86,6 +90,10 @@
             [
                 40,
                 "MOVE_SWORDS_DANCE"
+            ],
+            [
+                44,
+                "MOVE_FLYING_PRESS"
             ],
             [
                 48,
@@ -166,7 +174,9 @@
             "MOVE_MEAN_LOOK",
             "MOVE_CROSS_CHOP",
             "MOVE_FEINT",
-            "MOVE_DEFOG"
+            "MOVE_DEFOG",
+            "MOVE_ENTRAINMENT",
+            "MOVE_QUICK_GUARD"
         ]
     },
     "evolutions": [],

@@ -72,6 +72,10 @@
                 "MOVE_FEATHER_DANCE"
             ],
             [
+                23,
+                "MOVE_ACROBATICS"
+            ],
+            [
                 26,
                 "MOVE_TEETER_DANCE"
             ],
@@ -88,8 +92,16 @@
                 "MOVE_AIR_SLASH"
             ],
             [
+                40,
+                "MOVE_REVELATION_DANCE"
+            ],
+            [
                 43,
                 "MOVE_AGILITY"
+            ],
+            [
+                47,
+                "MOVE_HURRICANE"
             ]
         ],
         "by_tm": [
@@ -133,7 +145,8 @@
             "MOVE_ATTRACT",
             "MOVE_SAFEGUARD",
             "MOVE_PLUCK",
-            "MOVE_DEFOG"
+            "MOVE_DEFOG",
+            "MOVE_QUIVER_DANCE"
         ]
     },
     "evolutions": [],

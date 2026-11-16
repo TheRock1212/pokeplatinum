@@ -44,6 +44,18 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_SPIRIT_SHACKLE"
+            ],
+            [
+                1,
+                "MOVE_LEAFAGE"
+            ],
+            [
+                1,
+                "MOVE_PHANTOM_FORCE"
+            ],
+            [
                 1,
                 "MOVE_LEAF_STORM"
             ],

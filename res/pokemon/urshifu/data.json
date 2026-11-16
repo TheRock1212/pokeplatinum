@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_WICKED_BLOW"
+            ],
+            [
                 1,
                 "MOVE_ENDURE"
             ],

@@ -54,6 +54,10 @@
             [
                 1,
                 "MOVE_FURY_SWIPES"
+            ],
+            [
+                1,
+                "MOVE_SCALD"
             ]
         ],
         "by_tm": [
@@ -121,7 +125,8 @@
             "MOVE_COVET",
             "MOVE_AQUA_RING",
             "MOVE_AQUA_TAIL",
-            "MOVE_NASTY_PLOT"
+            "MOVE_NASTY_PLOT",
+            "MOVE_DISARMING_VOICE"
         ]
     },
     "evolutions": [],

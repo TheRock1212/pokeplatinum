@@ -48,12 +48,20 @@
                 "MOVE_FLAMETHROWER"
             ],
             [
+                0,
+                "MOVE_SPICY_EXTRACT"
+            ],
+            [
                 1,
                 "MOVE_LEER"
             ],
             [
                 1,
                 "MOVE_FIRE_FANG"
+            ],
+            [
+                1,
+                "MOVE_LEAFAGE"
             ],
             [
                 4,
@@ -136,7 +144,8 @@
             "MOVE_LEECH_SEED",
             "MOVE_ROLLOUT",
             "MOVE_INGRAIN",
-            "MOVE_WORRY_SEED"
+            "MOVE_WORRY_SEED",
+            "MOVE_RAGE_POWDER"
         ]
     },
     "evolutions": [],

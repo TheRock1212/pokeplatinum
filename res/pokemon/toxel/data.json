@@ -54,6 +54,18 @@
             [
                 1,
                 "MOVE_FLAIL"
+            ],
+            [
+                1,
+                "MOVE_BELCH"
+            ],
+            [
+                1,
+                "MOVE_NUZZLE"
+            ],
+            [
+                1,
+                "MOVE_TEARFUL_LOOK"
             ]
         ],
         "by_tm": [

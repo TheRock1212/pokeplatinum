@@ -60,6 +60,10 @@
                 "MOVE_SAND_ATTACK"
             ],
             [
+                13,
+                "MOVE_WORK_UP"
+            ],
+            [
                 19,
                 "MOVE_BITE"
             ],

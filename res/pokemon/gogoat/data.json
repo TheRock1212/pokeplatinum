@@ -88,6 +88,10 @@
                 "MOVE_TAKE_DOWN"
             ],
             [
+                26,
+                "MOVE_BULLDOZE"
+            ],
+            [
                 30,
                 "MOVE_SEED_BOMB"
             ],
@@ -98,6 +102,10 @@
             [
                 40,
                 "MOVE_DOUBLE_EDGE"
+            ],
+            [
+                47,
+                "MOVE_HORN_LEECH"
             ],
             [
                 55,
@@ -159,7 +167,8 @@
         "egg_moves": [
             "MOVE_DEFENSE_CURL",
             "MOVE_ROLLOUT",
-            "MOVE_MILK_DRINK"
+            "MOVE_MILK_DRINK",
+            "MOVE_GRASSY_TERRAIN"
         ]
     },
     "evolutions": [],

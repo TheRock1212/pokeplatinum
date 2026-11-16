@@ -56,6 +56,10 @@
                 "MOVE_TAUNT"
             ],
             [
+                10,
+                "MOVE_SNARL"
+            ],
+            [
                 15,
                 "MOVE_DISABLE"
             ],
@@ -84,8 +88,24 @@
                 "MOVE_PSYCHIC"
             ],
             [
+                50,
+                "MOVE_OBLIVION_WING"
+            ],
+            [
+                55,
+                "MOVE_PHANTOM_FORCE"
+            ],
+            [
+                60,
+                "MOVE_FOUL_PLAY"
+            ],
+            [
                 65,
                 "MOVE_DRAGON_RUSH"
+            ],
+            [
+                70,
+                "MOVE_HURRICANE"
             ],
             [
                 75,

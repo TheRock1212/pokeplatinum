@@ -60,6 +60,10 @@
                 "MOVE_HOWL"
             ],
             [
+                14,
+                "MOVE_NOBLE_ROAR"
+            ],
+            [
                 21,
                 "MOVE_BITE"
             ],
@@ -72,8 +76,16 @@
                 "MOVE_REST"
             ],
             [
+                42,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
                 49,
                 "MOVE_HYPER_VOICE"
+            ],
+            [
+                56,
+                "MOVE_PSYCHIC_FANGS"
             ],
             [
                 63,
@@ -90,6 +102,10 @@
             [
                 84,
                 "MOVE_PERISH_SONG"
+            ],
+            [
+                91,
+                "MOVE_BOOMBURST"
             ]
         ],
         "by_tm": [

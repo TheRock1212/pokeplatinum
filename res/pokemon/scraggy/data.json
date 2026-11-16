@@ -164,7 +164,8 @@
         "egg_moves": [
             "MOVE_COUNTER",
             "MOVE_DETECT",
-            "MOVE_FAKE_OUT"
+            "MOVE_FAKE_OUT",
+            "MOVE_QUICK_GUARD"
         ]
     },
     "evolutions": [

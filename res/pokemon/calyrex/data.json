@@ -60,12 +60,28 @@
                 "MOVE_CONFUSION"
             ],
             [
+                8,
+                "MOVE_LIFE_DEW"
+            ],
+            [
                 16,
                 "MOVE_GIGA_DRAIN"
             ],
             [
+                24,
+                "MOVE_PSYSHOCK"
+            ],
+            [
                 32,
                 "MOVE_HELPING_HAND"
+            ],
+            [
+                40,
+                "MOVE_GRASSY_TERRAIN"
+            ],
+            [
+                40,
+                "MOVE_PSYCHIC_TERRAIN"
             ],
             [
                 48,
@@ -78,6 +94,10 @@
             [
                 64,
                 "MOVE_LEECH_SEED"
+            ],
+            [
+                72,
+                "MOVE_HEAL_PULSE"
             ],
             [
                 80,

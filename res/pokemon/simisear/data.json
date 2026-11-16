@@ -54,6 +54,10 @@
             [
                 1,
                 "MOVE_FURY_SWIPES"
+            ],
+            [
+                1,
+                "MOVE_FLAME_BURST"
             ]
         ],
         "by_tm": [
@@ -119,7 +123,9 @@
             "MOVE_TICKLE",
             "MOVE_COVET",
             "MOVE_FLARE_BLITZ",
-            "MOVE_NASTY_PLOT"
+            "MOVE_NASTY_PLOT",
+            "MOVE_BELCH",
+            "MOVE_DISARMING_VOICE"
         ]
     },
     "evolutions": [],

@@ -60,6 +60,14 @@
                 "MOVE_HOWL"
             ],
             [
+                1,
+                "MOVE_QUICK_GUARD"
+            ],
+            [
+                1,
+                "MOVE_SACRED_SWORD"
+            ],
+            [
                 11,
                 "MOVE_SLASH"
             ],
@@ -72,8 +80,16 @@
                 "MOVE_IRON_HEAD"
             ],
             [
+                44,
+                "MOVE_NOBLE_ROAR"
+            ],
+            [
                 55,
                 "MOVE_CRUNCH"
+            ],
+            [
+                66,
+                "MOVE_MOONBLAST"
             ],
             [
                 77,

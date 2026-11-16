@@ -60,6 +60,14 @@
                 "MOVE_LICK"
             ],
             [
+                7,
+                "MOVE_SNARL"
+            ],
+            [
+                10,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
                 14,
                 "MOVE_BITE"
             ],
@@ -88,6 +96,10 @@
                 "MOVE_REVERSAL"
             ],
             [
+                43,
+                "MOVE_JAW_LOCK"
+            ],
+            [
                 49,
                 "MOVE_DOUBLE_EDGE"
             ]
@@ -113,7 +125,9 @@
         ],
         "egg_moves": [
             "MOVE_DESTINY_BOND",
-            "MOVE_ENDEAVOR"
+            "MOVE_ENDEAVOR",
+            "MOVE_RETALIATE",
+            "MOVE_PLAY_ROUGH"
         ]
     },
     "evolutions": [

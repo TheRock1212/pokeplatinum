@@ -90,6 +90,10 @@
             [
                 50,
                 "MOVE_FUTURE_SIGHT"
+            ],
+            [
+                55,
+                "MOVE_SIMPLE_BEAM"
             ]
         ],
         "by_tm": [

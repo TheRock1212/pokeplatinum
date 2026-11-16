@@ -52,6 +52,14 @@
                 "MOVE_TAIL_WHIP"
             ],
             [
+                5,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
+                8,
+                "MOVE_ECHOED_VOICE"
+            ],
+            [
                 12,
                 "MOVE_MUD_SHOT"
             ],
@@ -74,6 +82,10 @@
             [
                 27,
                 "MOVE_TAKE_DOWN"
+            ],
+            [
+                30,
+                "MOVE_WORK_UP"
             ],
             [
                 32,
@@ -110,7 +122,8 @@
             "MOVE_STOCKPILE",
             "MOVE_SPIT_UP",
             "MOVE_SWALLOW",
-            "MOVE_ENDEAVOR"
+            "MOVE_ENDEAVOR",
+            "MOVE_STUFF_CHEEKS"
         ]
     },
     "evolutions": [

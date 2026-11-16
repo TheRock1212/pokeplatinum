@@ -53,6 +53,10 @@
             ],
             [
                 1,
+                "MOVE_FIRST_IMPRESSION"
+            ],
+            [
+                1,
                 "MOVE_PECK"
             ],
             [
@@ -70,6 +74,10 @@
             [
                 15,
                 "MOVE_ROCK_SMASH"
+            ],
+            [
+                20,
+                "MOVE_BRUTAL_SWING"
             ],
             [
                 25,
@@ -100,8 +108,16 @@
                 "MOVE_LEAF_BLADE"
             ],
             [
+                60,
+                "MOVE_FINAL_GAMBIT"
+            ],
+            [
                 65,
                 "MOVE_BRAVE_BIRD"
+            ],
+            [
+                70,
+                "MOVE_METEOR_ASSAULT"
             ]
         ],
         "by_tm": [
@@ -134,7 +150,10 @@
             "MOVE_COVET",
             "MOVE_ROOST",
             "MOVE_FEINT",
-            "MOVE_NIGHT_SLASH"
+            "MOVE_NIGHT_SLASH",
+            "MOVE_SIMPLE_BEAM",
+            "MOVE_FINAL_GAMBIT",
+            "MOVE_FIRST_IMPRESSION"
         ]
     },
     "evolutions": [],

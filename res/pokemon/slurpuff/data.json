@@ -52,12 +52,28 @@
                 "MOVE_SWEET_SCENT"
             ],
             [
+                1,
+                "MOVE_PLAY_NICE"
+            ],
+            [
+                1,
+                "MOVE_FAIRY_WIND"
+            ],
+            [
                 9,
                 "MOVE_AROMATHERAPY"
             ],
             [
+                12,
+                "MOVE_DRAINING_KISS"
+            ],
+            [
                 15,
                 "MOVE_FAKE_TEARS"
+            ],
+            [
+                18,
+                "MOVE_ROUND"
             ],
             [
                 21,
@@ -76,8 +92,20 @@
                 "MOVE_WISH"
             ],
             [
+                33,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
+                36,
+                "MOVE_COTTON_GUARD"
+            ],
+            [
                 39,
                 "MOVE_ENDEAVOR"
+            ],
+            [
+                42,
+                "MOVE_STICKY_WEB"
             ]
         ],
         "by_tm": [
@@ -122,7 +150,9 @@
         ],
         "egg_moves": [
             "MOVE_YAWN",
-            "MOVE_COPYCAT"
+            "MOVE_COPYCAT",
+            "MOVE_AFTER_YOU",
+            "MOVE_STICKY_WEB"
         ]
     },
     "evolutions": [],

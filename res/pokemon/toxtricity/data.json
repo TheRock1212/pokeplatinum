@@ -65,6 +65,14 @@
             ],
             [
                 1,
+                "MOVE_NUZZLE"
+            ],
+            [
+                1,
+                "MOVE_NOBLE_ROAR"
+            ],
+            [
+                1,
                 "MOVE_FLAIL"
             ],
             [
@@ -102,6 +110,18 @@
             [
                 40,
                 "MOVE_POISON_JAB"
+            ],
+            [
+                44,
+                "MOVE_OVERDRIVE"
+            ],
+            [
+                48,
+                "MOVE_BOOMBURST"
+            ],
+            [
+                52,
+                "MOVE_SHIFT_GEAR"
             ]
         ],
         "by_tm": [

@@ -52,8 +52,24 @@
                 "MOVE_LEER"
             ],
             [
+                4,
+                "MOVE_WORK_UP"
+            ],
+            [
                 8,
                 "MOVE_BITE"
+            ],
+            [
+                12,
+                "MOVE_RETALIATE"
+            ],
+            [
+                17,
+                "MOVE_BABY_DOLL_EYES"
+            ],
+            [
+                20,
+                "MOVE_PLAY_ROUGH"
             ],
             [
                 24,
@@ -124,7 +140,8 @@
             "MOVE_MUD_SLAP",
             "MOVE_YAWN",
             "MOVE_HOWL",
-            "MOVE_COVET"
+            "MOVE_COVET",
+            "MOVE_AFTER_YOU"
         ]
     },
     "evolutions": [

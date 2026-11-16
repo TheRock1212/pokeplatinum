@@ -60,6 +60,10 @@
                 "MOVE_TAUNT"
             ],
             [
+                14,
+                "MOVE_BREAKING_SWIPE"
+            ],
+            [
                 18,
                 "MOVE_QUICK_ATTACK"
             ],
@@ -72,8 +76,16 @@
                 "MOVE_U_TURN"
             ],
             [
+                31,
+                "MOVE_SHED_TAIL"
+            ],
+            [
                 36,
                 "MOVE_DRAGON_CLAW"
+            ],
+            [
+                40,
+                "MOVE_SHIFT_GEAR"
             ],
             [
                 45,

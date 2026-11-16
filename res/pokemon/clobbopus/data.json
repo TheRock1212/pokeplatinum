@@ -113,7 +113,10 @@
         "egg_moves": [
             "MOVE_SEISMIC_TOSS",
             "MOVE_PAIN_SPLIT",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_SOAK",
+            "MOVE_CIRCLE_THROW",
+            "MOVE_POWER_UP_PUNCH"
         ]
     },
     "evolutions": [

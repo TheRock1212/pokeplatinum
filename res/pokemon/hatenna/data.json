@@ -48,8 +48,32 @@
                 "MOVE_CONFUSION"
             ],
             [
+                1,
+                "MOVE_PLAY_NICE"
+            ],
+            [
+                5,
+                "MOVE_LIFE_DEW"
+            ],
+            [
+                10,
+                "MOVE_DISARMING_VOICE"
+            ],
+            [
+                15,
+                "MOVE_AROMATIC_MIST"
+            ],
+            [
                 20,
                 "MOVE_PSYBEAM"
+            ],
+            [
+                25,
+                "MOVE_HEAL_PULSE"
+            ],
+            [
+                30,
+                "MOVE_DAZZLING_GLEAM"
             ],
             [
                 35,
@@ -90,7 +114,12 @@
             "MOVE_SWIFT",
             "MOVE_TRICK"
         ],
-        "egg_moves": []
+        "egg_moves": [
+            "MOVE_AFTER_YOU",
+            "MOVE_QUASH",
+            "MOVE_MYSTICAL_FIRE",
+            "MOVE_NUZZLE"
+        ]
     },
     "evolutions": [
         [

@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_AQUA_STEP"
+            ],
+            [
                 1,
                 "MOVE_POUND"
             ],
@@ -60,6 +64,10 @@
                 "MOVE_DOUBLE_HIT"
             ],
             [
+                7,
+                "MOVE_WORK_UP"
+            ],
+            [
                 10,
                 "MOVE_WING_ATTACK"
             ],
@@ -70,6 +78,14 @@
             [
                 17,
                 "MOVE_WATER_PULSE"
+            ],
+            [
+                17,
+                "MOVE_LOW_SWEEP"
+            ],
+            [
+                21,
+                "MOVE_AQUA_CUTTER"
             ],
             [
                 27,
@@ -84,12 +100,24 @@
                 "MOVE_MEGA_KICK"
             ],
             [
+                43,
+                "MOVE_ACROBATICS"
+            ],
+            [
+                47,
+                "MOVE_LIQUIDATION"
+            ],
+            [
                 52,
                 "MOVE_FEATHER_DANCE"
             ],
             [
                 58,
                 "MOVE_CLOSE_COMBAT"
+            ],
+            [
+                64,
+                "MOVE_WAVE_CRASH"
             ]
         ],
         "by_tm": [

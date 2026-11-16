@@ -48,6 +48,10 @@
                 "MOVE_TAIL_WHIP"
             ],
             [
+                1,
+                "MOVE_NUZZLE"
+            ],
+            [
                 5,
                 "MOVE_TACKLE"
             ],
@@ -64,6 +68,14 @@
                 "MOVE_CHARM"
             ],
             [
+                25,
+                "MOVE_PARABOLIC_CHARGE"
+            ],
+            [
+                30,
+                "MOVE_VOLT_SWITCH"
+            ],
+            [
                 35,
                 "MOVE_REST"
             ],
@@ -76,8 +88,16 @@
                 "MOVE_DISCHARGE"
             ],
             [
+                45,
+                "MOVE_PLAY_ROUGH"
+            ],
+            [
                 50,
                 "MOVE_SUPER_FANG"
+            ],
+            [
+                55,
+                "MOVE_ENTRAINMENT"
             ],
             [
                 60,
@@ -133,7 +153,8 @@
         ],
         "egg_moves": [
             "MOVE_COVET",
-            "MOVE_MAGNET_RISE"
+            "MOVE_MAGNET_RISE",
+            "MOVE_TEARFUL_LOOK"
         ]
     },
     "evolutions": [],

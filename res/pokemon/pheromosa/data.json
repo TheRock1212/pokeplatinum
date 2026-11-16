@@ -56,6 +56,10 @@
                 "MOVE_LEER"
             ],
             [
+                10,
+                "MOVE_QUICK_GUARD"
+            ],
+            [
                 15,
                 "MOVE_BUG_BITE"
             ],
@@ -80,12 +84,24 @@
                 "MOVE_AGILITY"
             ],
             [
+                45,
+                "MOVE_LUNGE"
+            ],
+            [
                 50,
                 "MOVE_BOUNCE"
             ],
             [
+                55,
+                "MOVE_SPEED_SWAP"
+            ],
+            [
                 60,
                 "MOVE_BUG_BUZZ"
+            ],
+            [
+                65,
+                "MOVE_QUIVER_DANCE"
             ],
             [
                 70,

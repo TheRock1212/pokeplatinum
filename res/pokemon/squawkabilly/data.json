@@ -133,7 +133,9 @@
         ],
         "egg_moves": [
             "MOVE_DOUBLE_EDGE",
-            "MOVE_FLATTER"
+            "MOVE_FLATTER",
+            "MOVE_FINAL_GAMBIT",
+            "MOVE_PARTING_SHOT"
         ]
     },
     "evolutions": [],

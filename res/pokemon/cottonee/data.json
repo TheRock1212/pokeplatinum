@@ -52,6 +52,10 @@
                 "MOVE_ABSORB"
             ],
             [
+                3,
+                "MOVE_FAIRY_WIND"
+            ],
+            [
                 6,
                 "MOVE_STUN_SPORE"
             ],
@@ -98,6 +102,10 @@
             [
                 42,
                 "MOVE_ENDEAVOR"
+            ],
+            [
+                45,
+                "MOVE_COTTON_GUARD"
             ],
             [
                 48,

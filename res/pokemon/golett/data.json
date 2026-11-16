@@ -72,6 +72,10 @@
                 "MOVE_NIGHT_SHADE"
             ],
             [
+                24,
+                "MOVE_STOMPING_TANTRUM"
+            ],
+            [
                 28,
                 "MOVE_IRON_DEFENSE"
             ],
@@ -82,6 +86,14 @@
             [
                 36,
                 "MOVE_SHADOW_BALL"
+            ],
+            [
+                40,
+                "MOVE_HEAVY_SLAM"
+            ],
+            [
+                44,
+                "MOVE_PHANTOM_FORCE"
             ],
             [
                 48,

@@ -60,6 +60,10 @@
                 "MOVE_SLEEP_POWDER"
             ],
             [
+                1,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
                 12,
                 "MOVE_LIGHT_SCREEN"
             ],
@@ -72,12 +76,24 @@
                 "MOVE_SUPERSONIC"
             ],
             [
+                25,
+                "MOVE_DRAINING_KISS"
+            ],
+            [
                 31,
                 "MOVE_SAFEGUARD"
             ],
             [
                 35,
                 "MOVE_BUG_BUZZ"
+            ],
+            [
+                45,
+                "MOVE_QUIVER_DANCE"
+            ],
+            [
+                50,
+                "MOVE_HURRICANE"
             ]
         ],
         "by_tm": [
@@ -124,7 +140,8 @@
             "MOVE_SWIFT"
         ],
         "egg_moves": [
-            "MOVE_POISON_POWDER"
+            "MOVE_POISON_POWDER",
+            "MOVE_RAGE_POWDER"
         ]
     },
     "evolutions": [],

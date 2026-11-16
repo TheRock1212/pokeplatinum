@@ -76,6 +76,10 @@
                 "MOVE_CHARGE"
             ],
             [
+                35,
+                "MOVE_VOLT_SWITCH"
+            ],
+            [
                 40,
                 "MOVE_CRUNCH"
             ],
@@ -102,6 +106,10 @@
             [
                 70,
                 "MOVE_THRASH"
+            ],
+            [
+                75,
+                "MOVE_WILDBOLT_STORM"
             ]
         ],
         "by_tm": [

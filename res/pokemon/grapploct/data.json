@@ -44,6 +44,14 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_OCTOLOCK"
+            ],
+            [
+                1,
+                "MOVE_OCTOLOCK"
+            ],
+            [
                 1,
                 "MOVE_OCTAZOOKA"
             ],
@@ -90,6 +98,10 @@
             [
                 45,
                 "MOVE_SUPERPOWER"
+            ],
+            [
+                50,
+                "MOVE_TOPSY_TURVY"
             ]
         ],
         "by_tm": [
@@ -122,7 +134,10 @@
         "egg_moves": [
             "MOVE_SEISMIC_TOSS",
             "MOVE_PAIN_SPLIT",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_SOAK",
+            "MOVE_CIRCLE_THROW",
+            "MOVE_POWER_UP_PUNCH"
         ]
     },
     "evolutions": [],

@@ -80,6 +80,10 @@
                 "MOVE_POWER_GEM"
             ],
             [
+                56,
+                "MOVE_MAKE_IT_RAIN"
+            ],
+            [
                 63,
                 "MOVE_NASTY_PLOT"
             ],

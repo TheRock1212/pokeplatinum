@@ -161,7 +161,9 @@
             "MOVE_CURSE",
             "MOVE_BELLY_DRUM",
             "MOVE_SPIKES",
-            "MOVE_SYNTHESIS"
+            "MOVE_SYNTHESIS",
+            "MOVE_WIDE_GUARD",
+            "MOVE_QUICK_GUARD"
         ]
     },
     "evolutions": [

@@ -56,12 +56,20 @@
                 "MOVE_PROTECT"
             ],
             [
+                1,
+                "MOVE_DRAGON_TAIL"
+            ],
+            [
                 12,
                 "MOVE_SCARY_FACE"
             ],
             [
                 16,
                 "MOVE_HEADBUTT"
+            ],
+            [
+                20,
+                "MOVE_WORK_UP"
             ],
             [
                 24,
@@ -74,6 +82,10 @@
             [
                 32,
                 "MOVE_DRAGON_CLAW"
+            ],
+            [
+                38,
+                "MOVE_NOBLE_ROAR"
             ],
             [
                 44,

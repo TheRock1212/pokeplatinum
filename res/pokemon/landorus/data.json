@@ -45,6 +45,10 @@
         "by_level": [
             [
                 1,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
+                1,
                 "MOVE_SAND_TOMB"
             ],
             [
@@ -54,6 +58,10 @@
             [
                 10,
                 "MOVE_BLOCK"
+            ],
+            [
+                15,
+                "MOVE_BULLDOZE"
             ],
             [
                 20,
@@ -98,6 +106,10 @@
             [
                 75,
                 "MOVE_FISSURE"
+            ],
+            [
+                80,
+                "MOVE_SANDSEAR_STORM"
             ]
         ],
         "by_tm": [

@@ -49,6 +49,14 @@
             ],
             [
                 1,
+                "MOVE_MOONBLAST"
+            ],
+            [
+                1,
+                "MOVE_TRICK_OR_TREAT"
+            ],
+            [
+                1,
                 "MOVE_ASTONISH"
             ],
             [
@@ -58,6 +66,10 @@
             [
                 1,
                 "MOVE_CONFUSE_RAY"
+            ],
+            [
+                12,
+                "MOVE_TRICK_OR_TREAT"
             ],
             [
                 12,
@@ -73,6 +85,10 @@
             ],
             [
                 24,
+                "MOVE_TRICK_OR_TREAT"
+            ],
+            [
+                24,
                 "MOVE_SCARY_FACE"
             ],
             [
@@ -85,6 +101,10 @@
             ],
             [
                 36,
+                "MOVE_TRICK_OR_TREAT"
+            ],
+            [
+                36,
                 "MOVE_SHADOW_BALL"
             ],
             [
@@ -94,6 +114,10 @@
             [
                 44,
                 "MOVE_PAIN_SPLIT"
+            ],
+            [
+                48,
+                "MOVE_PHANTOM_FORCE"
             ]
         ],
         "by_tm": [

@@ -72,6 +72,10 @@
                 "MOVE_PLUCK"
             ],
             [
+                18,
+                "MOVE_QUICK_GUARD"
+            ],
+            [
                 21,
                 "MOVE_U_TURN"
             ],

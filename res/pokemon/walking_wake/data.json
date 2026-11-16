@@ -68,12 +68,24 @@
                 "MOVE_WATER_PULSE"
             ],
             [
+                21,
+                "MOVE_NOBLE_ROAR"
+            ],
+            [
                 28,
                 "MOVE_DRAGON_BREATH"
             ],
             [
+                35,
+                "MOVE_BREAKING_SWIPE"
+            ],
+            [
                 42,
                 "MOVE_DRAGON_RUSH"
+            ],
+            [
+                56,
+                "MOVE_HYDRO_STEAM"
             ],
             [
                 63,

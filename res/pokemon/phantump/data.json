@@ -52,6 +52,10 @@
                 "MOVE_ASTONISH"
             ],
             [
+                4,
+                "MOVE_BRANCH_POKE"
+            ],
+            [
                 8,
                 "MOVE_LEECH_SEED"
             ],
@@ -64,12 +68,24 @@
                 "MOVE_WILL_O_WISP"
             ],
             [
+                20,
+                "MOVE_HEX"
+            ],
+            [
                 24,
                 "MOVE_GROWTH"
             ],
             [
+                28,
+                "MOVE_HORN_LEECH"
+            ],
+            [
                 32,
                 "MOVE_CURSE"
+            ],
+            [
+                36,
+                "MOVE_PHANTOM_FORCE"
             ],
             [
                 40,
@@ -82,6 +98,10 @@
             [
                 48,
                 "MOVE_DESTINY_BOND"
+            ],
+            [
+                52,
+                "MOVE_FORESTS_CURSE"
             ]
         ],
         "by_tm": [
@@ -132,7 +152,8 @@
         ],
         "egg_moves": [
             "MOVE_DISABLE",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_ALLY_SWITCH"
         ]
     },
     "evolutions": [

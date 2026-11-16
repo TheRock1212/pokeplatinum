@@ -48,6 +48,10 @@
                 "MOVE_SPLASH"
             ],
             [
+                4,
+                "MOVE_PLAY_NICE"
+            ],
+            [
                 8,
                 "MOVE_RAPID_SPIN"
             ],
@@ -70,6 +74,10 @@
             [
                 28,
                 "MOVE_TEETER_DANCE"
+            ],
+            [
+                32,
+                "MOVE_AROMATIC_MIST"
             ]
         ],
         "by_tm": [

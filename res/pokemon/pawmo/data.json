@@ -68,6 +68,10 @@
                 "MOVE_CHARGE"
             ],
             [
+                12,
+                "MOVE_NUZZLE"
+            ],
+            [
                 15,
                 "MOVE_DIG"
             ],
@@ -88,12 +92,20 @@
                 "MOVE_SLAM"
             ],
             [
+                38,
+                "MOVE_ENTRAINMENT"
+            ],
+            [
                 42,
                 "MOVE_DISCHARGE"
             ],
             [
                 46,
                 "MOVE_AGILITY"
+            ],
+            [
+                52,
+                "MOVE_WILD_CHARGE"
             ]
         ],
         "by_tm": [

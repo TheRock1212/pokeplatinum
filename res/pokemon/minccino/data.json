@@ -48,8 +48,16 @@
                 "MOVE_POUND"
             ],
             [
+                1,
+                "MOVE_BABY_DOLL_EYES"
+            ],
+            [
                 4,
                 "MOVE_HELPING_HAND"
+            ],
+            [
+                8,
+                "MOVE_ECHOED_VOICE"
             ],
             [
                 12,
@@ -66,6 +74,14 @@
             [
                 24,
                 "MOVE_ENCORE"
+            ],
+            [
+                28,
+                "MOVE_AFTER_YOU"
+            ],
+            [
+                32,
+                "MOVE_TAIL_SLAP"
             ],
             [
                 36,
@@ -131,7 +147,8 @@
             "MOVE_TAIL_WHIP",
             "MOVE_FLAIL",
             "MOVE_KNOCK_OFF",
-            "MOVE_AQUA_TAIL"
+            "MOVE_AQUA_TAIL",
+            "MOVE_TIDY_UP"
         ]
     },
     "evolutions": [

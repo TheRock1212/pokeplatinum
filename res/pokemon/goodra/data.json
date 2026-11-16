@@ -49,11 +49,19 @@
             ],
             [
                 1,
+                "MOVE_TEARFUL_LOOK"
+            ],
+            [
+                1,
                 "MOVE_FEINT"
             ],
             [
                 1,
                 "MOVE_POISON_TAIL"
+            ],
+            [
+                1,
+                "MOVE_ACID_SPRAY"
             ],
             [
                 1,
@@ -154,7 +162,8 @@
             "MOVE_THUNDER_PUNCH"
         ],
         "egg_moves": [
-            "MOVE_COUNTER"
+            "MOVE_COUNTER",
+            "MOVE_LIFE_DEW"
         ]
     },
     "evolutions": [],

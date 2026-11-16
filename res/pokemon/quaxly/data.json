@@ -56,6 +56,10 @@
                 "MOVE_WATER_GUN"
             ],
             [
+                7,
+                "MOVE_WORK_UP"
+            ],
+            [
                 10,
                 "MOVE_WING_ATTACK"
             ],
@@ -68,12 +72,24 @@
                 "MOVE_DOUBLE_HIT"
             ],
             [
+                21,
+                "MOVE_AQUA_CUTTER"
+            ],
+            [
                 24,
                 "MOVE_AIR_SLASH"
             ],
             [
                 28,
                 "MOVE_FOCUS_ENERGY"
+            ],
+            [
+                31,
+                "MOVE_ACROBATICS"
+            ],
+            [
+                35,
+                "MOVE_LIQUIDATION"
             ]
         ],
         "by_tm": [

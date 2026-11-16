@@ -56,8 +56,16 @@
                 "MOVE_POISON_TAIL"
             ],
             [
+                1,
+                "MOVE_DRAGON_TAIL"
+            ],
+            [
                 8,
                 "MOVE_TOXIC"
+            ],
+            [
+                16,
+                "MOVE_VENOSHOCK"
             ],
             [
                 24,
@@ -74,6 +82,10 @@
             [
                 48,
                 "MOVE_FLAMETHROWER"
+            ],
+            [
+                56,
+                "MOVE_DYNAMAX_CANNON"
             ],
             [
                 64,

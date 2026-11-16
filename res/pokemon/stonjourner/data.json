@@ -80,6 +80,14 @@
                 "MOVE_BODY_SLAM"
             ],
             [
+                48,
+                "MOVE_WIDE_GUARD"
+            ],
+            [
+                54,
+                "MOVE_HEAVY_SLAM"
+            ],
+            [
                 60,
                 "MOVE_STONE_EDGE"
             ],

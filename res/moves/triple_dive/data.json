@@ -1,0 +1,32 @@
+{
+    "name": "Triple Dive",
+    "description": [
+        "The user performs a\n",
+        "perfectly timed triple\n",
+        "dive, hitting the target\n",
+        "with splashes of water\n",
+        "three times in a row."
+    ],
+    "class": "CLASS_PHYSICAL",
+    "type": "TYPE_WATER",
+    "power": 35,
+    "accuracy": 95,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_HIT_THREE_TIMES_GEN5",
+        "chance": 0
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_MAKES_CONTACT",
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK",
+        "MOVE_FLAG_HIDES_HP_GAUGES"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

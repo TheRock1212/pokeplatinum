@@ -56,6 +56,10 @@
                 "MOVE_CONFUSION"
             ],
             [
+                1,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
                 4,
                 "MOVE_CONFUSE_RAY"
             ],
@@ -76,6 +80,10 @@
                 "MOVE_HYPNOSIS"
             ],
             [
+                24,
+                "MOVE_ALLY_SWITCH"
+            ],
+            [
                 28,
                 "MOVE_BUG_BUZZ"
             ],
@@ -88,8 +96,16 @@
                 "MOVE_PSYCHIC"
             ],
             [
+                40,
+                "MOVE_AFTER_YOU"
+            ],
+            [
                 44,
                 "MOVE_CALM_MIND"
+            ],
+            [
+                48,
+                "MOVE_PSYCHIC_TERRAIN"
             ]
         ],
         "by_tm": [
@@ -125,7 +141,9 @@
         ],
         "egg_moves": [
             "MOVE_SUPERSONIC",
-            "MOVE_RECOVER"
+            "MOVE_RECOVER",
+            "MOVE_STICKY_WEB",
+            "MOVE_INFESTATION"
         ]
     },
     "evolutions": [],

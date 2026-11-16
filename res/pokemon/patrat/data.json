@@ -80,8 +80,16 @@
                 "MOVE_SUPER_FANG"
             ],
             [
+                23,
+                "MOVE_AFTER_YOU"
+            ],
+            [
                 26,
                 "MOVE_FOCUS_ENERGY"
+            ],
+            [
+                28,
+                "MOVE_WORK_UP"
             ],
             [
                 31,
@@ -148,7 +156,8 @@
             "MOVE_IRON_TAIL",
             "MOVE_REVENGE",
             "MOVE_BULLET_SEED",
-            "MOVE_ASSURANCE"
+            "MOVE_ASSURANCE",
+            "MOVE_TEARFUL_LOOK"
         ]
     },
     "evolutions": [

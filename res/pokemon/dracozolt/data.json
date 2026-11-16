@@ -68,6 +68,10 @@
                 "MOVE_PLUCK"
             ],
             [
+                35,
+                "MOVE_DRAGON_TAIL"
+            ],
+            [
                 42,
                 "MOVE_STOMP"
             ],
@@ -78,6 +82,10 @@
             [
                 56,
                 "MOVE_DISCHARGE"
+            ],
+            [
+                63,
+                "MOVE_BOLT_BEAK"
             ],
             [
                 70,

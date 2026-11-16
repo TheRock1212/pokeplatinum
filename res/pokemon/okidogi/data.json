@@ -76,6 +76,10 @@
                 "MOVE_POISON_JAB"
             ],
             [
+                48,
+                "MOVE_BRUTAL_SWING"
+            ],
+            [
                 56,
                 "MOVE_CRUNCH"
             ],

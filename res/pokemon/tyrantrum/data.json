@@ -68,6 +68,10 @@
                 "MOVE_BITE"
             ],
             [
+                20,
+                "MOVE_DRAGON_TAIL"
+            ],
+            [
                 24,
                 "MOVE_STOMP"
             ],

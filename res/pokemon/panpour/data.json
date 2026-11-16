@@ -48,6 +48,10 @@
                 "MOVE_SCRATCH"
             ],
             [
+                1,
+                "MOVE_PLAY_NICE"
+            ],
+            [
                 4,
                 "MOVE_LEER"
             ],
@@ -72,12 +76,20 @@
                 "MOVE_BITE"
             ],
             [
+                22,
+                "MOVE_SCALD"
+            ],
+            [
                 25,
                 "MOVE_TAUNT"
             ],
             [
                 28,
                 "MOVE_FLING"
+            ],
+            [
+                31,
+                "MOVE_ACROBATICS"
             ],
             [
                 34,
@@ -155,7 +167,8 @@
             "MOVE_COVET",
             "MOVE_AQUA_RING",
             "MOVE_AQUA_TAIL",
-            "MOVE_NASTY_PLOT"
+            "MOVE_NASTY_PLOT",
+            "MOVE_DISARMING_VOICE"
         ]
     },
     "evolutions": [

@@ -76,6 +76,10 @@
                 "MOVE_CHARM"
             ],
             [
+                29,
+                "MOVE_ACROBATICS"
+            ],
+            [
                 34,
                 "MOVE_ENCORE"
             ],
@@ -118,7 +122,8 @@
             "MOVE_COUNTER",
             "MOVE_HAZE",
             "MOVE_TICKLE",
-            "MOVE_BOUNCE"
+            "MOVE_BOUNCE",
+            "MOVE_BOOMBURST"
         ]
     },
     "evolutions": [

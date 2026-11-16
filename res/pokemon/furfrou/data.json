@@ -56,6 +56,10 @@
                 "MOVE_SAND_ATTACK"
             ],
             [
+                9,
+                "MOVE_BABY_DOLL_EYES"
+            ],
+            [
                 12,
                 "MOVE_HEADBUTT"
             ],
@@ -72,6 +76,10 @@
                 "MOVE_ODOR_SLEUTH"
             ],
             [
+                33,
+                "MOVE_RETALIATE"
+            ],
+            [
                 35,
                 "MOVE_TAKE_DOWN"
             ],
@@ -82,6 +90,10 @@
             [
                 42,
                 "MOVE_SUCKER_PUNCH"
+            ],
+            [
+                48,
+                "MOVE_COTTON_GUARD"
             ]
         ],
         "by_tm": [
@@ -125,7 +137,8 @@
             "MOVE_MIMIC",
             "MOVE_ROLE_PLAY",
             "MOVE_REFRESH",
-            "MOVE_CAPTIVATE"
+            "MOVE_CAPTIVATE",
+            "MOVE_WORK_UP"
         ]
     },
     "evolutions": [],

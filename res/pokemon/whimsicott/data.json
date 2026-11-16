@@ -45,6 +45,18 @@
         "by_level": [
             [
                 1,
+                "MOVE_MOONBLAST"
+            ],
+            [
+                1,
+                "MOVE_HURRICANE"
+            ],
+            [
+                1,
+                "MOVE_COTTON_GUARD"
+            ],
+            [
+                1,
                 "MOVE_ENERGY_BALL"
             ],
             [
@@ -110,10 +122,6 @@
             [
                 1,
                 "MOVE_ABSORB"
-            ],
-            [
-                1,
-                "MOVE_GUST"
             ]
         ],
         "by_tm": [

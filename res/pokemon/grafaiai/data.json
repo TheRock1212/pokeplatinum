@@ -44,12 +44,20 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_DOODLE"
+            ],
+            [
                 1,
                 "MOVE_SCRATCH"
             ],
             [
                 1,
                 "MOVE_LEER"
+            ],
+            [
+                5,
+                "MOVE_ACID_SPRAY"
             ],
             [
                 8,
@@ -131,7 +139,8 @@
             "MOVE_SUPER_FANG",
             "MOVE_SWAGGER",
             "MOVE_COPYCAT",
-            "MOVE_CROSS_POISON"
+            "MOVE_CROSS_POISON",
+            "MOVE_PARTING_SHOT"
         ]
     },
     "evolutions": [],

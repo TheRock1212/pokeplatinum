@@ -60,12 +60,24 @@
                 "MOVE_LICK"
             ],
             [
+                10,
+                "MOVE_ROUND"
+            ],
+            [
                 12,
                 "MOVE_BITE"
             ],
             [
                 15,
                 "MOVE_YAWN"
+            ],
+            [
+                17,
+                "MOVE_INCINERATE"
+            ],
+            [
+                24,
+                "MOVE_SNARL"
             ],
             [
                 28,
@@ -114,7 +126,8 @@
         "egg_moves": [
             "MOVE_CURSE",
             "MOVE_ENCORE",
-            "MOVE_SLACK_OFF"
+            "MOVE_SLACK_OFF",
+            "MOVE_BELCH"
         ]
     },
     "evolutions": [

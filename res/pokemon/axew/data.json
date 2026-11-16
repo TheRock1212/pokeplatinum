@@ -88,6 +88,10 @@
                 "MOVE_DRAGON_DANCE"
             ],
             [
+                30,
+                "MOVE_BREAKING_SWIPE"
+            ],
+            [
                 33,
                 "MOVE_FOCUS_ENERGY"
             ],
@@ -166,7 +170,8 @@
             "MOVE_IRON_TAIL",
             "MOVE_ENDEAVOR",
             "MOVE_NIGHT_SLASH",
-            "MOVE_AQUA_TAIL"
+            "MOVE_AQUA_TAIL",
+            "MOVE_FIRST_IMPRESSION"
         ]
     },
     "evolutions": [

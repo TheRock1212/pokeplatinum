@@ -49,6 +49,18 @@
             ],
             [
                 1,
+                "MOVE_PETAL_BLIZZARD"
+            ],
+            [
+                1,
+                "MOVE_ENTRAINMENT"
+            ],
+            [
+                1,
+                "MOVE_QUIVER_DANCE"
+            ],
+            [
+                1,
                 "MOVE_LEAF_STORM"
             ],
             [
@@ -98,6 +110,10 @@
             [
                 1,
                 "MOVE_MEGA_DRAIN"
+            ],
+            [
+                1,
+                "MOVE_AFTER_YOU"
             ],
             [
                 1,

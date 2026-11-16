@@ -76,6 +76,14 @@
                 "MOVE_REVERSAL"
             ],
             [
+                35,
+                "MOVE_FIRST_IMPRESSION"
+            ],
+            [
+                40,
+                "MOVE_NO_RETREAT"
+            ],
+            [
                 45,
                 "MOVE_IRON_DEFENSE"
             ],

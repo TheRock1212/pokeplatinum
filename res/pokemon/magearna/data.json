@@ -64,6 +64,10 @@
                 "MOVE_IRON_DEFENSE"
             ],
             [
+                24,
+                "MOVE_MAGNETIC_FLUX"
+            ],
+            [
                 30,
                 "MOVE_PSYBEAM"
             ],
@@ -74,6 +78,10 @@
             [
                 42,
                 "MOVE_LOCK_ON"
+            ],
+            [
+                48,
+                "MOVE_SHIFT_GEAR"
             ],
             [
                 54,
@@ -98,6 +106,10 @@
             [
                 84,
                 "MOVE_ZAP_CANNON"
+            ],
+            [
+                90,
+                "MOVE_FLEUR_CANNON"
             ]
         ],
         "by_tm": [

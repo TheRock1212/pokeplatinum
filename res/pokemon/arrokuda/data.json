@@ -76,6 +76,10 @@
                 "MOVE_CRUNCH"
             ],
             [
+                42,
+                "MOVE_LIQUIDATION"
+            ],
+            [
                 48,
                 "MOVE_DOUBLE_EDGE"
             ]

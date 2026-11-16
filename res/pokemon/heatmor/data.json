@@ -56,6 +56,10 @@
                 "MOVE_FURY_SWIPES"
             ],
             [
+                10,
+                "MOVE_INCINERATE"
+            ],
+            [
                 15,
                 "MOVE_BUG_BITE"
             ],
@@ -80,12 +84,24 @@
                 "MOVE_BIND"
             ],
             [
+                35,
+                "MOVE_FIRE_LASH"
+            ],
+            [
+                40,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
                 45,
                 "MOVE_AMNESIA"
             ],
             [
                 50,
                 "MOVE_FIRE_SPIN"
+            ],
+            [
+                55,
+                "MOVE_INFERNO"
             ],
             [
                 60,
@@ -144,7 +160,8 @@
             "MOVE_CURSE",
             "MOVE_TICKLE",
             "MOVE_SUCKER_PUNCH",
-            "MOVE_NIGHT_SLASH"
+            "MOVE_NIGHT_SLASH",
+            "MOVE_BELCH"
         ]
     },
     "evolutions": [],

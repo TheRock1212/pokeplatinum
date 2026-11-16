@@ -68,6 +68,14 @@
                 "MOVE_WILL_O_WISP"
             ],
             [
+                20,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
+                25,
+                "MOVE_INCINERATE"
+            ],
+            [
                 30,
                 "MOVE_CONFUSE_RAY"
             ],
@@ -84,12 +92,20 @@
                 "MOVE_LAVA_PLUME"
             ],
             [
+                50,
+                "MOVE_RUINATION"
+            ],
+            [
                 55,
                 "MOVE_BOUNCE"
             ],
             [
                 60,
                 "MOVE_SWAGGER"
+            ],
+            [
+                65,
+                "MOVE_INFERNO"
             ],
             [
                 70,

@@ -56,6 +56,10 @@
                 "MOVE_TORMENT"
             ],
             [
+                8,
+                "MOVE_HONE_CLAWS"
+            ],
+            [
                 12,
                 "MOVE_FURY_SWIPES"
             ],
@@ -84,8 +88,16 @@
                 "MOVE_IMPRISON"
             ],
             [
+                40,
+                "MOVE_NIGHT_DAZE"
+            ],
+            [
                 44,
                 "MOVE_NASTY_PLOT"
+            ],
+            [
+                48,
+                "MOVE_FOUL_PLAY"
             ]
         ],
         "by_tm": [

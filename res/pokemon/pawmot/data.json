@@ -44,12 +44,20 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_REVIVAL_BLESSING"
+            ],
+            [
                 1,
                 "MOVE_SCRATCH"
             ],
             [
                 1,
                 "MOVE_GROWL"
+            ],
+            [
+                1,
+                "MOVE_WILD_CHARGE"
             ],
             [
                 3,
@@ -62,6 +70,10 @@
             [
                 8,
                 "MOVE_CHARGE"
+            ],
+            [
+                12,
+                "MOVE_NUZZLE"
             ],
             [
                 15,
@@ -88,6 +100,10 @@
                 "MOVE_SLAM"
             ],
             [
+                39,
+                "MOVE_ENTRAINMENT"
+            ],
+            [
                 44,
                 "MOVE_CLOSE_COMBAT"
             ],
@@ -98,6 +114,10 @@
             [
                 54,
                 "MOVE_AGILITY"
+            ],
+            [
+                60,
+                "MOVE_DOUBLE_SHOCK"
             ]
         ],
         "by_tm": [

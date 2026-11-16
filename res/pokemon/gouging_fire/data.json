@@ -53,6 +53,10 @@
             ],
             [
                 1,
+                "MOVE_INCINERATE"
+            ],
+            [
+                1,
                 "MOVE_SUNNY_DAY"
             ],
             [
@@ -80,6 +84,10 @@
                 "MOVE_MORNING_SUN"
             ],
             [
+                49,
+                "MOVE_BURNING_BULWARK"
+            ],
+            [
                 56,
                 "MOVE_DRAGON_RUSH"
             ],
@@ -98,6 +106,10 @@
             [
                 84,
                 "MOVE_FLARE_BLITZ"
+            ],
+            [
+                91,
+                "MOVE_RAGING_FURY"
             ]
         ],
         "by_tm": [
@@ -126,7 +138,8 @@
         ],
         "egg_moves": [
             "MOVE_DOUBLE_KICK",
-            "MOVE_ANCIENT_POWER"
+            "MOVE_ANCIENT_POWER",
+            "MOVE_NOBLE_ROAR"
         ]
     },
     "evolutions": [],

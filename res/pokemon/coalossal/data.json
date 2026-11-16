@@ -44,6 +44,10 @@
     "learnset": {
         "by_level": [
             [
+                0,
+                "MOVE_TAR_SHOT"
+            ],
+            [
                 1,
                 "MOVE_TACKLE"
             ],
@@ -56,6 +60,14 @@
                 "MOVE_RAPID_SPIN"
             ],
             [
+                1,
+                "MOVE_SMACK_DOWN"
+            ],
+            [
+                1,
+                "MOVE_FLAME_CHARGE"
+            ],
+            [
                 15,
                 "MOVE_ROCK_POLISH"
             ],
@@ -64,8 +76,16 @@
                 "MOVE_ANCIENT_POWER"
             ],
             [
+                27,
+                "MOVE_INCINERATE"
+            ],
+            [
                 37,
                 "MOVE_STEALTH_ROCK"
+            ],
+            [
+                45,
+                "MOVE_HEAT_CRASH"
             ],
             [
                 54,

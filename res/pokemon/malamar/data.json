@@ -96,6 +96,14 @@
                 "MOVE_SWITCHEROO"
             ],
             [
+                37,
+                "MOVE_FOUL_PLAY"
+            ],
+            [
+                42,
+                "MOVE_TOPSY_TURVY"
+            ],
+            [
                 47,
                 "MOVE_SUPERPOWER"
             ]

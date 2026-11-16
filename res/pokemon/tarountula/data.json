@@ -52,6 +52,10 @@
                 "MOVE_STRING_SHOT"
             ],
             [
+                5,
+                "MOVE_STRUGGLE_BUG"
+            ],
+            [
                 8,
                 "MOVE_ASSURANCE"
             ],
@@ -76,8 +80,24 @@
                 "MOVE_HEADBUTT"
             ],
             [
+                29,
+                "MOVE_STICKY_WEB"
+            ],
+            [
                 33,
                 "MOVE_GASTRO_ACID"
+            ],
+            [
+                36,
+                "MOVE_CIRCLE_THROW"
+            ],
+            [
+                40,
+                "MOVE_THROAT_CHOP"
+            ],
+            [
+                44,
+                "MOVE_SKITTER_SMACK"
             ]
         ],
         "by_tm": [
@@ -103,7 +123,9 @@
         ],
         "egg_moves": [
             "MOVE_MEMENTO",
-            "MOVE_SUCKER_PUNCH"
+            "MOVE_SUCKER_PUNCH",
+            "MOVE_FIRST_IMPRESSION",
+            "MOVE_LUNGE"
         ]
     },
     "evolutions": [

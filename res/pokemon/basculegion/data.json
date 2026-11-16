@@ -56,6 +56,10 @@
                 "MOVE_WATER_GUN"
             ],
             [
+                1,
+                "MOVE_PHANTOM_FORCE"
+            ],
+            [
                 4,
                 "MOVE_TACKLE"
             ],
@@ -80,6 +84,10 @@
                 "MOVE_HEADBUTT"
             ],
             [
+                28,
+                "MOVE_SOAK"
+            ],
+            [
                 32,
                 "MOVE_CRUNCH"
             ],
@@ -90,6 +98,10 @@
             [
                 40,
                 "MOVE_UPROAR"
+            ],
+            [
+                44,
+                "MOVE_WAVE_CRASH"
             ],
             [
                 48,
@@ -129,6 +141,7 @@
         ],
         "egg_moves": [
             "MOVE_ENDEAVOR",
+            "MOVE_LAST_RESPECTS",
             "MOVE_BUBBLE_BEAM"
         ]
     },

@@ -68,6 +68,10 @@
                 "MOVE_BUG_BITE"
             ],
             [
+                25,
+                "MOVE_COIL"
+            ],
+            [
                 30,
                 "MOVE_SLAM"
             ],
@@ -78,6 +82,18 @@
             [
                 40,
                 "MOVE_CRUNCH"
+            ],
+            [
+                45,
+                "MOVE_FIRE_LASH"
+            ],
+            [
+                50,
+                "MOVE_LUNGE"
+            ],
+            [
+                55,
+                "MOVE_BURN_UP"
             ]
         ],
         "by_tm": [
@@ -97,7 +113,8 @@
         "egg_moves": [
             "MOVE_DEFENSE_CURL",
             "MOVE_ROLLOUT",
-            "MOVE_KNOCK_OFF"
+            "MOVE_KNOCK_OFF",
+            "MOVE_STRUGGLE_BUG"
         ]
     },
     "evolutions": [

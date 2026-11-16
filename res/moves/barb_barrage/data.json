@@ -1,0 +1,30 @@
+{
+    "name": "Barb Barrage",
+    "description": [
+        "The user launches barbs\n",
+        "which may poison the\n",
+        "target. Its power is\n",
+        "doubled if the target\n",
+        "is already poisoned."
+    ],
+    "class": "CLASS_PHYSICAL",
+    "type": "TYPE_POISON",
+    "power": 60,
+    "accuracy": 100,
+    "pp": 10,
+    "effect": {
+        "type": "BATTLE_EFFECT_POISON_HIT_DOUBLE_POWER_ON_POISONED",
+        "chance": 50
+    },
+    "range": "RANGE_SINGLE_TARGET",
+    "priority": 0,
+    "flags": [
+        "MOVE_FLAG_CAN_PROTECT",
+        "MOVE_FLAG_CAN_MIRROR_MOVE",
+        "MOVE_FLAG_TRIGGERS_KINGS_ROCK"
+    ],
+    "contest": {
+        "effect": "CONTEST_EFFECT_NONE",
+        "type": "CONTEST_TYPE_COOL"
+    }
+}

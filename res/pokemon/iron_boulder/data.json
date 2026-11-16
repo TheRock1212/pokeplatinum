@@ -56,6 +56,10 @@
                 "MOVE_ROCK_THROW"
             ],
             [
+                1,
+                "MOVE_ELECTRIC_TERRAIN"
+            ],
+            [
                 7,
                 "MOVE_QUICK_ATTACK"
             ],
@@ -80,12 +84,24 @@
                 "MOVE_ROCK_TOMB"
             ],
             [
+                49,
+                "MOVE_SACRED_SWORD"
+            ],
+            [
+                56,
+                "MOVE_MIGHTY_CLEAVE"
+            ],
+            [
                 63,
                 "MOVE_SWORDS_DANCE"
             ],
             [
                 70,
                 "MOVE_MEGAHORN"
+            ],
+            [
+                77,
+                "MOVE_QUICK_GUARD"
             ],
             [
                 84,

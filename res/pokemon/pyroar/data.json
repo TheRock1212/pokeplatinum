@@ -60,8 +60,16 @@
                 "MOVE_HYPER_BEAM"
             ],
             [
+                1,
+                "MOVE_WORK_UP"
+            ],
+            [
                 11,
                 "MOVE_HEADBUTT"
+            ],
+            [
+                15,
+                "MOVE_NOBLE_ROAR"
             ],
             [
                 20,
@@ -76,6 +84,10 @@
                 "MOVE_ENDEAVOR"
             ],
             [
+                33,
+                "MOVE_ECHOED_VOICE"
+            ],
+            [
                 38,
                 "MOVE_FLAMETHROWER"
             ],
@@ -86,6 +98,10 @@
             [
                 48,
                 "MOVE_HYPER_VOICE"
+            ],
+            [
+                51,
+                "MOVE_INCINERATE"
             ],
             [
                 57,
@@ -139,7 +155,8 @@
         "egg_moves": [
             "MOVE_FIRE_SPIN",
             "MOVE_YAWN",
-            "MOVE_FLARE_BLITZ"
+            "MOVE_FLARE_BLITZ",
+            "MOVE_ENTRAINMENT"
         ]
     },
     "evolutions": [],

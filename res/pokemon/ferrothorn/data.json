@@ -155,7 +155,8 @@
             "MOVE_LEECH_SEED",
             "MOVE_TOXIC",
             "MOVE_KNOCK_OFF",
-            "MOVE_GRAVITY"
+            "MOVE_GRAVITY",
+            "MOVE_ACID_SPRAY"
         ]
     },
     "evolutions": [],
