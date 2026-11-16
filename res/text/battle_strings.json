@@ -6276,7 +6276,7 @@
         "stopped evolving!\r"
       ]
     },
-    {           
+    {
       "id": "BattleStrings_Text_EllipsesEllipses",
       "en_US": "... ...?\r"
     },
@@ -8487,6 +8487,319 @@
       "en_US": [
         "The Distortion World’s {STRVAR_1 1, 0, 0}\n",
         "appeared!\r"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1309",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its {STRVAR_1 13, 2, 0} sharply!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1313",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} raised its {STRVAR_1 13, 2, 0}\f",
+        "drastically!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1314",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} raised its {STRVAR_1 13, 2, 0}\f",
+        "drastically!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1315",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 13, 1, 0}\n",
+        "rose drastically!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1316",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 13, 1, 0}\n",
+        "rose drastically!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1317",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s {STRVAR_1 13, 1, 0}\n",
+        "rose drastically!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1318",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} cut its {STRVAR_1 13, 2, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1364",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its Sp. Attack!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1367",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} popped!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1370",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} floats in the\n",
+        "air with its {STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1373",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its Attack!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1376",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its Defense!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1379",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its Special Defense!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1382",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its Speed!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1396",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} had\n",
+        "its HP restored."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1436",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} is absorbing\n",
+        "power!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1443",
+      "en_US": [
+        "The Water-type attack evaporated\n",
+        "in the harsh sunlight!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1447",
+      "en_US": [
+        "The Fire-type attack fizzled out in the heavy rain!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1451",
+      "en_US": [
+        "The mysterious strong winds\n",
+        "weakened the attack!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1471",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}\n",
+        "is protected by the Psychic Terrain!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1484",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}\n",
+        "is protected by the Electric Terrain!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1487",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}\n",
+        "is not affected by\f",
+        "{STRVAR_1 6, 1, 0}\f",
+        "thanks to its Safety Goggles!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1490",
+      "en_US": [
+        "The move was blocked\n",
+        "by the power of Dynamax!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1491",
+      "en_US": [
+        "But {STRVAR_1 1, 0, 0} can’t use the move!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1492",
+      "en_US": [
+        "But {STRVAR_1 1, 0, 0} can’t use it the way it is now!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1493",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}\n",
+        "shook its head.\f",
+        "It seems like it can’t use this move..."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1496",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} surrounds itself with\n",
+        "a protective mist!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1520",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 13, 1, 0}\n",
+        "severely fell!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1521",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s {STRVAR_1 13, 1, 0}\n",
+        "severely fell!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1522",
+      "en_US": [
+        "The {STRVAR_1 8, 1, 0} drastically boosted\n",
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 13, 2, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1525",
+      "en_US": [
+        "Your team is no longer\n",
+        "protected by mist!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1530",
+      "en_US": [
+        "{STRVAR_1 8, 0, 0} cannot\n",
+        "be confused!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1539",
+      "en_US": [
+        "But it failed to affect\n",
+        "{STRVAR_1 8, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1542",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} is about to be\n",
+        "attacked by its {STRVAR_1 6, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1545",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} is going all out\n",
+        "for this attack!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1548",
+      "en_US": [
+        "Neither Pokémon can run away!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1562",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} was hurt!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1600",
+      "en_US": [
+        "A deluge of ions showers\n",
+        "the battlefield!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1601",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} burned itself out!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1604",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} used up all\n",
+        "its electricity!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1619",
+      "en_US": [
+        "The effects of Throat Chop prevent\n",
+        "{STRVAR_1 1, 0, 0} from using certain moves!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1676",
+      "en_US": [
+        "A critical hit on {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1679",
+      "en_US": [
+        "The {STRVAR_1 8, 0, 0} was used up..."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1704",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} used the Electric Terrain to\n",
+        "energize its futuristic engine!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1716",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} held up\n",
+        "its Red Card against\f",
+        "{STRVAR_1 1, 1, 0}!"
       ]
     }
   ]
