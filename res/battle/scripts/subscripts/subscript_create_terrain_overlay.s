@@ -1,7 +1,8 @@
 #include "macros/btlcmd.inc"
 
-@ Expansion: written by hand (no terrain animations or backgrounds yet)
+@ Expansion: written by hand (the terrain move has no animation of its own, only the background)
 _000:
+    RefreshTerrainBackground
     GotoIfTerrainOverlayIsType GRASSY_TERRAIN, _grassy
     GotoIfTerrainOverlayIsType MISTY_TERRAIN, _misty
     GotoIfTerrainOverlayIsType ELECTRIC_TERRAIN, _electric

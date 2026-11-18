@@ -321,6 +321,7 @@ static BOOL BtlCmd_ResetParadoxAbility(BattleSystem *battleSys, BattleContext *b
 static BOOL BtlCmd_UpdateTerrainOverlay(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_GotoIfTerrainOverlayIsType(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_CheckTerrainBlocksStatus(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_RefreshTerrainBackground(BattleSystem *battleSys, BattleContext *battleCtx);
 
 static int BattleScript_Read(BattleContext *battleCtx);
 static void BattleScript_Iter(BattleContext *battleCtx, int i);
@@ -9822,6 +9823,21 @@ static BOOL BtlCmd_CheckTerrainBlocksStatus(BattleSystem *battleSys, BattleConte
         battleCtx->msgBuffer.params[0] = BattleSystem_NicknameTag(battleCtx, battler);
         BattleScript_Iter(battleCtx, jump);
     }
+
+    return FALSE;
+}
+
+/**
+ * @brief Show the background of the active terrain, or the original one if
+ * there is none.
+ *
+ * As in hg-engine (changepermanentbg), this changes the screen directly and
+ * not through a BattleIO message: in link battles only the host would see it.
+ */
+static BOOL BtlCmd_RefreshTerrainBackground(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    BattleSystem_SetTerrainBackground(battleSys, battleCtx->terrain);
 
     return FALSE;
 }

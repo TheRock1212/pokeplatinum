@@ -243,6 +243,7 @@ ScriptCommand(BTLCMD_RESETPARADOXABILITY,         BtlCmd_ResetParadoxAbility)
 ScriptCommand(BTLCMD_UPDATETERRAINOVERLAY,        BtlCmd_UpdateTerrainOverlay)
 ScriptCommand(BTLCMD_GOTOIFTERRAINOVERLAYISTYPE,  BtlCmd_GotoIfTerrainOverlayIsType)
 ScriptCommand(BTLCMD_CHECKTERRAINBLOCKSSTATUS,    BtlCmd_CheckTerrainBlocksStatus)
+ScriptCommand(BTLCMD_REFRESHTERRAINBACKGROUND,    BtlCmd_RefreshTerrainBackground)
 
 // clang-format on
 

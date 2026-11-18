@@ -89,6 +89,8 @@ struct BattleSystem {
     GameRecords *records;
     u8 *bgTileSnapshot;
     u16 *bgPaletteSnapshot;
+    u8 *bgPlatformTiles; // expansion: baked platforms, saved while a terrain background is shown
+    u16 *bgOriginalPalette; // expansion: palette of the original background
     u8 serverMessage[4096];
     u8 clientMessage[4096];
     u16 savedBgPalettes[112];

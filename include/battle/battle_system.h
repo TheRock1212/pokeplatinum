@@ -217,6 +217,13 @@ void BattleSystem_InitCaptureAttempt(BattleSystem *battleSys, Pokemon *mon);
 void BattleSystem_BakeSpritesToBackground(BattleSystem *battleSys);
 u8 *BattleSystem_GetBgTileSnapshot(BattleSystem *battleSys);
 u16 *BattleSystem_GetBgPaletteSnapshot(BattleSystem *battleSys);
+
+// expansion: Grassy/Misty/Electric/Psychic Terrain backgrounds from hg-engine, appended to
+// pl_batt_bg.narc by tools/expansion/add_terrain_backgrounds.py: tiles at
+// BATTLE_BG_NARC_TERRAIN_FIRST + 2 * (terrain - 1), palette right after
+#define BATTLE_BG_NARC_TERRAIN_FIRST 342
+
+void BattleSystem_SetTerrainBackground(BattleSystem *battleSys, int terrain);
 int BattleSystem_GetVisitedContestHall(BattleSystem *battleSys);
 u16 *BattleSystem_GetSavedBgPalettes(BattleSystem *battleSys);
 u16 *BattleSystem_GetSavedObjPalettes(BattleSystem *battleSys);

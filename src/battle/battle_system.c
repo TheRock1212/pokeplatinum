@@ -1071,6 +1071,66 @@ void BattleSystem_BakeSpritesToBackground(BattleSystem *battleSys)
     Terrain_Destroy(&battleSys->terrains[1]);
 }
 
+// Tile rows 19-31 of the background, where BattleSystem_BakeSpritesToBackground draws the platforms
+#define BG_PLATFORM_TILES_START (19 * 0x800)
+#define BG_PLATFORM_TILES_SIZE  (13 * 0x800)
+
+/**
+ * @brief Show the background of a terrain (Grassy/Misty/Electric/Psychic
+ * Terrain, without platforms, as in hg-engine) or go back to the original one.
+ *
+ * The background snapshot is updated too, so that the move animations which
+ * restore the background from it keep the terrain one.
+ *
+ * @param battleSys
+ * @param terrain   GRASSY_TERRAIN, ... or TERRAIN_NONE for the original background
+ */
+void BattleSystem_SetTerrainBackground(BattleSystem *battleSys, int terrain)
+{
+    NNSG2dCharacterData *charData;
+    int tilesMember;
+    void *file;
+
+    if (battleSys->bgTileSnapshot == NULL) {
+        return;
+    }
+
+    if (battleSys->bgPlatformTiles == NULL) {
+        if (terrain == TERRAIN_NONE) {
+            return;
+        }
+
+        battleSys->bgPlatformTiles = Heap_Alloc(HEAP_ID_BATTLE, BG_PLATFORM_TILES_SIZE);
+        battleSys->bgOriginalPalette = Heap_Alloc(HEAP_ID_BATTLE, HW_BG_PLTT_SIZE);
+        MI_CpuCopy32(battleSys->bgTileSnapshot + BG_PLATFORM_TILES_START, battleSys->bgPlatformTiles, BG_PLATFORM_TILES_SIZE);
+        MI_CpuCopy32(battleSys->bgPaletteSnapshot, battleSys->bgOriginalPalette, HW_BG_PLTT_SIZE);
+    }
+
+    if (terrain == TERRAIN_NONE) {
+        tilesMember = 3 + battleSys->background;
+    } else {
+        tilesMember = BATTLE_BG_NARC_TERRAIN_FIRST + 2 * (terrain - 1);
+    }
+
+    file = Graphics_GetCharData(NARC_INDEX_BATTLE__GRAPHIC__PL_BATT_BG, tilesMember, TRUE, &charData, HEAP_ID_BATTLE);
+    MI_CpuCopy32(charData->pRawData, battleSys->bgTileSnapshot, charData->szByte < 0x10000 ? charData->szByte : 0x10000);
+    Heap_Free(file);
+
+    if (terrain == TERRAIN_NONE) {
+        MI_CpuCopy32(battleSys->bgPlatformTiles, battleSys->bgTileSnapshot + BG_PLATFORM_TILES_START, BG_PLATFORM_TILES_SIZE);
+        PaletteData_LoadBuffer(battleSys->paletteData, battleSys->bgOriginalPalette, PLTTBUF_MAIN_BG, 0, HW_BG_PLTT_SIZE);
+    } else {
+        int frame = BattleSystem_GetOptionsFrame(battleSys);
+
+        PaletteData_LoadBufferFromFileStart(battleSys->paletteData, NARC_INDEX_BATTLE__GRAPHIC__PL_BATT_BG, tilesMember + 1, HEAP_ID_BATTLE, PLTTBUF_MAIN_BG, 0, PLTT_DEST(0));
+        PaletteData_LoadBufferFromFileStart(battleSys->paletteData, NARC_INDEX_GRAPHIC__PL_WINFRAME, GetMessageBoxPaletteNARCMember(frame), HEAP_ID_BATTLE, PLTTBUF_MAIN_BG, PALETTE_SIZE_BYTES, PLTT_DEST(10));
+        PaletteData_LoadBufferFromFileStart(battleSys->paletteData, NARC_INDEX_GRAPHIC__PL_FONT, 7, HEAP_ID_BATTLE, PLTTBUF_MAIN_BG, PALETTE_SIZE_BYTES, PLTT_DEST(11));
+    }
+
+    MI_CpuCopy32(PaletteData_GetUnfadedBuffer(battleSys->paletteData, PLTTBUF_MAIN_BG), battleSys->bgPaletteSnapshot, HW_BG_PLTT_SIZE);
+    Bg_LoadTiles(battleSys->bgConfig, BG_LAYER_MAIN_3, battleSys->bgTileSnapshot, 0x10000, 0);
+}
+
 u8 *BattleSystem_GetBgTileSnapshot(BattleSystem *battleSys)
 {
     return battleSys->bgTileSnapshot;

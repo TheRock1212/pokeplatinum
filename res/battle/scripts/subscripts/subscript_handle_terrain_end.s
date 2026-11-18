@@ -31,6 +31,7 @@ _clear:
     Wait
     WaitButtonABTime 30
     UpdateTerrainOverlay TRUE, _end
+    RefreshTerrainBackground
 
 _end:
     End

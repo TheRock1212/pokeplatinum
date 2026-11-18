@@ -763,6 +763,11 @@ static void BattleMain_CopyBattleSysToDTOAndFree(ApplicationManager *appMan)
     Heap_Free(battleSys->bgConfig);
     Heap_Free(battleSys->bgTileSnapshot);
     Heap_Free(battleSys->bgPaletteSnapshot);
+
+    if (battleSys->bgPlatformTiles != NULL) {
+        Heap_Free(battleSys->bgPlatformTiles);
+        Heap_Free(battleSys->bgOriginalPalette);
+    }
     FontSpecialChars_Free(battleSys->specialCharsHP);
     Font_Free(FONT_SUBSCREEN);
     SysTask_Done(battleSys->taskDrawSprites);
