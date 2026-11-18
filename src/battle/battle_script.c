@@ -9867,9 +9867,22 @@ static BOOL BtlCmd_RefreshTerrainBackground(BattleSystem *battleSys, BattleConte
  */
 static BOOL BtlCmd_AbilityPopup(BattleSystem *battleSys, BattleContext *battleCtx)
 {
+    int cursor = battleCtx->scriptCursor;
+
     BattleScript_Iter(battleCtx, 1);
-    BattleScript_Read(battleCtx);
-    BattleScript_Read(battleCtx);
+    int battler = BattleScript_Battler(battleSys, battleCtx, BattleScript_Read(battleCtx));
+    int ability = BattleScript_Read(battleCtx);
+
+    if (ability == -1 || ability == 0xFFFF) {
+        ability = battleCtx->battleMons[battler].ability;
+    }
+
+    if (ability != ABILITY_NONE
+        && BattleSystem_ShowAbilityPopup(battleSys, battler, ability, battleCtx->selectedPartySlot[battler]) == FALSE) {
+        // run this command again next frame, until the bar is gone
+        battleCtx->scriptCursor = cursor;
+        battleCtx->battleProgressFlag = TRUE;
+    }
 
     return FALSE;
 }

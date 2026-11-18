@@ -91,6 +91,9 @@ struct BattleSystem {
     u16 *bgPaletteSnapshot;
     u8 *bgPlatformTiles; // expansion: baked platforms, saved while a terrain background is shown
     u16 *bgOriginalPalette; // expansion: palette of the original background
+    u8 abilityPopupStep; // expansion: ability popup bar (BattleSystem_ShowAbilityPopup)
+    u8 abilityPopupFrame;
+    u16 abilityPopupSavedPalette[16];
     u8 serverMessage[4096];
     u8 clientMessage[4096];
     u16 savedBgPalettes[112];

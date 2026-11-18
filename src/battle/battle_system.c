@@ -70,6 +70,8 @@
 #include "tv_segment.h"
 #include "unk_0202F1D4.h"
 
+#include "res/text/bank/battle_strings.h"
+
 static void BattleMessage_CheckSide(BattleSystem *battleSys, BattleMessage *battleMsg);
 static void BattleMessage_FillFormatBuffers(BattleSystem *battleSys, BattleMessage *battleMsg);
 static void BattleMessage_Format(BattleSystem *battleSys, MessageLoader *msgLoader, BattleMessage *battleMsg);
@@ -2372,4 +2374,178 @@ static BOOL BattleMessage_Callback(TextPrinterTemplate *unused, u16 soundCommand
     }
 
     return result;
+}
+
+// Ability popup bar (as in Gen 5+, from hg-engine's AbilityPopup): a blue bar with "{nickname}'s / {ability}"
+// slides in from the battler's side of the screen, stays a moment and slides out. It is drawn on BG2 in window 1,
+// like the level-up stat summary, starting off-screen at tile x 32 (BG2 is 512 px wide) and moved by scrolling BG2.
+
+#define ABILITY_POPUP_PALETTE      12
+#define ABILITY_POPUP_BASE_TILE    (9 + 1)
+#define ABILITY_POPUP_WIDTH        16 // tiles
+#define ABILITY_POPUP_HEIGHT       5 // tiles
+#define ABILITY_POPUP_BG_X         256 // pixels: window at tile x 32, off-screen until BG2 scrolls
+#define ABILITY_POPUP_SLIDE_FRAMES 4
+#define ABILITY_POPUP_WAIT_FRAMES  45
+#define ABILITY_POPUP_ENEMY_X      144 // the enemy's bar ends past the right edge of the screen
+#define ABILITY_POPUP_PLAYER_X     (-16) // the player's bar starts past the left edge
+
+#define POPUP_RGB(r, g, b) ((((r) >> 3) & 0x1F) | ((((g) >> 3) & 0x1F) << 5) | ((((b) >> 3) & 0x1F) << 10))
+
+enum {
+    POPUP_COLOR_BORDER = 1,
+    POPUP_COLOR_HIGHLIGHT,
+    POPUP_COLOR_BODY,
+    POPUP_COLOR_EDGE,
+    POPUP_COLOR_SHADOW = 14,
+    POPUP_COLOR_TEXT = 15,
+};
+
+static const u16 sAbilityPopupPalette[16] = {
+    [POPUP_COLOR_BORDER] = POPUP_RGB(74, 74, 98),
+    [POPUP_COLOR_HIGHLIGHT] = POPUP_RGB(156, 197, 246),
+    [POPUP_COLOR_BODY] = POPUP_RGB(90, 131, 213),
+    [POPUP_COLOR_EDGE] = POPUP_RGB(60, 98, 143),
+    [POPUP_COLOR_SHADOW] = POPUP_RGB(41, 49, 74),
+    [POPUP_COLOR_TEXT] = POPUP_RGB(255, 255, 255),
+};
+
+enum {
+    ABILITY_POPUP_INIT = 0,
+    ABILITY_POPUP_SLIDE_IN,
+    ABILITY_POPUP_WAIT,
+    ABILITY_POPUP_SLIDE_OUT,
+};
+
+// frame 0: fully off-screen; frame ABILITY_POPUP_SLIDE_FRAMES: in place
+static int AbilityPopup_ScreenX(BattleSystem *battleSys, int battler, int frame)
+{
+    int shown, hidden;
+
+    if (BattleSystem_GetBattlerSide(battleSys, battler)) {
+        shown = ABILITY_POPUP_ENEMY_X;
+        hidden = 256;
+    } else {
+        shown = ABILITY_POPUP_PLAYER_X;
+        hidden = -ABILITY_POPUP_WIDTH * 8;
+    }
+
+    return hidden + (shown - hidden) * frame / ABILITY_POPUP_SLIDE_FRAMES;
+}
+
+static void AbilityPopup_Scroll(BattleSystem *battleSys, int battler, int frame)
+{
+    Bg_SetOffset(battleSys->bgConfig, BG_LAYER_MAIN_2, BG_OFFSET_UPDATE_SET_X, ABILITY_POPUP_BG_X - AbilityPopup_ScreenX(battleSys, battler, frame));
+}
+
+static void AbilityPopup_Draw(BattleSystem *battleSys, int battler, int ability, int partySlot)
+{
+    Window *window = BattleSystem_GetWindow(battleSys, 1);
+    int enemy = BattleSystem_GetBattlerSide(battleSys, battler);
+    int top;
+
+    // enemy bars on the right under the enemy's Pokemon, player bars on the left above the message box;
+    // in doubles the second battler of each side gets its own row
+    if (enemy) {
+        top = (battler == BATTLER_ENEMY_2) ? 1 : 6;
+    } else {
+        top = (battler == BATTLER_PLAYER_2) ? 7 : 12;
+    }
+
+    u16 *palette = PaletteData_GetUnfadedBuffer(battleSys->paletteData, PLTTBUF_MAIN_BG);
+    MI_CpuCopy16(&palette[ABILITY_POPUP_PALETTE * 16], battleSys->abilityPopupSavedPalette, sizeof(battleSys->abilityPopupSavedPalette));
+    PaletteData_LoadBuffer(battleSys->paletteData, sAbilityPopupPalette, PLTTBUF_MAIN_BG, ABILITY_POPUP_PALETTE * 16, sizeof(sAbilityPopupPalette));
+
+    G2_SetBG0Priority(1 + 1);
+    Bg_SetPriority(BG_LAYER_MAIN_1, 1);
+    Bg_SetPriority(BG_LAYER_MAIN_2, 0);
+    BattleSystem_SetHealthboxPriority(battleSys, 0 + 2);
+
+    AbilityPopup_Scroll(battleSys, battler, 0);
+    Bg_SetOffset(battleSys->bgConfig, BG_LAYER_MAIN_2, BG_OFFSET_UPDATE_SET_Y, 0);
+
+    Window_Add(battleSys->bgConfig, window, BG_LAYER_MAIN_2, ABILITY_POPUP_BG_X / 8, top, ABILITY_POPUP_WIDTH, ABILITY_POPUP_HEIGHT, ABILITY_POPUP_PALETTE, ABILITY_POPUP_BASE_TILE);
+    Window_FillTilemap(window, 0);
+
+    // the bar: 128x37 with a dark outline, a light top line and a darker bottom line
+    int w = ABILITY_POPUP_WIDTH * 8, y = 1, h = 37;
+
+    Window_FillRectWithColor(window, POPUP_COLOR_BORDER, 1, y, w - 2, h);
+    Window_FillRectWithColor(window, POPUP_COLOR_BORDER, 0, y + 1, w, h - 2);
+    Window_FillRectWithColor(window, POPUP_COLOR_EDGE, 1, y + 1, w - 2, h - 2);
+    Window_FillRectWithColor(window, POPUP_COLOR_HIGHLIGHT, 1, y + 1, w - 3, 1);
+    Window_FillRectWithColor(window, POPUP_COLOR_BODY, 2, y + 2, w - 4, h - 5);
+
+    BattleMessage msg = { 0 };
+    msg.id = BattleStrings_Text_HgEngine1354; // "{0}'s\n{1}"
+    msg.tags = TAG_NICKNAME_ABILITY;
+    msg.params[0] = battler | (partySlot << 8);
+    msg.params[1] = ability;
+    msg.battler = battler;
+
+    BattleMessage_FillFormatBuffers(battleSys, &msg);
+    BattleMessage_Format(battleSys, battleSys->msgLoader, &msg);
+    // keep the text clear of the part of the bar that is past the screen edge
+    Text_AddPrinterWithParamsAndColor(window, FONT_SYSTEM, battleSys->msgBuffer, enemy ? 8 : 8 - ABILITY_POPUP_PLAYER_X, y + 2, TEXT_SPEED_NO_TRANSFER, TEXT_COLOR(POPUP_COLOR_TEXT, POPUP_COLOR_SHADOW, 0), NULL);
+    Window_CopyToVRAM(window);
+}
+
+static void AbilityPopup_Destroy(BattleSystem *battleSys)
+{
+    Window *window = BattleSystem_GetWindow(battleSys, 1);
+
+    Window_ClearAndCopyToVRAM(window);
+    Window_Remove(window);
+    Bg_SetOffset(battleSys->bgConfig, BG_LAYER_MAIN_2, BG_OFFSET_UPDATE_SET_X, 0);
+
+    G2_SetBG0Priority(1);
+    Bg_SetPriority(BG_LAYER_MAIN_1, 0);
+    Bg_SetPriority(BG_LAYER_MAIN_2, 1);
+    BattleSystem_SetHealthboxPriority(battleSys, 0);
+
+    PaletteData_LoadBuffer(battleSys->paletteData, battleSys->abilityPopupSavedPalette, PLTTBUF_MAIN_BG, ABILITY_POPUP_PALETTE * 16, sizeof(battleSys->abilityPopupSavedPalette));
+}
+
+/**
+ * @brief Advance the ability popup bar by one frame.
+ *
+ * @return TRUE once the bar has slid in, waited and slid out again
+ */
+BOOL BattleSystem_ShowAbilityPopup(BattleSystem *battleSys, int battler, int ability, int partySlot)
+{
+    switch (battleSys->abilityPopupStep) {
+    case ABILITY_POPUP_INIT:
+        AbilityPopup_Draw(battleSys, battler, ability, partySlot);
+        battleSys->abilityPopupFrame = 0;
+        battleSys->abilityPopupStep = ABILITY_POPUP_SLIDE_IN;
+        break;
+
+    case ABILITY_POPUP_SLIDE_IN:
+        AbilityPopup_Scroll(battleSys, battler, ++battleSys->abilityPopupFrame);
+
+        if (battleSys->abilityPopupFrame == ABILITY_POPUP_SLIDE_FRAMES) {
+            battleSys->abilityPopupFrame = 0;
+            battleSys->abilityPopupStep = ABILITY_POPUP_WAIT;
+        }
+        break;
+
+    case ABILITY_POPUP_WAIT:
+        if (++battleSys->abilityPopupFrame == ABILITY_POPUP_WAIT_FRAMES) {
+            battleSys->abilityPopupFrame = ABILITY_POPUP_SLIDE_FRAMES;
+            battleSys->abilityPopupStep = ABILITY_POPUP_SLIDE_OUT;
+        }
+        break;
+
+    case ABILITY_POPUP_SLIDE_OUT:
+        AbilityPopup_Scroll(battleSys, battler, --battleSys->abilityPopupFrame);
+
+        if (battleSys->abilityPopupFrame == 0) {
+            AbilityPopup_Destroy(battleSys);
+            battleSys->abilityPopupStep = ABILITY_POPUP_INIT;
+            return TRUE;
+        }
+        break;
+    }
+
+    return FALSE;
 }

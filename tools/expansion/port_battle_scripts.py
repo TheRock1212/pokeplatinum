@@ -33,6 +33,7 @@ C_MESSAGES = [
     1396,  # {0} had its HP restored.  (Grassy Terrain)
     1484,  # {0} is protected by the Electric Terrain!
     1496,  # {0} surrounds itself with a protective mist!
+    1354,  # {0}'s\n{1}  (ability popup bar, BattleSystem_ShowAbilityPopup)
     1588,  # Aurora Veil made [your/the opposing] side stronger...  (BtlCmd_TryAuroraVeil)
 ]
 # Costanti che gli script vanilla non usano (quindi non compaiono nella mappa ricavata) ma hanno un equivalente.

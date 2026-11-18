@@ -224,6 +224,7 @@ u16 *BattleSystem_GetBgPaletteSnapshot(BattleSystem *battleSys);
 #define BATTLE_BG_NARC_TERRAIN_FIRST 342
 
 void BattleSystem_SetTerrainBackground(BattleSystem *battleSys, int terrain);
+BOOL BattleSystem_ShowAbilityPopup(BattleSystem *battleSys, int battler, int ability, int partySlot);
 int BattleSystem_GetVisitedContestHall(BattleSystem *battleSys);
 u16 *BattleSystem_GetSavedBgPalettes(BattleSystem *battleSys);
 u16 *BattleSystem_GetSavedObjPalettes(BattleSystem *battleSys);

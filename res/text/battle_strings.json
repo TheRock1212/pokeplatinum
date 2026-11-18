@@ -8867,6 +8867,13 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1354",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0}"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1360",
       "en_US": [
         "You sense the presence of many!"
