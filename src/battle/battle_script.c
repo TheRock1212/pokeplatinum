@@ -322,6 +322,17 @@ static BOOL BtlCmd_UpdateTerrainOverlay(BattleSystem *battleSys, BattleContext *
 static BOOL BtlCmd_GotoIfTerrainOverlayIsType(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_CheckTerrainBlocksStatus(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_RefreshTerrainBackground(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_AbilityPopup(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_DivideVarByValueRoundUp(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_HandleSoak(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_HandleMagicPowder(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_HandleForestsCurse(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_HandleTrickOrTreat(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_StrengthSapCalc(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_StuffCheeks(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_ReduceWeight(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_TryAuroraVeil(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_ChangeExecutionOrderPriority(BattleSystem *battleSys, BattleContext *battleCtx);
 
 static int BattleScript_Read(BattleContext *battleCtx);
 static void BattleScript_Iter(BattleContext *battleCtx, int i);
@@ -2893,7 +2904,7 @@ static BOOL BtlCmd_ChangeStatStage(BattleSystem *battleSys, BattleContext *battl
                 SetupNicknameStatMsg(battleCtx,
                     stageChange == 1 ? BattleStrings_Text_PokemonsStatRose_Ally : // "{0}'s {1} rose!"
                         stageChange == 2 ? BattleStrings_Text_PokemonsStatSharplyRose_Ally : // "{0}'s {1} sharply rose!"
-                        BattleStrings_Text_HgEngine1316, // "{0}'s {1} rose drastically!"
+                        BattleStrings_Text_HgEngine1315, // "{0}'s {1} rose drastically!"
                     statOffset);
             }
 
@@ -2995,7 +3006,7 @@ static BOOL BtlCmd_ChangeStatStage(BattleSystem *battleSys, BattleContext *battl
             SetupNicknameStatMsg(battleCtx,
                 stageChange == -1 ? BattleStrings_Text_PokemonsStatFell_Ally : // "{0}'s {1} fell!"
                     stageChange == -2 ? BattleStrings_Text_PokemonsStatHarshlyFell_Ally : // "{0}'s {1} harshly fell!"
-                    BattleStrings_Text_HgEngine1520, // "{0}'s {1} severely fell!"
+                    BattleStrings_Text_HgEngine1519, // "{0}'s {1} severely fell!"
                 statOffset);
         }
 
@@ -6586,9 +6597,12 @@ static BOOL BtlCmd_TryBreakScreens(BattleSystem *battleSys, BattleContext *battl
     int defending = BattleSystem_GetBattlerSide(battleSys, battleCtx->defender);
 
     if ((battleCtx->sideConditionsMask[defending] & SIDE_CONDITION_REFLECT)
-        || (battleCtx->sideConditionsMask[defending] & SIDE_CONDITION_LIGHT_SCREEN)) {
+        || (battleCtx->sideConditionsMask[defending] & SIDE_CONDITION_LIGHT_SCREEN)
+        || (battleCtx->sideConditionsMask[defending] & SIDE_CONDITION_AURORA_VEIL)) {
         battleCtx->sideConditionsMask[defending] &= ~SIDE_CONDITION_REFLECT;
         battleCtx->sideConditionsMask[defending] &= ~SIDE_CONDITION_LIGHT_SCREEN;
+        battleCtx->sideConditionsMask[defending] &= ~SIDE_CONDITION_AURORA_VEIL;
+        battleCtx->sideConditions[defending].auroraVeilTurns = 0;
         battleCtx->sideConditions[defending].reflectTurns = 0;
         battleCtx->sideConditions[defending].lightScreenTurns = 0;
     } else {
@@ -9838,6 +9852,244 @@ static BOOL BtlCmd_RefreshTerrainBackground(BattleSystem *battleSys, BattleConte
 {
     BattleScript_Iter(battleCtx, 1);
     BattleSystem_SetTerrainBackground(battleSys, battleCtx->terrain);
+
+    return FALSE;
+}
+
+/**
+ * @brief Show the ability popup of a battler (hg-engine).
+ *
+ * Not drawn yet: the scripts keep the command for when the popup exists.
+ *
+ * Inputs:
+ * 1. The battler.
+ * 2. The ability to show, or -1 for the battler's own.
+ */
+static BOOL BtlCmd_AbilityPopup(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    BattleScript_Read(battleCtx);
+    BattleScript_Read(battleCtx);
+
+    return FALSE;
+}
+
+/**
+ * @brief Divide a variable by a value, rounding up.
+ *
+ * Inputs:
+ * 1. The variable.
+ * 2. The divisor.
+ */
+static BOOL BtlCmd_DivideVarByValueRoundUp(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int var = BattleScript_Read(battleCtx);
+    int divisor = BattleScript_Read(battleCtx);
+    int *data = BattleScript_VarAddress(battleSys, battleCtx, var);
+
+    if (*data >= 0) {
+        *data = (*data + divisor - 1) / divisor;
+    } else {
+        *data = -((-*data + divisor - 1) / divisor);
+    }
+
+    return FALSE;
+}
+
+static void Expansion_SetPureType(BattleContext *battleCtx, int battler, int type)
+{
+    battleCtx->battleMons[battler].type1 = type;
+    battleCtx->battleMons[battler].type2 = type;
+    battleCtx->battlerType3[battler] = TYPE3_NONE;
+}
+
+/**
+ * @brief Soak: the defender becomes pure Water type.
+ */
+static BOOL BtlCmd_HandleSoak(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    Expansion_SetPureType(battleCtx, battleCtx->defender, TYPE_WATER);
+
+    return FALSE;
+}
+
+/**
+ * @brief Magic Powder: the defender becomes pure Psychic type.
+ */
+static BOOL BtlCmd_HandleMagicPowder(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    Expansion_SetPureType(battleCtx, battleCtx->defender, TYPE_PSYCHIC);
+
+    return FALSE;
+}
+
+/**
+ * @brief Forest's Curse: the defender gets Grass as third type.
+ */
+static BOOL BtlCmd_HandleForestsCurse(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    battleCtx->battlerType3[battleCtx->defender] = TYPE_GRASS;
+
+    return FALSE;
+}
+
+/**
+ * @brief Trick-or-Treat: the defender gets Ghost as third type.
+ */
+static BOOL BtlCmd_HandleTrickOrTreat(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    battleCtx->battlerType3[battleCtx->defender] = TYPE_GHOST;
+
+    return FALSE;
+}
+
+/**
+ * @brief Strength Sap: HP to restore = the defender's Attack with its stat
+ * stage, stored negated in hpCalcTemp (as in hg-engine).
+ */
+static BOOL BtlCmd_StrengthSapCalc(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+
+    int stage = DEFENDING_MON.statBoosts[BATTLE_STAT_ATTACK];
+    int attack = DEFENDING_MON.attack;
+
+    if (stage >= DEFAULT_STAT_STAGE) {
+        attack = attack * (2 + stage - DEFAULT_STAT_STAGE) / 2;
+    } else {
+        attack = attack * 2 / (2 + DEFAULT_STAT_STAGE - stage);
+    }
+
+    battleCtx->hpCalcTemp = -attack;
+
+    return FALSE;
+}
+
+/**
+ * @brief Stuff Cheeks: the attacker eats its own berry (same effects as
+ * Pluck); the subscript to run is left in scriptTemp.
+ *
+ * Inputs:
+ * 1. The distance to jump if the berry has no effect now.
+ */
+static BOOL BtlCmd_StuffCheeks(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int jump = BattleScript_Read(battleCtx);
+
+    if (BattleSystem_PluckBerry(battleSys, battleCtx, battleCtx->attacker) != TRUE
+        || battleCtx->scriptTemp == 0) {
+        BattleScript_Iter(battleCtx, jump);
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief Autotomize: lower the attacker's weight (in 0.1 kg), down to 0.1 kg.
+ *
+ * Inputs:
+ * 1. The amount.
+ */
+static BOOL BtlCmd_ReduceWeight(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int amount = BattleScript_Read(battleCtx);
+
+    if (amount >= ATTACKING_MON.weight) {
+        ATTACKING_MON.weight = 1;
+    } else {
+        ATTACKING_MON.weight -= amount;
+    }
+
+    return FALSE;
+}
+
+/**
+ * @brief Set Aurora Veil for the attacker's side (halves physical and special
+ * damage like Reflect and Light Screen) for 5 turns.
+ *
+ * It fails without hail or snow, or if it is already active: then the next
+ * command (Call BATTLE_SUBSCRIPT_ANIMATION_PREPARED_MESSAGE in
+ * subscript_aurora_veil) is skipped, as TryReflect does with its jump.
+ */
+static BOOL BtlCmd_TryAuroraVeil(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int side = BattleSystem_GetBattlerSide(battleSys, battleCtx->attacker);
+
+    if ((battleCtx->fieldConditionsMask & (FIELD_CONDITION_HAILING | FIELD_CONDITION_SNOW)) == FALSE
+        || (battleCtx->sideConditionsMask[side] & SIDE_CONDITION_AURORA_VEIL)) {
+        BattleScript_Iter(battleCtx, 2);
+        battleCtx->moveStatusFlags |= MOVE_STATUS_FAILED;
+        return FALSE;
+    }
+
+    battleCtx->sideConditionsMask[side] |= SIDE_CONDITION_AURORA_VEIL;
+    battleCtx->sideConditions[side].auroraVeilTurns = NUM_SCREEN_TURNS;
+    battleCtx->sideConditions[side].auroraVeilUser = battleCtx->attacker;
+
+    if (Battler_HeldItemEffect(battleCtx, battleCtx->attacker) == HOLD_EFFECT_EXTEND_SCREENS) {
+        battleCtx->sideConditions[side].auroraVeilTurns += Battler_HeldItemPower(battleCtx, battleCtx->attacker, 0);
+    }
+
+    battleCtx->msgBuffer.id = BattleStrings_Text_HgEngine1588; // "Aurora Veil made [your/the opposing] side stronger against physical and special moves!"
+    battleCtx->msgBuffer.tags = TAG_MOVE_SIDE;
+    battleCtx->msgBuffer.params[0] = battleCtx->moveCur;
+    battleCtx->msgBuffer.params[1] = battleCtx->attacker;
+
+    return FALSE;
+}
+
+/**
+ * @brief After You / Quash: the battler moves right after the attacker or
+ * last in this turn.
+ *
+ * Inputs:
+ * 1. The battler.
+ * 2. EXECUTION_ORDER_AFTER_YOU or EXECUTION_ORDER_QUASH.
+ * 3. The distance to jump if the battler has already acted this turn.
+ */
+static BOOL BtlCmd_ChangeExecutionOrderPriority(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleScript_Iter(battleCtx, 1);
+    int inBattler = BattleScript_Read(battleCtx);
+    int order = BattleScript_Read(battleCtx);
+    int jump = BattleScript_Read(battleCtx);
+
+    int battler = BattleScript_Battler(battleSys, battleCtx, inBattler);
+    int maxBattlers = BattleSystem_GetMaxBattlers(battleSys);
+    int pos, i;
+
+    for (pos = 0; pos < maxBattlers; pos++) {
+        if (battleCtx->battlerActionOrder[pos] == battler) {
+            break;
+        }
+    }
+
+    if (pos >= maxBattlers || pos <= battleCtx->turnOrderCounter) {
+        BattleScript_Iter(battleCtx, jump);
+        return FALSE;
+    }
+
+    if (order == EXECUTION_ORDER_AFTER_YOU) {
+        for (i = pos; i > battleCtx->turnOrderCounter + 1; i--) {
+            battleCtx->battlerActionOrder[i] = battleCtx->battlerActionOrder[i - 1];
+        }
+
+        battleCtx->battlerActionOrder[battleCtx->turnOrderCounter + 1] = battler;
+    } else if (order == EXECUTION_ORDER_QUASH) {
+        for (i = pos; i < maxBattlers - 1; i++) {
+            battleCtx->battlerActionOrder[i] = battleCtx->battlerActionOrder[i + 1];
+        }
+
+        battleCtx->battlerActionOrder[maxBattlers - 1] = battler;
+    }
 
     return FALSE;
 }

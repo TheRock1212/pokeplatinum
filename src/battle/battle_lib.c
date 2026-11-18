@@ -113,6 +113,7 @@ void BattleSystem_InitBattleMon(BattleSystem *battleSys, BattleContext *battleCt
     battleCtx->battleMons[battler].pressureAnnounced = FALSE;
     battleCtx->battleMons[battler].type1 = Pokemon_GetValue(mon, MON_DATA_TYPE_1, NULL);
     battleCtx->battleMons[battler].type2 = Pokemon_GetValue(mon, MON_DATA_TYPE_2, NULL);
+    battleCtx->battlerType3[battler] = TYPE3_NONE;
     battleCtx->battleMons[battler].gender = Pokemon_GetGender(mon);
     battleCtx->battleMons[battler].isShiny = Pokemon_IsShiny(mon);
 
@@ -2663,6 +2664,18 @@ int BattleSystem_ApplyTypeChart(BattleSystem *battleSys, BattleContext *battleCt
 
                 if (sTypeMatchupMultipliers[chartEntry][1] == BattleMon_Get(battleCtx, defender, BATTLEMON_TYPE_2, NULL)
                     && BattleMon_Get(battleCtx, defender, BATTLEMON_TYPE_1, NULL) != BattleMon_Get(battleCtx, defender, BATTLEMON_TYPE_2, NULL)
+                    && BasicTypeMulApplies(battleCtx, attacker, defender, chartEntry) == TRUE) {
+                    damage = ApplyTypeMultiplier(battleCtx, attacker, sTypeMatchupMultipliers[chartEntry][2], damage, movePower, moveStatusMask);
+
+                    if (sTypeMatchupMultipliers[chartEntry][2] == TYPE_MULTI_SUPER_EFF) {
+                        totalMul *= 2;
+                    }
+                }
+
+                // expansion: third type (Trick-or-Treat, Forest's Curse)
+                if (sTypeMatchupMultipliers[chartEntry][1] == battleCtx->battlerType3[defender]
+                    && BattleMon_Get(battleCtx, defender, BATTLEMON_TYPE_1, NULL) != battleCtx->battlerType3[defender]
+                    && BattleMon_Get(battleCtx, defender, BATTLEMON_TYPE_2, NULL) != battleCtx->battlerType3[defender]
                     && BasicTypeMulApplies(battleCtx, attacker, defender, chartEntry) == TRUE) {
                     damage = ApplyTypeMultiplier(battleCtx, attacker, sTypeMatchupMultipliers[chartEntry][2], damage, movePower, moveStatusMask);
 
@@ -7196,7 +7209,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
             damage /= 2;
         }
 
-        if ((sideConditions & SIDE_CONDITION_REFLECT) != FALSE
+        if (((sideConditions & SIDE_CONDITION_REFLECT) != FALSE || (sideConditions & SIDE_CONDITION_AURORA_VEIL) != FALSE)
             && criticalMul == 1
             && MOVE_DATA(move).effect != BATTLE_EFFECT_REMOVE_SCREENS) {
             if ((battleType & BATTLE_TYPE_DOUBLES)
@@ -7237,7 +7250,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
         damage /= stageDivisor;
         damage /= 50;
 
-        if ((sideConditions & SIDE_CONDITION_LIGHT_SCREEN) != FALSE
+        if (((sideConditions & SIDE_CONDITION_LIGHT_SCREEN) != FALSE || (sideConditions & SIDE_CONDITION_AURORA_VEIL) != FALSE)
             && criticalMul == 1
             && MOVE_DATA(move).effect != BATTLE_EFFECT_REMOVE_SCREENS) {
             if ((battleType & BATTLE_TYPE_DOUBLES)

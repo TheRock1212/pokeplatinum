@@ -244,6 +244,17 @@ ScriptCommand(BTLCMD_UPDATETERRAINOVERLAY,        BtlCmd_UpdateTerrainOverlay)
 ScriptCommand(BTLCMD_GOTOIFTERRAINOVERLAYISTYPE,  BtlCmd_GotoIfTerrainOverlayIsType)
 ScriptCommand(BTLCMD_CHECKTERRAINBLOCKSSTATUS,    BtlCmd_CheckTerrainBlocksStatus)
 ScriptCommand(BTLCMD_REFRESHTERRAINBACKGROUND,    BtlCmd_RefreshTerrainBackground)
+ScriptCommand(BTLCMD_ABILITYPOPUP,                  BtlCmd_AbilityPopup)
+ScriptCommand(BTLCMD_DIVIDEVARBYVALUEROUNDUP,       BtlCmd_DivideVarByValueRoundUp)
+ScriptCommand(BTLCMD_HANDLESOAK,                    BtlCmd_HandleSoak)
+ScriptCommand(BTLCMD_HANDLEMAGICPOWDER,             BtlCmd_HandleMagicPowder)
+ScriptCommand(BTLCMD_HANDLEFORESTSCURSE,            BtlCmd_HandleForestsCurse)
+ScriptCommand(BTLCMD_HANDLETRICKORTREAT,            BtlCmd_HandleTrickOrTreat)
+ScriptCommand(BTLCMD_STRENGTHSAPCALC,               BtlCmd_StrengthSapCalc)
+ScriptCommand(BTLCMD_STUFFCHEEKS,                   BtlCmd_StuffCheeks)
+ScriptCommand(BTLCMD_REDUCEWEIGHT,                  BtlCmd_ReduceWeight)
+ScriptCommand(BTLCMD_TRYAURORAVEIL,                 BtlCmd_TryAuroraVeil)
+ScriptCommand(BTLCMD_CHANGEEXECUTIONORDERPRIORITY,  BtlCmd_ChangeExecutionOrderPriority)
 
 // clang-format on
 

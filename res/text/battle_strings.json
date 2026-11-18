@@ -8490,6 +8490,193 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1282",
+      "en_US": [
+        "The opposing side is too nervous\n",
+        "to eat Berries!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1283",
+      "en_US": [
+        "Your side is too nervous\n",
+        "to eat Berries!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1284",
+      "en_US": [
+        "Your side is too nervous\n",
+        "to eat Berries!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1285",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "made it the {STRVAR_1 15, 2, 0} type!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1286",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} made it the\f",
+        "{STRVAR_1 15, 2, 0} type!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1287",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} made it the\f",
+        "{STRVAR_1 15, 2, 0} type!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1288",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} is radiating\n",
+        "a dark aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1289",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} is radiating\n",
+        "a dark aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1290",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} is radiating\n",
+        "a dark aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1291",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} is radiating\n",
+        "a fairy aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1292",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} is radiating\n",
+        "a fairy aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1293",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} is radiating\n",
+        "a fairy aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1294",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} reversed\n",
+        "all other Pokémon’s auras!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1295",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} reversed\n",
+        "all other Pokémon’s auras!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1296",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} reversed\n",
+        "all other Pokémon’s auras!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1297",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} is radiating a blazing\n",
+        "aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1298",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} is radiating a\n",
+        "blazing aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1299",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} is radiating a\n",
+        "blazing aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1300",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} is radiating a bursting\n",
+        "aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1301",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} is radiating a\n",
+        "bursting aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1302",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} is radiating a\n",
+        "bursting aura!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1303",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} was hurt!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1304",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} was hurt!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1305",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} was hurt!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1306",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s ability became Mummy!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1307",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s ability\n",
+        "became Mummy!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1308",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s ability\n",
+        "became Mummy!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1309",
       "en_US": [
         "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
@@ -8497,19 +8684,19 @@
       ]
     },
     {
-      "id": "BattleStrings_Text_HgEngine1313",
+      "id": "BattleStrings_Text_HgEngine1310",
       "en_US": [
         "The wild {STRVAR_1 1, 0, 0}’s\n",
         "{STRVAR_1 5, 1, 0} raised its {STRVAR_1 13, 2, 0}\f",
-        "drastically!"
+        "sharply!"
       ]
     },
     {
-      "id": "BattleStrings_Text_HgEngine1314",
+      "id": "BattleStrings_Text_HgEngine1311",
       "en_US": [
         "The opposing {STRVAR_1 1, 0, 0}’s\n",
         "{STRVAR_1 5, 1, 0} raised its {STRVAR_1 13, 2, 0}\f",
-        "drastically!"
+        "sharply!"
       ]
     },
     {
@@ -8534,10 +8721,108 @@
       ]
     },
     {
-      "id": "BattleStrings_Text_HgEngine1318",
+      "id": "BattleStrings_Text_HgEngine1324",
       "en_US": [
-        "{STRVAR_1 1, 0, 0}’s\n",
-        "{STRVAR_1 5, 1, 0} cut its {STRVAR_1 13, 2, 0}!"
+        "{STRVAR_1 1, 0, 0} shared its\n",
+        "guard with the target!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1325",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} shared its\n",
+        "guard with the target!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1326",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} shared its\n",
+        "guard with the target!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1327",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} shared its\n",
+        "power with the target!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1328",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} shared its\n",
+        "power with the target!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1329",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} shared its\n",
+        "power with the target!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1330",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} transformed\n",
+        "into the Water type!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1331",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} transformed\n",
+        "into the Water type!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1332",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} transformed\n",
+        "into the Water type!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1333",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} harvested\n",
+        "{STRVAR_1 8, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1334",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} harvested\n",
+        "{STRVAR_1 8, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1335",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} harvested\n",
+        "{STRVAR_1 8, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1339",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 6, 1, 0}\n",
+        "was disabled!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1340",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 6, 1, 0} was disabled!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1341",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 6, 1, 0} was disabled!"
       ]
     },
     {
@@ -8548,9 +8833,37 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1349",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s\n",
+        "illusion wore off!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1350",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "illusion wore off!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1351",
       "en_US": [
         "{STRVAR_1 1, 0, 0}’s disguise was busted!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1352",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s disguise was\n",
+        "busted!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1353",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s disguise was\n",
+        "busted!"
       ]
     },
     {
@@ -8567,6 +8880,20 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1362",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} transformed\n",
+        "into its Complete Forme!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1363",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} transformed\n",
+        "into its Complete Forme!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1364",
       "en_US": [
         "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
@@ -8574,9 +8901,37 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1365",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its Sp. Attack!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1366",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} raised its Sp. Attack!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1367",
       "en_US": [
         "{STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} popped!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1368",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} popped!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1369",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
         "{STRVAR_1 5, 1, 0} popped!"
       ]
     },
@@ -8588,10 +8943,38 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1371",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} floats in the\n",
+        "air with its {STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1372",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} floats in the\n",
+        "air with its {STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1373",
       "en_US": [
         "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
         "raised its Attack!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1374",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its Attack!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1375",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} raised its Attack!"
       ]
     },
     {
@@ -8602,6 +8985,20 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1377",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its Defense!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1378",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} raised its Defense!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1379",
       "en_US": [
         "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
@@ -8609,10 +9006,38 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1380",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its Special Defense!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1381",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} raised its Special Defense!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1382",
       "en_US": [
         "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
         "raised its Speed!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1383",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}\n",
+        "raised its Speed!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1384",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 5, 1, 0} raised its Speed!"
       ]
     },
     {
@@ -8690,9 +9115,86 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1414",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} shed its tail to\n",
+        "create a decoy!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1415",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} shed its tail to\n",
+        "create a decoy!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1416",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} shed its tail to\n",
+        "create a decoy!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1430",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}\n",
+        "took the kind offer!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1431",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}\n",
+        "took the kind offer!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1432",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}\n",
+        "took the kind offer!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1433",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s move\n",
+        "was postponed!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1434",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s move\n",
+        "was postponed!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1435",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s move\n",
+        "was postponed!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1436",
       "en_US": [
         "{STRVAR_1 1, 0, 0} is absorbing\n",
+        "power!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1437",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} is absorbing\n",
+        "power!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1438",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} is absorbing\n",
         "power!"
       ]
     },
@@ -8729,9 +9231,66 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1453",
+      "en_US": [
+        "A lingering aroma clings to {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1454",
+      "en_US": [
+        "A lingering aroma clings to the wild {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1455",
+      "en_US": [
+        "A lingering aroma clings to the opposing {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1460",
       "en_US": [
         "{STRVAR_1 1, 0, 0}’s burn was healed!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1461",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s burn was healed!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1462",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s burn was healed!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1463",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}\n",
+        "has two Abilities!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1464",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}\n",
+        "has two Abilities!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1465",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}\n",
+        "has two Abilities!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1470",
+      "en_US": [
+        "The effects of the weather disappeared."
       ]
     },
     {
@@ -8742,6 +9301,41 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1472",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}\n",
+        "is protected by the Psychic Terrain!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1473",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}\n",
+        "is protected by the Psychic Terrain!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1474",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}\n",
+        "cannot use {STRVAR_1 6, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1475",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}\n",
+        "cannot use {STRVAR_1 6, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1476",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}\n",
+        "cannot use {STRVAR_1 6, 1, 0}!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1477",
       "en_US": [
         "{STRVAR_1 1, 0, 0} is\n",
@@ -8749,9 +9343,37 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1478",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} is\n",
+        "overflowing with space power!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1479",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} is\n",
+        "overflowing with space power!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1480",
       "en_US": [
         "{STRVAR_1 1, 0, 0} absorbed\n",
+        "electricity!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1481",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} absorbed\n",
+        "electricity!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1482",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} absorbed\n",
         "electricity!"
       ]
     },
@@ -8786,6 +9408,24 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1488",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}\n",
+        "is not affected by\f",
+        "{STRVAR_1 6, 1, 0}\f",
+        "thanks to its Safety Goggles!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1489",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}\n",
+        "is not affected by\f",
+        "{STRVAR_1 6, 1, 0}\f",
+        "thanks to its Safety Goggles!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1490",
       "en_US": [
         "The move was blocked\n",
@@ -8808,6 +9448,22 @@
       "id": "BattleStrings_Text_HgEngine1493",
       "en_US": [
         "{STRVAR_1 1, 0, 0}\n",
+        "shook its head.\f",
+        "It seems like it can’t use this move..."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1494",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}\n",
+        "shook its head.\f",
+        "It seems like it can’t use this move..."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1495",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}\n",
         "shook its head.\f",
         "It seems like it can’t use this move..."
       ]
@@ -8836,10 +9492,101 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1499",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s\n",
+        "stats were not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1500",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s\n",
+        "stats were not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1501",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "stats were not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1502",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s\n",
+        "Attack was not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1503",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s\n",
+        "Attack was not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1504",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "Attack was not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1505",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s\n",
+        "Defense was not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1506",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s\n",
+        "Defense was not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1507",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "Defense was not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1508",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s\n",
+        "accuracy was not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1509",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s\n",
+        "accuracy was not lowered!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1510",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "accuracy was not lowered!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1514",
       "en_US": [
         "A sticky web has been laid out on the\n",
         "ground on your side!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1515",
+      "en_US": [
+        "A sticky web has been laid out on the\n",
+        "ground on the opposing side!"
       ]
     },
     {
@@ -8864,6 +9611,13 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1519",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 13, 1, 0}\n",
+        "severely fell!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1520",
       "en_US": [
         "The wild {STRVAR_1 1, 0, 0}’s {STRVAR_1 13, 1, 0}\n",
@@ -8878,16 +9632,16 @@
       ]
     },
     {
-      "id": "BattleStrings_Text_HgEngine1522",
-      "en_US": [
-        "The {STRVAR_1 8, 1, 0} drastically boosted\n",
-        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 13, 2, 0}!"
-      ]
-    },
-    {
       "id": "BattleStrings_Text_HgEngine1525",
       "en_US": [
         "Your team is no longer\n",
+        "protected by mist!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1526",
+      "en_US": [
+        "The opposing team is no longer\n",
         "protected by mist!"
       ]
     },
@@ -8899,9 +9653,37 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1528",
+      "en_US": [
+        "The {STRVAR_1 8, 1, 0} weakened\n",
+        "the damage to the wild {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1529",
+      "en_US": [
+        "The {STRVAR_1 8, 1, 0} weakened\n",
+        "the damage to the opposing {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1530",
       "en_US": [
         "{STRVAR_1 8, 0, 0} cannot\n",
+        "be confused!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1531",
+      "en_US": [
+        "The wild {STRVAR_1 8, 0, 0} cannot\n",
+        "be confused!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1532",
+      "en_US": [
+        "The opposing {STRVAR_1 8, 0, 0} cannot\n",
         "be confused!"
       ]
     },
@@ -8913,9 +9695,37 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1534",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} became cloaked\n",
+        "in a freezing light!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1535",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} became cloaked\n",
+        "in a freezing light!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1536",
       "en_US": [
         "{STRVAR_1 1, 0, 0} became cloaked\n",
+        "in freezing air!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1537",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} became cloaked\n",
+        "in freezing air!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1538",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} became cloaked\n",
         "in freezing air!"
       ]
     },
@@ -8927,9 +9737,37 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1540",
+      "en_US": [
+        "But it failed to affect\n",
+        "the wild {STRVAR_1 8, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1541",
+      "en_US": [
+        "But it failed to affect\n",
+        "the opposing {STRVAR_1 8, 0, 0}!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1542",
       "en_US": [
         "{STRVAR_1 1, 0, 0} is about to be\n",
+        "attacked by its {STRVAR_1 6, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1543",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} is about to be\n",
+        "attacked by its {STRVAR_1 6, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1544",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} is about to be\n",
         "attacked by its {STRVAR_1 6, 1, 0}!"
       ]
     },
@@ -8941,9 +9779,92 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1546",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} is going all out\n",
+        "for this attack!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1547",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} is going all out\n",
+        "for this attack!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1548",
       "en_US": [
         "Neither Pokémon can run away!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1549",
+      "en_US": [
+        "Tidying up complete!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1550",
+      "en_US": [
+        "The pointed stones disappeared from\n",
+        "around your side!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1551",
+      "en_US": [
+        "The pointed stones disappeared from\n",
+        "around the opposing side!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1552",
+      "en_US": [
+        "The spikes disappeared from the ground\n",
+        "around your side!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1553",
+      "en_US": [
+        "The spikes disappeared from the ground\n",
+        "around the opposing side!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1554",
+      "en_US": [
+        "The sticky web has disappeared from the\n",
+        "ground on your side!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1555",
+      "en_US": [
+        "The sticky web has disappeared from the\n",
+        "ground on the opposing side!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1556",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} can’t be hit\n",
+        "by attacks from its ally Pokémon!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1557",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} can’t be hit\n",
+        "by attacks from its ally Pokémon!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1558",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} can’t be hit\n",
+        "by attacks from its ally Pokémon!"
       ]
     },
     {
@@ -8954,15 +9875,155 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1560",
+      "en_US": [
+        "Being hit by {STRVAR_1 8, 1, 0} charged the wild\n",
+        "{STRVAR_1 1, 0, 0} with power!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1561",
+      "en_US": [
+        "Being hit by {STRVAR_1 8, 1, 0} charged the opposing\n",
+        "{STRVAR_1 1, 0, 0} with power!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1562",
       "en_US": [
         "{STRVAR_1 1, 0, 0} was hurt!"
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1563",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} was hurt!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1564",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} was hurt!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1571",
+      "en_US": [
+        "Both Pokémon will faint in three\n",
+        "turns!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1579",
+      "en_US": [
+        "Grass type was added\n",
+        "to {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1580",
+      "en_US": [
+        "Grass type was added\n",
+        "to the wild {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1581",
+      "en_US": [
+        "Grass type was added\n",
+        "to the opposing {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1582",
+      "en_US": [
+        "Ghost type was added\n",
+        "to {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1583",
+      "en_US": [
+        "Ghost type was added\n",
+        "to the wild {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1584",
+      "en_US": [
+        "Ghost type was added\n",
+        "to the opposing {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1585",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} transformed\n",
+        "into the Psychic type!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1586",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} transformed\n",
+        "into the Psychic type!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1587",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} transformed\n",
+        "into the Psychic type!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1588",
+      "en_US": [
+        "Aurora Veil made your side stronger\n",
+        "against physical and special moves!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1589",
+      "en_US": [
+        "Aurora Veil made the opposing side\n",
+        "stronger against physical and special\f",
+        "moves!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1590",
+      "en_US": [
+        "Aurora Veil made your side stronger\n",
+        "against physical and special moves!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1591",
+      "en_US": [
+        "Aurora Veil made the opposing side\n",
+        "stronger against physical and special\f",
+        "moves!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1597",
       "en_US": [
         "The bursting flame hit {STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1598",
+      "en_US": [
+        "The bursting flame hit the wild\n",
+        "{STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1599",
+      "en_US": [
+        "The bursting flame hit the\n",
+        "opposing {STRVAR_1 1, 0, 0}!"
       ]
     },
     {
@@ -8979,10 +10040,37 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1602",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} burned itself out!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1603",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}\n",
+        "burned itself out!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1604",
       "en_US": [
         "{STRVAR_1 1, 0, 0} used up all\n",
         "its electricity!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1605",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} used up\n",
+        "all its electricity!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1606",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} used up\n",
+        "all its electricity!"
       ]
     },
     {
@@ -8992,9 +10080,37 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1614",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} is covered\n",
+        "in powder!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1615",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} is covered\n",
+        "in powder!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1616",
       "en_US": [
         "{STRVAR_1 1, 0, 0} concentrated intensely!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1617",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} concentrated\n",
+        "intensely!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1618",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} concentrated\n",
+        "intensely!"
       ]
     },
     {
@@ -9027,9 +10143,109 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1677",
+      "en_US": [
+        "A critical hit on the wild\n",
+        "{STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1678",
+      "en_US": [
+        "A critical hit on the opposing\n",
+        "{STRVAR_1 1, 0, 0}!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1679",
       "en_US": [
         "The {STRVAR_1 8, 0, 0} was used up..."
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1680",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} used the {STRVAR_1 8, 2, 0} to\n",
+        "activate {STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1681",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} used the\n",
+        "{STRVAR_1 8, 2, 0} to activate\f",
+        "{STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1682",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} used the\n",
+        "{STRVAR_1 8, 2, 0} to activate\f",
+        "{STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1683",
+      "en_US": [
+        "The harsh sunlight activated\n",
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1684",
+      "en_US": [
+        "The harsh sunlight activated the wild\n",
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1685",
+      "en_US": [
+        "The harsh sunlight activated the\n",
+        "opposing {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1686",
+      "en_US": [
+        "The Electric Terrain activated\n",
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1687",
+      "en_US": [
+        "The Electric Terrain activated the wild\n",
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1688",
+      "en_US": [
+        "The Electric Terrain activated the\n",
+        "opposing {STRVAR_1 1, 0, 0}’s {STRVAR_1 5, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1689",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s {STRVAR_1 13, 1, 0}\n",
+        "was heightened!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1690",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 13, 1, 0} was heightened!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1691",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s\n",
+        "{STRVAR_1 13, 1, 0} was heightened!"
       ]
     },
     {
@@ -9040,11 +10256,220 @@
       ]
     },
     {
+      "id": "BattleStrings_Text_HgEngine1705",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} used the Electric\n",
+        "Terrain to energize its futuristic\f",
+        "engine!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1706",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} used the\n",
+        "Electric Terrain to energize its\f",
+        "futuristic engine!"
+      ]
+    },
+    {
       "id": "BattleStrings_Text_HgEngine1716",
       "en_US": [
         "{STRVAR_1 1, 0, 0} held up\n",
         "its Red Card against\f",
         "{STRVAR_1 1, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1717",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} held up\n",
+        "its Red Card against\f",
+        "the wild {STRVAR_1 1, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1718",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} held up\n",
+        "its Red Card against\f",
+        "the opposing {STRVAR_1 1, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1719",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}\n",
+        "held up its Red Card against\f",
+        "{STRVAR_1 1, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1723",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} drank down all\n",
+        "the matcha that {STRVAR_1 1, 1, 0}\f",
+        "made!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1724",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} drank down all\n",
+        "the matcha that the wild\f",
+        "{STRVAR_1 1, 1, 0} made!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1725",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} drank down all\n",
+        "the matcha that the opposing\f",
+        "{STRVAR_1 1, 1, 0} made!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1726",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} drank down all\n",
+        "the matcha that {STRVAR_1 1, 1, 0}\f",
+        "made!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1740",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} received\n",
+        "{STRVAR_1 8, 2, 0} from {STRVAR_1 1, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1741",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} received\n",
+        "{STRVAR_1 8, 2, 0} from the wild {STRVAR_1 1, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1742",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} received\n",
+        "{STRVAR_1 8, 2, 0} from the opposing {STRVAR_1 1, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1743",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} received\n",
+        "{STRVAR_1 8, 2, 0} from {STRVAR_1 1, 1, 0}!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1765",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} couldn’t\n",
+        "fully protect itself and got hurt!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1766",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} couldn’t\n",
+        "fully protect itself and got hurt!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1767",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} couldn’t\n",
+        "fully protect itself and got hurt!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1768",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} was cured of its\n",
+        "poisoning!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1769",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} was cured\n",
+        "of its poisoning!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1770",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} was cured\n",
+        "of its poisoning!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1771",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0}’s burn was cured!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1772",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0}’s burn was\n",
+        "cured!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1773",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0}’s burn\n",
+        "was cured!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1774",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} was cured of paralysis!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1775",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} was cured of\n",
+        "paralysis!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1776",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} was cured\n",
+        "of paralysis!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1780",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} underwent a heroic\n",
+        "transformation!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1781",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} underwent a\n",
+        "heroic transformation!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1782",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} underwent\n",
+        "a heroic transformation!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1783",
+      "en_US": [
+        "All screens on the field were cleansed!"
       ]
     },
     {
@@ -9060,6 +10485,24 @@
       "en_US": [
         "Magic Room wore off, and held items’\n",
         "effects returned to normal!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1798",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} is drowsing!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1799",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} is drowsing!"
+      ]
+    },
+    {
+      "id": "BattleStrings_Text_HgEngine1800",
+      "en_US": [
+        "The opposing {STRVAR_1 1, 0, 0} is drowsing!"
       ]
     },
     {

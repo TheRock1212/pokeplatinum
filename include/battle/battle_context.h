@@ -51,7 +51,9 @@ typedef struct SideConditions {
 
     u32 spikesLayers : 2;
     u32 toxicSpikesLayers : 2;
-    u32 padding04_04 : 28;
+    u32 auroraVeilUser : 2; // expansion
+    u32 auroraVeilTurns : 4; // expansion
+    u32 padding04_0A : 22;
 } SideConditions;
 
 typedef struct TurnFlags {
@@ -324,6 +326,7 @@ struct BattleContext {
     u8 magicRoomTurns;
     u8 terrain;
     u8 terrainTurns;
+    u8 battlerType3[MAX_BATTLERS]; // expansion: type added by Trick-or-Treat/Forest's Curse, or TYPE3_NONE
     u8 paddingExpansion;
 };
 

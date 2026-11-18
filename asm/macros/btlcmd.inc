@@ -1318,6 +1318,59 @@
     .long BTLCMD_REFRESHTERRAINBACKGROUND
     .endm
 
+    .macro AbilityPopup battler, ability=-1
+    .long BTLCMD_ABILITYPOPUP
+    .long \battler
+    .long \ability
+    .endm
+
+    .macro DivideVarByValueRoundUp var, value
+    .long BTLCMD_DIVIDEVARBYVALUEROUNDUP
+    .long \var
+    .long \value
+    .endm
+
+    .macro HandleSoak
+    .long BTLCMD_HANDLESOAK
+    .endm
+
+    .macro HandleMagicPowder
+    .long BTLCMD_HANDLEMAGICPOWDER
+    .endm
+
+    .macro HandleForestsCurse
+    .long BTLCMD_HANDLEFORESTSCURSE
+    .endm
+
+    .macro HandleTrickOrTreat
+    .long BTLCMD_HANDLETRICKORTREAT
+    .endm
+
+    .macro StrengthSapCalc
+    .long BTLCMD_STRENGTHSAPCALC
+    .endm
+
+    .macro StuffCheeks jump
+    .long BTLCMD_STUFFCHEEKS
+    .long (\jump-.) / 4 - 1
+    .endm
+
+    .macro ReduceWeight amount
+    .long BTLCMD_REDUCEWEIGHT
+    .long \amount
+    .endm
+
+    .macro TryAuroraVeil
+    .long BTLCMD_TRYAURORAVEIL
+    .endm
+
+    .macro ChangeExecutionOrderPriority battler, order, jump
+    .long BTLCMD_CHANGEEXECUTIONORDERPRIORITY
+    .long \battler
+    .long \order
+    .long (\jump-.) / 4 - 1
+    .endm
+
     .text
     .globl _start
 _start:

@@ -100,6 +100,7 @@
 #define SIDE_CONDITION_LUCKY_CHANT_0 (1 << 12)
 #define SIDE_CONDITION_LUCKY_CHANT_1 (1 << 13)
 #define SIDE_CONDITION_LUCKY_CHANT_2 (1 << 14)
+#define SIDE_CONDITION_AURORA_VEIL  (1 << 15) // expansion (same bit as hg-engine)
 
 #define SIDE_CONDITION_TAILWIND    (SIDE_CONDITION_TAILWIND_0 | SIDE_CONDITION_TAILWIND_1)
 #define SIDE_CONDITION_LUCKY_CHANT (SIDE_CONDITION_LUCKY_CHANT_0 | SIDE_CONDITION_LUCKY_CHANT_1 | SIDE_CONDITION_LUCKY_CHANT_2)
@@ -133,6 +134,14 @@
 // Second field condition mask (BattleContext.fieldConditions2Mask), as in hg-engine
 #define FIELD_CONDITION_2_NONE       0
 #define FIELD_CONDITION_2_MAGIC_ROOM (1 << 0)
+
+// ChangeExecutionOrderPriority (After You, Quash), same values as hg-engine
+#define EXECUTION_ORDER_NORMAL    0
+#define EXECUTION_ORDER_AFTER_YOU 1
+#define EXECUTION_ORDER_QUASH     2
+
+// BattleContext.battlerType3: no third type
+#define TYPE3_NONE 0xFF
 
 // Terrains (BattleContext.terrain), same values as hg-engine's TerrainOverlayType
 #define TERRAIN_NONE     0
