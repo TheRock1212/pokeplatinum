@@ -1396,6 +1396,15 @@ u8 BattleSystem_CompareBattlerSpeed(BattleSystem *battleSys, BattleContext *batt
 
         battler1Priority = MOVE_DATA(battler1Move).priority;
         battler2Priority = MOVE_DATA(battler2Move).priority;
+
+        // expansion: Grassy Glide has +1 priority on Grassy Terrain for a grounded user
+        if (battler1Move == MOVE_GRASSY_GLIDE && battleCtx->terrain == GRASSY_TERRAIN && Battler_IsGrounded(battleCtx, battler1)) {
+            battler1Priority++;
+        }
+
+        if (battler2Move == MOVE_GRASSY_GLIDE && battleCtx->terrain == GRASSY_TERRAIN && Battler_IsGrounded(battleCtx, battler2)) {
+            battler2Priority++;
+        }
     }
 
     if (battler1Priority == battler2Priority) {
@@ -3823,7 +3832,8 @@ int BattleSystem_TriggerEffectOnSwitch(BattleSystem *battleSys, BattleContext *b
                     case ABILITY_SNOW_WARNING:
                         battleCtx->battleMons[battler].weatherAbilityAnnounced = TRUE;
 
-                        if ((battleCtx->fieldConditionsMask & FIELD_CONDITION_HAILING_PERM) == FALSE) {
+                        // expansion: Snow Warning summons snow (Gen 9)
+                        if ((battleCtx->fieldConditionsMask & FIELD_CONDITION_SNOW_PERM) == FALSE) {
                             subscript = subscript_snow_warning;
                             result = SWITCH_IN_CHECK_RESULT_BREAK;
                         }

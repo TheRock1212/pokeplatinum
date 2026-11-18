@@ -51,6 +51,10 @@ ALIASES = {
 EXTRA_MESSAGES = {
     'BattleStrings_Text_SnowContinuesToFall': ['Snow continues to fall.'],
 }
+# Puntatori di effetti secondari che hg-engine non ha (gestiti in C là), accodati dopo i suoi.
+EXTRA_PTRS = {
+    'MOVE_SUBSCRIPT_PTR_END_TERRAIN': 'subscript_handle_terrain_end',  # Steel Roller, Ice Spinner
+}
 MSG_COMMANDS = {'PrintMessage': 0, 'PrintGlobalMessage': 0, 'BufferMessage': 0, 'BufferLocalMessage': 1}
 log = collections.defaultdict(list)
 
@@ -397,7 +401,7 @@ def main():
           + ',\n'.join(f"    '{n}.s'" for n in order) + ',\n)\n')
 
     # 3. puntatori degli effetti secondari
-    ptrs = [_PTR_PT[i] for i in range(max(HG_PTRS) + 1)]
+    ptrs = [_PTR_PT[i] for i in range(max(HG_PTRS) + 1)] + list(EXTRA_PTRS)
     write(f'{PP}/generated/battle_move_subscript_ptrs.txt', '\n'.join(ptrs) + '\n')
     hpath = f'{PP}/include/data/move_side_effect_subscripts.h'
     h = read(hpath)
@@ -408,6 +412,7 @@ def main():
         if target is None:
             continue
         rows.append(f'    [{_PTR_PT[n]}] = {sub_file(HG_SUB_NUM[target])},')
+    rows += [f'    [{name}] = {sub},' for name, sub in EXTRA_PTRS.items()]
     h = h.replace('\n};', '\n    // hg-engine (tools/expansion/port_battle_scripts.py)\n' + '\n'.join(rows) + '\n};', 1)
     write(hpath, h)
 

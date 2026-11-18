@@ -220,5 +220,6 @@ static const int sSideEffectSubscripts[] = {
     [MOVE_SUBSCRIPT_PTR_POWDER] = subscript_powder,
     [MOVE_SUBSCRIPT_PTR_LASER_FOCUS] = subscript_laser_focus,
     [MOVE_SUBSCRIPT_PTR_GIVE_HELD_ITEM] = subscript_give_held_item,
+    [MOVE_SUBSCRIPT_PTR_END_TERRAIN] = subscript_handle_terrain_end,
 };
 // clang-format on
