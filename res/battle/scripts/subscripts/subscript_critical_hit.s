@@ -14,6 +14,7 @@ _000:
     Wait 
     UpdateMonData OPCODE_SET, BTLSCR_DEFENDER, BATTLEMON_ATTACK_STAGE, 12
     UpdateVar OPCODE_SET, BTLVAR_MSG_TEMP, 1
+    AbilityPopup BTLSCR_DEFENDER
     // {0} maxed its {2} with {1}!
     PrintMessage BattleStrings_Text_PokemonMaxedItsStatWithAbility_Ally, TAG_NICKNAME_ABILITY_STAT, BTLSCR_DEFENDER, BTLSCR_DEFENDER, BTLSCR_MSG_TEMP
     Wait 

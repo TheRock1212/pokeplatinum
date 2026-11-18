@@ -41,6 +41,7 @@ _065:
 
 _098:
     WaitButtonABTime 30
+    AbilityPopup BTLSCR_ATTACKER
     // {0} stayed awake because of its {1}!
     PrintMessage BattleStrings_Text_PokemonStayedAwakeBecauseOfItsAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_ATTACKER, BTLSCR_ATTACKER
     GoTo _143

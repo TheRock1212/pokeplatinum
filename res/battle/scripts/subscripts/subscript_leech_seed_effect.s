@@ -52,6 +52,7 @@ _110:
     PrintMessage BattleStrings_Text_ItSuckedUpTheLiquidOoze, TAG_NONE
     Wait 
     WaitButtonABTime 30
+    AbilityPopup BTLSCR_MSG_ATTACKER
     // {0}’s {1} suppressed {2}’s {3}!
     PrintMessage BattleStrings_Text_PokemonsAbilitySuppressedPokemonsAbility_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME_ABILITY, BTLSCR_MSG_ATTACKER, BTLSCR_MSG_ATTACKER, BTLSCR_MSG_DEFENDER, BTLSCR_MSG_DEFENDER
     Wait 

@@ -65,6 +65,7 @@ _147:
     GoTo _176
 
 _170:
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0}’s {1} made {2} fall asleep!
     PrintMessage BattleStrings_Text_PokemonsAbilityMadePokemonFallAsleep_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_SIDE_EFFECT_MON
 
@@ -94,9 +95,11 @@ _202:
     WaitButtonABTime 30
 
 _221:
+    AbilityPopup BTLSCR_SIDE_EFFECT_MON
     // {0} stayed awake because of its {1}!
     PrintMessage BattleStrings_Text_PokemonStayedAwakeBecauseOfItsAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON
     GoTo _330
+    AbilityPopup BTLSCR_SIDE_EFFECT_MON
     // {0}’s {1} suppressed {2}’s {3}!
     PrintMessage BattleStrings_Text_PokemonsAbilitySuppressedPokemonsAbility_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP
     GoTo _330

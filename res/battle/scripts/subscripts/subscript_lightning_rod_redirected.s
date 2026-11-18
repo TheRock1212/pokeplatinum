@@ -5,6 +5,7 @@ _000:
     PrintAttackMessage 
     Wait 
     WaitButtonABTime 15
+    AbilityPopup BTLSCR_DEFENDER
     // {0}’s {1} took the attack!
     PrintMessage BattleStrings_Text_PokemonsAbilityTookTheAttack_Ally, TAG_NICKNAME_ABILITY, BTLSCR_DEFENDER, BTLSCR_DEFENDER
     Wait 

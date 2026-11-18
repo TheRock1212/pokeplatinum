@@ -42,6 +42,7 @@ _074:
     End 
 
 _079:
+    AbilityPopup BTLSCR_DEFENDER
     // {0} anchors itself with {1}!
     BufferMessage BattleStrings_Text_PokemonAnchorsItselfWithAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_DEFENDER, BTLSCR_DEFENDER
     GoTo _090

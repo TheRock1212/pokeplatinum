@@ -41,6 +41,7 @@ _076:
     GoTo _102
 
 _096:
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0}’s {1} paralyzed {2}! It may be unable to move!
     PrintMessage BattleStrings_Text_PokemonsAbilityParalyzedPokemon_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_SIDE_EFFECT_MON
 
@@ -82,9 +83,11 @@ _170:
     PrintAttackMessage 
     Wait 
     WaitButtonABTime 30
+    AbilityPopup BTLSCR_SIDE_EFFECT_MON
     // {0}’s {1} prevents paralysis!
     PrintMessage BattleStrings_Text_PokemonsAbilityPreventsParalysis_Ally, TAG_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON
     GoTo _211
+    AbilityPopup BTLSCR_SIDE_EFFECT_MON
     // {0}’s {1} suppressed {2}’s {3}!
     PrintMessage BattleStrings_Text_PokemonsAbilitySuppressedPokemonsAbility_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP
     GoTo _211

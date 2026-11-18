@@ -101,6 +101,7 @@ _249:
 
 _266:
     WaitButtonABTime 30
+    AbilityPopup BTLSCR_SIDE_EFFECT_MON
     // {0}’s {1} prevents poisoning!
     PrintMessage BattleStrings_Text_PokemonsAbilityPreventsPoisoning_Ally, TAG_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON
     GoTo _348

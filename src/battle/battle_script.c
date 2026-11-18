@@ -9875,6 +9875,8 @@ static BOOL BtlCmd_AbilityPopup(BattleSystem *battleSys, BattleContext *battleCt
 
     if (ability == -1 || ability == 0xFFFF) {
         ability = battleCtx->battleMons[battler].ability;
+    } else if (ability == BTLSCR_MSG_TEMP) {
+        ability = battleCtx->msgAbilityTemp; // as for the ability in a message
     }
 
     if (ability != ABILITY_NONE

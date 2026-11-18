@@ -66,6 +66,7 @@ _152:
     GoTo _190
 
 _177:
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0}’s {1} burned {2}!
     PrintMessage BattleStrings_Text_PokemonsAbilityBurnedPokemon_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_SIDE_EFFECT_MON
     GoTo _190
@@ -117,9 +118,11 @@ _264:
     PrintAttackMessage 
     Wait 
     WaitButtonABTime 30
+    AbilityPopup BTLSCR_SIDE_EFFECT_MON
     // {0}’s {1} prevents burns!
     PrintMessage BattleStrings_Text_PokemonsAbilityPreventsBurns_Ally, TAG_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON
     GoTo _305
+    AbilityPopup BTLSCR_SIDE_EFFECT_MON
     // {0}’s {1} suppressed {2}’s {3}!
     PrintMessage BattleStrings_Text_PokemonsAbilitySuppressedPokemonsAbility_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP
     GoTo _305

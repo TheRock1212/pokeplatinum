@@ -33,6 +33,7 @@ _063:
 
 _069:
     CompareVarToValue OPCODE_FLAG_NOT, BTLVAR_MOVE_STATUS_FLAGS, MOVE_STATUS_LEVITATED, _081
+    AbilityPopup BTLSCR_DEFENDER
     // {0} makes Ground moves miss by using {1}!
     PrintMessage BattleStrings_Text_PokemonMakesGroundMovesMissByUsingAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_DEFENDER, BTLSCR_DEFENDER
     GoTo _179
@@ -52,6 +53,7 @@ _097:
 
 _107:
     CompareVarToValue OPCODE_FLAG_NOT, BTLVAR_MOVE_STATUS_FLAGS, MOVE_STATUS_WONDER_GUARD, _119
+    AbilityPopup BTLSCR_DEFENDER
     // {0} avoided damage by using {1}!
     PrintMessage BattleStrings_Text_PokemonAvoidedDamageByUsingAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_DEFENDER, BTLSCR_DEFENDER
     GoTo _179
@@ -65,6 +67,7 @@ _119:
 
 _134:
     CompareVarToValue OPCODE_FLAG_NOT, BTLVAR_MOVE_STATUS_FLAGS, MOVE_STATUS_STURDY, _146
+    AbilityPopup BTLSCR_DEFENDER
     // {0} was protected by {1}!
     PrintMessage BattleStrings_Text_PokemonWasProtectedByAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_DEFENDER, BTLSCR_DEFENDER
     GoTo _179

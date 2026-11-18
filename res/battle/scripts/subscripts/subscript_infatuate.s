@@ -13,6 +13,7 @@ _000:
     GoTo _047
 
 _029:
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0}’s {1} infatuated {2}!
     PrintMessage BattleStrings_Text_PokemonsAbilityInfatuatedPokemon_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_SIDE_EFFECT_MON
     GoTo _047
@@ -35,6 +36,7 @@ _055:
     PrintAttackMessage 
     Wait 
     WaitButtonABTime 30
+    AbilityPopup BTLSCR_SIDE_EFFECT_MON
     // {0}’s {1} prevents romance!
     PrintMessage BattleStrings_Text_PokemonsAbilityPreventsRomance_Ally, TAG_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON
     Wait 
@@ -44,6 +46,7 @@ _055:
 
 _082:
     CompareVarToValue OPCODE_EQU, BTLVAR_SIDE_EFFECT_TYPE, SIDE_EFFECT_TYPE_ABILITY, _117
+    AbilityPopup BTLSCR_SIDE_EFFECT_MON
     // {0}’s {1} suppressed {2}’s {3}!
     PrintMessage BattleStrings_Text_PokemonsAbilitySuppressedPokemonsAbility_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME_ABILITY, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP
     Wait 
@@ -51,6 +54,7 @@ _082:
     End 
 
 _098:
+    AbilityPopup BTLSCR_SIDE_EFFECT_MON
     // {0}’s {1} made the {2} ineffective!
     PrintMessage BattleStrings_Text_PokemonsAbilityMadeTheItemIneffective_Ally, TAG_NICKNAME_ABILITY_ITEM, BTLSCR_SIDE_EFFECT_MON, BTLSCR_SIDE_EFFECT_MON, BTLSCR_MSG_BATTLER_TEMP
     Wait 

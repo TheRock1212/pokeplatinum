@@ -21,11 +21,13 @@ _009:
 
 _045:
     CompareVarToValue OPCODE_EQU, BTLVAR_SCRIPT_TEMP, 2, _057
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0} is hurt by its {1}!
     PrintMessage BattleStrings_Text_PokemonIsHurtByItsAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP
     GoTo _062
 
 _057:
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0} lost some HP because of its {1}!
     PrintMessage BattleStrings_Text_PokemonLostSomeHPBecauseOfItsAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP
 
@@ -40,6 +42,7 @@ _062:
 _076:
     UpdateVar OPCODE_FLAG_ON, BTLVAR_BATTLE_CTX_STATUS, SYSCTL_SKIP_SPRITE_BLINK
     Call BATTLE_SUBSCRIPT_UPDATE_HP
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0} restored HP using its {1}!
     PrintMessage BattleStrings_Text_PokemonRestoredHPUsingItsAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP
     Wait 

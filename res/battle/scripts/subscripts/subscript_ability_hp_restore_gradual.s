@@ -2,6 +2,7 @@
 
 
 _000:
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0} restored HP using its {1}!
     PrintMessage BattleStrings_Text_PokemonRestoredHPUsingItsAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP
     Wait 

@@ -2,6 +2,7 @@
 
 
 _000:
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     PlayBattleAnimation BTLSCR_PLAYER, BATTLE_ANIMATION_WEATHER_SAND
     Wait 
     // {0}’s {1} whipped up a sandstorm!
