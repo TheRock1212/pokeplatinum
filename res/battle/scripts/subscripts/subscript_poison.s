@@ -45,6 +45,10 @@ _065:
     Wait 
 
 _130:
+    CompareVarToValue OPCODE_NEQ, BTLVAR_SIDE_EFFECT_TYPE, SIDE_EFFECT_TYPE_ABILITY, _ability_popup_done
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
+
+_ability_popup_done:
     PlayBattleAnimation BTLSCR_SIDE_EFFECT_MON, BATTLE_ANIMATION_POISONED
     Wait 
     UpdateMonData OPCODE_FLAG_ON, BTLSCR_SIDE_EFFECT_MON, BATTLEMON_STATUS, MON_CONDITION_POISON
@@ -54,7 +58,6 @@ _130:
     GoTo _156
 
 _150:
-    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0}’s {1} poisoned {2}!
     PrintMessage BattleStrings_Text_PokemonsAbilityPoisonedPokemon_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_SIDE_EFFECT_MON
 

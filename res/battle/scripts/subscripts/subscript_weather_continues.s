@@ -40,9 +40,9 @@ _062:
     GoTo _090
 
 _076:
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     UpdateVar OPCODE_FLAG_ON, BTLVAR_BATTLE_CTX_STATUS, SYSCTL_SKIP_SPRITE_BLINK
     Call BATTLE_SUBSCRIPT_UPDATE_HP
-    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0} restored HP using its {1}!
     PrintMessage BattleStrings_Text_PokemonRestoredHPUsingItsAbility_Ally, TAG_NICKNAME_ABILITY, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP
     Wait 

@@ -333,6 +333,7 @@ static BOOL BtlCmd_StuffCheeks(BattleSystem *battleSys, BattleContext *battleCtx
 static BOOL BtlCmd_ReduceWeight(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_TryAuroraVeil(BattleSystem *battleSys, BattleContext *battleCtx);
 static BOOL BtlCmd_ChangeExecutionOrderPriority(BattleSystem *battleSys, BattleContext *battleCtx);
+static BOOL BtlCmd_AbilityPopupForBufferedMessage(BattleSystem *battleSys, BattleContext *battleCtx);
 
 static int BattleScript_Read(BattleContext *battleCtx);
 static void BattleScript_Iter(BattleContext *battleCtx, int i);
@@ -9879,11 +9880,15 @@ static BOOL BtlCmd_AbilityPopup(BattleSystem *battleSys, BattleContext *battleCt
         ability = battleCtx->msgAbilityTemp; // as for the ability in a message
     }
 
-    if (ability != ABILITY_NONE
-        && BattleSystem_ShowAbilityPopup(battleSys, battler, ability, battleCtx->selectedPartySlot[battler]) == FALSE) {
-        // run this command again next frame, until the bar is gone
-        battleCtx->scriptCursor = cursor;
-        battleCtx->battleProgressFlag = TRUE;
+    if (ability != ABILITY_NONE) {
+        if (BattleSystem_ShowAbilityPopup(battleSys, battler, ability, battleCtx->selectedPartySlot[battler]) == FALSE) {
+            // run this command again next frame, until the bar is gone
+            battleCtx->scriptCursor = cursor;
+            battleCtx->battleProgressFlag = TRUE;
+        } else {
+            battleSys->abilityPopupLastBattler = battler;
+            battleSys->abilityPopupLastAbility = ability;
+        }
     }
 
     return FALSE;
@@ -10115,6 +10120,63 @@ static BOOL BtlCmd_ChangeExecutionOrderPriority(BattleSystem *battleSys, BattleC
  * @param battleCtx
  * @return The read 4-byte chunk.
  */
+/**
+ * @brief Show the ability popup bar for the buffered message, if it starts with
+ * "{0}'s {1}" naming a battler and its ability (Speed Boost, Clear Body, Hyper Cutter, ...).
+ *
+ * Intimidate's "cuts" message is skipped: its own script already shows the bar.
+ *
+ * @param battleSys
+ * @param battleCtx
+ * @return FALSE
+ */
+static BOOL BtlCmd_AbilityPopupForBufferedMessage(BattleSystem *battleSys, BattleContext *battleCtx)
+{
+    BattleMessage *msg = &battleCtx->msgBuffer;
+    BOOL show;
+
+    switch (msg->tags & BATTLE_MESSAGE_TAGS) {
+    case TAG_NICKNAME_ABILITY:
+    case TAG_NICKNAME_ABILITY_MOVE:
+    case TAG_NICKNAME_ABILITY_ITEM:
+    case TAG_NICKNAME_ABILITY_STAT:
+    case TAG_NICKNAME_ABILITY_TYPE:
+    case TAG_NICKNAME_ABILITY_STATUS:
+    case TAG_NICKNAME_ABILITY_NUMBER:
+    case TAG_NICKNAME_ABILITY_NICKNAME:
+    case TAG_NICKNAME_ABILITY_NICKNAME_MOVE:
+    case TAG_NICKNAME_ABILITY_NICKNAME_ABILITY:
+        show = TRUE;
+        break;
+
+    case TAG_NICKNAME_ABILITY_NICKNAME_STAT:
+        show = msg->id != BattleStrings_Text_PokemonsAbilityCutsPokemonsStat_AllyAlly;
+        break;
+
+    default:
+        show = FALSE;
+        break;
+    }
+
+    // skip it if the script has just shown the same bar (e.g. Soul Heart before its stat change)
+    if (show && battleSys->abilityPopupStep == 0
+        && battleSys->abilityPopupLastBattler == (msg->params[0] & 0xFF)
+        && battleSys->abilityPopupLastAbility == msg->params[1]) {
+        show = FALSE;
+        battleSys->abilityPopupLastAbility = ABILITY_NONE;
+    }
+
+    if (show && msg->params[1] != ABILITY_NONE
+        && BattleSystem_ShowAbilityPopup(battleSys, msg->params[0] & 0xFF, msg->params[1], (msg->params[0] >> 8) & 0xFF) == FALSE) {
+        // run this command again next frame, until the bar is gone
+        battleCtx->battleProgressFlag = TRUE;
+        return FALSE;
+    }
+
+    BattleScript_Iter(battleCtx, 1);
+    return FALSE;
+}
+
 static int BattleScript_Read(BattleContext *battleCtx)
 {
     int data = battleCtx->battleScript[battleCtx->scriptCursor];

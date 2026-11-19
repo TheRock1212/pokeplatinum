@@ -255,6 +255,7 @@ ScriptCommand(BTLCMD_STUFFCHEEKS,                   BtlCmd_StuffCheeks)
 ScriptCommand(BTLCMD_REDUCEWEIGHT,                  BtlCmd_ReduceWeight)
 ScriptCommand(BTLCMD_TRYAURORAVEIL,                 BtlCmd_TryAuroraVeil)
 ScriptCommand(BTLCMD_CHANGEEXECUTIONORDERPRIORITY,  BtlCmd_ChangeExecutionOrderPriority)
+ScriptCommand(BTLCMD_ABILITYPOPUPFORBUFFEREDMESSAGE, BtlCmd_AbilityPopupForBufferedMessage)
 
 // clang-format on
 

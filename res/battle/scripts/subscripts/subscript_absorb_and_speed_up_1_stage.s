@@ -6,11 +6,11 @@ _000:
     Wait 
     WaitButtonABTime 15
     CompareMonDataToValue OPCODE_EQU, BTLSCR_DEFENDER, BATTLEMON_SPEED_STAGE, 12, _032
+    AbilityPopup BTLSCR_DEFENDER
     PlayBattleAnimation BTLSCR_DEFENDER, BATTLE_ANIMATION_STAT_BOOST
     Wait 
     UpdateMonData OPCODE_ADD, BTLSCR_DEFENDER, BATTLEMON_SPEED_STAGE, 1
     UpdateVar OPCODE_SET, BTLVAR_MSG_TEMP, 3
-    AbilityPopup BTLSCR_DEFENDER
     // {0}’s {1} raised its {2}!
     PrintMessage BattleStrings_Text_PokemonsAbilityRaisedItsStat_Ally, TAG_NICKNAME_ABILITY_STAT, BTLSCR_DEFENDER, BTLSCR_DEFENDER, BTLSCR_MSG_TEMP
     Wait 

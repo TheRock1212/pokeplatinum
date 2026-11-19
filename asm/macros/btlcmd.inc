@@ -1371,6 +1371,10 @@
     .long (\jump-.) / 4 - 1
     .endm
 
+    .macro AbilityPopupForBufferedMessage
+    .long BTLCMD_ABILITYPOPUPFORBUFFEREDMESSAGE
+    .endm
+
     .text
     .globl _start
 _start:

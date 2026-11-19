@@ -2386,7 +2386,7 @@ static BOOL BattleMessage_Callback(TextPrinterTemplate *unused, u16 soundCommand
 #define ABILITY_POPUP_HEIGHT       5 // tiles
 #define ABILITY_POPUP_BG_X         256 // pixels: window at tile x 32, off-screen until BG2 scrolls
 #define ABILITY_POPUP_SLIDE_FRAMES 4
-#define ABILITY_POPUP_WAIT_FRAMES  45
+#define ABILITY_POPUP_WAIT_FRAMES  62 // as hg-engine
 #define ABILITY_POPUP_ENEMY_X      144 // the enemy's bar ends past the right edge of the screen
 #define ABILITY_POPUP_PLAYER_X     (-16) // the player's bar starts past the left edge
 

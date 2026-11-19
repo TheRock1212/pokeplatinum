@@ -2,9 +2,9 @@
 
 
 _000:
+    AbilityPopup BTLSCR_DEFENDER
     UpdateVar OPCODE_FLAG_ON, BTLVAR_BATTLE_CTX_STATUS, SYSCTL_SKIP_SPRITE_BLINK
     Call BATTLE_SUBSCRIPT_UPDATE_HP
-    AbilityPopup BTLSCR_DEFENDER
     // {0}’s {1} hurt {2}!
     PrintMessage BattleStrings_Text_PokemonsAbilityHurtPokemon_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME, BTLSCR_DEFENDER, BTLSCR_DEFENDER, BTLSCR_ATTACKER
     Wait 

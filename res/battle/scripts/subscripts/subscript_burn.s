@@ -56,6 +56,10 @@ _141:
     WaitButtonABTime 15
 
 _152:
+    CompareVarToValue OPCODE_NEQ, BTLVAR_SIDE_EFFECT_TYPE, SIDE_EFFECT_TYPE_ABILITY, _ability_popup_done
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
+
+_ability_popup_done:
     PlayBattleAnimation BTLSCR_SIDE_EFFECT_MON, BATTLE_ANIMATION_BURNED
     Wait 
     UpdateMonData OPCODE_FLAG_ON, BTLSCR_SIDE_EFFECT_MON, BATTLEMON_STATUS, MON_CONDITION_BURN
@@ -66,7 +70,6 @@ _152:
     GoTo _190
 
 _177:
-    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0}’s {1} burned {2}!
     PrintMessage BattleStrings_Text_PokemonsAbilityBurnedPokemon_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_SIDE_EFFECT_MON
     GoTo _190

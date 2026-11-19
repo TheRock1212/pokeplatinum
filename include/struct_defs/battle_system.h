@@ -94,6 +94,8 @@ struct BattleSystem {
     u8 abilityPopupStep; // expansion: ability popup bar (BattleSystem_ShowAbilityPopup)
     u8 abilityPopupFrame;
     u16 abilityPopupSavedPalette[16];
+    u16 abilityPopupLastAbility; // last bar shown by a script, so the stat change message does not show it again
+    u8 abilityPopupLastBattler;
     u8 serverMessage[4096];
     u8 clientMessage[4096];
     u16 savedBgPalettes[112];

@@ -55,6 +55,10 @@ _118:
     Wait 
 
 _147:
+    CompareVarToValue OPCODE_NEQ, BTLVAR_SIDE_EFFECT_TYPE, SIDE_EFFECT_TYPE_ABILITY, _ability_popup_done
+    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
+
+_ability_popup_done:
     PlayBattleAnimation BTLSCR_SIDE_EFFECT_MON, BATTLE_ANIMATION_ASLEEP
     Wait 
     Random 3, 2
@@ -65,7 +69,6 @@ _147:
     GoTo _176
 
 _170:
-    AbilityPopup BTLSCR_MSG_BATTLER_TEMP
     // {0}’s {1} made {2} fall asleep!
     PrintMessage BattleStrings_Text_PokemonsAbilityMadePokemonFallAsleep_AllyAlly, TAG_NICKNAME_ABILITY_NICKNAME, BTLSCR_MSG_TEMP, BTLSCR_MSG_BATTLER_TEMP, BTLSCR_SIDE_EFFECT_MON
 

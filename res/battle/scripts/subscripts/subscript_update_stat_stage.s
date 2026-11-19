@@ -13,6 +13,7 @@ _010:
     Wait 
 
 _018:
+    AbilityPopupForBufferedMessage
     CompareVarToValue OPCODE_FLAG_SET, BTLVAR_BATTLE_CTX_STATUS_2, SYSCTL_UPDATE_STAT_STAGES, _036
     PlayBattleAnimationFromVar BTLSCR_SIDE_EFFECT_MON, BTLVAR_SCRIPT_TEMP
     Wait 
@@ -33,6 +34,7 @@ _041:
 _048:
     CompareVarToValue OPCODE_FLAG_SET, BTLVAR_BATTLE_CTX_STATUS, SYSCTL_TURN_OFF_MESSAGES, _059
     WaitButtonABTime 30
+    AbilityPopupForBufferedMessage
     PrintBufferedMessage 
     Wait 
     WaitButtonABTime 30
